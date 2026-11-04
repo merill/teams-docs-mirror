@@ -1,0 +1,264 @@
+---
+layout: Conceptual
+title: Microsoft Sentinel and Microsoft Teams - Microsoft Teams | Microsoft Learn
+canonicalUrl: https://learn.microsoft.com/en-us/microsoftteams/teams-sentinel-guide
+breadcrumb_path: /microsoftteams/breadcrumb/toc.json
+uhfHeaderId: MSDocsHeader-MicrosoftTeams
+ms.suite: office
+feedback_system: Standard
+feedback_product_url: https://aka.ms/TeamsFeedback
+recommendations: true
+author: DivySri-RK
+ms.author: divyasrirk
+manager: prgholve
+ms.topic: reference
+ms.service: msteams
+ms.subservice: msteams-admin
+audience: admin
+ms.reviewer: 
+ms.date: 2020-04-30T00:00:00.0000000Z
+description: Security advice and learnings for IT admins on using Sentinel to monitor and hunt threats that may arise in Teams.
+ms.localizationpriority: high
+search.appverid: MET150
+f1.keywords:
+- NOCSH
+ms.collection:
+- M365-collaboration
+- remotework
+- trust-pod
+ms.custom:
+- Security
+locale: en-us
+document_id: 0157c71c-b57d-ecdf-d2de-1d6f02eaf238
+document_version_independent_id: 25eae9c1-9730-a88b-066d-75e9116f389c
+original_content_git_url: https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness-pr/blob/live/Teams/teams-sentinel-guide.md
+site_name: Docs
+depot_name: office.OfficeDocs-MicrosoftTeams
+page_type: conceptual
+toc_rel: toc.json
+pdf_url_template: https://learn.microsoft.com/pdfstore/en-us/office.OfficeDocs-MicrosoftTeams/{branchName}{pdfName}
+feedback_help_link_type: ''
+feedback_help_link_url: ''
+asset_id: teams-sentinel-guide
+moniker_range_name: 
+monikers: []
+item_type: Content
+source_path: Teams/teams-sentinel-guide.md
+cmProducts:
+- https://authoring-docs-microsoft.poolparty.biz/devrel/63959238-cb90-4871-a33d-4a5519097e47
+- https://authoring-docs-microsoft.poolparty.biz/devrel/8a94907f-2511-4271-b5ca-ec7f2e75067c
+spProducts:
+- https://authoring-docs-microsoft.poolparty.biz/devrel/78d87f42-5582-4a6b-90be-7db2f12b34e6
+- https://authoring-docs-microsoft.poolparty.biz/devrel/bffa8e88-f633-409d-a24d-083bdbc68872
+platformId: 940ab403-3555-543f-d615-fc6a3c4998cc
+---
+
+# Microsoft Sentinel and Microsoft Teams - Microsoft Teams | Microsoft Learn
+
+Important
+
+Microsoft Sentinel now has an integrated connector. For more information, see [Connect Office 365 Logs to Microsoft Sentinel](/en-us/azure/sentinel/connect-office-365). This is the recommended route for collecting these logs and supersedes the collection methods described below.
+
+Teams serves a central role in communication and data-sharing in the Microsoft 365 Cloud. Since Teams touches on so many technologies in the Cloud, it can benefit from human and automated analysis. This applies to both *hunting in logs*, and *real-time monitoring of meetings*. Microsoft Sentinel offers admins these solutions.
+
+Note
+
+Need a refresher on Microsoft Sentinel? [This article](/en-us/azure/sentinel/overview) is just the thing.
+
+## Sentinel and Microsoft Teams Activity Logs
+
+This article focuses on collecting Teams activity logs in Microsoft Sentinel.
+
+Sentinel lets administrators do security management in one location. This includes managing:
+
+- Third-party devices
+- Microsoft Threat Protection
+- Microsoft 365 Workloads
+
+Sentinel workbooks and runbooks can make security monitoring *systematic*. A good first step in this process is collecting the logs needed for analysis.
+
+Note
+
+More than one Microsoft 365 subscription can be surfaced in the same instance of Microsoft Sentinel. This will allow for [real time monitoring](/en-us/azure/sentinel/livestream) and hunting for threats in historical log files. Administrators will be able to hunt using [cross-resource queries](/en-us/azure/azure-monitor/log-query/cross-workspace-query), that is within a single resource group, across resource groups, or in another subscription.
+
+## Step 1: Collect Teams logs: Enable Audit logs in Microsoft 365
+
+Because Teams logs activity through Microsoft 365, audit logs aren't collected by default. Turn on this feature with [these steps](/en-us/microsoft-365/compliance/turn-audit-log-search-on-or-off). Teams data is collected in the Microsoft 365 audit under *Audit.General*.
+
+## Step 2: Connect Office 365 logs to Microsoft Sentinel
+
+Microsoft Sentinel provides a built-in connector for Office 365 logs, which enables you to ingest Teams data into Microsoft Sentinel together with other Office 365 data.
+
+In Microsoft Sentinel, enable the Office 365 data connector. For more information, see the [Microsoft Sentinel documentation](/en-us/azure/sentinel/connect-office-365).
+
+## Helpful hunting KQL queries
+
+Use these queries to familiarize yourself with your Teams data and Teams environment. Knowing how the environment should look and behave is a good first step in recognizing suspicious activity. From there, you can branch out into threat hunting.
+
+### Federated external users query
+
+Get the list of Teams sites that have federated external users. These users have a domain name and/or a UPN suffix that isn't owned by your organization.
+
+In this example query, the organization owns contoso.com.
+
+```Kusto
+OfficeActivity
+| where TimeGenerated > ago(7d)
+| where Operation =~ "MemberAdded"
+| where parse_json(Members)[0].Role == 3
+| project TeamName, Operation, UserId, Members
+| mv-expand bagexpansion=array Members
+| evaluate bag_unpack(Members)
+```
+
+Tip
+
+To learn more about External and Guest access types in Teams see [Communicate with users from other organizations](communicate-with-users-from-other-organizations), or the [Participant Types](teams-security-guide) section in the Teams Security Guide.
+
+### Who recently joined / Whose role changed
+
+Query a specific user to check if they were added to a Teams channel in the last seven days, or within a week:
+
+```Kusto
+OfficeActivity
+| where TimeGenerated > ago(7d)
+| where Operation =~ "MemberAdded"
+| where Members has "<DisplayName>" or Members has "<UserPrincipalName>"
+| project TeamName, Operation, UserId, Members
+```
+
+Query whether a user's role changed for a Team in the last seven days:
+
+```Kusto
+OfficeActivity
+| where TimeGenerated > ago(7d)
+| where Operation =~ "MemberRoleChanged"
+| project TeamName, Operation, UserId, Members
+| mv-expand bagexpansion=array Members
+| evaluate bag_unpack(Members)
+| where Role == '1'
+```
+
+### External users from unknown or new organizations
+
+In Teams, you can add external users to your environment or channels. Organizations often have a limited number of key partnerships and add users from among these partners. This KQL looks at external users added to teams who come from organizations that haven't been seen or added before.
+
+For more information, see the query in the [Microsoft Sentinel community GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Hunting%20Queries/OfficeActivity/ExternalUserFromNewOrgAddedToTeams.yaml).
+
+### External users who were added and then removed
+
+Attackers with some level of existing access may add a new external account to Teams to access and exfiltrate data. They may also quickly remove that user to hide that they made access. This query hunts for external accounts that are added to Teams and swiftly removed to help identify suspicious behavior.
+
+For more information, see the query in the [Microsoft Sentinel community GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Detections/OfficeActivity/ExternalUserAddedRemovedInTeams.yaml).
+
+### New bot or application added
+
+Teams can include apps or bots in a Team to extend the feature set (including custom apps and bots). In some cases, an app or bot can be used for *persistence* in Teams without needing a user account, and can access files and other data. This query hunts for apps or bots that are new to Teams.
+
+For more information, see the query in the [Microsoft Sentinel community GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Hunting%20Queries/OfficeActivity/NewBotAddedToTeams.yaml).
+
+### User accounts who are Owners of large numbers of Teams
+
+Attackers looking to elevate their privileges may assign themselves Owner privileges of a large number of diverse teams. *Usually*, users create and own a few teams around specific topics. This KQL query looks for suspicious behavior.
+
+For more information, see the query in the [Microsoft Sentinel community GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Hunting%20Queries/OfficeActivity/MultiTeamOwner.yaml).
+
+### Many Team deletions by a single user
+
+Attackers can cause disruptions and jeopardize projects and data by deleting multiple teams. Since teams are usually deleted by individual Owners, central deletion of many teams can be a sign of trouble. This KQL looks for single users who delete multiple teams.
+
+For more information, see the query in the [Microsoft Sentinel community GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Hunting%20Queries/OfficeActivity/MultipleTeamsDeletes.yaml).
+
+### Expanding your threat hunting opportunities
+
+Combining queries from resources like Microsoft Entra ID, or other Office 365 workloads can be used with Teams queries. For example, combine the detection of suspicious patterns in Microsoft Entra SigninLogs, and use that output while hunting for Team Owners.
+
+```Kusto
+let timeRange = 1d;
+let lookBack = 7d;
+let threshold_Failed = 5;
+let threshold_FailedwithSingleIP = 20;
+let threshold_IPAddressCount = 2;
+let isGUID = "[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}";
+let azPortalSignins = SigninLogs
+| where TimeGenerated >= ago(timeRange)
+// Azure Portal only and exclude non-failure Result Types
+| where AppDisplayName has "Azure Portal" and ResultType !in ("0", "50125", "50140")
+// Tagging identities not resolved to friendly names
+| extend Unresolved = iff(Identity matches regex isGUID, true, false);
+// Lookup up resolved identities from last 7 days
+let identityLookup = SigninLogs
+| where TimeGenerated >= ago(lookBack)
+| where not(Identity matches regex isGUID)
+| summarize by UserId, lu_UserDisplayName = UserDisplayName, lu_UserPrincipalName = UserPrincipalName;
+// Join resolved names to unresolved list from portal signins
+let unresolvedNames = azPortalSignins | where Unresolved == true | join kind= inner (
+   identityLookup ) on UserId
+| extend UserDisplayName = lu_UserDisplayName, UserPrincipalName = lu_UserPrincipalName
+| project-away lu_UserDisplayName, lu_UserPrincipalName;
+// Join Signins that had resolved names with list of unresolved that now have a resolved name
+let u_azPortalSignins = azPortalSignins | where Unresolved == false | union unresolvedNames;
+let failed_signins = (u_azPortalSignins
+| extend Status = strcat(ResultType, ": ", ResultDescription), OS = tostring(DeviceDetail.operatingSystem), Browser = tostring(DeviceDetail.browser)
+| extend FullLocation = strcat(Location,'|', LocationDetails.state, '|', LocationDetails.city)
+| summarize TimeGenerated = makelist(TimeGenerated), Status = makelist(Status), IPAddresses = makelist(IPAddress), IPAddressCount = dcount(IPAddress), FailedLogonCount = count()
+by UserPrincipalName, UserId, UserDisplayName, AppDisplayName, Browser, OS, FullLocation
+| mvexpand TimeGenerated, IPAddresses, Status
+| extend TimeGenerated = todatetime(tostring(TimeGenerated)), IPAddress = tostring(IPAddresses), Status = tostring(Status)
+| project-away IPAddresses
+| summarize StartTime = min(TimeGenerated), EndTime = max(TimeGenerated) by UserPrincipalName, UserId, UserDisplayName, Status, FailedLogonCount, IPAddress, IPAddressCount, AppDisplayName, Browser, OS, FullLocation
+| where (IPAddressCount >= threshold_IPAddressCount and FailedLogonCount >= threshold_Failed) or FailedLogonCount >= threshold_FailedwithSingleIP
+| project UserPrincipalName);
+OfficeActivity
+| where TimeGenerated > ago(time_window)
+| where Operation =~ "MemberRoleChanged"
+| mv-expand bagexpansion=array Members
+| evaluate bag_unpack(Members)
+| where Role == '2'
+| where Members in (failed_signins)
+```
+
+Also, you can make the SigninLogs detections specific to Teams by adding a filter for only Teams-based logons by using:
+
+```Kusto
+| where AppDisplayName has 'Teams'
+```
+
+To help explain using *where AppDisplayName has Teams* further, the KQL you see below demonstrates a successful logon from one IP address with failure from a different IP address, but scoped to *only* Teams sign-ins:
+
+```Kusto
+let timeFrame = 1d;
+let logonDiff = 10m;
+SigninLogs 
+  | where TimeGenerated >= ago(timeFrame) 
+  | where ResultType == "0" 
+  | where AppDisplayName has "Teams"
+  | project SuccessLogonTime = TimeGenerated, UserPrincipalName, SuccessIPAddress = IPAddress, AppDisplayName, SuccessIPBlock = strcat(split(IPAddress, ".")[0], ".", split(IPAddress, ".")[1])
+  | join kind= inner (
+      SigninLogs 
+      | where TimeGenerated >= ago(timeFrame) 
+      | where ResultType !in ("0", "50140") 
+      | where ResultDescription !~ "Other"  
+      | where AppDisplayName startswith "Microsoft Teams"
+      | project FailedLogonTime = TimeGenerated, UserPrincipalName, FailedIPAddress = IPAddress, AppDisplayName, ResultType, ResultDescription
+  ) on UserPrincipalName, AppDisplayName 
+  | where SuccessLogonTime < FailedLogonTime and FailedLogonTime - SuccessLogonTime <= logonDiff and FailedIPAddress !startswith SuccessIPBlock
+  | summarize FailedLogonTime = max(FailedLogonTime), SuccessLogonTime = max(SuccessLogonTime) by UserPrincipalName, SuccessIPAddress, AppDisplayName, FailedIPAddress, ResultType, ResultDescription 
+  | extend timestamp = SuccessLogonTime, AccountCustomEntity = UserPrincipalName, IPCustomEntity = SuccessIPAddress
+```
+
+## Important information and updates
+
+**Thank you for content collaboration, Pete Bryan, Nicholas DiCola, and Matthew Lowe.** Pete Bryan, and people he collaborates with, continue to develop detection and hunting queries for Teams.
+
+Stay in touch with this [GitHub](https://github.com/Azure/Azure-Sentinel/tree/master/Hunting%20Queries/) repository for updates.
+
+Watch for updates to the [parser](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/Teams_parser.txt) and [logic app](https://github.com/Azure/Azure-Sentinel/tree/master/Playbooks/Get-O365Data) used in this article.
+
+You should also join (and contribute to) the [Azure Sentinel community](https://github.com/Azure/Azure-Sentinel/wiki). We're actively looking for feedback on this article, so use the feedback option below. Thank you & Happy hunting.
+
+[Registering your application in Microsoft Entra ID](/en-us/skype-sdk/trusted-application-api/docs/registrationinazureactivedirectory)
+
+[Turn audit log search on or off](/en-us/microsoft-365/compliance/turn-audit-log-search-on-or-off)
+
+[What is Azure Sentinel?](/en-us/azure/sentinel/overview)

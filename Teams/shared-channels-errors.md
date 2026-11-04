@@ -1,0 +1,101 @@
+---
+layout: Conceptual
+title: Shared channels errors in Microsoft Teams - Microsoft Teams | Microsoft Learn
+canonicalUrl: https://learn.microsoft.com/en-us/microsoftteams/shared-channels-errors
+breadcrumb_path: /microsoftteams/breadcrumb/toc.json
+uhfHeaderId: MSDocsHeader-MicrosoftTeams
+ms.suite: office
+feedback_system: Standard
+feedback_product_url: https://aka.ms/TeamsFeedback
+recommendations: true
+author: officedocspr5
+ms.author: odocspr
+manager: jtremper
+ms.reviewer: jasonlewis
+ms.date: 2024-06-28T00:00:00.0000000Z
+ms.topic: article
+ms.tgt.pltfrm: cloud
+ms.service: msteams
+ms.subservice: teams-chat
+audience: Admin
+ms.collection:
+- M365-collaboration
+- Teams_ITAdmin_Help
+f1.keywords:
+- NOCSH
+ms.localizationpriority: Medium
+search.appverid: MET150
+description: Learn how to use fix errors in shared channels in Microsoft Teams.
+locale: en-us
+document_id: 138ac890-8786-c6e6-db7e-1e90a94e6c9b
+document_version_independent_id: 138ac890-8786-c6e6-db7e-1e90a94e6c9b
+original_content_git_url: https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness-pr/blob/live/Teams/shared-channels-errors.md
+site_name: Docs
+depot_name: office.OfficeDocs-MicrosoftTeams
+page_type: conceptual
+toc_rel: toc.json
+pdf_url_template: https://learn.microsoft.com/pdfstore/en-us/office.OfficeDocs-MicrosoftTeams/{branchName}{pdfName}
+feedback_help_link_type: ''
+feedback_help_link_url: ''
+asset_id: shared-channels-errors
+moniker_range_name: 
+monikers: []
+item_type: Content
+source_path: Teams/shared-channels-errors.md
+cmProducts:
+- https://authoring-docs-microsoft.poolparty.biz/devrel/63959238-cb90-4871-a33d-4a5519097e47
+- https://authoring-docs-microsoft.poolparty.biz/devrel/1dd701e0-441f-4b0a-9806-aa47decc4e35
+spProducts:
+- https://authoring-docs-microsoft.poolparty.biz/devrel/78d87f42-5582-4a6b-90be-7db2f12b34e6
+- https://authoring-docs-microsoft.poolparty.biz/devrel/0a2fc935-5977-4aa6-9f55-0be03bd2acb8
+platformId: d3e845b8-5b16-ab08-96e6-917dfbc78eb1
+---
+
+# Shared channels errors in Microsoft Teams - Microsoft Teams | Microsoft Learn
+
+If your users see error messages when trying to add people from outside your organization to shared channels, check the settings in this article.
+
+## Due to admin policy, you can't add external people to the channel. For more info, talk to your admin.
+
+Teams uses Microsoft 365 Groups for team membership. The Microsoft 365 Groups guest settings must be turned on in order for people outside the organization to be added to a shared channel. If your users see this error, check the Microsoft 365 Groups settings for people outside the organization.
+
+To set Microsoft 365 Groups settings for people outside the organization:
+
+1. In the Microsoft 365 admin center, in the left navigation pane, expand **Settings**.
+2. Click **Org settings**.
+3. In the list, click **Microsoft 365 Groups**.
+4. Ensure that the **Let group owners add people outside your organization to Microsoft 365 Groups as guests** and **Let guest group members access group content** check boxes are both checked.
+5. If you made changes, click **Save changes**.
+
+## Due to admin policy, you can't add external people to the channel
+
+Teams channel policies determine how users can interact with shared channels. If users see this error message, check the channel policy for that user.
+
+To set the policy for inviting people outside the organization to shared channels:
+
+1. In the left navigation of the Microsoft Teams admin center, go to **Teams** &gt; **Teams policies**.
+2. Select the policy that your user is assigned to.
+3. Ensure that **Invite external users to shared channels** is **On**.
+4. If you made changes, select **Apply**.
+
+For more information about Teams channel policies, see [Manage channel policies in Microsoft Teams](teams-policies).
+
+## You can't share this channel with people from this org
+
+If your users see this error, then they're prevented from sharing the channel with people in the other organization by the Microsoft Entra cross-tenant access settings. This may be due to the inbound settings in your organization or the outbound settings in the other organization.
+
+To check the inbound settings for your organization:
+
+1. In [Microsoft Entra ID](https://aad.portal.azure.com), select **External Identities**, and then select **Cross-tenant access settings**.
+2. Select the inbound access link for the organization that you want to check.
+3. On the **B2B direct connect** tab, choose **Customize settings**.
+4. On the **External users and groups** tab, ensure that **Allow access** and **All external users and groups** are selected, or if you've chosen **Select external users and groups**, make sure that the user being invited is a member of the selected groups.
+5. If you made changes, select **Save** and close the **Inbound access settings** blade.
+
+If users continue to see the error, check with the organization that they're collaborating with. That organization's outbound settings may disallow sharing with your organization. For information about setting up shared channels between organizations, see [Collaborate with external participants in a shared channel](/en-us/microsoft-365/solutions/collaborate-teams-direct-connect).
+
+You can specify an internal help link that appears as part of this error message. The link can go to your internal documentation about how to request shared channel for your organization. For more information, see [Specify a link to your internal process for requesting new external organizations](/en-us/microsoft-365/solutions/collaborate-teams-direct-connect#specify-a-link-to-your-internal-process-for-requesting-new-external-organizations).
+
+## We couldn't find any matches. Make sure the email address is correct, or talk to your admin
+
+If your users see this error, then Microsoft 365 is not able to find the specified email address in the external organization. You'll need to confirm the address with the external organization.

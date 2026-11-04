@@ -1,0 +1,195 @@
+---
+layout: Conceptual
+title: Manage messaging policies in Teams - Microsoft Teams | Microsoft Learn
+canonicalUrl: https://learn.microsoft.com/en-us/microsoftteams/messaging-policies-in-teams
+breadcrumb_path: /microsoftteams/breadcrumb/toc.json
+uhfHeaderId: MSDocsHeader-MicrosoftTeams
+ms.suite: office
+feedback_system: Standard
+feedback_product_url: https://aka.ms/TeamsFeedback
+recommendations: true
+author: officedocspr5
+ms.author: odocspr
+manager: jtremper
+ms.reviewer: jastark
+ms.date: 2025-01-29T00:00:00.0000000Z
+ms.topic: how-to
+ms.tgt.pltfrm: cloud
+ms.service: msteams
+ms.subservice: teams-chat
+ms.collection:
+- M365-collaboration
+audience: Admin
+ms.localizationpriority: medium
+search.appverid: MET150
+f1.keywords:
+- CSH
+ms.custom:
+- ms.teamsadmincenter.messagingpolicies.overview
+- seo-marvel-apr2020
+- chat-teams-channels-revamp
+- teams-chat-and-channels
+description: Learn about Messaging policies and how they can be used to control chat messaging in Teams.
+locale: en-us
+document_id: f34f3188-0af5-f972-9d28-959f5f7866a2
+document_version_independent_id: fab26e11-a729-92a4-3ea6-8668dca55dd0
+original_content_git_url: https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness-pr/blob/live/Teams/messaging-policies-in-teams.md
+site_name: Docs
+depot_name: office.OfficeDocs-MicrosoftTeams
+page_type: conceptual
+toc_rel: toc.json
+pdf_url_template: https://learn.microsoft.com/pdfstore/en-us/office.OfficeDocs-MicrosoftTeams/{branchName}{pdfName}
+feedback_help_link_type: ''
+feedback_help_link_url: ''
+asset_id: messaging-policies-in-teams
+moniker_range_name: 
+monikers: []
+item_type: Content
+source_path: Teams/messaging-policies-in-teams.md
+cmProducts:
+- https://authoring-docs-microsoft.poolparty.biz/devrel/63959238-cb90-4871-a33d-4a5519097e47
+spProducts:
+- https://authoring-docs-microsoft.poolparty.biz/devrel/78d87f42-5582-4a6b-90be-7db2f12b34e6
+platformId: c0e315cf-6852-f167-fbb0-a575b2400701
+---
+
+# Manage messaging policies in Teams - Microsoft Teams | Microsoft Learn
+
+Messaging policies are used to control which chat and channel messaging features are available to [users (owners and members)](assign-roles-permissions) in Microsoft Teams. You can use the global (Org-wide default) policy that's created automatically or create and assign custom messaging policies.
+
+Users in your organization will automatically get the global policy, unless you create and assign a custom policy. Edit the settings in the global policy or create and assign one or more custom policies to turn on or turn off the features that you want.
+
+For information on Microsoft's policy for SMS messaging in Microsoft Teams, see [Microsoft's policy for SMS messaging in Microsoft Teams](sms-microsoft-teams-policy). For more information on SMS in Teams, see [Plan for SMS in Teams](sms-overview).
+
+Note
+
+To ensure syncing after a policy change, a reboot may be necessary for certain instances.
+
+## Create a custom messaging policy
+
+1. In the left navigation of the Microsoft Teams admin center, go to **Messaging policies**.
+2. Select **Add**.
+3. Enter a name and description for the policy.
+4. Choose the settings that you want.
+5. Select **Save**.
+
+    For example, you want to make sure that sent messages aren't deleted or altered. Create a new custom policy named "Retain sent messages" and turn off the following settings:
+
+    - Owners can delete sent messages
+    - Users can delete sent messages
+    - Users can edit sent messages
+
+Then assign the policy to users.
+
+## Edit a messaging policy
+
+You can edit the global policy and any custom policies that you create.
+
+1. In the left navigation of the Microsoft Teams admin center, go to **Messaging policies**.
+2. Select the policy by clicking to the left of the policy name, and then select **Edit**.
+3. From here, make the changes that you want.
+4. Select **Save**.
+
+## Assign a custom messaging policy to users
+
+You can assign a policy directly to users, either individually or at scale through a batch assignment (if supported for the policy type), or to a group that the users are members of (if supported for the policy type).
+
+To learn about the different ways that you can assign policies to users, see [Assign policies to your users in Teams](policy-assignment-overview).
+
+A user can only be assigned one messaging policy at a time.
+
+Note
+
+You can't delete a policy if users are assigned to it. You must first assign a different policy to all affected users, and then you can delete the original policy.
+
+## Messaging policy settings
+
+Here are the messaging policy settings that you can configure.
+
+- **Owners can delete sent messages** - Enable this setting to allow owners to delete messages or posts sent by users, excluding their own. *To allow owners to delete their own sent messages, activate the **Delete Sent Messages** setting*.
+- **Delete sent messages** - Use this setting to let users delete individual messages that they sent in chat.
+- **User can delete messages sent by bots** - Use this setting to allow users to delete bot messages in all communications across Teams, including 1:1 chats, group chats, all channels, and meeting chats.
+- **Delete chat** - Use this setting to let users have the option to delete entire conversations from their chat list. This will only delete the chat content for the user taking the action; other users in the chat will still be able to see all of the messages. The user who deleted the chat won't see any existing messages in their activity feed or search results for the deleted chat; this user will also be removed from the deleted chat. Users will be prompted to confirm the decision to delete a chat. This setting is on by default. If this setting is turned off, users will no longer see the delete option for their chats.
+- **Edit sent messages** - Use this setting to let users edit the messages that they sent in chat.
+- **Read receipts** - Read receipts allow the sender of a chat message to be notified when their message was read by the recipient in 1:1 and group chats 20 people or fewer. Message read receipts remove uncertainty about whether a message was read, and improve team communication. Read receipts aren't captured in eDiscovery reporting.
+
+    - **User controlled** - This means that users get to decide if they want read receipts ON or OFF. Default setting within the app is ON. Users can then turn it OFF.
+    - **Turned on for everyone** - This means everyone in the tenant will have the feature ON with no option to turn it off. When using the **On for everyone** setting, the only way to set receipts for the whole tenant is either to have only one messaging policy for the whole tenant (the default policy named "Global (Org-wide Default)") or to have all messaging policies in the tenant use the same settings for receipts. The read receipts feature is most effective when the feature is enabled to **On for everyone**.
+    - **Turned off for everyone** - This means the feature is disabled and no one in the tenant has read receipts nor can they turn it on.
+- **Upload custom emojis** - Set which users can create custom emojis. This setting is on by default. For more information about custom emojis and their new messaging policy settings, see [Custom emojis in Microsoft Teams](teams-custom-emojis).
+- **Delete custom emojis** - Set which users can delete custom emojis. This setting is off by default (except for Teams admins). For more information about custom emojis and their new messaging policy settings, see [Custom emojis in Microsoft Teams](teams-custom-emojis).
+- **Chat** - Turn this setting on if you want users in your organization to be able to use the Teams app to chat with other people. When this setting is off, chat is disabled for new one-on-one and group chats.
+- **Chat with groups** - Users can start a chat with distribution groups, mail-enabled security groups, and Microsoft 365 groups.
+- **Use Giphy in conversations** - If you turn on Giphys, users can include Giphys in chat conversations with other people. Giphy is an online database and search engine that allows users to search for and share animated GIF files. Each Giphy is assigned a content rating. In addition to turning on this setting, you need to enable [Optional Connected Experiences](/en-us/deployoffice/privacy/manage-privacy-controls#policy-setting-for-optional-connected-experiences) to allow Giphys in conversations.
+- **Giphy content rating**
+
+    - **No restriction** - This means that your users will be able to insert any Giphy in chats regardless of the content rating.
+    - **Moderate** - This means that your users will be able to insert Giphys in chats, but will be moderately restricted from adult content.
+    - **Strict** - This means that your users will be able to insert Giphys in chats, but will be strictly restricted from adult content.
+- **Memes in conversations** - If you turn Memes ON, users can include Memes in chat conversations with other people.
+- **Stickers in conversations** - If you turn this ON, users can include Stickers in chat conversations with other people.
+- **URL previews** - Use this setting to turn automatic URL previewing on or off in messages.
+- **Report inappropriate content** - When this is ON, users can report inappropriate content for review by communication compliance reviewers. Reviewers can remove the message if appropriate. For more information, see [Create and manage communication compliance policies](/en-us/microsoft-365/compliance/communication-compliance-policies#user-reported-messages-policy).
+- **Report a security concern** - When this is ON, users can report malicious messages in Microsoft Teams in organizations with Microsoft Defender for Office 365 Plan 2 or Microsoft Defender XDR. For more information, see [Reporting malicious messages in Teams](/en-us/defender-office-365/submissions-teams).
+- **Translate messages** - Turn this setting on to let users automatically translate Teams messages into the language specified by their personal language settings for Microsoft 365 or Office 365.
+- **Immersive reader for messages** - Turn this setting ON to let users view messages in Microsoft Immersive Reader. Immersive Reader is a learning tool that provides a full screen reading experience to increase readability of text.
+- **Send urgent messages using priority notifications** - If you turn this ON, users can send messages using [priority notifications](https://support.microsoft.com/article/mark-a-message-as-important-or-urgent-in-teams-ea99d5b6-1317-4550-8d75-86ff14cd4462). Priority notifications notify users every 2 minutes for 20 minutes or until messages that are marked as *urgent* are picked up and read by the recipient. This feature increases the likelihood that the message is acted upon in a timely manner. You can't edit an urgent message after you send it.
+- **Create voice messages**
+
+    Important
+
+    Audio messages are not captured in eDiscovery reporting.
+
+    - **Allowed in chats and channels** - This means that users can leave audio messages in both chats and channels.
+    - **Allowed in chats only** - This means that users can leave audio messages in chats, but not in channels.
+    - **Not enabled** - This means that users can't create audio messages in chats or channels.
+- **On mobile devices, display favorite channels above recent chats** - Enable this setting to move favorite channels to the top of the mobile device screen so that a user doesn't need to scroll to find them.
+- **Remove users from group chats** - Turn this setting ON to let a user remove other users from a group chat. This feature lets you continue a chat with a smaller group of people without losing the chat history.
+- **Text predictions** - Turn on this setting to let a user get text predictions for chat messages.
+- **Suggested replies** - Turn this setting on to enable suggested replies for chat messages.
+- **Chat permission role** - Use this setting to define the supervised chat role of the user. Learn more about [supervised chat](supervise-chats-edu).
+- **Users with full chat permissions can delete any message** - Use this setting to let users with full permissions delete any group or meeting chat message.
+- **Video messages** - Turn this setting on if you want users in your organization to be able to use the Teams app to send video messages to other people in chats and channels.
+- **Viva Engage experiences in Teams** - Turn this setting on if you want users in your organization to be able to integrate Viva Engage experiences, like Storyline, into their chats.
+- **Use Designer to create backgrounds and images** - Turn this setting on if you want users in your organization to be able to use Microsoft Designer to generate announcement backgrounds using generative AI.
+
+Note
+
+Some of these settings, such as using Giphys, can also be configured at the team level by team owners and at the private or shared channel level by channel owners.
+
+## Closed captions for video messages in Teams Chat
+
+Teams Chat supports closed captions for video messages. Users can disable captions at any point in time if they don't wish to see them.
+
+Note
+
+Captions are auto-generated and currently available only in English.
+
+As an administrator, you can hide or show captions for users by using PowerShell cmdlets.
+
+- Use the following command to enable captions:
+
+    ```powershell
+    Set-CsTeamsMessagingConfiguration -EnableVideoMessageCaptions $true
+    
+    ```
+- Use the following command to disable captions:
+
+    ```powershell
+    Set-CsTeamsMessagingConfiguration -EnableVideoMessageCaptions $false
+    
+    ```
+- Use the following command to get the value for `TeamsMessagingConfiguration`:
+
+    ```powershell
+    Get-CsTeamsMessagingConfiguration
+    
+    ```
+
+For more information about PowerShell, see [Microsoft Teams PowerShell Overview - Microsoft Teams | Microsoft Learn](teams-powershell-overview).
+
+### Related articles
+
+- [Teams policies reference - Messaging policies](settings-policies-reference#messaging-policies)
+- [Assign policies to users and groups in Teams](assign-policies-users-and-groups)
+- [Assign team owners and members in Microsoft Teams](assign-roles-permissions)

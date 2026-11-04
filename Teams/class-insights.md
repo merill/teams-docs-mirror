@@ -1,0 +1,293 @@
+---
+layout: Conceptual
+title: IT Admin Guide to Education Insights in Microsoft Teams - Microsoft Teams | Microsoft Learn
+canonicalUrl: https://learn.microsoft.com/en-us/microsoftteams/class-insights
+breadcrumb_path: /microsoftteams/breadcrumb/toc.json
+uhfHeaderId: MSDocsHeader-MicrosoftTeams
+ms.suite: office
+feedback_system: Standard
+feedback_product_url: https://aka.ms/TeamsFeedback
+recommendations: true
+author: officedocspr5
+ms.author: odocspr
+manager: jtremper
+ms.topic: reference
+ms.service: msteams
+ms.subservice: teams-education
+audience: admin
+ms.reviewer: 
+ms.date: 2024-05-29T00:00:00.0000000Z
+description: An IT Admin guide to Insights in Microsoft Teams for Education.
+ms.localizationpriority: high
+search.appverid: MET150
+f1.keywords:
+- NOCSH
+ms.collection:
+- M365-collaboration
+- m365initiative-edu
+- tier2
+locale: en-us
+document_id: 3501fde1-69ef-1908-876c-4f50e90649f5
+document_version_independent_id: e9c673d9-6c18-7440-da5d-cdeff4dd9b8b
+original_content_git_url: https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness-pr/blob/live/Teams/class-insights.md
+site_name: Docs
+depot_name: office.OfficeDocs-MicrosoftTeams
+page_type: conceptual
+toc_rel: toc.json
+pdf_url_template: https://learn.microsoft.com/pdfstore/en-us/office.OfficeDocs-MicrosoftTeams/{branchName}{pdfName}
+feedback_help_link_type: ''
+feedback_help_link_url: ''
+asset_id: class-insights
+moniker_range_name: 
+monikers: []
+item_type: Content
+source_path: Teams/class-insights.md
+cmProducts:
+- https://authoring-docs-microsoft.poolparty.biz/devrel/63959238-cb90-4871-a33d-4a5519097e47
+spProducts:
+- https://authoring-docs-microsoft.poolparty.biz/devrel/78d87f42-5582-4a6b-90be-7db2f12b34e6
+platformId: 70c84ee2-1a07-6fa4-b97d-c23b2c3db711
+---
+
+# IT Admin Guide to Education Insights in Microsoft Teams - Microsoft Teams | Microsoft Learn
+
+This document provides the steps required to get Education Insights in Microsoft Teams up and running and help educators and education leaders adopt the platform and successfully use the app.
+
+## Overview
+
+**Each student has unique experiences, skills, and voice.** **Insights helps you understand your students and respond to their needs.**
+
+Insights provides real-time analytics of student progress and activity within their classes. With easily digestible visualizations, school communities can proactively and easily track student experiences. Educators and education leaders are presented with meaningful, reliable data to make informed decisions regarding their class teams. Guided by this data, educators have the information they need to ensure that their students' emotional, social, and academic needs are being met.
+
+School communities can channel their efforts and achieve a more significant impact when educators know which strategies work for their students. With the timely data provided by Insights, educators and education leaders focus time and energy on taking actions that improve the learning environment, drive student success, and help learners thrive.
+
+## Who uses Insights?
+
+### Educators
+
+An educator is anyone who owns a class team. Educators may include teachers, lecturers, and professors.
+
+Educators access Insights at the class level. They see the activity of students assigned to their classes but can't access data from other classes. Insights helps educators understand and support their students.
+
+There are no prerequisites to using Insights, and educators just need to add the Insights to the left app bar or as a tab to each of their classes in Teams.
+
+Educators are identified by faculty licenses. Educators must have a faculty license and be a class team owner to see the data in Insights.
+
+Note
+
+**Regarding students:**
+
+Insights collects data about student activity in Teams.
+
+Students are members of a class team within Teams. They are identified by their license and **do not have access** to the Insights app or tab (even if they are the team owner).
+
+## Where do users find Insights?
+
+Educators can use these two methods:
+
+- [Personal app](https://support.microsoft.com/office/747fd8d9-00b0-43e6-bacc-a1bf030b1867) - an overview of all their active classes is available from Teams left app bar, with the ability to drill down to class data.
+- [Tabs](https://support.microsoft.com/office/1386d1b4-3641-4a23-9b9c-0c6c774c2b6c) - Insights for specific classes they own are available in a tab from a class team's left navigation menu. This tab enables the educator to directly access the relevant data when they are in that class in Teams to see the data in the class context.
+
+Insights surfaces activity data from all channels within a class team but can only be added as a tab to public channels. The tab reflects activity from everyone in the class team who isn't an owner (including educators who aren't owners of the class team).
+
+In both views, an educator can access class data. Using the personal app, the educator needs to drill down to the class level, whereas the tab provides direct access to class data.
+
+At the class level, if an educator owns a class Team, Insights is available without any other action on the part of the IT Admin.
+
+**To add the Insights app in Teams:**
+
+- Select "**...**" on the app bar.
+- Search for **Insights** and select it.
+- A description screen will open. Select **Add**.
+
+    ![Add Insights to Teams.](media/insights-add-personal-app.png)
+- Right select on the Insights icon and select **Pin**.
+
+    ![Pin the Insights app.](media/insights-pin-app.png)
+
+## When is Insights used?
+
+Insights supports learning communities throughout **the learning cycle**. With real-time metrics across multiple dimensions, Insights supports a continuous cycle of identification, reflection, discussion, and taking action amongst members of the school community.
+
+- **Identify** how and when students engage with educators, course materials, and their peers, and how they perform on assignments.
+- **Reflect** on how the inputs support the students to succeed, determine areas for growth, and where assistance is required.
+- **Discuss** findings with students and the school community to strengthen relationships, goal setting, self-review, spark collaboration, and improve outcomes.
+- **Take Action** to develop interventions, provide feedback on growth areas, modify teaching strategies, and identify extra support required.
+
+![Insights supports learning communities throughout the learning cycle.](media/insights-learning-cycle.png)
+
+## How Insights works?
+
+Insights produces powerful analytics to help educators deliver better learning outcomes. It does this by analyzing student activity within Teams and optionally using the Student Information System (SIS) data that you provide to help contextualize and group that activity.
+
+Before you start to deploy Insights for your institution, take a quick look at how Insights works, our commitment to data ethics, and the required licensing.
+
+### Data collection
+
+Data is collected for Insights from student and educator activity in Teams.
+
+Insights *doesn't* display data about educators. Analysis of the data provides actionable insights to aid in teaching and learning.
+
+Currently, data is collected from the following areas in class teams:
+
+| Teams component | Data collected |
+| --- | --- |
+| **Assignments** | Opening, turning in, and grade on assignments. |
+| **Channel engagement** | Visiting a channel, creating a post, replying to and liking a post (not including chat content). |
+| **Files** | Uploading, downloading, accessing, modifying, commenting on, and sharing a file (not including file content). |
+| **OneNote Class Notebook** | Editing a page or section in a notebook (not including page content). |
+| **Meetings** | Attendance (not including meeting content). |
+| **[Reading Progress](https://support.microsoft.com/topic/e71705a2-a79a-4d7e-bcef-a1e0aa336017)** | Accuracy rate, most challenging words, and words per minute. |
+| **[Reflect](reflect)** | Check-ins (including values). |
+
+Note
+
+Most of the collected data shows up in Insights within a few minutes. Attendance in class meetings (meetings associated with one of the class channels) appears a few hours after the end of the meeting, usually up to 24 hours later.
+
+Note
+
+Data collected in Education Insights is kept until either the IT Admin turns off the Education Analytics toggle or the Office subscription for the tenant ends. Turning off specific features in Teams does not delete historic data.
+
+### Privacy and security
+
+Education Insights, as part of Microsoft 365, meets national, regional, and industry-specific regulations for data collection and use, including [GDPR](/en-us/compliance/regulatory/gdpr) and the [Family Educational Rights and Privacy Act (FERPA)](/en-us/compliance/regulatory/offering-ferpa) that protects the privacy of students' education records.
+
+The data belongs to the institution, and Microsoft only collects the data and stores it. Microsoft personnel can't access the data or see it, except as allowed by compliance in an audited way to maintain the service, such as data recovery.
+
+Tip
+
+- Visit the [Microsoft Trust Center](https://www.microsoft.com/trust-center) to learn more about how Microsoft protects your data.
+- Visit [Microsoft compliance offerings](/en-us/compliance/regulatory/offering-home) to learn how Microsoft 365 helps your institution meet regulatory compliance standards.
+
+### Performance and reliability
+
+Insights is designed to handle a high volume of data collected from Teams with optimal performance and reliability. We can't guarantee 100% availability, but we endeavor to be available as close as possible to that target.
+
+The data collection process takes place on separate servers to the installation of the Insights tab in Teams. The Insights tab or personal app doesn't affect application performance or network bandwidth for educators and students using the rest of the Teams functionality.
+
+Tip
+
+For more details, read [Help for low-bandwidth situations for Teams for EDU](edu-remote-low-bandwidth).
+
+### Data storage
+
+Insights is currently deployed in Europe and the United States. Data for European-based users is stored on servers in Europe. Data for Australian-based and US-based users is stored on servers in the United States. Data for users outside of Europe, Australia, or the United States, will be stored in one of our geographic regions.
+
+### Using data ethically
+
+We're committed to using data responsibly and ethically. Insights follows our Microsoft principles for Responsible data and AI. This means that we're transparent about how the data is used, and we put the interests of educators and students first. We use the highest security and privacy standards, monitor for continuous reliability and accuracy, and ensure ongoing compliance for your institution.
+
+Microsoft has built Insights from the ground up to ensure data protection. We're aware of the potential sensitivity of how this data can be used, and we care for your data and the privacy of individuals.
+
+#### Data to support learning
+
+Insights shines a spotlight on student learning and digital engagement. The data supports learning and shows the level of student engagement on the digital learning platform. While you can drill down to the individual level for class activities, Microsoft **does not assign any positive or negative value** assigned to these actions. The purpose of the data it collects is to support students and educators to achieve their best.
+
+Educators know and understand their students best. The information presented in Insights is there to aid them in **providing support to students** in a digital learning scenario. It replicates the insights available in an in-person experience. For example, suppose a student hasn't been active during a specific period or didn't complete all their assignments last week on-time. The data is surfaced to the educator to provide the right nudges or to check in on the student. It remains the educator's responsibility to interact with the student, or that student's family or guardians, to determine the underlying reason for any activity or inactivity detected.
+
+Insights has been designed to support both students and educators in the digital learning environment framework. Insights **does not directly capture data about educators**. In addition to individual student data, it provides aggregations of student activity and outcomes for a specific educator to enable education leaders to support students and educators.
+
+### Licensing
+
+To access Insights, users must have an A1, A3, or A5 faculty license for Microsoft 365.
+
+## Manage the setup policy
+
+As an IT Admin, you can use the app setup policy to install Insights by default for your educators and leaders when they start Teams. With the setup policy, you can customize Teams to highlight Insights and pin it on the apps bar.
+
+If educators want direct access to each class, they can manually install the Insights tab on the top navigation menu. This tab enables the educator to directly access the relevant data when they are in that class in Teams to see the data in the class context.
+
+In both views, an educator can access class data. Using the personal app, the educator needs to drill down to the class level, whereas the tab provides direct access to class data.
+
+Tip
+
+For more details, read [Teams Policies and Policy Packages for Education](policy-packages-edu).
+
+## Encourage the adoption of Insights
+
+Get your educational institution excited about using Insights.
+
+Feel free to distribute the following material to your **educators**:
+
+- Check the [Insights support page](https://support.microsoft.com/office/27b56255-90c0-47aa-bac3-1c9f50157181) for more help.
+- Watch [step-by-step tutorials](https://aka.ms/insights/resources) on how to use Insights.
+- Train yourself with the [free Insights course](https://aka.ms/insights/course) at the Microsoft Educator Center
+- And lastly, check out [this blog](https://techcommunity.microsoft.com/t5/education-blog/6-ways-to-be-insight-ful-and-support-student-engagement/ba-p/1903091) dedicated to Insights.
+
+### Turn on and off Insights
+
+By default, Insights is turned on, which allows analytics of students' activities within Teams to be used in Insights. You may opt out of Insights, in which case we *delete all the data collected* for Insights and stop collecting any future data. If you turn Insights back on, we start collecting data from the time it's re-enabled.
+
+There are two places where you can control *Education Insights*. Both options have the same result. For customers that have transitioned from *SDS (Classic)* to *SDS for provisioning*, only the Teams client option is available.
+
+#### Turn on and off Insights from the Teams client
+
+1. If you don’t have the *Education Insights* personal app pinned, follow [these instructions](class-insights#educators) to add it.
+2. With a Microsoft 365 administrator account, open the **Admin settings** page using the ellipsis icon located in the top right corner of *Education Insights*.
+3. Adjust the **Collect activity data for Insights** toggle to on or off.
+
+![Screenshot of the Teams client toggles to turn Insights off and on.](media/admin-settings-main-screen.png)
+
+Note
+
+If you've turned Insights off, the data that's been collected is deleted. The deleted data on opt-out cannot be restored at a later time, even if Insights is re-enabled.
+
+### Turn on and off Advanced inferences in Insights
+
+When the **Allow advanced inferences** toggle for Education Insights is turned on, Education Insights may present students, educators, and education leaders with advanced inferences about learning (such as engagement warnings). These inferences allow educators to provide more tailored support to students. The toggle also controls using tenant data for modeling.
+
+Turning on this toggle won't collect any extra data other than the data already collected by Education Insights.
+
+There are two places where you can control *Advanced inferences*. Both options have the same result. For customers that have transitioned from *SDS (Classic)* to *SDS for provisioning*, only the Teams client option is available.
+
+#### Turn on and off Advanced inferences from the Teams client
+
+1. If you don’t have the *Education Insights* personal app pinned, follow [these instructions](class-insights#educators) to add it.
+2. With a Microsoft 365 administrator account, open the **Admin settings** page using the ellipsis icon located in the top right corner of *Education Insights*.
+3. Adjust the **Allow advanced inferences** toggle to on or off.
+
+Note
+
+This toggle depends on the **Collect activity data for Insights** toggle. Turning off **Collect activity data for Insights** will also turn off the **Allow advanced inferences** toggle.
+
+### How to delete user data from Education insights
+
+Insights stores student and educator activities performed in Microsoft Teams for Education.
+
+There are two types of data collected by insights:
+
+- **Commingled data** – data that is generated as part of the class learning activities.
+- **Non-commingled (private) data** – data that is collected by the students activity in Teams for education that isn't part of the class learning activity.
+
+The full data collected by insights is listed [here](class-insights#data-collection).
+
+In order to provide completeness and integrity of the data for past time frames to educator and education leaders, by default Insights doesn't automatically delete data from the service when a student or educator user accounts are closed. The IT Admin of the organization can request manual delete of a user (educator or student) data, by taking the following steps:
+
+- Open a [support ticket](https://aka.ms/edusupport). The support ticket must state clearly the request for a GDPR Delete DSR operation and contain the user object ID to be deleted. There's no ability to limit the data set or time window of the deletion.
+- In the request the IT Admin should clearly state the type of data that needs to be deleted for that user, out of the following options:
+    - All data (commingled and private)
+    - All private data
+- Once filed, the support ticket waits in the queue for one week to meet compliance's minimal retention policy. You have the opportunity to cancel the operation during this time.
+- After one week, the Education Insights team ensures all data related to the user ID of the specific type as described above is deleted from the service. Microsoft support monitors the ticket and will notify you once the deletion process is complete, in no more than 28 days
+
+## Troubleshooting
+
+### Why doesn't my institution see any data in Insights?
+
+If it's a *new* tenant and you've *never* seen data in Insights, check that your tenant is **verified as an education tenant** to access Insights. Contact your Microsoft account manager and ask them to check that the tenant is configured correctly.
+
+If you don't have an account manager, open a ticket. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/AdminPortal/) &gt; **Support** &gt; **New Service Request**. In the title of the ticket, write: "Need assistance with education verification".
+
+### Why don't educators see meeting data?
+
+It takes up to 24 hours to see meeting data in Insights reports. So, check that enough time has passed.
+
+Also, check that students didn't\* [join the class meeting without a Teams account](https://support.microsoft.com/office/c6efc38f-4e03-4e79-b28f-e65a4c039508). In such a scenario, the student activity isn't collected.
+
+Tip
+
+For those educators who want to track student attendance, you can recommend sending a message during the meeting asking students to reply. This registers their attendance within a few minutes.
+
+Note
+
+If your question is still unanswered, please [open a support ticket](https://aka.ms/edusupport). Include the relevant screenshots representing the problem and the date the problem occurred. Add any additional data you think might help us to resolve the issue.

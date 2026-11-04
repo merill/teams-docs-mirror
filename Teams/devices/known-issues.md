@@ -1,0 +1,115 @@
+---
+layout: Conceptual
+title: Teams Device Known Issues - Microsoft Teams | Microsoft Learn
+canonicalUrl: https://learn.microsoft.com/en-us/microsoftteams/devices/known-issues
+breadcrumb_path: /microsoftteams/breadcrumb/toc.json
+uhfHeaderId: MSDocsHeader-MicrosoftTeams
+ms.suite: office
+feedback_system: Standard
+feedback_product_url: https://aka.ms/TeamsFeedback
+recommendations: true
+description: Current known issues for Teams Rooms on Windows, Teams Rooms on Android, Teams panel, and Teams phone devices are documented here along with suggested workarounds.
+author: MattSlomka
+ms.author: mattslomka
+manager: miaitelh
+ms.service: msteams
+ms.topic: troubleshooting-known-issue
+ms.date: 2026-10-30T00:00:00.0000000Z
+ms.subservice: itpro-devices
+locale: en-us
+document_id: 7f06572c-b6ae-7ff3-40dc-537712172644
+document_version_independent_id: 7f06572c-b6ae-7ff3-40dc-537712172644
+original_content_git_url: https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness-pr/blob/live/Teams/devices/known-issues.md
+site_name: Docs
+depot_name: office.OfficeDocs-MicrosoftTeams
+page_type: conceptual
+toc_rel: ../toc.json
+pdf_url_template: https://learn.microsoft.com/pdfstore/en-us/office.OfficeDocs-MicrosoftTeams/{branchName}{pdfName}
+feedback_help_link_type: ''
+feedback_help_link_url: ''
+asset_id: devices/known-issues
+moniker_range_name: 
+monikers: []
+item_type: Content
+source_path: Teams/devices/known-issues.md
+cmProducts:
+- https://authoring-docs-microsoft.poolparty.biz/devrel/63959238-cb90-4871-a33d-4a5519097e47
+- https://authoring-docs-microsoft.poolparty.biz/devrel/bcbcbad5-4208-4783-8035-8481272c98b8
+spProducts:
+- https://authoring-docs-microsoft.poolparty.biz/devrel/78d87f42-5582-4a6b-90be-7db2f12b34e6
+- https://authoring-docs-microsoft.poolparty.biz/devrel/43b2e5aa-8a6d-4de2-a252-692232e5edc8
+platformId: 448a114f-8665-34fc-cbe8-e0c937d45911
+---
+
+# Teams Device Known Issues - Microsoft Teams | Microsoft Learn
+
+## Issues affecting multiple device types
+
+| Issue | Description | Workaround |
+| --- | --- | --- |
+| Android 15 devices show unmonitored in Pro Management Portal | Teams Android devices running Android 15 may offer limited management controls. | No workaround is available at this time. |
+| Time Zone Changes for Teams Rooms on Android, Teams panels & Teams phones in Canada | Several parts of Canada have made daylight savings time permanent in 2026. The Teams Pro Management Portal has been updated to allow configuration of new time zones for each location and we are working closely with device manufacturer partners to enable support for these new Canadian time zones on the devices through firmware updates | Configure the following time zones in the Pro Management Portal as a workaround until the region specific time zone is available for the device:<br>- Alberta (UTC -6): UTC-06:00 Saskatchewan<br>- Most of British Columbia (UTC -7): UTC-07:00 Arizona<br>- Manitoba (UTC -5): UTC-05:00 Bogota, Lima, Quito, Rio Branco<br>- The Northwest Territory (UTC -7): UTC-07:00 Arizona<br>- Northwestern Ontario (UTC -5): UTC-05:00 Bogota, Lima, Quito, Rio Branco |
+
+## Issues affecting Teams Rooms on Windows devices
+
+| Issue | Description | Workaround |
+| --- | --- | --- |
+| Time Zone changes in Canada may impact ad-hoc room reservation on Teams Rooms on Windows devices | Teams Rooms on Windows devices should automatically pickup new Windows time zones "**British Columbia Standard Time**, **Albert Standard Time**, and **Manitoba Standard Time** however, ad-hoc room reservation may not correctly adjust to these time zones. | Temporarily disable ad-hoc room reservation using [Settings Management in the Pro Management Portal](/en-us/microsoftteams/rooms/pro-portal-settings) or [configure alternative time zones](/en-us/microsoftteams/rooms/rooms-operations#changing-the-teams-rooms-console-language-or-date--time-format) as a workaround until the region specific time zone is resolved:<br>- Alberta (UTC -6): UTC-06:00 Saskatchewan<br>- Most of British Columbia (UTC -7): UTC-07:00 Arizona<br>- Manitoba (UTC -5): UTC-05:00 Bogota, Lima, Quito, Rio Branco<br>- The Northwest Territory (UTC -7): UTC-07:00 Arizona<br>- Northwestern Ontario (UTC -5): UTC-05:00 Bogota, Lima, Quito, Rio Branco |
+| Sign-in may fail with Access Denied/Incorrect configuration on Teams Rooms on Windows when the room resource account password contains certain special characters | On Teams Rooms on Windows versions 5.6 and 5.7, a sign-in issue can occur with some password character combinations. The device may show Access Denied/Incorrect configuration, and the sign-in request may not complete even though web/desktop sign-in works. | Reset the room resource account password to a value that does not include these characters: / ' \ . &lt; &gt;`, then retry sign-in. This is a temporary mitigation while a full fix is being finalized. |
+| Teams Rooms on Windows may show a welcome/OOBE screen instead of auto-sign-in during setup | On some Teams Rooms on Windows devices (notably versions up to 5.7.112 with certain August/September 2026 Windows security updates), a race condition can prevent Autopilot from being recognized during onboarding or after zero-day updates. This can cause the device to show a welcome screen that requires user input. | No workaround. Engineering is actively working on a hotfix. |
+| Autologin and One-Time Passcode Security Change | As part of ongoing security updates, OTP and Autopilot+Autologin require Teams Rooms on Windows app version 5.6.301.0 or later to gather the Teams Rooms Resource Account credentials. | The [day zero update mechanism](/en-us/microsoftteams/rooms/zero-daydeviceupdates) has been updated to push 5.6.301.0 which contains this fix, no IT admin action should be required for new device deployments. |
+| HDMI ingest may display black instead of connected content | HDMI ingest for Teams Rooms on Windows devices may display black when presenting local content share. | A service side fix has been deployed to resolve this issue, please restart your Teams Rooms on Windows device to pickup the fix. |
+| Devices set to British Columbia time zone may show incorrect time | A new time zone was added to Windows for British Columbia Canada, Teams Rooms on Windows devices set to this timezone may not reflect the correct time on the Front of Room displays or calendar. | A new version of Edge WebView2 was released (155.0.4283.60) to resolve this issue across Teams Desktop and Teams Rooms on Windows devices. WebView2 updates automatically on devices so this should replicate quickly. You can check current WebView2 version in this folder on a PC: C:\Program Files (x86)\Microsoft\EdgeWebView\Application |
+| Local PTZ Reset may restore zoom but not pan or tilt in Teams Rooms app version 5.6 | On Microsoft Teams Rooms on Windows devices running app version 5.6 with local PTZ enabled, selecting Reset may restore zoom without restoring pan or tilt on some cameras. The camera can remain in its adjusted position after Reset is selected. | Update the Teams Rooms on Windows app to version 5.7.112.0 or a later supported release. If the issue persists after updating, contact Microsoft Support with the camera model, camera firmware version, and Teams Rooms app version. Consult the camera manufacturer for recommended firmware and model-specific guidance. |
+| Teams Rooms app may stop responding when using local PTZ zoom controls | On Teams Rooms on Windows, using local pan, tilt, and zoom controls with some camera and firmware combinations may cause the Teams Rooms app to stop responding or close unexpectedly. This has been observed with repeated zoom commands on an AVer CAM520 Pro running firmware V0.0.1000.26. Broader camera and firmware impact is still being evaluated. | Contact the camera manufacturer for guidance on supported firmware updates. As a temporary avoidance measure, admins can disable local PTZ controls and restart the Teams Rooms console. Disabling local PTZ is an avoidance measure and does not resolve the underlying issue. |
+| Can't access Windows Settings from the desktop right-click menu in admin mode. | On Teams Rooms devices, any user account that has the Teams Rooms app installed can access Windows Settings only by using the Start menu. If you try to access Windows Settings by using another method, the Teams Rooms app opens instead. | Use one of the following workarounds to access Windows Settings:<br>- Select the **Settings** option from the **Start** menu.<br>- Uninstall the Teams Rooms app for the affected user. Locate the app on the **Start** menu, right-click it, and select **Uninstall**. |
+| Video participants missing from Front row. | The Front row view doesn't show all the video participants, and they're missing from the overflow area as well.The Front row view displays a maximum of five attendees on a single screen, and up to nine attendees on a dual screen. When the maximum number of attendees are already shown on the screen, the extra attendees are represented in the overflow view area. However, when two or more participants turn on their cameras, the remaining video streams might not fit in the Front-of-Room display, and they are not accounted for in the overflow area as well. This issue causes those video participants to appear as "missing" from the meeting. | Use a different meeting view than the Front row view. |
+| All video streams turn off on Front row during a meeting. | When you use the Front row view on a Teams Rooms on Windows device, all video streams including the meeting room's video and incoming content turn off in the Front-of-Room display. This issue occurs intermittently when a remote participant turns off their video while content is being shared. | Leave and rejoin the Teams meeting from the Teams Rooms device. |
+| USB devices fail intermittently on Teams Rooms devices. | On Teams Rooms on Windows devices that use Intel PCH 500, 600, or 700 systems, you hear occasional glitches or unexpected clicking or popping noises in an audio stream. You might also see glitches in a video stream momentarily, and occasionally a USB audio or video device might stop working.These issues occur if your device experiences USB split transaction issues. | Switch to Admin mode on your Teams Rooms on Windows device and perform step 3 listed in the Resolution section of [USB-connected audio or video devices malfunction when connected to specific Intel-based devices](/en-us/troubleshoot/windows-client/setup-upgrade-and-drivers/usb-audio-video-devices-malfunction?source=docs#resolution). If the script that you run determines that your device is impacted, perform step 4 to add the registry entry as described. |
+| Teams Rooms device loses internet connectivity after installing a feature update for Windows | A Teams Rooms device that is connected to a network, which requires a proxy can't connect to the internet after installing a feature update for Windows, including an upgrade to Windows 11.This issue occurs if the proxy setting for internet access on the affected device is configured for the LocalSystem instead of a system-wide proxy. The Windows feature update deletes the LocalSystem settings. This behavior is by design. | If your device has proxy settings set for the LocalSystem user, transfer those settings to the [system-wide proxy settings](/en-us/windows/client-management/mdm/networkproxy-csp) that are set and maintained through Mobile Device Management (MDM). Alternatively, you can use the [Set-WinInetProxy](https://www.powershellgallery.com/packages/WinInetProxy/0.1.0) PowerShell cmdlet to configure the system-wide proxy settings.When you use system-wide proxy settings, they won't be affected when you install Windows feature updates on the device in future. |
+| File Explorer view appears when Google Meet starts. | When you join a Google Meet meeting by using a Teams Rooms on Windows device, the display shows a view of File Explorer briefly before the Google Meet interface appears. | No workaround is needed. The view of File Explorer disappears automatically when the meeting finishes loading. |
+| Brief spike in volume after disconnecting from Google Meet. | You join a Google Meet meeting by using a Teams Rooms on Windows device. Another user joins the meeting by using a different device such as a laptop, and shares a presentation involving audio. The volume of the presentation audio heard on the Teams Rooms device is low.If you disconnect the Teams Rooms device while the presentation is ongoing, then for a brief moment while the device disconnects from the meeting, you hear a significant increase in the volume of the presentation audio. | No workaround is available at this time. |
+| During a Coordinated meeting, when the meeting volume is changed by using a room remote, the speaker on a Surface Hub or Teams Rooms device turns on. | For a trusted device such as a Surface Hub or Teams Rooms device that is set up to automatically join a Coordinated meeting when the primary device joins, the speaker turns on when a room remote is used to change the meeting volume. This issue occurs even though the audio settings on the device are turned off, and whether they're enabled or disabled. | Turn off proximity join and room remote capabilities on the trusted devices that automatically join a Coordinated meeting. |
+| The central part of the console on a Teams Rooms device doesn't respond to touch and mouse input. | On some Microsoft Teams Rooms devices such as the Crestron Dell Optiplex 7080 that use a 4k monitor connected as the front-of-room display, the central portion of the display intermittently stops responding to touch and mouse controls.Despite this issue, the Teams Rooms app is functional and accepts inputs from a connected keyboard. | Contact Microsoft Support for assistance to work around this issue. |
+| Poor audio quality from a Teams Rooms device. | You might experience any of the following audio quality issues from a USB microphone or speaker that is connected to your Teams Rooms device: <br>- Echo sent to remote participants on the call.<br>- Low audio quality sent to remote participants on the call.<br>- Decrease in audio quality as the call progresses.<br>- Low volume in speakers within the room.<br><br>This issue might be caused when a setting in the audio driver configuration to enhance audio quality is enabled. | To fix the audio quality issue, disable the audio enhancement setting for the attached Teams-certified USB audio device by using the following steps:<br>1. Select **Settings** on the Teams Rooms device console.<br>2. Select **Windows Settings**, and sign in to the Teams Rooms device as an administrator.<br>3. Open **Control Panel**.<br>4. Select **Hardware and Sound** &gt; **Sound**.<br>5. On the **Playback** tab, select the affected audio device and then select **Properties**.<br>6. Select the **Advanced** tab.<br>7. In the **Signal Enhancements** section, uncheck **Enable audio enhancements**, and then select **OK**.<br>8. Select the **Recording** tab and repeat steps 5, 6 & 7 for the same audio device<br>9. Select **OK** and then close \*\*Control Panel.<br>10. Restart the Teams Rooms device. |
+
+## Issues affecting Teams Rooms on Android devices
+
+| Issue | Description | Workaround |
+| --- | --- | --- |
+| Unable to join E2EE meeting using Teams Rooms on Android device. | When you use a Teams Rooms on Android device that is paired with a console, you're not able to join a Teams meeting that is set up with end-to-end encryption (E2EE). | Update to Teams Rooms on Android application [1449/1.0.96.2026249711](/en-us/MicrosoftTeams/rooms/rooms-release-note?tabs=Android#144910962026249711-september-2026) |
+| Devices may automatically exit meetings due to mismatched application versions. | Teams Rooms on Android devices with paired consoles may automatically exit meetings if the compute and console are operating on different Teams Rooms on Android application versions. | Review application versions installed on each device from the Pro Management Portal or on the device itself. Use the Pro Management Portal to force update the Teams Rooms application to the latest release on both devices. |
+| [DGJ] Unable to join future Google meet meetings on Teams Rooms on Android via One-Touch join | When using a Teams Rooms on Android device to join a Google Meet meeting **before its scheduled start time**, the meeting cannot be joined using the One-Touch Join button | If you need to join a Google Meet meeting before its scheduled start time, use the **Join by ID** option |
+
+## Issues affecting Teams panel devices
+
+| Issue | Description | Workaround |
+| --- | --- | --- |
+| Line of business apps are unavailable | Line of Business (LoB) applications assigned to Teams panel resource accounts are not visible on the Teams panel home screen except for the Room Equipment application | No workaround is available at this time. |
+
+## Issues affecting Teams phone devices
+
+| Issue | Description | Workaround |
+| --- | --- | --- |
+| Incoming calls generate a "Just me" chat automatically. | When you receive a call from a main call queue on a Teams Phone, a "Just Me" chat is generated automatically in the Teams desktop app. This chat only includes you and it remains in the chat notifications list until you delete it manually. A new chat is generated with each incoming call.The problem occurs specifically when answering calls from a call queue on a Teams Phone device, but not when they're answered by using the Teams desktop app. | To work around the issue, turn on Conference mode for the call queue. Use the following steps:<br>1. In the Microsoft Teams admin center, select **Call queues**.<br>2. Select **Edit a call queue** &gt; **Call answering**.<br>3. On the Call answering page, toggle the **Conference mode** button to turn it on. |
+| Unable to save app configuration settings in the Teams admin center. | In the Microsoft Teams admin center you're not able to access the **Allowed apps** feature to remove applications that're installed on Teams Phone devices. This feature has been rolled back temporarily. | No workaround is available at this time. |
+| Can't configure ringtones for line keys on a device. | When you use line keys on either a Yealink, AudioCodes, or Poly device that is provisioned with a Teams Shared Space license, you can't configure ringtones for individual line keys. | Configure a ringtone for a line key by using a user license, such as an E5 license instead.  Use the following steps:<br>1. On a touch-enabled device's home screen, select the **Line Keys** app. On a non-touch enabled device, select an assigned line key.<br>2. By using your finger, long press on an assigned line key and select **Manage Ringtone**. |
+| Basic Calling displays instead of Advanced Calling. | You're using a Teams Shared Devices license that has the sign-in mode set to Common Area Phone (CAP) and is enabled for Advanced Calling. However, you see the Basic Calling experience instead of the expected Advanced Calling experience. This issue occurs after you update the device to version 1449/1.0.94.2026220406. | Use one of the following workarounds:<br>1. [Change the sign-in mode to UserSignIn by using the Teams IP Phone policy](/en-us/microsoftteams/phones/set-up-common-area-phones).<br>2. [Re-enable Advanced Calling in the Microsoft Teams admin center](/en-us/microsoftteams/phones/set-up-common-area-phones#turn-on-advanced-calling-in-teams-admin-center).<br>3. [Enable Advanced Calling directly on the device](/en-us/microsoftteams/phones/set-up-common-area-phones#turn-on-advanced-calling-from-a-teams-phone-device). |
+
+## Limitations
+
+- Teams Rooms don't support High-Bandwidth Digital Content Protection (HDCP) inputs. Using an HDCP enabled input may cause issues that affect High-Definition Multimedia Interface (HDMI) ingest functionality, such as video and audio. To avoid these issues, make sure that the HDCP options are turned off for switches that are connected to Teams Rooms.
+- Teams Rooms on Android devices that are paired with a console don't support the ability to join cross-cloud meetings. However devices that aren't paired with a console can join cross-cloud meetings by installing Teams Rooms on Android app version [1449/1.0.96.2025325609](/en-us/MicrosoftTeams/rooms/rooms-release-note?tabs=Android#144910962025325609-october-2025) or a later version.
+- When you use the Call app on a Teams Rooms device to dial the toll number or conference ID for a Teams meeting, the conference bridge triggers multiple call flows. Because the Teams Rooms app is designed to support only one active call at a time, the call fails. Instead of using the Call app, join the meeting by using the **Join with an ID** option and entering the meeting ID.
+- If you're in a call with another user who is on a Teams Rooms device, you can't transfer the call. The Teams Rooms app is designed to support only one call at a time.
+- The meeting details that you export in the Microsoft Teams admin center includes the link speed of the Ethernet network interface that's used during the meeting. The details always display the default value of 10 Mbps. However, this value might not be accurate because Teams Rooms for Android devices can't fetch the exact value. The actual link speed might be faster than the default value.
+- When you use multiple connected USB cameras of the same make and model with Teams Rooms on Windows, you experience the following issues:
+    - Inability to reliably select or control a specific physical camera.
+    - Unexpected changes in camera selection, framing behavior, and source switching.
+    - Change to the active camera setting after it is disconnected and reconnected, or after the Teams Rooms app or the meeting restart.
+    - Intelligent or enhanced framing experiences target the wrong camera.
+
+## Expected Behaviors
+
+- Teams Rooms Pro and Teams Rooms Basic licenses include test service plans: Teams Rooms Test 1 & Teams Rooms Test 2. These service plans don't have any capabilities and can be ignored. They'll continue to display for the lifetime of the two SKUs.
+- Teams Rooms on Android, Teams Phones, Teams panels, and Teams displays can be automatically signed out of Teams due to a policy block on the device registration service. See [Signed out of Teams on Android devices](troubleshooting-teams-android-signed-out) for more information. Similarly, sign-in may continually loop when both the MFA and the Terms of Use (ToU) Conditional Access (CA) policies are used. The combination of MFA CA and ToU CA isn't supported. You should exclude it from being used. When only the MFA CA is used, make sure that it's enabled in Device Registration Services (DRS). For more information, see [Conditional Access: Cloud apps, actions, and authentication context](/en-us/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#user-actions).

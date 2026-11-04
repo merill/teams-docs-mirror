@@ -1,0 +1,90 @@
+---
+layout: Conceptual
+title: Teams Optional Connected Experiences - Microsoft Teams | Microsoft Learn
+canonicalUrl: https://learn.microsoft.com/en-us/microsoftteams/privacy/teams-privacy-oce-overview
+breadcrumb_path: /microsoftteams/breadcrumb/toc.json
+uhfHeaderId: MSDocsHeader-MicrosoftTeams
+ms.suite: office
+feedback_system: Standard
+feedback_product_url: https://aka.ms/TeamsFeedback
+recommendations: true
+ms.author: divyasrirk
+author: DivySri-RK
+manager: prgholve
+audience: Admin
+ms.topic: concept-article
+ms.service: msteams
+ms.subservice: msteams-admin
+ms.collection:
+- M365-collaboration
+- privacy-teams
+- must-keep
+ms.reviewer: stbyer
+ms.date: 2024-10-18T00:00:00.0000000Z
+ms.localizationpriority: high
+search.appverid: MET150
+description: This article outlines the optional connected experiences you see in Microsoft Teams.
+locale: en-us
+document_id: cacc4104-a554-02ee-144e-d9d290b0d0ae
+document_version_independent_id: 1451de57-ddf8-38b9-7878-6a58f325a6d3
+original_content_git_url: https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness-pr/blob/live/Teams/privacy/teams-privacy-oce-overview.md
+site_name: Docs
+depot_name: office.OfficeDocs-MicrosoftTeams
+page_type: conceptual
+toc_rel: ../toc.json
+pdf_url_template: https://learn.microsoft.com/pdfstore/en-us/office.OfficeDocs-MicrosoftTeams/{branchName}{pdfName}
+feedback_help_link_type: ''
+feedback_help_link_url: ''
+asset_id: privacy/teams-privacy-oce-overview
+moniker_range_name: 
+monikers: []
+item_type: Content
+source_path: Teams/privacy/teams-privacy-oce-overview.md
+cmProducts:
+- https://authoring-docs-microsoft.poolparty.biz/devrel/63959238-cb90-4871-a33d-4a5519097e47
+spProducts:
+- https://authoring-docs-microsoft.poolparty.biz/devrel/78d87f42-5582-4a6b-90be-7db2f12b34e6
+platformId: ee10791b-d388-0c35-f681-10e47086f30c
+---
+
+# Teams Optional Connected Experiences - Microsoft Teams | Microsoft Learn
+
+If you have a work or school account, your organization's admin may have provided you with the ability to use one or more cloud-backed services (also referred to as "optional connected experiences") while using Microsoft Teams, like GIPHY and/or URL Preview service. These cloud-backed services are optional. Whether you use them is up to you. They're offered to you under terms that differ from the [Microsoft Product Terms](https://www.microsoft.com/licensing/docs/view/Product-Terms), as described separately for each optional service. This article lists our Teams cloud-backed services.
+
+If your admin has given you the ability to use optional connected experiences in Teams, you can go to **Settings** &gt; **Privacy** in Teams and choose whether you want to use optional connected experiences.
+
+Note
+
+If you're an admin, you can give or restrict your users' ability to use optional connected experiences. You can do this by using [Cloud Policy service for Microsoft 365](/en-us/microsoft-365-apps/admin-center/overview-cloud-policy) and configuring the **Allow the use of additional optional connected experiences in Office** policy setting. This is the same policy setting that controls whether optional connected experiences are available to your users in Microsoft 365 Apps, such as Word, Excel, and PowerPoint.
+
+## GIPHY
+
+GIPHY is a cloud-backed service that lets you use GIFs in your Teams chats. If you're in **Teams** &gt; **GIF** &gt; **Search**, the search terms are sent to GIPHY. These experiences, if allowed by your admin and after you choose to use them, are subject to the [GIPHY Privacy Policy](https://support.giphy.com/hc/articles/360032872931-GIPHY-Privacy-Policy) and the [GIPHY User Terms of Service](https://support.giphy.com/hc/articles/360020027752-GIPHY-User-Terms-of-Service).
+
+## Ratings and reviews for Teams apps
+
+Ratings and reviews allow Teams users to provide feedback about their experience with using a Teams app. Reviews are anonymous unless the user chooses otherwise. All Teams users can view these ratings and reviews on the details page for the app. Users are only allowed to provide ratings and reviews for apps they’ve installed and only for apps that are publicly available from Microsoft or other companies. The ratings are powered by Microsoft AppSource and are shown on the app’s page on the [AppSource website](https://appsource.microsoft.com/). AppSource is provided under the [Microsoft Privacy Statement](https://www.microsoft.com/privacy/privacystatement) and the [Microsoft Commercial Marketplace Terms of Use](/en-us/legal/marketplace/marketplace-terms).
+
+## Search Coach Tab App
+
+The Search Coach Teams tab app available in Microsoft EDU Class Teams makes search requests to Bing search through the Bing API when a user sends a query, returning ad-free SafeSearch results. Experiences that rely on Bing are licensed to you under the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and covered by the [Microsoft Privacy Statement](https://www.microsoft.com/privacy/privacystatement).
+
+## Teams apps link previews
+
+The Teams app link previews service generates a preview snippet of the app's adaptive card and attaches it under the URL when a user sends a URL string that maps to the app in the Teams store. If the URLP setting is turned on, this service makes a request to the service URL as the user is typing the message to unfurl a card preview. Tenant admin and user settings for apps would be honored.
+
+## Teams device store checkout
+
+Teams device store is available in the Teams admin center and Teams App. It enables discovery and purchase of Teams certified devices. To enable checkout, the Teams device store shares basic user and company information, including user email address, user GUIDs, and tenant GUIDs, with UnifiedCommunications.com. This experience, if allowed by the **Allow the use of additional optional connected experiences in Office** policy setting, is subject to the [Terms of Service](https://new.unifiedcommunications.com/about/terms-of-service/) and [Privacy Policy](https://new.unifiedcommunications.com/about/privacy-policy/) of UnifiedCommunications.com.
+
+To learn more about Teams device store, see [Purchase devices in the Microsoft Teams device store](../devices/device-store).
+
+## URL Preview service
+
+The URL Preview service automatically generates a preview snippet and attaches under the snippet the URL when a user sends a URL string. This service makes a request to the service URL as the user is typing the message. If the service URL doesn't have any schema.org data, it sends a request to Bing search to get the data it needs to generate the preview snippet. Experiences that rely on Bing are licensed to you under the terms of the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) and covered by the [Microsoft Privacy Statement](https://www.microsoft.com/privacy/privacystatement). Any URLs you provide to Microsoft Teams while using these services can be sent to Microsoft Bing, including Bing Content Validation Service for evaluation of harmful content. They aren't linked to you by the Bing organization.
+
+![A screen showing a sample of a URL preview for the Microsoft home page in a text box.](../media/url-preview.png)
+
+## WebView2
+
+WebView2 is a component that developers use to build their applications, and the developers can deploy a self-updating Evergreen WebView2 Runtime onto user devices to power their applications. WebView2 collects its own telemetry to help them maintain and improve the WebView2 component. If the policy turned off, the diagnostic data collection from WebView2 will be disabled.

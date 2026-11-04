@@ -1,0 +1,233 @@
+---
+layout: Conceptual
+title: Manage devices in Microsoft Teams - Microsoft Teams | Microsoft Learn
+canonicalUrl: https://learn.microsoft.com/en-us/microsoftteams/devices/device-management
+breadcrumb_path: /microsoftteams/breadcrumb/toc.json
+uhfHeaderId: MSDocsHeader-MicrosoftTeams
+ms.suite: office
+feedback_system: Standard
+feedback_product_url: https://aka.ms/TeamsFeedback
+recommendations: true
+author: MSTonySmith
+ms.author: tonysmit
+manager: pamgreen
+ms.reviewer: srpall
+ms.date: 2026-07-15T00:00:00.0000000Z
+ms.topic: how-to
+ms.service: msteams
+ms.subservice: itpro-devices
+audience: Admin
+ms.collection:
+- teams-rooms-devices
+- M365-collaboration
+- m365initiative-deployteams
+- Teams_ITAdmin_Devices
+- Tier1
+f1.keywords:
+- CSH
+ms.custom:
+- ms.teamsadmincenter.managedevices.overview
+- ms.teamsadmincenter.devicemanagement.overview
+description: Manage devices used with Microsoft Teams in your organization.
+ms.localizationpriority: medium
+search.appverid: MET150
+locale: en-us
+document_id: 284bed9f-a55f-b2d0-466f-7e8150df30bb
+document_version_independent_id: 284bed9f-a55f-b2d0-466f-7e8150df30bb
+original_content_git_url: https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness-pr/blob/live/Teams/devices/device-management.md
+site_name: Docs
+depot_name: office.OfficeDocs-MicrosoftTeams
+page_type: conceptual
+toc_rel: ../toc.json
+pdf_url_template: https://learn.microsoft.com/pdfstore/en-us/office.OfficeDocs-MicrosoftTeams/{branchName}{pdfName}
+feedback_help_link_type: ''
+feedback_help_link_url: ''
+asset_id: devices/device-management
+moniker_range_name: 
+monikers: []
+item_type: Content
+source_path: Teams/devices/device-management.md
+cmProducts:
+- https://authoring-docs-microsoft.poolparty.biz/devrel/63959238-cb90-4871-a33d-4a5519097e47
+spProducts:
+- https://authoring-docs-microsoft.poolparty.biz/devrel/78d87f42-5582-4a6b-90be-7db2f12b34e6
+platformId: e3fa00d3-53cf-79b7-9d5a-c9afc5cf7f49
+---
+
+# Manage devices in Microsoft Teams - Microsoft Teams | Microsoft Learn
+
+Important
+
+Monitoring, managing, and updating Teams devices is moving to the Pro Management Portal. Review the transition guide [here](/en-us/microsoftteams/rooms/aboutunifieddevicemanagement-pmp1) to learn more and begin using the Pro Management Portal.
+
+You can manage devices used with Microsoft Teams in your organization from the Microsoft Teams admin center or in Teams Rooms Pro Management. You can view and manage the device inventory for your organization and do tasks such as update, restart, and monitor diagnostics for devices. You can also create and assign configuration profiles to a device or groups of devices.
+
+To manage devices, such as change device configuration, restart devices, manage updates, or view device and peripheral health, you need to be assigned one of the following Microsoft 365 admin roles:
+
+- Teams Service admin
+- Teams Device admin
+
+For more information about admin roles in Teams, see [Use Teams administrator roles to manage Teams](../using-admin-roles).
+
+For more information about Teams Rooms Pro management role based access control, see [Role-based access control in the Microsoft Teams Rooms Pro Management Portal](../rooms/rooms-pro-rbac).
+
+## What devices can you manage?
+
+You can manage any device that's certified for, and enrolled in, Teams. A device is automatically enrolled the first time a user signs in to Teams on the device. For a list of certified devices that can be managed, see:
+
+- [Microsoft Teams Rooms](https://www.microsoft.com/microsoft-365/microsoft-teams/across-devices/devices/category?devicetype=20)
+- [Conference phones](https://products.office.com/microsoft-teams/across-devices/devices/category?devicetype=73)
+- [Desk phones](https://products.office.com/microsoft-teams/across-devices/devices/category?devicetype=34)
+- [Teams displays](https://www.microsoft.com/microsoft-365/microsoft-teams/across-devices/devices/category?devicetype=34)
+- [Teams panels](teams-panels)
+
+To manage devices, in the left navigation of the [Microsoft Teams admin center](https://admin.teams.microsoft.com), go to **Teams Devices**, and then select the device type. Each type of device has its own respective section, which lets you manage them separately.
+
+## Manage Teams Rooms in Teams Rooms Pro Management
+
+To manage devices in Teams Rooms Pro Management, see [Microsoft Teams Rooms Pro Management Portal](../rooms/managed-meeting-rooms-portal).
+
+## Manage Teams Rooms on Windows devices in Teams Admin Center
+
+You can use the Teams admin center to view and remotely manage your Teams Rooms on Windows devices across your organization. The Teams admin center makes it easy to see, at a glance, which devices are healthy and which need attention, and lets you focus on specific devices to see detailed information about device health, meeting performance, call quality, and peripherals.
+
+Here are some things you can do to manage your Teams Rooms devices. Teams Rooms devices can be found in the [Microsoft Teams admin center](https://admin.teams.microsoft.com) under **Teams Devices** &gt; **Teams Rooms on Windows**.
+
+For details about how to manage your Teams Rooms devices, see [Manage Microsoft Teams Rooms](../rooms/rooms-manage).
+
+| To do this... | Do this |
+| --- | --- |
+| Change settings on one or more devices | Select one or more devices &gt; **Edit settings**. If you select multiple devices, the values you change will replace the values on all the selected devices. |
+| Restart devices | Select one or more devices &gt; **Restart**. When you restart a device, you can choose whether to restart the device immediately or select **Schedule restart** to restart the device at a specific date and time. The date and time you select are local to the device being restarted. |
+| View meeting activity | Select a device name to open device details &gt; **Activity**. When you open the **Activity** tab, you can see all the meetings that the device has participated in. This summary view shows the meeting start time, the number of participants, its duration, and the overall call quality. |
+| View meeting details | Select a device name to open device details &gt; **Activity** &gt; select a meeting. When you open a meeting's details, you can see all of the participants in the meeting, how long they were in the call, the Teams session types, and their individual call quality. If you want to see technical information about a participant's call, select the participant's call start time. |
+
+## Manage phones, Teams Rooms on Android, Teams displays, and Teams panels
+
+In the Teams admin center, you can view and manage phones, Teams Rooms on Android, Teams displays, and Teams panels enrolled in Teams in your organization. Information that you'll see for each device includes device name, manufacturer, model, user, status, action, last seen, and history. You can customize the view to show the information that fits your needs.
+
+Phones, Teams Rooms on Android, Teams displays, and Teams panels are automatically enrolled in Microsoft Intune if you've signed up for it. After a device is enrolled, device compliance is confirmed and conditional access policies are applied to the device.
+
+Here are some examples of how you can manage phones, Teams Rooms on Android, Teams displays, and Teams panels in your organization.
+
+| To do this... | Do this |
+| --- | --- |
+| Change device information | Select a device &gt; **Edit**. You can edit details such as device name, asset tag, and add notes. |
+| Manage software updates | Select a device &gt; **Update**. You can view the list of software and firmware updates available for the device and choose the updates to install. For more information about updating devices, see [Update Teams devices remotely](/en-us/microsoftteams/rooms/androidupdatemanagementinpmp) |
+| Assign or change configuration policies | Select one or more devices &gt; **Assign configuration**. |
+| Add or remove device tags | Select one or more devices &gt; **Manage tags**. For more information about device tags, see [Manage Teams device tags](manage-device-tags). |
+| Restart devices | Select one or more devices &gt; **Restart**. |
+| Filter devices using device tags | Select the filter icon, select the **Tag** field, specify a device tag to filter on, and select **Apply**. For more information about filtering devices using device tags, see [Use filters to return devices with a specific tag](manage-device-tags#use-filters-to-return-devices-with-a-specific-tag). |
+| Schedule device actions | Actions like **Restart** and **Software update** can be scheduled for the preferred date and time. |
+| View device history and diagnostics | Under the **History** column, click the **View** link for a device to view its update history and diagnostic details. |
+| View device action details | In the **History** tab on the device page, select the action status to view the details of the action. |
+| Cancel device actions | From the **History** section, you can cancel any action that is in a Queued or Scheduled state (not in progress or completed) to prevent execution. This option is accessible from the **History** tab in the device page and the **History** column in the list page. You can select multiple actions to cancel at once. Paired actions will be canceled together if execution hasn't started. |
+| Actions on multiple devices | You can select multiple devices from the list page and perform an action on them at once. This is applicable for **Restart**, **Software update**, **Assign configuration**, **Manage tags**, **Remove device**, and **Sign-out**. |
+
+This video shows how to search for Teams devices.
+
+### View issues with Android-based Teams devices
+
+You can view issues with Android-based Teams devices in the health status column of the device list.
+
+In addition to the health status of the device, the following issues are also surfaced in the health status column:
+
+1. **Sign-in errors exist** - There was an issue signing-in to the device. Select the health status of the device to view the time the sign-in failure occurred, the account that attempted to sign into the device, the reason for the failure, and a history of previous sign-in failures.
+2. **No connection** - The connection between Teams admin center and the device has been lost. Restart or update the device through Teams admin center to resolve this error.
+3. **Multiple issues** - One or more errors exist. Select the health status of the device to view the list of issues.
+
+Note
+
+If you don't see any issues for a device you're having trouble with, make sure the device's firmware is on the latest version.
+
+### Use configuration profiles in Teams
+
+Use configuration profiles to manage settings and features for different Teams Android devices in your organization, including Teams Rooms on Android, Teams displays, Teams phone, and Teams panels. You can create a configuration profile to include settings and features you want to enable or disable and then assign it to a device or set of devices.
+
+Important
+
+We have made few changes in the current configuration profile design to support Partial application of configuration profiles. With this update, you can now configure and apply only the necessary settings without unintentionally overriding other existing settings on the device. Read on to know more.
+
+Here are the different scenarios you can utilize configuration profiles for your Teams device settings management.
+
+#### Create a configuration profile
+
+To create a configuration profile for a Teams device type:
+
+1. In the left navigation, go to **Teams Devices** &gt; select the Teams device type &gt; **Configuration profiles**. For example, select **Teams Devices** &gt; **Teams panels** &gt; **Configuration profiles** to create a new configuration profile for Teams panels.
+2. Click **Add**.
+3. Enter a name for the profile and optionally add a friendly description.
+4. By default, all the settings in the profile will be in "Not configured" state.
+5. Change the settings you want for the profile from “Not configured” to the required value, and then click **Review changes**.
+6. A "Review configured settings" pop up appears. Compare and review the current and new values of the settings that were changed. Click on **Save changes.**
+7. The newly created configuration profile is displayed in the list of profiles.![Create Config.](media/device-management/image.png)
+
+Note
+
+Custom wallpapers must be under 500KB in file size.
+
+#### Assign a configuration profile
+
+After creating a configuration profile for a Teams device type, assign it to one or more devices.
+
+1. In the left navigation, go to **Teams Devices** &gt; select the Teams device type. For example, to assign a configuration profile to a Teams panels device, select **Teams Devices** &gt; **Teams panels**.
+2. Select one or more devices, and then click **Assign configuration**.
+3. In the **Assign a configuration** pane, search for configuration profile to assign to the selected devices.
+4. Click **Apply**.
+5. For the devices to which you applied the configuration profile, only the settings that were changed and reviewed by the admin will be configured.
+6. The status of the configuration profile assignment can be checked for the device, in the History tab. The **Action** column displays **Config Update** and the **Configuration profile** column displays the configuration profile name.
+7. If the OEM of any of the selected devices don't support **Partial application of configuration profiles** feature yet, you'll see a warning in the Assign a configuration pane as below![User's image](media/device-management/image1.png)
+
+    Below is the list of the OEMS and their minimum firmware versions that have the support of Partial application of configuration profiles feature.
+
+    | OEM | Device type | Minimum FW version |
+    | --- | --- | --- |
+    | Audiocodes | Phones | AOSP Firmware: 2.3.497 |
+    | Audiocodes | Teams Rooms on Android, Panels | AOSP Firmware: 2.8.208 |
+    | Cisco | Teams Rooms on Android, Panels | AOSP Firmware: 11.24.1.8 |
+    | DTEN | Teams Rooms on Android | D7X 1.6.13 + Bar 1.3.13 + Mate 2.3.13\_AOSP |
+    | Poly | Phones | 9.1.0.9017 |
+    | Yealink | Phones | 122.15.0.166\_CP |
+
+#### Edit an existing configuration profile
+
+To edit an existing configuration profile,
+
+1. In the left navigation, go to **Teams Devices** &gt; select the Teams device type &gt; **Configuration profiles**. For example, select **Teams Devices** &gt; **Teams panels** &gt; **Configuration profiles** to edit an existing configuration profile for Teams panels.
+2. Click on the configuration profile you want to edit. Change the settings you want for the profile and click on **Review changes.**
+3. A "Review configured settings" pop up appears. Compare and review the current and new values of the settings that were changed. Click on **Save changes.**
+4. The changes in the settings will be automatically applied to the devices that have the configuration profile assigned.
+
+#### Reassign an existing configuration profile
+
+To reassign a configuration profile to the existing assigned devices, without making any changes to settings
+
+1. In the left navigation, go to **Teams Devices** &gt; select the Teams device type &gt; **Configuration profiles**. For example, select **Teams Devices** &gt; **Teams panels** &gt; **Configuration profiles** to edit an existing configuration profile for Teams panels.
+2. Click on the configuration profile you want to reassign and scroll to the bottom to find the **Reassign config** CTA.
+3. Click on the **Reassign config** CTA, review the configured settings and **Save changes**.
+4. The configuration profile will be automatically applied to all the devices that have this profile already assigned.
+
+Note
+
+As part of the new Partial application design for configuration profiles, the **"Set device lock"** setting has been removed from Teams Rooms on Android and Teams Panels profiles. This setting isn't applicable to shared devices and doesn't function as expected in those scenarios, so it has been excluded to avoid confusion.
+
+#### Frequently asked questions
+
+1. What is Partial application of configuration profiles?*Previously, when a configuration profile was assigned to a device, **all settings** in the profile, including those left unconfigured, were applied with their **default values**. This often caused **unintended changes**, especially to critical settings like **language** and **time zone**, which differ across regions.*
+
+    *With **Partial application of configuration profiles**, admins now have greater **control and visibility**. Only the settings that are **explicitly configured** in the profile will be applied—ensuring that existing device settings remain unchanged unless intentionally modified. This helps prevent disruptions and simplifies large-scale device management.*
+2. What if a device doesn't support Partial application of configuration profiles?*If a configuration profile is assigned to a device that doesn't support Partial application of configuration profiles, then all the settings in the profile, including those left unconfigured, will be applied with their default values (which is basically the behavior of the previous implementation of configuration profiles).*
+3. What happens to the existing configuration profiles created before the launch of Partial application of configuration profiles feature?*All existing configuration profiles created prior to the launch will **automatically support** the Partial application feature. Since these profiles had all settings explicitly configured with default values, they will continue to be shown with the same values in the new design.*
+
+    *If you want to stop applying certain settings, change their value to **"Not configured"** and click **Save**. Only the configured settings will then be applied moving forward.*
+4. What does **"Not configured"** mean in the new configuration profile design?*In the new design, any setting marked as **"Not configured"** will **not** be applied to the assigned devices. Instead, the existing value already present on the device will remain unchanged. This allows admins to update only the necessary settings without affecting others.*
+
+#### Best practices for managing configuration profiles
+
+When configuring Teams Android devices, especially in organizations with multiple locations and different device configurations, managing configuration profiles can become complex. Teams Android devices allow for a variety of settings (e.g., Language, Timezone, Touch controls, Dual display mode, and Whiteboard) which may require the creation of multiple profiles to meet the needs of different teams, rooms, or locations. Here are key considerations for effective management:
+
+1. **Create one profile per configuration set** - You'll need a separate profile for each combination of settings that you wish to apply.
+2. **Adopt a systemic naming convention** - As new features and settings are added, existing profiles may need duplication. While this increases the number of profiles, it's necessary to ensure that each room or device type receives the appropriate configuration. Use a systemic naming convention that clearly indicates the variable settings included in each profile to stay organized (e.g., Berlin-Timezone-Touch-NoDualDisplay). This will help ensure that profiles are easily identifiable and prevent confusion when applying them to different rooms.
+3. **Group devices by shared configuration needs** - As your deployment grows, group devices with shared configurations to minimize the number of profiles. As Teams Android devices features evolve, keep an eye on new settings that may require additional profiles. Always ensure that each device receives the precise configuration it requires.
+
+By maintaining a clear structure for your profiles and carefully managing device specific settings, you can ensure smoother deployment and operation of Teams Android devices across your organization.

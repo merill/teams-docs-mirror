@@ -1,0 +1,112 @@
+---
+layout: Conceptual
+title: Set up Microsoft Teams Rooms consoles through one-time passwords - Microsoft Teams | Microsoft Learn
+canonicalUrl: https://learn.microsoft.com/en-us/microsoftteams/rooms/first-time-setup
+breadcrumb_path: /microsoftteams/breadcrumb/toc.json
+uhfHeaderId: MSDocsHeader-MicrosoftTeams
+ms.suite: office
+feedback_system: Standard
+feedback_product_url: https://aka.ms/TeamsFeedback
+recommendations: true
+author: MSTonySmith
+ms.author: tonysmit
+manager: pamgreen
+ms.reviewer: altsou
+audience: ITPro
+ms.date: 2025-10-14T00:00:00.0000000Z
+ms.topic: quickstart
+ms.service: msteams
+ms.subservice: itpro-rooms
+f1.keywords:
+- NOCSH
+ms.localizationpriority: medium
+ms.collection:
+- M365-collaboration
+- teams-rooms-consoles
+- Tier1
+ms.custom: seo-marvel-apr2020
+ms.assetid: 678689e4-d547-499b-be64-7d8f16dd8668
+description: Read this article to learn about how to set up Microsoft Teams Rooms consoles for the first time.
+locale: en-us
+document_id: 5db17a8c-7c61-d875-57d7-326eaf17363b
+document_version_independent_id: 5db17a8c-7c61-d875-57d7-326eaf17363b
+original_content_git_url: https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness-pr/blob/live/Teams/rooms/first-time-setup.md
+site_name: Docs
+depot_name: office.OfficeDocs-MicrosoftTeams
+page_type: conceptual
+toc_rel: ../toc.json
+pdf_url_template: https://learn.microsoft.com/pdfstore/en-us/office.OfficeDocs-MicrosoftTeams/{branchName}{pdfName}
+feedback_help_link_type: ''
+feedback_help_link_url: ''
+asset_id: rooms/first-time-setup
+moniker_range_name: 
+monikers: []
+item_type: Content
+source_path: Teams/rooms/first-time-setup.md
+cmProducts:
+- https://authoring-docs-microsoft.poolparty.biz/devrel/63959238-cb90-4871-a33d-4a5519097e47
+spProducts:
+- https://authoring-docs-microsoft.poolparty.biz/devrel/78d87f42-5582-4a6b-90be-7db2f12b34e6
+platformId: 8219f770-8dfe-00c4-12d0-db46afdb07c0
+---
+
+# Set up Microsoft Teams Rooms consoles through one-time passwords - Microsoft Teams | Microsoft Learn
+
+This article describes how you can set up Microsoft Teams Rooms consoles for the first time.
+
+During the first time you set up a console, you can set up Teams Rooms consoles using one of the two methods:
+
+- Set up consoles using a one-time password
+- Set up consoles manually
+
+## Set up consoles using a one-time password
+
+To set up consoles by using a one-time password, perform the following steps:
+
+1. Sign in to the Microsoft Teams Rooms Pro Management portal.
+2. Unbox the Microsoft Teams Rooms console that you want to set up and plug it in. The **Welcome** page appears on the console.
+3. On the **Welcome** page, select **Get started**. The **End user agreement** page appears.
+
+    On selecting **Get started**, you might see a page that has a message stating that the device verification information couldn't be found. For information on how to troubleshoot this error, see Device verification failure and troubleshooting.
+4. On the **End user agreement** page, select **Accept**. The **Set up Microsoft Teams Rooms account** page will appear.
+
+    For information on how to get a one-time password from an IT administrator, see [Create a one-time password](create-otp#create-a-one-time-password).
+
+    Note
+
+    If you don't have a one-time password, you can do the device setup manually. For more information, see Set up consoles manually.
+5. On the **Set up Microsoft Teams Rooms account** page, put in the one-time password that was provided to you by the IT administrator, and then select **Continue**.
+
+    The page displaying the sign-in status of the device appears.
+
+    After you select **Continue**, a message on the page will tell you whether the one-time password has been approved automatically or is pending approval from an IT administrator.
+
+    When the one-time password is approved - either automatically or by the IT administrator - this page will be displayed on the console that shows it was set up and then signed in successfully.
+
+    [![Screenshot that shows the user that the device has been signed in.](../media/mtr-devices/device-signed-in-notification.png)](../media/mtr-devices/device-signed-in-notification.png#lightbox)
+
+## Set up consoles manually
+
+If you don't have a one-time password, you can still set up a Teams Rooms console but you'll need to do it manually.
+
+The process of setting up consoles manually (without a one-time password) is the same as the Out Of Box Experience (OOBE), that is, the same as specified in Set up consoles using one-time password.
+
+To set up a Microsoft Teams Rooms console manually, follow these steps:
+
+1. Repeat Steps 1 through 4 in Set up consoles through one-time password.
+2. On the **Set up Microsoft Teams Rooms account** page, select **Manual setup**.
+
+    The **Account setup** page appears.
+3. On the **Account setup** page, put in the email and password that is used for the console or device in the **Email** and **Password** fields. If you don't know what those are, please contact your IT admin.
+4. Select **Finish**. The page displayed in the following screenshot appears, showing that the console was set up and then signed in successfully.
+
+    [![Screenshot that shows the user that the device has been signed in.](../media/mtr-devices/device-signed-in-notification.png)](../media/mtr-devices/device-signed-in-notification.png#lightbox)
+
+### Device verification failure and troubleshooting
+
+The device verification is an automatic process to ensure that the device being deployed is a certified Microsoft Teams Rooms device. However, sometimes the process may fail and you'll see an error message as depicted in the following screenshot:
+
+If the device verification process fails, you can try one or more of the following troubleshooting options:
+
+- Use the HDMI ingest module that came with the Teams Rooms console. Connect this HDMI ingest module to the Teams Rooms console and restart the console.
+- If you continue to have problems after connecting the HDMI ingest module to the console, contact the manufacturer or the seller.

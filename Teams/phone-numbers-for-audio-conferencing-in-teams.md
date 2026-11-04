@@ -1,0 +1,102 @@
+---
+layout: Conceptual
+title: Phone numbers for Audio Conferencing - Microsoft Teams | Microsoft Learn
+canonicalUrl: https://learn.microsoft.com/en-us/microsoftteams/phone-numbers-for-audio-conferencing-in-teams
+breadcrumb_path: /microsoftteams/breadcrumb/toc.json
+uhfHeaderId: MSDocsHeader-MicrosoftTeams
+ms.suite: office
+feedback_system: Standard
+feedback_product_url: https://aka.ms/TeamsFeedback
+recommendations: true
+ms.author: wlibebe
+author: wlibebe
+manager: pamgreen
+ms.reviewer: oscarr
+ms.date: 2026-10-06T00:00:00.0000000Z
+ms.topic: concept-article
+ms.assetid: 95a08f84-04e5-4f72-88a8-d6472a7c89d7
+ms.tgt.pltfrm: cloud
+ms.service: msteams
+ms.subservice: teams-audio-conferencing
+search.appverid: MET150
+ms.collection:
+- M365-voice
+- M365-collaboration
+- m365initiative-meetings
+- Tier1
+audience: Admin
+ms.localizationpriority: medium
+f1.keywords:
+- CSH
+ms.custom:
+- Audio Conferencing
+- LIL_Placement
+- seo-marvel-mar2020
+description: Learn which countries and regions have dial-in conferencing numbers, and how they're automatically assigned.
+locale: en-us
+document_id: 5c6e2b61-656c-a4f8-94a7-ec3c14e4d65e
+document_version_independent_id: 77932de0-0312-95c5-f356-89ece9b3aabd
+original_content_git_url: https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness-pr/blob/live/Teams/phone-numbers-for-audio-conferencing-in-teams.md
+site_name: Docs
+depot_name: office.OfficeDocs-MicrosoftTeams
+page_type: conceptual
+toc_rel: toc.json
+pdf_url_template: https://learn.microsoft.com/pdfstore/en-us/office.OfficeDocs-MicrosoftTeams/{branchName}{pdfName}
+feedback_help_link_type: ''
+feedback_help_link_url: ''
+asset_id: phone-numbers-for-audio-conferencing-in-teams
+moniker_range_name: 
+monikers: []
+item_type: Content
+source_path: Teams/phone-numbers-for-audio-conferencing-in-teams.md
+cmProducts:
+- https://authoring-docs-microsoft.poolparty.biz/devrel/63959238-cb90-4871-a33d-4a5519097e47
+spProducts:
+- https://authoring-docs-microsoft.poolparty.biz/devrel/78d87f42-5582-4a6b-90be-7db2f12b34e6
+platformId: d1534127-72b4-ff8d-67fa-8730efc0db3b
+---
+
+# Phone numbers for Audio Conferencing - Microsoft Teams | Microsoft Learn
+
+When you're setting up **Audio Conferencing** for Microsoft Teams, dial-in phone numbers are automatically assigned to your organization. To see the phone numbers that are assigned to your audio conferencing bridge, in the Microsoft Teams admin center, go to **Meetings** &gt; **Conference bridges**. For more information, go to [See a list of Audio Conferencing numbers](see-a-list-of-audio-conferencing-numbers-in-teams).
+
+## Audio Conferencing coverage and pricing
+
+For a complete list of all the countries/regions and cities where Audio Conferencing is available, see [Country and region availability for Audio Conferencing and Calling Plans](country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans). For pricing information, see [Pricing for Audio Conferencing](https://go.microsoft.com/fwlink/?linkid=799762).
+
+## Dial-in phone numbers in a meeting invite
+
+To manage phone numbers that are included when a Microsoft Teams user schedules a meeting in Outlook or the Outlook for the web, see [Set the phone numbers included on invites in Microsoft Teams](set-the-phone-numbers-included-on-invites-in-teams).
+
+## Dial-in phone numbers set on an audio conferencing bridge
+
+There are two types of audio conferencing phone numbers that can be assigned to your conferencing bridge: **Shared** and **Dedicated**. Any caller can use both types of these numbers to join audio meetings that are being held in your organization.
+
+- **Dedicated phone numbers** are those phone numbers that are only available to users within your organization. You can change the languages that are used when someone calls in to one of these numbers.
+- **Shared phone numbers** are those phone numbers that can be shared with other Microsoft 365 or Office 365. You can't change the languages that are used when someone calls in to one of these numbers.
+
+The organizer's default audio conferencing number is included in the meeting invite, but callers can use any assigned phone number to join the meeting. The list of phone numbers that can be used to join a meeting is available using the **Find a local number** link that is included on every meeting invite.
+
+## Automatically assigned audio conferencing phone numbers
+
+Shared audio conferencing phone numbers are automatically assigned to organizations when they're enabled for audio conferencing. When the phone numbers are assigned, a phone number is assigned as the default phone number of the conferencing bridge. The phone number assigned as the default number of the bridge is one from the country/region of the organization.
+
+To see a list of those countries/regions that have phone numbers automatically assigned to organizations, see [Country and region availability for Audio Conferencing and Calling Plans](country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans).
+
+Note
+
+You can find your organization's country/region in the **Microsoft 365 admin center** under **Organization Profile**.
+
+Caution
+
+Due to limited availability of toll phone numbers in Venezuela, Indonesia, and United Arab Emirates (UAE), organizations from these countries/regions don't have an Audio Conferencing toll number automatically assigned to them. Toll-free numbers from these locations are available depending on available inventory.
+
+## What else should you know?
+
+- To see the list of supported languages for audio conferencing, see [Audio Conferencing supported languages](audio-conferencing-supported-languages).
+- You can set up to four languages for each audio conferencing phone number - one primary and three secondary. And you can also set languages on a dedicated audio conferencing phone number.
+- To set the dial-in phone number for a user, see [Set the phone numbers included on invites](set-the-phone-numbers-included-on-invites-in-teams).
+
+## Related topic
+
+- [Try or purchase Audio Conferencing in Microsoft 365 or Office 365](/en-us/skypeforbusiness/audio-conferencing-in-office-365/try-or-purchase-audio-conferencing-in-office-365)

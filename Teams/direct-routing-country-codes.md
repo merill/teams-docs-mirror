@@ -1,0 +1,330 @@
+---
+layout: Conceptual
+title: Direct Routing country/region codes - Microsoft Teams | Microsoft Learn
+canonicalUrl: https://learn.microsoft.com/en-us/microsoftteams/direct-routing-country-codes
+breadcrumb_path: /microsoftteams/breadcrumb/toc.json
+uhfHeaderId: MSDocsHeader-MicrosoftTeams
+ms.suite: office
+feedback_system: Standard
+feedback_product_url: https://aka.ms/TeamsFeedback
+recommendations: true
+ms.author: odocspr
+author: officedocspr5
+manager: pamgreen
+audience: ITPro
+ms.reviewer: 
+ms.date: 2026-03-30T00:00:00.0000000Z
+ms.topic: reference
+ms.service: msteams
+ms.subservice: teams-calling
+ms.localizationpriority: medium
+search.appverid: MET150
+ms.collection:
+- M365-voice
+- m365initiative-voice
+- Tier1
+f1.keywords:
+- NOCSH
+description: Read this article to locate media path country/region codes for Direct Routing so you can select the optimal media path.
+ms.custom: seo-marvel-apr2020
+locale: en-us
+document_id: 7a420204-479f-d8c9-ea30-9f07431b4b42
+document_version_independent_id: a67787ef-c6ac-74bb-baef-5835391b5949
+original_content_git_url: https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness-pr/blob/live/Teams/direct-routing-country-codes.md
+site_name: Docs
+depot_name: office.OfficeDocs-MicrosoftTeams
+page_type: conceptual
+toc_rel: toc.json
+pdf_url_template: https://learn.microsoft.com/pdfstore/en-us/office.OfficeDocs-MicrosoftTeams/{branchName}{pdfName}
+feedback_help_link_type: ''
+feedback_help_link_url: ''
+asset_id: direct-routing-country-codes
+moniker_range_name: 
+monikers: []
+item_type: Content
+source_path: Teams/direct-routing-country-codes.md
+cmProducts:
+- https://authoring-docs-microsoft.poolparty.biz/devrel/63959238-cb90-4871-a33d-4a5519097e47
+- https://authoring-docs-microsoft.poolparty.biz/devrel/000aaee4-f890-4b0a-bd33-24fb2aefa882
+- https://authoring-docs-microsoft.poolparty.biz/devrel/b1cfdec6-b0c3-4209-818c-736879856e0e
+spProducts:
+- https://authoring-docs-microsoft.poolparty.biz/devrel/78d87f42-5582-4a6b-90be-7db2f12b34e6
+- https://authoring-docs-microsoft.poolparty.biz/devrel/57828563-e363-48c1-ac42-c4d23fb7ba52
+- https://authoring-docs-microsoft.poolparty.biz/devrel/2d0723c1-cf38-4c30-ab3d-5df787b33270
+platformId: f0685395-8ce3-97a9-4197-91df44d700db
+---
+
+# Direct Routing country/region codes - Microsoft Teams | Microsoft Learn
+
+When you choose a routing path for media, Direct Routing, by default, always assigns a datacenter based on the public IP address of the Session Border Controller (SBC), and always selects the path closest to the SBC datacenter.
+
+However, in some cases the default media path might not be the optimal media path. For example, a public IP address from a United States range might be assigned to an SBC located in Europe.
+
+By using the `-MediaRelayRoutingLocationOverride` parameter with the [New-CsOnlinePSTNGateway](/en-us/powershell/module/teams/new-csonlinepstngateway) and [Set-CsOnlinePSTNGateway](/en-us/powershell/module/teams/set-csonlinepstngateway) cmdlets, you can specify the preferred region for media traffic.
+
+For example, the following command specifies that the preferred region is Germany:
+
+```powershell
+Set-CSOnlinePSTNGateway -Identity sbc1.contoso.com –MediaRelayRoutingLocationOverride DE
+```
+
+Microsoft only recommends setting this parameter if the call logs clearly indicate that the default assignment of the datacenter for the media path doesn't use the path closest to the SBC datacenter.
+
+## Country and region code reference table
+
+The following table shows the country/region code values for the `-MediaRelayRoutingLocationOverride` parameter:
+
+| Country/Region | Code |
+| --- | --- |
+| Afghanistan | AF |
+| Aland Islands | AX |
+| Albania | AL |
+| Algeria | DZ |
+| American Samoa | AS |
+| Andorra | AD |
+| Angola | AO |
+| Anguilla | AI |
+| Antarctica | AQ |
+| Antigua and Barbuda | AG |
+| Argentina | AR |
+| Armenia | AM |
+| Aruba | AW |
+| Australia | AU |
+| Austria | AT |
+| Azerbaijan | AZ |
+| Bahamas | BS |
+| Bahrain | BH |
+| Bangladesh | BD |
+| Barbados | BB |
+| Belarus | BY |
+| Belgium | BE |
+| Belize | BZ |
+| Benin | BJ |
+| Bermuda | BM |
+| Bhutan | BT |
+| Bolivia | BO |
+| Bonaire | BQ |
+| Bosnia and Herzegovina | BA |
+| Botswana | BW |
+| Bouvet Island | BV |
+| Brazil | BR |
+| British Indian Ocean Territory | IO |
+| British Virgin Islands | VG |
+| Brunei | BN |
+| Bulgaria | BG |
+| Burkina Faso | BF |
+| Burundi | BI |
+| Cabo Verde | CV |
+| Cambodia | KH |
+| Cameroon | CM |
+| Canada | CA |
+| Cayman Islands | KY |
+| Central African Republic | CF |
+| Chad | TD |
+| Chile | CL |
+| China | CN |
+| Christmas Island | CX |
+| Cocos (Keeling) Islands | CC |
+| Colombia | CO |
+| Comoros | KM |
+| Congo | CG |
+| Congo (DRC) | CD |
+| Cook Islands | CK |
+| Costa Rica | CR |
+| Cote d'Ivoire | CI |
+| Croatia | HR |
+| Cuba | CU |
+| Curacao | CW |
+| Cyprus | CY |
+| Czechia | CZ |
+| Denmark | DK |
+| Djibouti | DJ |
+| Dominica | DM |
+| Dominican Republic | DO |
+| Ecuador | EC |
+| Egypt | EG |
+| El Salvador | SV |
+| Equatorial Guinea | GQ |
+| Eritrea | ER |
+| Estonia | EE |
+| Eswatini | SZ |
+| Ethiopia | ET |
+| Falkland Islands | FK |
+| Faroe Islands | FO |
+| Fiji | FJ |
+| Finland | FI |
+| France | FR |
+| French Guiana | GF |
+| French Polynesia | PF |
+| French Southern Territories | TF |
+| Gabon | GA |
+| Gambia | GM |
+| Georgia | GE |
+| Germany | DE |
+| Ghana | GH |
+| Gibraltar | GI |
+| Greece | GR |
+| Greenland | GL |
+| Grenada | GD |
+| Guadeloupe | GP |
+| Guam | GU |
+| Guatemala | GT |
+| Guernsey | GG |
+| Guinea | GN |
+| Guinea-Bissau | GW |
+| Guyana | GY |
+| Haiti | HI |
+| Heard Island and McDonald Islands | HM |
+| Honduras | HN |
+| Hong Kong SAR | HK |
+| Hungary | HU |
+| Iceland | IS |
+| India | IN |
+| Indonesia | ID |
+| Iran | IR |
+| Iraq | IQ |
+| Ireland | IE |
+| Isle of Man | IM |
+| Israel | IL |
+| Italy | IT |
+| Jamaica | JM |
+| Jan Mayen | XJ |
+| Japan | JP |
+| Jersey | JE |
+| Jordan | JO |
+| Kazakhstan | KZ |
+| Kenya | KE |
+| Kiribati | KI |
+| Korea | KR |
+| Kosovo | XK |
+| Kuwait | KW |
+| Kyrgyzstan | KG |
+| Laos | LA |
+| Latvia | LV |
+| Lebanon | LB |
+| Lesotho | LS |
+| Liberia | LR |
+| Libya | LY |
+| Liechtenstein | LI |
+| Lithuania | LT |
+| Luxembourg | LU |
+| Macao SAR | MO |
+| Madagascar | MG |
+| Malawi | MW |
+| Malaysia | MY |
+| Maldives | MV |
+| Mali | ML |
+| Malta | MT |
+| Marshall Islands | MH |
+| Martinique | MQ |
+| Mauritania | MR |
+| Mauritius | MU |
+| Mayotte | YT |
+| Mexico | MX |
+| Micronesia | FM |
+| Moldova | MD |
+| Monaco | MC |
+| Mongolia | MN |
+| Montenegro | ME |
+| Montserrat | MS |
+| Morocco | MA |
+| Mozambique | MZ |
+| Myanmar | MM |
+| Namibia | NA |
+| Nauru | NR |
+| Nepal | NP |
+| Netherlands | NL |
+| New Caledonia | NC |
+| New Zealand | NZ |
+| Nicaragua | NI |
+| Niger | NE |
+| Nigeria | NG |
+| Niue | NU |
+| Norfolk Island | NF |
+| North Korea | KP |
+| North Macedonia | MK |
+| Northern Mariana Islands | NP |
+| Norway | NO |
+| Oman | OM |
+| Pakistan | PK |
+| Palau | PW |
+| Palestinian Authority | PS |
+| Panama | PA |
+| Papua New Guinea | PG |
+| Paraguay | PY |
+| Peru | PE |
+| Philippines | PH |
+| Pitcairn Islands | PN |
+| Poland | PL |
+| Portugal | PT |
+| Puerto Rico | PR |
+| Qatar | QA |
+| Reunion | RE |
+| Romania | RO |
+| Russia | RU |
+| Rwanda | RW |
+| Saba | XS |
+| Saint Barthélemy | BL |
+| Saint Kitts and Nevis | KN |
+| Saint Lucia | LC |
+| Saint Martin | MF |
+| Saint Pierre and Miquelon | PM |
+| Saint Vincent and the Grenadines | VC |
+| Samoa | WS |
+| San Marino | SM |
+| São Tomé and Príncipe | ST |
+| Saudi Arabia | SA |
+| Senegal | SN |
+| Serbia | RS |
+| Seychelles | SC |
+| Sierra Leone | SL |
+| Singapore | SG |
+| Sint Eustatius | XE |
+| Sint Maarten | SX |
+| Slovakia | SK |
+| Slovenia | SL |
+| Solomon Islands | SB |
+| Somalia | SO |
+| South Africa | ZA |
+| South Georgia and South Sandwich Islands | GS |
+| South Sudan | SS |
+| Spain | ES |
+| Sri Lanka | LK |
+| St Helena, Ascension, Tristan da Cunha | SH |
+| Sudan | SD |
+| Suriname | SR |
+| Svalbard | SJ |
+| Sweden | SE |
+| Switzerland | CH |
+| Syria | SY |
+| Taiwan | TW |
+| Tajikistan | TJ |
+| Tanzania | TZ |
+| Thailand | TH |
+| Timor-Leste | TL |
+| Togo | TG |
+| Tokelau | TK |
+| Tonga | TO |
+| Trinidad and Tobago | TT |
+| Tunisia | TN |
+| Türkiye | TR |
+| Turkmenistan | TM |
+| Turks and Caicos Islands | TC |
+| Tuvalu | TV |
+| U.S. Outlying Islands | UM |
+| U.S. Virgin Islands | VI |
+| Uganda | UG |
+| Ukraine | UA |
+| United Arab Emirates | AE |
+| United Kingdom | GB |
+| United States | US |
+| Uruguay | UY |
+| Uzbekistan | UZ |
+| Vanuatu | VU |
+| Vatican City | VA |
+| Venezuela | VE |
+| Vietnam | VN |
+| Wallis and Futuna | WF |
+| Yemen | YE |
+| Zambia | ZM |
+| Zimbabwe | ZW |
