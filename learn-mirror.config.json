@@ -1,0 +1,19 @@
+{
+  "sitemapIndex": "https://learn.microsoft.com/_sitemaps/sitemapindex.xml",
+  "sitemaps": "/_sitemaps/microsoftteams_en-us_\\d+\\.xml$",
+  "tocs": [
+    "https://learn.microsoft.com/en-us/microsoftteams/toc.json"
+  ],
+  "extraUrls": [],
+  "include": "^https://learn\\.microsoft\\.com/en-us/microsoftteams/",
+  "exclude": [
+    "^https://learn\\.microsoft\\.com/en-us/microsoftteams/platform/",
+    "^https://learn\\.microsoft\\.com/en-us/microsoftteams/phone-reference/"
+  ],
+  "trackedPaths": "^Teams/",
+  "sourceRepos": [
+    "MicrosoftDocs/OfficeDocs-SkypeForBusiness-pr"
+  ],
+  "concurrency": 4,
+  "priority": "(whats-new|release-notes|what-s-new|new-features|deprecat|retire)"
+}
