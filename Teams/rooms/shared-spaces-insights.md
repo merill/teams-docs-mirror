@@ -12,7 +12,7 @@ author: MSTonySmith
 ms.author: tonysmit
 manager: pamgreen
 ms.reviewer: srpall
-ms.date: 2025-07-28T00:00:00.0000000Z
+ms.date: 2026-11-04T00:00:00.0000000Z
 ms.topic: article
 audience: Admin
 ms.service: msteams
@@ -282,6 +282,10 @@ This chart shows how Teams Rooms are used based on room size and seating capacit
 ### People count by size
 
 This chart shows how Teams Rooms are occupied by highlighting the average and maximum number of people in the room based on room size and seating capacity. You can customize the view and switch the view between room size or capacity.
+
+To explore occupancy for individual rooms, select a bar for a room size or capacity group in the chart. The drilldown shows the rooms in the selected group with their people count and occupancy details.
+
+Use the room-level details to compare actual occupancy with configured room capacity. For example, you can identify large rooms that accommodate only a few people or rooms where occupancy approaches capacity. These insights help you assess whether room sizes meet demand and make informed decisions about room sizing and space planning.
 
 Note
 
