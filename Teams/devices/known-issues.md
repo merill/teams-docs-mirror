@@ -14,7 +14,7 @@ ms.author: mattslomka
 manager: miaitelh
 ms.service: msteams
 ms.topic: troubleshooting-known-issue
-ms.date: 2026-10-30T00:00:00.0000000Z
+ms.date: 2026-11-05T00:00:00.0000000Z
 ms.subservice: itpro-devices
 locale: en-us
 document_id: 7f06572c-b6ae-7ff3-40dc-537712172644
@@ -77,6 +77,7 @@ platformId: 448a114f-8665-34fc-cbe8-e0c937d45911
 
 | Issue | Description | Workaround |
 | --- | --- | --- |
+| Large gallery view is unavailable for Teams Rooms on Android devices. | Teams Rooms on Android devices may not offer large gallery view as a layout selection when running application versions 1449/1.0.96.2026249711 through 1449/1.0.96.2026264504 | This is expected and will be addressed in a future application release. |
 | Unable to join E2EE meeting using Teams Rooms on Android device. | When you use a Teams Rooms on Android device that is paired with a console, you're not able to join a Teams meeting that is set up with end-to-end encryption (E2EE). | Update to Teams Rooms on Android application [1449/1.0.96.2026249711](/en-us/MicrosoftTeams/rooms/rooms-release-note?tabs=Android#144910962026249711-september-2026) |
 | Devices may automatically exit meetings due to mismatched application versions. | Teams Rooms on Android devices with paired consoles may automatically exit meetings if the compute and console are operating on different Teams Rooms on Android application versions. | Review application versions installed on each device from the Pro Management Portal or on the device itself. Use the Pro Management Portal to force update the Teams Rooms application to the latest release on both devices. |
 | [DGJ] Unable to join future Google meet meetings on Teams Rooms on Android via One-Touch join | When using a Teams Rooms on Android device to join a Google Meet meeting **before its scheduled start time**, the meeting cannot be joined using the One-Touch Join button | If you need to join a Google Meet meeting before its scheduled start time, use the **Join by ID** option |

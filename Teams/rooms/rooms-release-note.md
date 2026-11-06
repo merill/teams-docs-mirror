@@ -939,6 +939,7 @@ Resolved issues:
 - Resolved an issue where console was slow to join a meeting when QR code join was used.
 - Resolved an issue where certain devices appeared as unhealthy in the Pro Management Portal after entering “sleep mode”.
 - Resolved an issue where certain devices with paired consoles were unable to participate in end-to-end encrypted meetings.
+- Resolved an issue where certain devices sent low bitrate video in certain meeting scenarios.
 
 ### 1449/1.0.96.2026144512 (August 2026)
 
