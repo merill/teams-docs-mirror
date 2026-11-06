@@ -11,8 +11,8 @@ recommendations: true
 author: MSTonySmith
 ms.author: tonysmit
 manager: pamgreen
-ms.reviewer: altsou
-ms.date: 2026-04-15T00:00:00.0000000Z
+ms.reviewer: mattslomka
+ms.date: 2026-11-06T00:00:00.0000000Z
 ms.topic: install-set-up-deploy
 ms.tgt.pltfrm: cloud
 ms.service: msteams
@@ -117,6 +117,12 @@ Tip
 If you use Intune to manage other Windows devices besides Teams Rooms, we recommend opening each configuration and compliance policy and adding this newly created device group as an exclusion for any policy assignments. This will ensure Teams Rooms devices only receive desired policy assignments.
 
 ## Step 4: Deploy Teams Rooms app update tool
+
+Note
+
+As of November 2026, the app update tool is no longer a recommended step in the deployment process for Autopilot + Autologin. The Teams Rooms app has had the automatic update functionality included since April 2024, all new devices being deployed should have the feature included out of box.
+
+If you have the app update tool still included in your Intune configuration it's recommended that you unassign it unless you're deploying devices older than 2025.
 
 The Teams Rooms app update tool updates the Teams room app running on the device to a version that supports Windows Autopilot and Autologin. The update tool needs to be first downloaded, then uploaded to Intune, and deployed to the Teams Rooms on Windows devices. Although it's not required, use dynamic device groups. During the Windows Autopilot Enrollment Status Page (ESP), Intune installs the update tool to the Teams Rooms device and updates the Teams room app before it starts.
 

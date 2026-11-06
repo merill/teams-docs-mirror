@@ -249,8 +249,6 @@ Expand to see list of supported languages
 
 | # | Locale | Language | Optimized Voice |
 | --- | --- | --- | --- |
-| 1. | ar-EG | Arabic (Egypt) |  |
-| 1. | ar-EG | Arabic (Egypt) |  |
 | 01 | ar-EG | Arabic (Egypt) |  |
 | 02 | ar-SA | Arabic (Saudi Arabia) |  |
 | 03 | hy-AM | Armenian (Armenia) |  |
@@ -286,14 +284,14 @@ Expand to see list of supported languages
 | 33 | he-IL | Hebrew (Israel) |  |
 | 34 | hi-IN | Hindi (India) | 🎵 [Diya](https://res.cdn.office.net/s01-itpro-tac-ui/1.0.261025.2/5908b5cfd1247ee1.wav), 🎵 [Meera](https://res.cdn.office.net/s01-itpro-tac-ui/1.0.261025.2/6fd584f9d50c9a45.wav) |
 | 35 | hu-HU | Hungarian (Hungary) |  |
-| 36 | id-ID | Indonesian (Indonesia) |  |
-| 37 | is-IS | Icelandic (Iceland) |  |
+| 36 | is-IS | Icelandic (Iceland) |  |
+| 37 | id-ID | Indonesian (Indonesia) |  |
 | 38 | it-IT | Italian (Italy) | Isabella |
 | 39 | ja-JP | Japanese (Japan) |  |
 | 40 | kn-IN | Kannada (India) |  |
 | 41 | ko-KR | Korean (Korea) |  |
-| 42 | lt-LT | Lithuanian (Lithuania) |  |
-| 43 | lv-LV | Latvian (Latvia) |  |
+| 42 | lv-LV | Latvian (Latvia) |  |
+| 43 | lt-LT | Lithuanian (Lithuania) |  |
 | 44 | mr-IN | Marathi (India) |  |
 | 45 | nb-NO | Norwegian Bokmål (Norway) |  |
 | 46 | fa-IR | Persian (Iran) |  |
@@ -302,11 +300,11 @@ Expand to see list of supported languages
 | 49 | pt-PT | Portuguese (Portugal) |  |
 | 50 | ro-RO | Romanian (Romania) |  |
 | 51 | ru-RU | Russian (Russia) |  |
-| 52 | sk-SK | Slovak (Slovakia) |  |
-| 53 | sl-SI | Slovenian (Slovenia) |  |
-| 54 | sr-RS | Serbian (Serbia) |  |
-| 55 | es-ES | Spanish (Spain, International) | 🎵 [Ximena](https://res.cdn.office.net/s01-itpro-tac-ui/1.0.261025.2/5c0ab10bfbdf65f6.wav) |
-| 56 | es-MX | Spanish (Mexico) |  |
+| 52 | sr-RS | Serbian (Serbia) |  |
+| 53 | sk-SK | Slovak (Slovakia) |  |
+| 54 | sl-SI | Slovenian (Slovenia) |  |
+| 55 | es-MX | Spanish (Mexico) |  |
+| 56 | es-ES | Spanish (Spain, International) | 🎵 [Ximena](https://res.cdn.office.net/s01-itpro-tac-ui/1.0.261025.2/5c0ab10bfbdf65f6.wav) |
 | 57 | sv-SE | Swedish (Sweden) |  |
 | 58 | ta-IN | Tamil (India) |  |
 | 59 | th-TH | Thai (Thailand) |  |
