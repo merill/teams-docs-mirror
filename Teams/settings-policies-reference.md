@@ -888,20 +888,20 @@ Events policies control what features are available in events organized by users
 
 | Setting | Default | Description |
 | --- | --- | --- |
-| Webinars | On | When **On**, organizers can create events with up to 1,000 attendees. |
-| Who can attend webinars | Everyone | Controls who can attend events with up to 1,000 attendees created by the organizer. |
-| Town halls | On | When **On**, organizers can create events [optimized for large audiences](plan-events). |
-| Who can attend town halls | Everyone | Controls who can attend events [optimized for large audiences](plan-events) created by the organizer. |
-| Max resolution for town halls | Microsoft managed | Sets the maximum video resolution that attendees receive during an event optimized for a large audience. |
-| High bitrate for town halls | Off | Controls whether high bitrate streaming is enabled for events optimized for large audiences. |
-| Premium town hall organizers may add Attendee Apps | Yes | Controls whether organizers of events optimized for large audiences can add apps that attendees can access. |
+| Events up to 1k attendees | On | When **On**, organizers can create events with up to 1,000 attendees. |
+| Who can attend events up to 1k attendees | Everyone | Controls who can attend events with up to 1,000 attendees created by the organizer. |
+| Events optimized for a large audience | On | When **On**, organizers can create events [optimized for large audiences](plan-events). |
+| Who can attend events optimized for a large audience | Everyone | Controls who can attend events [optimized for large audiences](plan-events) created by the organizer. |
+| Max resolution for events optimized for a large audience | Microsoft managed | Sets the maximum video resolution that attendees receive during an event optimized for a large audience. |
+| High bitrate for events optimized for a large audience | Off | Controls whether high bitrate streaming is enabled for events optimized for large audiences. |
+| Organizers may add attendee apps to events optimized for a large audience | Yes | Controls whether organizers of events optimized for large audiences can add apps that attendees can access. |
 | Registration | On | When **On**, organizers can turn on registration for their events. |
 | Customize event emails | On | When **On**, organizers can customize event email templates for events. |
-| Webinar registration form questions | Custom, standard, required | Controls which types of questions organizers can require attendees to answer when registering for an event. |
-| Allowed webinar types for recording | Public | Controls whether organizers can publish recordings for events with up to 1,000 attendees and for which event types. |
-| Allowed town hall types for recording | Public | Controls whether organizers can publish recordings for events [optimized for large audiences](plan-events), and for which event types. |
+| Events registration form questions | Custom, standard, required | Controls which types of questions organizers can require attendees to answer when registering for an event. |
+| Event types up to 1k that may publish recordings | Public | Controls whether organizers can publish recordings for events with up to 1,000 attendees and for which event types. |
+| Event types optimized for a large audience that may publish recordings | Public | Controls whether organizers can publish recordings for events [optimized for large audiences](plan-events), and for which event types. |
 | Use Microsoft eCDN | On | When **On**, organizers use the Microsoft eCDN for events [optimized for large audiences](plan-events). When **Off**, organizers use the eCDN provider set in **Live event policies**. |
-| Town hall chat experience | Optimized | Controls whether organizers can turn on chat for attendees in events [optimized for large audiences](plan-events). |
+| Events optimized for a large audience chat experience | Optimized | Controls whether organizers can turn on chat for attendees in events [optimized for large audiences](plan-events). |
 | Immersive events | On | Controls who can schedule immersive events in your organization. |
 | Verify external presenters before joining an event | No verification needed | Controls whether anonymous and external presenters must be verified before joining an event. When set to **No verification needed**, organizers can choose whether to require verification in their Meeting options, with the default set to **No verification needed**. When set to **Yes verify accounts**, external presenters must sign in by using a personal Microsoft account or a work or school account, or enter a one-time email passcode if they don't have an account. |
 
@@ -909,10 +909,10 @@ Events policies control what features are available in events organized by users
 
 | Setting | Default | Description |
 | --- | --- | --- |
-| Record a town hall | On | When **On**, organizers can record events optimized for large audiences. |
-| Record a webinar | On | When **On**, organizers can record events with up to 1,000 attendees. |
-| Transcription for town hall | On | When **On**, users can start transcription when attending events optimized for large audiences and transcription can be enabled for the events they organize |
-| Transcription for webinar | On | When **On**, users can start transcription when attending events up to 1,000 attendees and transcription can be enabled for the events they organize. |
+| Record events optimized for a large audience | On | When **On**, organizers can record events optimized for large audiences. |
+| Record events up to 1k attendees | On | When **On**, organizers can record events with up to 1,000 attendees. |
+| Transcription for events optimized for a large audience | On | When **On**, users can start transcription when attending events optimized for large audiences and transcription can be enabled for the events they organize |
+| Transcription for events up to 1k attendees | On | When **On**, users can start transcription when attending events up to 1,000 attendees and transcription can be enabled for the events they organize. |
 
 ##### Related articles for events policies
 

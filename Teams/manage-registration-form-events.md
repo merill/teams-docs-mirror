@@ -15,8 +15,8 @@ audience: admin
 ms.topic: how-to
 ms.service: msteams
 ms.subservice: teams-events
-ms.reviewer: justle, absri
-ms.date: 2026-07-06T00:00:00.0000000Z
+ms.reviewer: justle, absri, chbalaki
+ms.date: 2026-11-10T00:00:00.0000000Z
 ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
@@ -95,7 +95,7 @@ To manage the registration form questions by using the Teams admin center, follo
 
 1. In the left navigation of the Teams admin center, go to **Meetings** &gt; **Events policies**.
 2. Select an existing policy or create a new one.
-3. Next to the **Webinar registration form questions** setting, choose one of the following options in the dropdown list:
+3. Next to the **Events registration form questions** setting, choose one of the following options in the dropdown list:
 
     - **Required only**
     - **Standard and required**

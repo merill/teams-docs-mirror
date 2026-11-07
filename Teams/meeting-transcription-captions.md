@@ -99,8 +99,8 @@ To allow or prevent meeting transcription by using the Teams admin center, follo
 3. Toggle **Transcription** **On** or **Off**. This setting is **On** by default for new policies.
 4. Select **Save**.
 5. To assign the policy:
-    - **To specific users**: Select your policy &gt; select **Manage users** &gt; **Assign users** &gt; enter in the search bar the names of specific users and select **Add** &gt; select **Apply**.
-    - **To groups**: Select **Group policy assignment** &gt; select **Add** &gt; enter the group's name and enter the policy's name &gt; select **Apply**.
+    - **To specific users**: Select your policy, select **Manage users** &gt; **Assign users**, enter the names of specific users in the search bar, select **Add**, and then select **Apply**.
+    - **To groups**: Select the **Group policy assignment** tab, select **Add**, enter the group name, select the policy name, and then select **Apply**.
 
 To manage meeting transcription using PowerShell, use the **`-AllowTranscription`** parameter in [Set-CsTeamsMeetingPolicy](/en-us/powershell/module/teams/set-csteamsmeetingpolicy). For details, see the PowerShell section later in this article.
 
@@ -119,11 +119,11 @@ To allow or prevent transcription for events with up to 1,000 attendees by using
 
 1. In the left navigation of the Teams admin center, go to **Meetings** &gt; **Events policies**.
 2. Select the policy that you want to edit or create a new one. To apply changes to all users in your organization who don't have an existing policy assignment, use the **Global policy**. To exclude certain users from the global policy, create and assign a custom events policy.
-3. Turn the **Transcription for webinar** toggle **On** or **Off**. This setting is **On** by default.
+3. Turn the **Transcription for events up to 1k attendees** toggle **On** or **Off**. This setting is **On** by default.
 4. Select **Save**.
 5. To assign the policy:
-    - **To specific users**: Select your policy &gt; select **Manage users** &gt; **Assign users** &gt; enter in the search bar the names of specific users and select **Add** &gt; select **Apply**.
-    - **To groups**: Select **Group policy assignment** &gt; select **Add** &gt; enter the group's name and enter the policy's name &gt; select **Apply**.
+    - **To specific users**: Select your policy, select **Manage users** &gt; **Assign users**, enter the names of specific users in the search bar, select **Add**, and then select **Apply**.
+    - **To groups**: Select the **Group policy assignment** tab, select **Add**, enter the group name, select the policy name, and then select **Apply**.
 
 To manage transcription for events with up to 1,000 attendees by using PowerShell, use the **`-TranscriptionForWebinar`** parameter in [Set-CsTeamsEventsPolicy](/en-us/powershell/module/teams/set-csteamseventspolicy). For more information, see the PowerShell section later in this article. The default value for the **`-TranscriptionForWebinar`** parameter is *Enabled*.
 
@@ -135,11 +135,11 @@ To allow or prevent transcription for events optimized for large audiences by us
 
 1. In the left navigation of the Teams admin center, go to **Meetings** &gt; **Events policies**.
 2. Select the policy that you want to edit or create a new one. To apply changes to all users in your organization who don't have an existing policy assignment, use the Global policy. To exclude certain users from the global policy, create and assign a custom events policy.
-3. Turn the **Transcription for town hall** toggle **On** or **Off**. This setting is **On** by default.
+3. Turn the **Transcription for events optimized for a large audience** toggle **On** or **Off**. This setting is **On** by default.
 4. Select **Save**.
 5. To assign the policy:
-    - **To specific users**: Select your policy &gt; select **Manage users** &gt; **Assign users** &gt; enter in the search bar the names of specific users and select **Add** &gt; select **Apply**.
-    - **To groups**: Select **Group policy assignment** &gt; select **Add** &gt; enter the group's name and enter the policy's name &gt; select **Apply**.
+    - **To specific users**: Select your policy, select **Manage users** &gt; **Assign users**, enter the names of specific users in the search bar, select **Add**, and then select **Apply**.
+    - **To groups**: Select the **Group policy assignment** tab, select **Add**, enter the group name, select the policy name, and then select **Apply**.
 
 To manage transcription for events optimized for large audiences by using PowerShell, use the **`-TranscriptionForTownhall`** parameter in [Set-CsTeamsEventsPolicy](/en-us/powershell/module/teams/set-csteamseventspolicy). For more information, see the PowerShell section later in this article. The default value for the **`-TranscriptionForTownhall`** parameter is *Enabled*.
 
@@ -175,8 +175,8 @@ To allow or prevent live captions in meetings, follow these steps:
 3. From the drop-down for **Live captions**, select **Not enabled, but users can enable**(default value) or **Off**.
 4. Select **Save**.
 5. To assign the policy:
-    - **To specific users**: Select your policy &gt; select **Manage users** &gt; **Assign users** &gt; enter in the search bar the names of specific users and select **Add** &gt; select **Apply**.
-    - **To groups**: Select **Group policy assignment** &gt; select **Add** &gt; enter the group's name and enter the policy's name &gt; select **Apply**.
+    - **To specific users**: Select your policy, select **Manage users** &gt; **Assign users**, enter the names of specific users in the search bar, select **Add**, and then select **Apply**.
+    - **To groups**: Select the **Group policy assignment** tab, select **Add**, enter the group name, select the policy name, and then select **Apply**.
 
 To manage live captions using PowerShell, use the **`-LiveCaptionsEnabledType`** parameter in [Set-CsTeamsMeetingPolicy](/en-us/powershell/module/teams/set-csteamsmeetingpolicy). For details, see the PowerShell section later in this article.
 

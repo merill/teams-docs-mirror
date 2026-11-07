@@ -12,7 +12,7 @@ ms.author: v-lanchin
 author: LanaChin8
 manager: v-jesserowe
 ms.reviewer: chbalaki
-ms.date: 2026-10-07T00:00:00.0000000Z
+ms.date: 2026-11-10T00:00:00.0000000Z
 ms.topic: how-to
 ms.tgt.pltfrm: cloud
 ms.service: msteams
@@ -67,12 +67,12 @@ Use the Teams admin center or PowerShell to manage who can schedule and run even
 
 | Teams admin center setting and value | PowerShell parameter and value | More information |
 | --- | --- | --- |
-| **Webinars** (On,Off) | `-AllowWebinars` (Enabled,Disabled) | Controls whether users with this policy can create events with up to 1,000 attendees, such as webinars. |
-| **Town halls** (On,Off) | `-AllowTownhalls` (Enabled,Disabled) | Controls whether users with this policy can create events optimized for large audiences, such as town halls. |
+| **Events up to 1k attendees** (On,Off) | `-AllowWebinars` (Enabled,Disabled) | Controls whether users with this policy can create events with up to 1,000 attendees, such as webinars. |
+| **Events optimized for a large audience** (On,Off) | `-AllowTownhalls` (Enabled,Disabled) | Controls whether users with this policy can create events optimized for large audiences, such as town halls. |
 
-The combination of these policy settings determine how the **[Optimize for large audience](plan-events)** option is applied in the scheduling form.
+The combination of these policy settings determines how the **[Optimize for large audience](plan-events)** option is applied in the scheduling form.
 
-| Webinars | Town halls | Optimize for large audience behavior | Organizer capabilities |
+| Events up to 1k attendees setting | Events optimized for a large audience setting | Optimize for large audience behavior | Organizer capabilities |
 | --- | --- | --- | --- |
 | **On**/`Enabled`(Default) | **On**/`Enabled`(Default) | - For events with *up to* 1,000 attendees, **Optimize for large audience** is off, and organizers can turn it on.<br>- For events with *more than* 1,000 attendees, **Optimize for large audience** is on and can't be turned off. | - Create events with up to 1,000 attendees.<br>- Create events optimized for large audiences. |
 | **Off**/`Disabled` | **On**/`Enabled` | **Optimize for large audience** is on and can't be turned off. | - Create events optimized for large audiences.<br>- Create view-only events with up to 10,000 attendees (with Q&A). |
@@ -83,8 +83,8 @@ The combination of these policy settings determine how the **[Optimize for large
 1. In the left navigation of the Teams admin center, go to **Meetings** &gt; **Events policies**.
 2. Select an existing policy or create a new one.
 3. Complete the following steps:
-    - For events with up to 1,000 attendees, such as webinars, turn the **Webinars** toggle **On** or **Off**.
-    - For events [optimized for large audiences](plan-events), such as town halls, turn the **Town halls** toggle **On** or **Off**.
+    - For events with up to 1,000 attendees, such as webinars, turn the **Events up to 1k attendees** toggle **On** or **Off**.
+    - For events [optimized for large audiences](plan-events), such as town halls, turn the **Events optimized for a large audience** toggle **On** or **Off**.
 4. Select **Save**.
 
 If you change the value to **Off** after a user schedules an event, they can't run or start the event.
@@ -130,8 +130,8 @@ Use the Teams admin center or PowerShell to manage who can attend events in your
 
 | Teams admin center setting and value | PowerShell parameter and value | More information |
 | --- | --- | --- |
-| **Who can attend webinars**(Everyone,Everyone in my organization excluding guests,Everyone in my organization including guests) | `-EventAccessType`(Everyone,EveryoneInCompanyExcludingGuests,EveryoneInCompany) | Controls who can attend events with up to 1,000 attendees (such as webinars) created by organizers with this policy. |
-| **Who can attend town halls**(Everyone,Everyone in my organization excluding guests,Everyone in my organization including guests) | `-TownhallEventAttendeeAccess`(Everyone,EveryoneInOrganization,EveryoneInOrganizationAndGuests) | Controls who can attend events optimized for large audiences (such as town halls) created by organizers with this policy. |
+| **Who can attend events up to 1k attendees**(Everyone,Everyone in my organization excluding guests,Everyone in my organization including guests) | `-EventAccessType`(Everyone,EveryoneInCompanyExcludingGuests,EveryoneInCompany) | Controls who can attend events with up to 1,000 attendees (such as webinars) created by organizers with this policy. |
+| **Who can attend events optimized for a large audience**(Everyone,Everyone in my organization excluding guests,Everyone in my organization including guests) | `-TownhallEventAttendeeAccess`(Everyone,EveryoneInOrganization,EveryoneInOrganizationAndGuests) | Controls who can attend events optimized for large audiences (such as town halls) created by organizers with this policy. |
 
 By default, both settings are set to **Everyone**. When users with this policy create events with up to 1,000 attendees or events optimized for large audiences, any user can attend.
 
@@ -140,11 +140,11 @@ By default, both settings are set to **Everyone**. When users with this policy c
 1. In the left navigation of the Teams admin center, go to **Meetings** &gt; **Events policies**.
 2. Select an existing policy or create a new one.
 3. Complete the following steps:
-    1. For events with up to 1,000 attendees, such as webinars, in the **Who can attend webinars**dropdown list, select one of the following:
+    1. For events with up to 1,000 attendees, such as webinars, in the **Who can attend events up to 1k attendees**dropdown list, select one of the following:
         - **Everyone**
         - **Everyone in my organization excluding guests**
         - **Everyone in my organization including guests**
-    2. For events [optimized for large audiences](plan-events), such as town halls, in the **Who can attend town halls**dropdown list, select one of the following:
+    2. For events [optimized for large audiences](plan-events), such as town halls, in the **Who can attend events optimized for a large audience**dropdown list, select one of the following:
         - **Everyone**
         - **Everyone in my organization excluding guests**
         - **Everyone in my organization including guests**

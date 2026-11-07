@@ -8,12 +8,12 @@ ms.suite: office
 feedback_system: Standard
 feedback_product_url: https://aka.ms/TeamsFeedback
 recommendations: true
-ms.reviewer: sachung
-ms.date: 2026-07-06T00:00:00.0000000Z
+ms.date: 2026-11-10T00:00:00.0000000Z
 ms.author: v-lanchin
 author: LanaChin8
 ms.topic: how-to
 manager: v-jesserowe
+ms.reviewer: sachung, chbalaki
 ms.service: msteams
 ms.subservice: teams-events
 audience: admin
@@ -48,9 +48,11 @@ source_path: Teams/manage-vod-publishing.md
 cmProducts:
 - https://authoring-docs-microsoft.poolparty.biz/devrel/63959238-cb90-4871-a33d-4a5519097e47
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/68e4b2d8-b70c-4019-b49a-d1f8881e2aea
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/5cf46315-b33f-4e99-8224-a1592697eff9
 spProducts:
 - https://authoring-docs-microsoft.poolparty.biz/devrel/78d87f42-5582-4a6b-90be-7db2f12b34e6
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/67b2ba1a-6f74-4044-a48a-f0f8ad076b8f
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/715d24c3-3683-4219-82c5-1e3c813fb7fc
 platformId: 9b33758f-435e-7fd2-daff-3ad834ca0acf
 ---
 
@@ -90,7 +92,7 @@ Guests can't view recordings of private events.
 
 1. In the left navigation of the Teams admin center, go to **Meetings** &gt; **Events policies**.
 2. Select an existing policy or create a new one.
-3. In the **Allowed webinar types for recordings**dropdown list, choose one of the following values:
+3. In the **Event types up to 1k that may publish recordings**dropdown list, choose one of the following values:
     - **Not allowed**
     - **Invite only**
     - **Your organization**
@@ -130,7 +132,7 @@ The following table lists the values that you can set for publishing permissions
 
 1. In the left navigation of the Teams admin center, go to **Meetings** &gt; **Events policies**.
 2. Select an existing policy or create a new one.
-3. In the **Allowed town hall types for recordings**dropdown list, choose one of the following values:
+3. In the **Event types optimized for a large audience that may publish recordings**dropdown list, choose one of the following values:
     - **Not allowed**
     - **Invite only**
     - **Your organization**

@@ -8,10 +8,10 @@ ms.suite: office
 feedback_system: Standard
 feedback_product_url: https://aka.ms/TeamsFeedback
 recommendations: true
-author: wlibebe
-ms.author: wlibebe
-manager: pamgreen
-ms.reviewer: jaydenlee
+author: LanaChin8
+ms.author: v-lanchin
+manager: v-jesserowe
+ms.reviewer: jaydenlee, chbalaki
 ms.date: 2026-07-06T00:00:00.0000000Z
 ms.topic: how-to
 ms.service: msteams
@@ -45,8 +45,10 @@ item_type: Content
 source_path: Teams/anonymous-users-in-meetings.md
 cmProducts:
 - https://authoring-docs-microsoft.poolparty.biz/devrel/63959238-cb90-4871-a33d-4a5519097e47
+- https://authoring-docs-microsoft.poolparty.biz/devrel/fcc3cd4a-59ea-47a2-9cc1-784142a5a25d
 spProducts:
 - https://authoring-docs-microsoft.poolparty.biz/devrel/78d87f42-5582-4a6b-90be-7db2f12b34e6
+- https://authoring-docs-microsoft.poolparty.biz/devrel/d7a55faf-a992-4e27-aa3a-eadc9830e778
 platformId: ba8e3364-c6de-4424-993e-cb5c091c1501
 ---
 
@@ -71,7 +73,7 @@ As an admin, you have the following options to manage anonymous meeting join for
 
 You also have the following option to manage anonymous event join for your organization:
 
-- The per-organizer **Who can attend webinars** and **Who can attend town halls** policy setting.
+- The per-organizer **Who can attend events up to 1k attendees** and **Who can attend events optimized for a large audience** policy setting.
 
 Your organizers have the following setting in their **Meeting options** to manage anonymous meeting join for their meetings:
 
@@ -156,27 +158,27 @@ You can control whether anonymous users can join events for your entire organiza
 
 ### Organization-wide
 
-To allow everyone in your organization to create events that allow anonymous users, the events policy setting for **Who can attend webinars** and **Who can attend town halls** must be set to **Everyone**. When this setting is changed to anything other than **Everyone**, anonymous users can't register or attend events hosted by anyone in your organization.
+To allow everyone in your organization to create events that allow anonymous users, the events policy setting for **Who can attend events up to 1k attendees** and **Who can attend events optimized for a large audience** must be set to **Everyone**. When this setting is changed to anything other than **Everyone**, anonymous users can't register or attend events hosted by anyone in your organization.
 
-Note that the **Who can attend town halls** setting affects all events in which **[Optimize for large audience](plan-events)** is turned on. Otherwise, the **Who can attend webinars** setting takes effect.
+Note that the **Who can attend events optimized for a large audience** setting affects all events in which **[Optimize for large audience](plan-events)** is turned on. Otherwise, the **Who can attend events up to 1k attendees** setting takes effect.
 
 To manage anonymous event join for your entire organization, follow these steps:
 
 1. In the left navigation of the Teams admin center, go to **Meetings** &gt; **Events policies**.
-2. In the **Who can attend webinars** dropdown list, change the value to **Everyone**.
-3. In the **Who can attend town halls** dropdown list, change the value to **Everyone**.
+2. In the **Who can attend events up to 1k attendees** dropdown list, change the value to **Everyone**.
+3. In the **Who can attend events optimized for a large audience** dropdown list, change the value to **Everyone**.
 4. Select **Save**.
 
 ### Per-organizer
 
-To control which users or groups can host events that allow anonymous participants, assign a per-organizer events policy to each organizer or group. If the organization-wide **Who can attend webinars** or **Who can attend town halls** setting is on, you can turn off this policy to prevent specific organizers from creating events that allow anonymous users to join or register.
+To control which users or groups can host events that allow anonymous participants, assign a per-organizer events policy to each organizer or group. If the organization-wide **Who can attend events up to 1k attendees** or **Who can attend events optimized for a large audience** setting is on, you can turn off this policy to prevent specific organizers from creating events that allow anonymous users to join or register.
 
 To manage anonymous event join or registration for specific event organizers, follow these steps:
 
 1. In the left navigation of the Teams admin center, go to **Meetings** &gt; **Events policies**.
 2. Select an existing policy or create a new one.
-3. In the **Who can attend webinars** dropdown list, change the value to **Everyone in my organization excluding guests**.
-4. In the **Who can attend town halls** dropdown list, change the value to **Everyone in my organization including guests**.
+3. In the **Who can attend events up to 1k attendees** dropdown list, change the value to **Everyone in my organization excluding guests**.
+4. In the **Who can attend events optimized for a large audience** dropdown list, change the value to **Everyone in my organization including guests**.
 5. Select **Save**.
 
 Changes to events policies might take up to 24 hours to take effect.

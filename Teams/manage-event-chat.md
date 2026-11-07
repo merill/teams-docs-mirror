@@ -12,7 +12,7 @@ ms.author: v-lanchin
 author: LanaChin8
 manager: v-jesserowe
 ms.reviewer: chbalaki
-ms.date: 2026-10-06T00:00:00.0000000Z
+ms.date: 2026-11-10T00:00:00.0000000Z
 ms.topic: how-to
 ms.tgt.pltfrm: cloud
 ms.service: msteams
@@ -99,7 +99,7 @@ You can use the Teams admin center or PowerShell to manage whether organizers ca
 
 1. In the left navigation of the Teams admin center, go to **Meetings** &gt; **Events policies**.
 2. Select the policy you want to edit or create a new one.
-3. In the **Town hall chat experience** dropdown list, select **Optimized** (the default value) or **None**.
+3. In the **Events optimized for a large audience chat experience** dropdown list, select **Optimized** (the default value) or **None**.
 4. Select **Save**.
 
 #### Use PowerShell

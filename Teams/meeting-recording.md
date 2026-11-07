@@ -59,19 +59,19 @@ When organizers turn off Microsoft Copilot in Teams meetings and events, recordi
 
 **APPLIES TO:**![Image of a checkmark for yes](/en-us/office/media/icons/success-teams.png)Meetings ![Image of a checkmark for yes](/en-us/office/media/icons/success-teams.png)Events ![Image of a checkmark for yes](/en-us/office/media/icons/success-teams.png)Group calls
 
-In Microsoft Teams, your users can record their Teams meetings, 1:1 calls, webinars, and town halls to capture audio, video, and screen sharing activity. There are policies that control recording in each type. Many users use the term "meetings" and "calls" interchangeably.
+In Microsoft Teams, your users can record their Teams meetings, 1:1 calls, and events to capture audio, video, and screen sharing activity. There are policies that control recording in each type. Many users use the term "meetings" and "calls" interchangeably.
 
-Use this article to find the policy that controls recording in Teams meetings, webinars, and town halls.
+Use this article to find the policy that controls recording in Teams meetings and events.
 
-1. Confirm the type: meeting, webinar, town hall, or call.
+1. Confirm the type: meeting, event, or call.
 2. Confirm the policy scope: meeting policy, events policy, or calling policy.
 3. Confirm who needs recording permission: the organizer, co-organizer, or presenter.
 
 There are two recording features that can be enabled with policy:
 
-**Convenience recording**- an ad-hoc recording of a call or meeting that a user starts and manages. For an overview of convenience recording, see [Overview- Recording and transcription for Teams meetings and calls](/en-us/microsoftteams/recording-transcription-overview).
+**Convenience recording**: An ad-hoc recording of a call or meeting that a user starts and manages. For an overview of convenience recording, see [Overview- Recording and transcription for Teams meetings and calls](/en-us/microsoftteams/recording-transcription-overview).
 
-**Compliance recording**-calls and meetings that are automatically recorded without user intervention and owned by the company, using a third-party solution.
+**Compliance recording**: Calls and meetings that are automatically recorded without user intervention and owned by the company, using a third-party solution.
 
 We recommend that you check your call recording policy settings as well. If the settings are different for meetings and calls, it might cause confusion for your users. To learn about managing recording for Public Switched Telephone Network (PSTN calls), see [Configure call recording, transcription, and captions in Teams](call-recording-transcription-captions).
 
@@ -112,8 +112,8 @@ To allow or prevent meeting recordings, follow these steps:
 3. Turn the **Meeting recording** toggle **On** or **Off**.
 4. Select **Save**.
 5. To assign the policy:
-    - **To specific users**: Select your policy &gt; select **Manage users** &gt; **Assign users** &gt; enter in the search bar the names of specific users and select **Add** &gt; select **Apply**.
-    - **To groups**: Select **Group policy assignment** &gt; select **Add** &gt; enter the group's name and enter the policy's name &gt; select **Apply**.
+    - **To specific users**: Select your policy, select **Manage users** &gt; **Assign users**, enter the names of specific users in the search bar, select **Add**, and then select **Apply**.
+    - **To groups**: Go to the **Group policy assignment** tab, select **Add**, enter the group name, select the policy name, and then select **Apply**.
 
 To manage meeting recording by using PowerShell, use the **`-AllowCloudRecording`** parameter in [Set-CsTeamsMeetingPolicy](/en-us/powershell/module/teams/set-csteamsmeetingpolicy). For details, see the PowerShell section later in this article. Before you enable meeting recording, review Permissions and storage and make sure the required OneDrive or SharePoint storage is available.
 
@@ -126,11 +126,11 @@ To allow or prevent recordings for events with up to 1,000 attendees, such as we
 1. In the left navigation of the Teams admin center, go to **Meetings** &gt; **Events policies**.
 2. Select an existing policy or create a new one. To apply changes to all users in your organization who don't have an existing policy assignment, use the Global policy. To exclude certain users from the Global policy, create and assign a custom events policy.
 3. Go to the **Recording & transcription** section.
-4. Turn the **Record a webinar** toggle **On** or **Off**.
+4. Turn the **Record events up to 1k attendees** toggle **On** or **Off**.
 5. Select **Save**.
 6. To assign the policy:
-    - **To specific users**: Select your policy &gt; select **Manage users** &gt; **Assign users** &gt; enter in the search bar the names of specific users and select **Add** &gt; select **Apply**.
-    - **To groups**: Select **Group policy assignment** &gt; select **Add** &gt; enter the group's name and enter the policy's name &gt; select **Apply**.
+    - **To specific users**: Select your policy, select **Manage users** &gt; **Assign users**, enter the names of specific users in the search bar, select **Add**, and then select **Apply**.
+    - **To groups**: Go to the **Group policy assignment** tab, select **Add**, enter the group name, select the policy name, and then select **Apply**.
 
 To manage recordings for events with up to 1,000 attendees using PowerShell, use the **`-RecordingForWebinar`** parameter in [Set-CsTeamsEventsPolicy](/en-us/powershell/module/teams/set-csteamseventspolicy). For details, see the PowerShell section later in this article.
 
@@ -141,11 +141,11 @@ To allow or prevent recordings for events [optimized for large audiences](plan-e
 1. In the left navigation of the Teams admin center, go to **Meetings** &gt; **Events policies**.
 2. Select an existing policy or create a new one. To apply changes to all users in your organization who don't have an existing policy assignment, use the Global policy. To exclude certain users from the Global policy, create and assign a custom events policy.
 3. Go to the **Recording & transcription** section.
-4. Turn the **Record a town hall** toggle **On** or **Off**.
+4. Turn the **Record events optimized for a large audience** toggle **On** or **Off**.
 5. Select **Save**.
 6. To assign the policy:
-    - **To specific users**: Select your policy &gt; select **Manage users** &gt; **Assign users** &gt; enter in the search bar the names of specific users and select **Add** &gt; select **Apply**.
-    - **To groups**: Select **Group policy assignment** &gt; select **Add** &gt; enter the group's name and enter the policy's name &gt; select **Apply**.
+    - **To specific users**: Select your policy, select **Manage users** &gt; **Assign users**, enter the names of specific users in the search bar, select **Add**, and then select **Apply**.
+    - **To groups**: Go to the **Group policy assignment** tab, select **Add**, enter the group name, select the policy name, and then select **Apply**.
 
 To manage recordings for events optimized for large audiences using PowerShell, use the **`-RecordingForTownhall`** parameter in [Set-CsTeamsEventsPolicy](/en-us/powershell/module/teams/set-csteamseventspolicy). For details, see the PowerShell section later in this article.
 
@@ -188,7 +188,7 @@ Important
 To find your users' recording and transcript files by using eDiscovery, follow these steps:
 
 1. Go to the [Microsoft Purview portal](https://purview.microsoft.com/).
-2. In the search box, enter 'eDiscovery'
+2. In the search box, enter 'eDiscovery'.
 3. Follow the steps in the linked article to create an eDiscovery case: [Create and manage an eDiscovery (Premium) case](/en-us/purview/ediscovery-create-and-manage-cases).
 4. Open the case, and then on the **Collections** tab, select **New collection**.
 5. Commit the new collection.
@@ -196,7 +196,7 @@ To find your users' recording and transcript files by using eDiscovery, follow t
 
 ## Troubleshooting
 
-If users can't record a meeting, first verify if it was a Teams meeting, 1:1 calls, webinar, or Town hall. Then verify the matching policy and recording setting assigned.
+If users can't record a meeting, first verify if it was a Teams meeting, 1:1 calls, or event. Then verify the matching policy and recording setting assigned.
 
 To learn about why users can't record meeting, see [I can't record a meeting in Microsoft Teams](https://support.microsoft.com/office/i-can-t-record-a-meeting-in-microsoft-teams-f35329c2-57b1-487f-b5e3-70a7efb0945b). To learn how to use diagnostic tools, see [Issues that affect meeting recordings](/en-us/microsoftteams/troubleshoot/meetings/troubleshoot-meeting-recording-issues).
 
