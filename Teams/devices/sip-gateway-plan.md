@@ -200,7 +200,6 @@ If you have a 3PIP or SIP device, you must have the following:
 |  | Edge E500^2^ | 8.1.0.12774 | 8.5.1.0508 | IP Phone |  |
 |  | Edge E550^2^ | 8.1.0.12774 | 8.5.1.0508 | IP Phone |  |
 |  | Edge V 200^2^ | 8.5.1.0565 | 8.5.1.0565 | IP Phone |  |
-|  | Edge V 200+^2^ | 8.5.1.0565 | 8.5.1.0565 | IP Phone |  |
 |  | Edge V 250^2^ | 8.5.1.0565 | 8.5.1.0565 | IP Phone |  |
 |  | Edge V 250+^2^ | 8.5.1.0565 | 8.5.1.0565 | IP Phone |  |
 |  | Edge V 400^2^ | 8.5.1.0565 | 8.5.1.0565 | IP Phone |  |
