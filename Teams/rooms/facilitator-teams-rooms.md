@@ -75,11 +75,11 @@ In a scheduled meeting with Teams Rooms devices invited, you can view notes gene
 
 ![Screenshot that shows the notes button on the console that will open/close the notes panel on the front-of-room display.](media/facilitator-teams-rooms/notes-button-on-ubar.png)*Notes button on the console to open and close the Notes panel.*
 
-![Screenshot that shows the notes panel on the front-of-room display in a meeting.](media/facilitator-teams-rooms/agenda-timer-front-of-room-display.png)*Notes panel on the front-of-room display*
+![Screenshot that shows the notes panel on the front-of-room display in a meeting.](media/facilitator-teams-rooms/notes-panel-front-of-room.png)*Notes panel on the front-of-room display*
 
 Facilitator can proactively share insights, reminders and time left in a meeting, as well as respond to participant questions or commands in the **Chat** panel.
 
-![Screenshot that shows Facilitator messages in chat panel on the front-of-room display.](media/facilitator-teams-rooms/agenda-timer-front-of-room-display.png)*Messages from Facilitator in the Chat panel on the front-of-room display*
+![Screenshot that shows Facilitator messages in chat panel on the front-of-room display.](media/facilitator-teams-rooms/facilitator-in-chat.png)*Messages from Facilitator in the Chat panel on the front-of-room display*
 
 If there is an agenda in the meeting invite or agenda added to the Loop meeting notes before the meeting, agenda timer will appear at the front-of-room display to show allocation of time for each topic.
 

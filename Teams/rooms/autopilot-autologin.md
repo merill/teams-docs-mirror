@@ -120,7 +120,7 @@ If you use Intune to manage other Windows devices besides Teams Rooms, we recomm
 
 Note
 
-As of November 2026, the app update tool is no longer a recommended step in the deployment process for Autopilot + Autologin. The Teams Rooms app has had the automatic update functionality included since April 2024, all new devices being deployed should have the feature included out of box.
+As of November 2026, the app update tool is no longer a recommended step in the deployment process for Autopilot + Autologin. The Teams Rooms app has had the automatic update functionality included since April 2024 with version [5.0.111.0](/en-us/MicrosoftTeams/rooms/rooms-release-note?tabs=Windows#501110-4242024), all new devices being deployed should have the feature included out of box.
 
 If you have the app update tool still included in your Intune configuration it's recommended that you unassign it unless you're deploying devices older than 2025.
 

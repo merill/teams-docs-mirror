@@ -196,6 +196,10 @@ Note
 
 Breakout rooms can only be created in meetings or events with up to 1,000 attendees. Breakout rooms aren't supported in events [optimized for large audiences](plan-events). Additionally, creating breakout rooms in a meeting or event automatically limits the number of attendees to 1,000. For more information about large Teams meetings and events, share the [Tips for setting up large meetings and events in Microsoft Teams](https://support.microsoft.com/teams/meetings/tips-for-setting-up-large-meetings-and-events-in-microsoft-teams) guidance with your end users.
 
+### External calling limits
+
+Organizations might be subject to limits on outbound external one-to-one (1:1) calls based on factors such as tenant age and calling activity. These limits help prevent abuse. When a limit is reached, users might be temporarily unable to place outbound 1:1 calls to external users. Internal calling isn't affected. External calling automatically resumes when activity falls below the limit.
+
 ### Meeting expiration
 
 The expiration applies to PSTN dial-in numbers, CVI coordinates, and underlying meeting policies and settings.
