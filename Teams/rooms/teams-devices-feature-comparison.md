@@ -12,7 +12,7 @@ author: MattSlomka
 ms.author: mattslomka
 manager: pamgreen
 ms.reviewer: mattslomka
-ms.date: 2026-10-13T00:00:00.0000000Z
+ms.date: 2026-11-09T00:00:00.0000000Z
 ms.topic: article
 audience: Admin
 ms.service: msteams
@@ -111,7 +111,7 @@ To help guide you as to what features are available on different platforms, you 
 |  | Net promoter score (NPS) at meeting end | Available | Available |
 |  | Meeting controls on touch enabled front of room displays | Not available | Available |
 |  | Smart Camera Controls | Available | Available |
-|  | Local pan tilt zoom (PTZ) controls | Not available | Available |
+|  | Local pan tilt zoom (PTZ) controls | Available | Available |
 |  | Remote Pan tilt zoom (PTZ) control | Available | Available |
 |  | Switch between multiple in-room cameras | Available | Available |
 |  | Coordinated meetings | Available | Not available |
@@ -227,7 +227,7 @@ To help guide you as to what features are available on different platforms, you 
 |  | Net promoter score (NPS) at meeting end | Not available | Not available |
 |  | Meeting controls on touch enabled front of room displays | Not available | Available |
 |  | Smart Camera Controls | Available | Available |
-|  | Local pan tilt zoom (PTZ) controls | Not available | Available |
+|  | Local pan tilt zoom (PTZ) controls | Available | Available |
 |  | Remote Pan tilt zoom (PTZ) control | Available | Available |
 |  | Switch between multiple in-room cameras | Available | Available |
 |  | Coordinated meetings | Available | Not available |
@@ -344,7 +344,7 @@ To help guide you as to what features are available on different platforms, you 
 |  | Net promoter score (NPS) at meeting end | Not available | Not available |
 |  | Meeting controls on touch enabled front of room displays | Not available | Available |
 |  | Smart Camera Controls | Available | Available |
-|  | Local pan tilt zoom (PTZ) controls | Not available | Available |
+|  | Local pan tilt zoom (PTZ) controls | Available | Available |
 |  | Remote Pan tilt zoom (PTZ) control | Available | Available |
 |  | Switch between multiple in-room cameras | Available | Available |
 |  | Coordinated meetings | Available | Not available |
