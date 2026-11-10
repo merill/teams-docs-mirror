@@ -147,7 +147,7 @@ The following examples show how different camera models provide PTZ. They aren't
 | --- | --- | --- |
 | **Jabra** | Original PanaCast | Electronic pan, tilt, and zoom (digital PTZ). This entry doesn't include PanaCast 50. |
 | **Lenovo** | ThinkSmart One | Electronic pan, tilt, and zoom for its integrated camera. ThinkSmart One is an all-in-one Windows device, not a separately connected ThinkSmart Cam. |
-| **Logitech** | Original BRIO/BRIO 4K; Webcam C920; Webcam C930e; original MeetUp | The listed webcams provide digital PTZ. MeetUp instead has motorized pan and tilt with digital zoom. Local directional PTZ can work on MeetUp, but that alone doesn't establish whether Reset restores its physical pan and tilt. Don't apply the original MeetUp description to MeetUp 2. |
+| **Logitech** | Original BRIO/BRIO 4K; Webcam C920; Rally; original MeetUp | The listed webcams provide digital PTZ. MeetUp instead has motorized pan and tilt with digital zoom. Local directional PTZ can work on MeetUp, but that alone doesn't establish whether Reset restores its physical pan and tilt. Don't apply the original MeetUp description to MeetUp 2. |
 | **Microsoft** | LifeCam Studio | Digital pan, tilt, and zoom. |
 | **Poly** | Studio E60; Studio E70 | Studio E60 uses hardware PTZ with absolute positioning; Studio E70 uses digital PTZ. |
 | **Yealink** | UVC30 Room; UVC34; original UVC40 | Electronic PTZ. These examples don't automatically include other UVC30 variants or UVC40 E2. |

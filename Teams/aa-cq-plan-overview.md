@@ -168,6 +168,8 @@ Call queues don't provide separate call routing for off hours and holidays. Even
 
 ## What's new in Call Queue (last six months)
 
+- November 10, 2026
+    - Monitor, Whisper, Barge, Takeover for authorized users now supports joining active calls.
 - October 19, 2026
     - Monitor, Whisper, Barge, Takeover for authorized users now supports outbound calls.
 - September 30, 2026

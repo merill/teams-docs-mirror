@@ -52,11 +52,11 @@ source_path: Teams/aa-cq-setup-call-queue-priorities.md
 cmProducts:
 - https://authoring-docs-microsoft.poolparty.biz/devrel/63959238-cb90-4871-a33d-4a5519097e47
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/5cf46315-b33f-4e99-8224-a1592697eff9
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/68e4b2d8-b70c-4019-b49a-d1f8881e2aea
+- https://authoring-docs-microsoft.poolparty.biz/devrel/07bb3e10-d135-43ff-bc8b-360497cb39fa
 spProducts:
 - https://authoring-docs-microsoft.poolparty.biz/devrel/78d87f42-5582-4a6b-90be-7db2f12b34e6
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/715d24c3-3683-4219-82c5-1e3c813fb7fc
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/67b2ba1a-6f74-4044-a48a-f0f8ad076b8f
+- https://authoring-docs-microsoft.poolparty.biz/devrel/12e559b9-eaf6-4aee-9af7-62334e15f863
 platformId: 34c62803-97de-4032-c93d-8aa513928c03
 ---
 
@@ -80,6 +80,8 @@ None.
 
 ## What's new in Call Queues (last six months)
 
+- November 10, 2026
+    - Monitor, Whisper, Barge, Takeover for authorized users now supports joining active calls.
 - October 19, 2026
     - Monitor, Whisper, Barge, Takeover for authorized users now supports outbound calls.
 - September 30, 2026

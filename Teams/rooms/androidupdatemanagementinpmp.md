@@ -1,6 +1,6 @@
 ---
 layout: Conceptual
-title: Transitioning updates management for Teams Android devices from Teams Admin Center to the Teams Rooms Pro Management Portal - Microsoft Teams | Microsoft Learn
+title: Manage updates for Teams Android devices in Pro Management Portal (PMP) - Microsoft Teams | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/microsoftteams/rooms/androidupdatemanagementinpmp
 breadcrumb_path: /microsoftteams/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-MicrosoftTeams
@@ -39,13 +39,13 @@ spProducts:
 platformId: 6f38d9e4-458e-b816-fcd6-5931fd8563da
 ---
 
-# Transitioning updates management for Teams Android devices from Teams Admin Center to the Teams Rooms Pro Management Portal - Microsoft Teams | Microsoft Learn
+# Manage updates for Teams Android devices in Pro Management Portal (PMP) - Microsoft Teams | Microsoft Learn
 
-Guidance for Teams device admins on transitioning update management capabilities for Teams Android devices from the Teams admin center (TAC) to the Teams Rooms Pro Management portal (PMP).
+Guidance for Teams device admins on transitioning update management capabilities for Teams Android devices from the Teams admin center (TAC) to the Teams Rooms Pro Management Portal (PMP).
 
 ## Overview: what is changing
 
-Management of Teams Android devices is moving from the Teams admin center (TAC) to the Teams Rooms Pro Management portal (PMP). PMP will become the primary destination for administrators to manage Teams Rooms on Android, Teams phones, Teams panels, and related update workflows.
+Management of Teams Android devices is moving from the Teams admin center (TAC) to the Teams Rooms Pro Management Portal (PMP). PMP is now the primary destination for administrators to manage Teams Rooms on Android, Teams phones, Teams panels, and related update workflows.
 
 This guide explains what administrators need to know about the update management experience for Teams Android devices in PMP, including:
 
@@ -129,10 +129,12 @@ Updates for Teams Android devices are installed on devices in the same way as [u
     - **Pause or resume a specific version across all eligible devices**
     - You can pause and resume the rollout of an individual update version at **Updates** &gt; **Update management** &gt; **Android updates** by selecting each version. This works the same way as pausing updates for Windows devices in PMP. [Learn more about controlling updates](update-management#controlling-updates).
     - *Roles & permissions required:* Any admin having role with 'Global - Grant all' permission should be able to set/resume this pause. Global administrator and Teams administrator role have these permissions by default.
+    - Pausing an individual update will [record an issue](/en-us/microsoftteams/rooms/managed-meeting-rooms-portal) attributed to what admin paused that update. Further logging is available in the Teams Pro Management Portal [audit logs](/en-us/microsoftteams/rooms/multi-tenant-auditing).
     - **Pause or resume updates for all Android devices across the entire tenant**
 
         - In order to do so, go to **Updates** &gt; **Update management** &gt; **Android updates** and click on **Pause updates** action. All auto-update rollouts for entire fleet of Android devices in your tenant will be paused for 2 weeks.
         - Admins can **Resume updates** from same page at any time. After 2 weeks, updates will auto-resume and updates rollout will restart automatically.
+        - The entire tenant pause or resume actions are logged in the Teams Pro Management Portal [audit logs](/en-us/microsoftteams/rooms/multi-tenant-auditing) as *TenantUpdatesPaused*.
 
 Important
 

@@ -119,6 +119,7 @@ To help guide you as to what features are available on different platforms, you 
 |  | Room remote (Desktop & Mobile) | Available | Available |
 |  | Teams Casting (Desktop & Mobile) | Available | Available |
 |  | Miracast | Available | Not available |
+|  | Take notes with Facilitator | Available | Not available |
 | **Front of Room Configurations** | Single Screen | Available | Available |
 |  | Dual Screen | Available | Available |
 |  | All-in-one touch board (no console) | Available | Available |
@@ -235,6 +236,7 @@ To help guide you as to what features are available on different platforms, you 
 |  | Room remote (Desktop & Mobile) | Available | Available |
 |  | Teams Casting (Desktop & Mobile) | Available | Available |
 |  | Miracast | Available | Not available |
+|  | Take notes with Facilitator | Not available | Not available |
 | **Front of Room Configurations** | Single Screen | Available | Available |
 |  | Dual Screen | Available | Available |
 |  | All-in-one touch board (no console) | Available | Available |
@@ -352,6 +354,7 @@ To help guide you as to what features are available on different platforms, you 
 |  | Room remote (Desktop & Mobile) | Not available | Not available |
 |  | Teams Casting (Desktop & Mobile) | Available | Available |
 |  | Miracast | Available | Not available |
+|  | Take notes with Facilitator | Not available | Not available |
 | **Front of Room Configurations** | Single Screen | Available | Available |
 |  | Dual Screen | Available | Available |
 |  | All-in-one touch board (no console) | Available | Available |

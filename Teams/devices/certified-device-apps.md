@@ -72,6 +72,7 @@ The following releases are supported versions of the Teams admin agent app:
 
 | **Release date** | **App version** |
 | --- | --- |
+| Nov 2026 | 1.0.0.202610190119.product |
 | October 2026 | 1.0.0.202610260205.product |
 | September 2026 | 1.0.0.202609172331.product |
 | September 2026 | 1.0.0.202608280411.product |
@@ -83,6 +84,23 @@ The following releases are supported versions of the Teams admin agent app:
 | May 2025 | 1.0.0.202505080136.product |
 | February 2025 | 1.0.0.202412110504.product |
 | October 2024 | 1.0.0.202407050618.product |
+
+### 1.0.0.202610190119
+
+**This release, also known as Admin Agent 901, is available for all Teams-certified devices in the all clouds. It includes the following updates:**
+
+- Fixes an issue where Android 15 devices could fail to connect to the Pro Management Portal (PMP).
+- Preparation for deprecating the device management experience in Teams Admin Center (TAC) which is targeted for deprecation in mid-November.
+- Fixes provisioning issues affecting Android devices.
+- Includes other miscellaneous bug fixes.
+
+Warning
+
+This update will be rolled out at an accelerated pace as the update includes critical fixes that enable Android 15 devices to establish connectivity with PMP.
+
+Note
+
+Because this update is being rolled out at an accelerated pace, admins may see a package publication date that appears to be backdated. This is a mandatory app update required to manage devices in PMP, therefore this update **cannot be paused**.
 
 ### 1.0.0.202610260205
 

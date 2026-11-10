@@ -909,6 +909,7 @@ Resolved Issues:
 
 - Resolved an issue where console is stuck on the connecting screen when joining a meeting
 - Resolved an issue where an incoming call fails to show up on the console.
+- Resolved an issue where a device may sign out after disconnecting from a cross-cloud meeting.
 
 ### 1449/1.0.96.2026261804 (September 2026)
 

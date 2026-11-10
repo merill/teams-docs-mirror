@@ -64,6 +64,8 @@ platformId: f7b2532a-bccc-0c48-317b-98460cac9db6
 
 ## What's new in Call Queues (last six months)
 
+- November 10, 2026
+    - Monitor, Whisper, Barge, Takeover for authorized users now supports joining active calls.
 - October 19, 2026
     - Monitor, Whisper, Barge, Takeover for authorized users now supports outbound calls.
 - September 30, 2026

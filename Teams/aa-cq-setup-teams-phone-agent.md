@@ -443,9 +443,15 @@ Microsoft Teams Phone Agent provides participant standard notifications as requi
 
 The default Teams Phone Agent disclaimer notification is:
 
-`I'm a virtual assistant. How can I help you today?`
+`This call will be recorded. I'm a virtual assistant. How can I help you today?`
+
+Note
+
+All Teams Phone Agent calls are recorded and transcribed for service quality purposes, are not accessible by humans, and are deleted after processing is completed.
 
 Accept the default message, customize it or disable it.
+
+If [Automatic Recording for Teams Phone Agent](aa-cq-setup-teams-phone-agent-template-recording-automatic) is configured, the greeting from that configuration is used to inform callers that the call is being recorded.
 
 ##### Call routing options
 
@@ -571,9 +577,15 @@ Microsoft Teams Phone Agent provides participant standard notifications as requi
 
 The default Teams Phone Agent disclaimer notification is:
 
-`I'm a virtual assistant. How can I help you today?`
+`This call will be recorded. I'm a virtual assistant. How can I help you today?`
+
+Note
+
+All Teams Phone Agent calls are recorded and transcribed for service quality purposes, are not accessible by humans, and are deleted after processing is completed.
 
 Accept the default message, customize it or disable it.
+
+If [Automatic Recording for Teams Phone Agent](aa-cq-setup-teams-phone-agent-template-recording-automatic) is configured, the greeting from that configuration is used to inform callers that the call is being recorded.
 
 ##### Call routing options
 
@@ -712,9 +724,15 @@ Microsoft Teams Phone Agent provides participant standard notifications as requi
 
 The default Teams Phone Agent disclaimer notification is:
 
-`I'm a virtual assistant. How can I help you today?`
+`This call will be recorded. I'm a virtual assistant. How can I help you today?`
+
+Note
+
+All Teams Phone Agent calls are recorded and transcribed for service quality purposes, are not accessible by humans, and are deleted after processing is completed.
 
 Accept the default message, customize it or disable it.
+
+If [Automatic Recording for Teams Phone Agent](aa-cq-setup-teams-phone-agent-template-recording-automatic) is configured, the greeting from that configuration is used to inform callers that the call is being recorded.
 
 ##### Call routing options
 

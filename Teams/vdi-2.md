@@ -12,7 +12,7 @@ author: officedocspr5
 ms.author: odocspr
 manager: jtremper
 ms.topic: article
-ms.date: 2026-10-27T00:00:00.0000000Z
+ms.date: 2026-11-10T00:00:00.0000000Z
 ms.service: msteams
 ms.subservice: msteams-admin
 audience: admin
@@ -554,7 +554,7 @@ This circumstance happens because Teams and SlimCore versions must match.
 1. On the user's endpoint (thin client/fat client), you must create the following regkey:
 
     - Location for Citrix: HKLM\SOFTWARE\WOW6432Node\Microsoft\Teams\MsTeamsPlugin
-    - Location for Azure Virtual Desktop/W365: HKLM\SOFTWARE\Microsoft\Teams\MsTeamsPlugin
+    - Location for Azure Virtual Desktop/W365/Omnissa: HKLM\SOFTWARE\Microsoft\Teams\MsTeamsPlugin
     - Name: MsixUrlBase
     - Type: REG\_SZ
     - Data: Either local storage or network storage UNC path, such as file://C:/Temp or file://ComputerName/SharedFolder.
@@ -564,8 +564,8 @@ This circumstance happens because Teams and SlimCore versions must match.
 
     Important
 
-    The MSIX package needs to match the architecture or bitness of the Citrix Workspace app (x86 only) or Remote Desktop or Windows App clients: `Microsoft.Teams.SlimCoreVdi.<platform>-<architecture>.msix`.
-3. To preserve the structure, place the MSIX in a specific folder with the version within the location specified in the registry key. For example, C:\Temp\2024.4.1.9\Microsoft.Teams.SlimCoreVdi.win-x86.msix or //ComputerName/SharedFolder/2024.4.1.9/.
+    The MSIX package needs to match the architecture or bitness of the Citrix Workspace app (x86 only) or Windows App/Horizon clients: `Microsoft.Teams.SlimCoreVdiHost.<platform>-<architecture>.msix`.
+3. To preserve the structure, place the MSIX in a specific folder with the version within the location specified in the registry key. For example, C:\Temp\2024.4.1.9\Microsoft.Teams.SlimCoreVdiHost.win-x64.msix (same for Framework) or //ComputerName/SharedFolder/2024.4.1.9/.
 
     Note
 
