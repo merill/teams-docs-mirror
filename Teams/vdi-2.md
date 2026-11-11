@@ -250,7 +250,6 @@ Logs are stored in the following directory on the user's device: ~/Library/Appli
 
 #### Unsupported Features in Mac
 
-- HID​ (currently only available in Public Preview)
 - Townhall optimization as an attendee
 - For AVD/W365, Cross Cloud is currently not supported
 - Outgoing screen sharing in end-to-end encrypted meetings is disabled​
@@ -263,7 +262,8 @@ Logs are stored in the following directory on the user's device: ~/Library/Appli
 
 1. Presenter's mouse cursor is slow during app sharing. If the presenter stops and reinitiates app sharing, the lag is not present anymore. This is fixed in Teams 26149.x.x.x or higher.
 2. Zoom VDI plugin older than 6.6.10 on the Mac device results in a Citrix Workspace app crash on call transfers.
-3. If you attach/detach external monitors during the call, video might appear on the wrong screen. This also occurs when you change display alignments during the HDX session​. This is fixed in Plugin 2026.35.1.1
+3. If you attach/detach external monitors during the call, video might appear on the wrong screen. This also occurs when you change display alignments during the HDX session​. This is fixed in Plugin 2026.35.1.1.
+4. HID requires Teams 26276.x.x.x or higher.
 
 ## Verifying that the endpoint is optimized
 
@@ -530,7 +530,7 @@ Logs, ringtones, configurations, and AI or ML models (used in noise suppression,
 
 Important
 
-Locked-down thin clients must allow these locations to be read/write. Otherwise, the new optimization might fail. For older Windows 10 1809 Thin Clients (such as Dell Wyse 5070 and similar models), SlimCoreVdi's processes write AppData to a virtualized file storage, hence the folder location for SlimCore's user profile is (depending on the SlimCore MSIX package): `C:\Users\<user>\AppData\Local\Packages\Microsoft.Teams.SlimCoreVdi.win-<architecture>.<version>_8wekyb3d8bbwe\LocalCache\`. `C:\Users\<user>\AppData\Local\Packages\Microsoft.Teams.SlimCoreVdiHost.win-x64_8wekyb3d8bbwe\LocalCache\`.
+Locked-down thin clients must allow these locations to be read/write. Otherwise, the new optimization might fail. For older Windows 10 1809 Thin Clients (such as Dell Wyse 5070 and similar models), SlimCoreVdi's processes write AppData to a virtualized file storage, hence the folder location for SlimCore's user profile is (depending on the SlimCore MSIX package): `C:\Users\<user>\AppData\Local\Packages\Microsoft.Teams.SlimCoreVdiHost.win-x64_8wekyb3d8bbwe\LocalCache\`.
 
 ### SlimCore installation and upgrade process in locked down Thin Client environments (optional)
 
@@ -564,7 +564,7 @@ This circumstance happens because Teams and SlimCore versions must match.
 
     Important
 
-    The MSIX package needs to match the architecture or bitness of the Citrix Workspace app (x86 only) or Windows App/Horizon clients: `Microsoft.Teams.SlimCoreVdiHost.<platform>-<architecture>.msix`.
+    The MSIX package needs to match the architecture or bitness of the Citrix Workspace app (x86 or x64) or Windows App/Horizon clients (which are 64-bit only): `Microsoft.Teams.SlimCoreVdiHost.<platform>-<architecture>.msix`.
 3. To preserve the structure, place the MSIX in a specific folder with the version within the location specified in the registry key. For example, C:\Temp\2024.4.1.9\Microsoft.Teams.SlimCoreVdiHost.win-x64.msix (same for Framework) or //ComputerName/SharedFolder/2024.4.1.9/.
 
     Note

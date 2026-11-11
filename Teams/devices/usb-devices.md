@@ -102,14 +102,18 @@ The date format is MM/DD/YYYY.
 | --- | --- | --- | --- |
 | Yealink | ZenOffice38 Headset | 10/30/2026 | Certified for Microsoft Teams |
 | Yealink | BH86 Headset | 9/24/2026 | Certified for Microsoft Teams |
+| Dell | WL527 Headset | 9/11/2026 | Certified for Microsoft Teams |
 | Logi | Zone Vibe Pro for Business | 8/25/2026 | Certified for Microsoft Teams |
+| Dell | WL327 Headset | 8/14/2026 | Certified for Microsoft Teams |
 | Yealink | ZenOffice32 Headset | 8/13/2026 | Certified for Microsoft Teams |
 | EPOS | IMPACT 400 Headset with USB-C Dongle | 8/4/2026 | Certified for Microsoft Teams |
+| Dell | WH527 Headset | 7/24/2026 | Certified for Microsoft Teams |
 | Jabra | Evolve3 65 Stereo/Mono Headset | 7/22/2026 | Certified for Microsoft Teams |
 | Jabra | Evolve3 45 Stereo/Mono Headset | 7/21/2026 | Certified for Microsoft Teams |
 | Lenovo | Wireless VoIP Headset with USB-C Dongle | 7/13/2026 | Certified for Microsoft Teams |
 | Yealink | BH78 Headset | 7/2/2026 | Certified for Microsoft Teams |
 | Yealink | WH64 Workstation | 6/25/2026 | Certified for Microsoft Teams |
+| Dell | WH327 Headset | 6/25/2026 | Certified for Microsoft Teams |
 | Yealink | WH68 Workstation | 6/22/2026 | Certified for Microsoft Teams |
 | Jabra | Evolve3 65 Flex Headset | 6/17/2026 | Certified for Microsoft Teams |
 | HP Poly | Focus 620/625 Headset | 4/20/2026 | Certified for Microsoft Teams |
@@ -416,7 +420,7 @@ Note
 Teams doesn't support button controls on connected certified peripherals if third-party collaboration and conferencing apps are running at the same time.
 
 # [Certified Native Bluetooth devices](#tab/bluetooth)
-*Table Updated October 2026*
+*Table Updated November 2026*
 
 Note
 
@@ -426,8 +430,10 @@ The date format is MM/DD/YYYY.
 | --- | --- | --- | --- |
 | HP | Free 60 Earbuds | 10/5/2026 | Certified for Microsoft Teams |
 | Dell | WL5024 Headset | 9/11/2026 | Certified for Microsoft Teams |
+| Dell | WL527 Headset | 9/11/2026 | Certified for Microsoft Teams |
 | Lenovo | ThinkPad Dual-Mode Wireless ANC Foldable Headset 8550 | 8/25/2026 | Certified for Microsoft Teams |
 | Logi | Zone Vibe Pro for Business | 8/25/2026 | Certified for Microsoft Teams |
+| Dell | WL327 Headset | 8/14/2026 | Certified for Microsoft Teams |
 | Yealink | BH78 Headset | 8/11/2026 | Certified for Microsoft Teams |
 | EPOS | IMPACT 500 Headset | 7/2/2026 | Certified for Microsoft Teams |
 | Dell | WL7024 Headset | 6/19/2026 | Certified for Microsoft Teams |

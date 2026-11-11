@@ -14,7 +14,7 @@ ms.author: mattslomka
 manager: miaitelh
 ms.service: msteams
 ms.topic: troubleshooting-known-issue
-ms.date: 2026-11-05T00:00:00.0000000Z
+ms.date: 2026-11-10T00:00:00.0000000Z
 ms.subservice: itpro-devices
 locale: en-us
 document_id: 7f06572c-b6ae-7ff3-40dc-537712172644
@@ -47,7 +47,7 @@ platformId: 448a114f-8665-34fc-cbe8-e0c937d45911
 
 | Issue | Description | Workaround |
 | --- | --- | --- |
-| Android 15 devices show unmonitored in Pro Management Portal | Teams Android devices running Android 15 may offer limited management controls. | No workaround is available at this time. |
+| Android 15 devices show unmonitored in Pro Management Portal | Teams Android devices running Android 15 may offer limited management controls. | Update devices to Admin Agent [1.0.0.202610190119](/en-us/microsoftteams/devices/certified-device-apps?tabs=Agent#100202610190119) to resolve this. *This update can be deployed manually through Teams Admin Center but it will also be deployed quickly using automatic updates to ensure all devices are fixed quickly.* |
 | Time Zone Changes for Teams Rooms on Android, Teams panels & Teams phones in Canada | Several parts of Canada have made daylight savings time permanent in 2026. The Teams Pro Management Portal has been updated to allow configuration of new time zones for each location and we are working closely with device manufacturer partners to enable support for these new Canadian time zones on the devices through firmware updates | Configure the following time zones in the Pro Management Portal as a workaround until the region specific time zone is available for the device:<br>- Alberta (UTC -6): UTC-06:00 Saskatchewan<br>- Most of British Columbia (UTC -7): UTC-07:00 Arizona<br>- Manitoba (UTC -5): UTC-05:00 Bogota, Lima, Quito, Rio Branco<br>- The Northwest Territory (UTC -7): UTC-07:00 Arizona<br>- Northwestern Ontario (UTC -5): UTC-05:00 Bogota, Lima, Quito, Rio Branco |
 
 ## Issues affecting Teams Rooms on Windows devices
