@@ -12,7 +12,7 @@ author: officedocspr5
 ms.author: odocspr
 manager: jtremper
 ms.topic: article
-ms.date: 2026-11-10T00:00:00.0000000Z
+ms.date: 2026-11-12T00:00:00.0000000Z
 ms.service: msteams
 ms.subservice: msteams-admin
 audience: admin
@@ -454,6 +454,14 @@ We recommend implementing these QoS policies using the endpoint source ports and
 
 1. **VPN network**. Not recommended for media traffic.
 2. **Packet shapers**. Any kind of packet sniffer, packet inspection, proxies, or packet shaper devices aren't recommended for Teams media traffic and might degrade quality significantly.
+
+### Media path, DNS and Ports on the endpoint
+
+Media Processors and Transport relays are a critical part of the Teams calling services infrastructure in Azure, because relays allow media connectivity between two clients that would otherwise fail to communicate. Therefore, VDI Administrators must discuss the following topics with their Networking teams since VDI optimization shifts some of the networking requirements to SlimCore running on the user's device.
+
+1. Relay discovery is DNS-based when a participant needs to allocate its own relay and a peer is not offering UDP 3478-3481. An optimized user that cannot resolve public relay names might not generate a relay ICE candidate, and the call will not establish (or establish without media). Relay names are covered by the Teams domains in Microsoft 365 URLs and IP Address ranges, including names under \*.teams.microsoft.com (e.g. \*.tr.teams.microsoft.com or \*.turn.teams.microsoft.com).
+2. Verify that DNS filtering, split-horizon DNS, secure web gateways, PAC logic, or Firewall policies do not block external relay-name resolution.
+3. Customers using Direct Routing need to take into account that Media Processors can also offer candidates in UDP 49152-53247 range in a non-media bypass call. Therefore, these destination UDP ports need to be allowed on the endpoint / branch office.
 
 ## Microsoft Teams PowerShell policy for optimization
 

@@ -12,7 +12,7 @@ author: LanaChin8
 ms.author: v-lanchin
 manager: v-jesserowe
 ms.reviewer: xiale
-ms.date: 2026-10-26T00:00:00.0000000Z
+ms.date: 2026-11-12T00:00:00.0000000Z
 ms.topic: how-to
 ms.service: msteams
 ms.subservice: meetings
@@ -98,7 +98,7 @@ AI summary documents are stored in the Meetings folder of the meeting organizer'
 
 1. In the left navigation of the Teams admin center, go to **Meetings** &gt; **Meeting policies**.
 2. Select an existing policy or create a new one.
-3. Under **AI memory and archive**, next to **Set a default expiration time for Intelligent recap docx**, enter the number of days that documents are retained. You can specify a value from **1** to **9999** days, or **-1** for no expiration.
+3. Under **Copilot and other AI**, next to **Set a default expiration time for Intelligent Recap .docx files for non-transcribed meetings**, enter the number of days that documents are retained. You can specify a value from **1** to **9999** days, or **-1** for no expiration.
 4. Select **Save**.
 
 ### Use PowerShell

@@ -182,7 +182,7 @@ None.
     - Teams Phone Agent is now generally available to all customers.
     - [Appointments integration with Microsoft Bookings](aa-cq-setup-teams-phone-agent-tools-appointments) can be configured in Teams admin center.
     - [Automatic Recording for Teams Phone Agent](aa-cq-setup-teams-phone-agent-template-recording-automatic) can be configured in Teams admin center.
-    - [Maximum call length with configurable disconnect message](aa-cq-setup-teams-phone-agent#configurable-call-length) can be configured in Teams admin center.
+    - [Maximum call length with configurable disconnect message](aa-cq-setup-teams-phone-agent#whats-new-configurable-call-length) can be configured in Teams admin center.
     - Question and Answers URLs are refreshed daily.
 - September 29, 2026
     - [Historical reporting](aa-cq-report-historical) for Teams Phone Agent updated.
@@ -190,7 +190,7 @@ None.
     - Appointments integration with Microsoft Bookings can be configured via PowerShell.
 - August 31, 2026
     - [AI disclaimer](aa-cq-setup-teams-phone-agent#ai-disclaimer-customization) can be configured in Teams admin center.
-    - [Maximum call length](aa-cq-setup-teams-phone-agent#configurable-call-length) can be configured in Teams admin center.
+    - [Maximum call length](aa-cq-setup-teams-phone-agent#whats-new-configurable-call-length) can be configured in Teams admin center.
 - August 17, 2026
     - Automatic Recording for Teams Phone Agent can be configured via PowerShell.
 - August 12, 2026

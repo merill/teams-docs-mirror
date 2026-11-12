@@ -188,7 +188,7 @@ The following list includes partners certified to deliver a compliance recording
 | NICE Engage | [https://www.nice.com/products/recording/engage](https://www.nice.com/products/recording-management) |
 | NICE NTR-X | https://www.niceactimize.com/compliance/ms-teams-recording.html |
 | Numonix | https://numonix.cloud |
-| Oak Innovation | https://www.oakinnovate.com/clarify |
+| Subphonic | https://www.subphonic.ai/products/focus#teams |
 | Theta Lake | https://thetalake.com/integrations/microsoft/ |
 | Tollring | https://tollring.com/compliance-recording-for-microsoft-teams/ |
 | Touch Call Recording | https://touchcallrecording.com/teams-policy-based-recording-for-callings-and-meetings |
