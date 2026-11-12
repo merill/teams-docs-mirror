@@ -165,7 +165,7 @@ The relative size of the port ranges for different real-time streaming workloads
 
 The DSCP value tells a correspondingly configured network what priority to give a packet or stream, whether the clients or the network itself assigned the DSCP mark based on ACL settings. Each media workload gets its own unique DSCP value, and a defined and separate port range used for each media type. (While other services might allow workloads to share a DSCP marking, Teams doesn't.) Other environments might have an existing QoS strategy in place, which helps you determine the priority of network workloads.
 
-*Recommended initial port ranges*
+*Recommended initial port ranges & DSCP values*
 
 | Media traffic type | Client source port range | Protocol | DSCP value | DSCP class |
 | --- | --- | --- | --- | --- |
@@ -179,7 +179,7 @@ The DSCP value tells a correspondingly configured network what priority to give 
 Be aware of the following points when you use these settings:
 
 - All clients, including mobile clients and Teams devices, use these port ranges and experience the effects of any DSCP policy you implement that targets these source port ranges. The only clients that continue to use dynamic ports are the browser-based clients (clients that let participants join meetings by using their browsers).
-- Although the Mac and mobile (iOS and Android) clients use these source port ranges, these clients use hard-coded values for audio (EF) and video and application/screen sharing (AF41). These values aren't configurable.
+- Although the Mac and mobile (iOS and Android) clients use these source port ranges, these clients use hard-coded values for audio (EF) and video and application/screen sharing (AF41). These values aren't configurable. Windows clients allow full customization of the DSCP markings based on how the client policy is configured.
 - If you later need to adjust the port ranges to improve user experience, the port ranges can't overlap and should be next to each other.
 - The port ranges used for Calling and Meetings signaling can't be customized currently.
 
@@ -188,7 +188,7 @@ Be aware of the following points when you use these settings:
 Implement QoS settings for clients and network devices, and determine how you want to handle media traffic for meetings.
 
 - As a prerequisite, enable QoS globally in the Teams Admin Center. See [Configure QoS in the Teams admin center](meetings-real-time-media-traffic) for details on enabling the **Insert Quality of Service (QoS) markers for real-time media traffic** setting.
-- For information on configuring DSCP markings for Windows endpoints, see [Implement QoS in Teams clients](qos-in-teams-clients).
+- For step-by-step on configuring DSCP markings for Windows endpoints, see [Implement QoS in Teams clients](qos-in-teams-clients). For Windows endpoints, the DSCP markings in the table above and in the instructional guide are suggestions, organizations can select other traffic markings if required.
 
     Note
 

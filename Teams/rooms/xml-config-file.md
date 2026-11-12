@@ -69,6 +69,10 @@ Some features are available only on Teams Rooms devices that have been assigned 
 
 At startup, if a Microsoft Teams Rooms console finds an XML file named SkypeSettings.xml located at `C:\Users\Skype\AppData\Local\Packages\Microsoft.SkypeRoomSystem_8wekyb3d8bbwe\LocalState`, it applies the configuration settings indicated by the XML file then deletes the XML file.
 
+Note
+
+If the Teams Rooms on Windows device has been transitioned to [password-less resource accounts](/en-us/microsoftteams/rooms/passwordlessentraresourceaccounts), the correct file path to copy the files to is: `C:\Users\ResourceAccount\AppData\Local\Packages\Microsoft.SkypeRoomSystem_8wekyb3d8bbwe\LocalState`.
+
 Depending on how many Microsoft Teams Rooms devices your enterprise has and how you choose to manage to configure them, there are several ways to place the XML configuration file. Once the file is pushed to the console, restart it to process the configuration changes. The XML configuration file is deleted after it's successfully processed.
 
 You can use any method you like so long as you can use it to transfer files and trigger a restart on the console device. The file must be readable, writable, and delete-able by the device's local user account. Preferably it's owned by, and has full privileges granted to, device's local user. If the file permissions aren't set correctly, the software can fail to apply the settings, can fail to delete the file upon successful processing, and can even potentially crash.

@@ -44,11 +44,9 @@ source_path: Teams/direct-routing-protocols-sip.md
 cmProducts:
 - https://authoring-docs-microsoft.poolparty.biz/devrel/63959238-cb90-4871-a33d-4a5519097e47
 - https://authoring-docs-microsoft.poolparty.biz/devrel/1dd701e0-441f-4b0a-9806-aa47decc4e35
-- https://authoring-docs-microsoft.poolparty.biz/devrel/6ab06385-661e-4214-8870-bbe4071c960d
 spProducts:
 - https://authoring-docs-microsoft.poolparty.biz/devrel/78d87f42-5582-4a6b-90be-7db2f12b34e6
 - https://authoring-docs-microsoft.poolparty.biz/devrel/0a2fc935-5977-4aa6-9f55-0be03bd2acb8
-- https://authoring-docs-microsoft.poolparty.biz/devrel/131ba09e-4280-4ae7-8622-1f9f1c0daad1
 platformId: 12cf52a2-195a-82c9-0dc7-c0bc047eac2d
 ---
 
@@ -75,6 +73,28 @@ Note
 - The SIP headers don't contain userinfo in the SIP URI in use. As per [RFC 3261, section 19.1.1](https://tools.ietf.org/html/rfc3261#section-19.1.1), the userinfo part of a URI is optional and MAY be absent when the destination host doesn't have a notion of users or when the host itself is the resource being identified. If the @ sign is present in a SIP URI, the user field MUST NOT be empty.
 - SIPS URI with Direct Routing isn't supported.
 - Check your Session Border Controller configuration and make sure that you aren't using "Replaces" headers in SIP requests. Direct Routing rejects SIP requests that have Replaces headers defined.
+
+#### How the SIP OPTIONS process works
+
+- The SBC sends a TLS connection request that includes a TLS certificate to the SIP proxy server Fully Qualified Domain Name (FQDN) (for example, **sip.pstnhub.microsoft.com**).
+- The SIP proxy checks the connection request.
+    - If the request is valid, the TLS connection is established, and the SBC can use it to send SIP OPTIONS requests to the SIP proxy.
+    - If the request is not valid, the TLS connection is closed and the SIP proxy does not receive SIP OPTIONS requests from the SBC.
+- After it receives a SIP OPTIONS request, the SIP proxy checks the Record-Route header to determine whether the SBC FQDN belongs to a known tenant. If the Record-Route header is not present, the SIP proxy checks the Contact header.
+- If the SBC FQDN is detected and recognized, the SIP proxy sends a SIP 200 OK response by using the same TLS connection.
+- The SIP proxy sends a SIP OPTIONS request to the SBC FQDN that is listed in the Contact header of the SIP OPTIONS request received from the SBC.
+- After receiving a SIP OPTIONS request from the SIP proxy, the SBC responds by sending a SIP 200 OK response. This step confirms that the SBC is healthy.
+- As the final step, the SBC is marked as Active in the Microsoft Teams admin center.
+
+Important
+
+SBC health status shown in Teams admin center is determined by successful SIP OPTIONS exchanges, not by successful call traffic. Therefore, calls might continue to work even when the SBC is shown as Inactive or displays SIP OPTIONS warnings.
+
+Note
+
+In a [hosted model](direct-routing-sbc-multiple-tenants), SIP OPTIONS requests should be sent from only the main (physical) SBC. The status of derived (customer) SBCs is based on the main SBC.
+
+#### Incoming call - tenant and user lookup
 
 On an incoming call, the SIP proxy needs to find the tenant to which the call is destined and find the specific user within this tenant. The tenant administrator might configure non-DID numbers, for example +1001, in multiple tenants. Therefore, it's important to find the specific tenant on which to perform the number lookup because the non-DID numbers might be the same in multiple Microsoft 365 or Office 365 organizations.
 

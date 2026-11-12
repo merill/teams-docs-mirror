@@ -219,6 +219,10 @@ After you've created backgrounds:
 
 1. Save them with unique and descriptive filenames. For example, `ContosoBackground-Right-FoR.jpg` (main/right display), `ContosoBackground-Left-FoR.jpg` (extended/left display), and `ContosoBackground-Console.jpg` (touch console display).
 2. Copy them to the `C:\Users\Skype\AppData\Local\Packages\Microsoft.SkypeRoomSystem_8wekyb3d8bbwe\LocalState` folder on your Teams Rooms device. You can use a USB drive or remotely connect to the network share of your device to copy the file.
+
+    Note
+
+    If the Teams Rooms on Windows device has been transitioned to [password-less resource accounts](/en-us/microsoftteams/rooms/passwordlessentraresourceaccounts), the correct file path to copy the files to is: `C:\Users\ResourceAccount\AppData\Local\Packages\Microsoft.SkypeRoomSystem_8wekyb3d8bbwe\LocalState`.
 3. To tell the Teams Rooms on Windows app to use custom backgrounds and which files to use, you must add the `<Theming>` element to your XML configuration file. Within the `<Theming>` element, you need to provide the elements in the table below.
 
 Note
@@ -316,6 +320,10 @@ To apply the configuration changes included in this article to your Teams Rooms 
 ### Deploy an updated custom background
 
 First, copy your custom background to the `C:\Users\Skype\AppData\Local\Packages\Microsoft.SkypeRoomSystem_8wekyb3d8bbwe\LocalState` folder on your Teams Rooms device. You can use a USB drive or remotely connect to the network share of your device to copy the file.
+
+Note
+
+If the Teams Rooms on Windows device has been transitioned to [password-less resource accounts](/en-us/microsoftteams/rooms/passwordlessentraresourceaccounts), the correct file path to copy the files to is: `C:\Users\ResourceAccount\AppData\Local\Packages\Microsoft.SkypeRoomSystem_8wekyb3d8bbwe\LocalState`.
 
 After you've copied your custom background to the device, you need to tell Teams to use it. To use the custom background, add the following XML configuration file:
 

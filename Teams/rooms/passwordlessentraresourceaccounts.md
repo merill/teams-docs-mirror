@@ -14,7 +14,7 @@ manager: Srpall
 ms.author: dimehta
 ms.service: msteams
 ms.topic: article
-ms.date: 2026-09-15T00:00:00.0000000Z
+ms.date: 2026-11-11T00:00:00.0000000Z
 locale: en-us
 document_id: 3e84d2c2-41bb-a546-51b4-247537d7cd12
 document_version_independent_id: 3e84d2c2-41bb-a546-51b4-247537d7cd12
@@ -344,3 +344,8 @@ The wizard resets the selected account passwords to secure, unknown values. It d
 
 > 
 > Because the password-less token is device bound to the identity in Entra ID, you can delete the device itself from Entra ID and that will invalidate the password-less token. The device will then be signed out automatically at next authentication refresh. Deleting the device in Entra ID deletes that specific make/model/serial device for Android or breaks Entra ID join for Windows device, the account itself and any other devices associated will not be impacted. [Manage devices in Microsoft Entra ID](/en-us/entra/identity/devices/manage-device-identities#delete-a-microsoft-entra-device) has the steps for deleting devices.
+
+**Does transitioning a device to password-less impact Device Code Flow (DCF) usage?**
+
+> 
+> Teams Android devices signed in using Device Code Flow (DCF) continue to use DCF for authentication when the authentication token is refreshed. This has presented challenges if a organization chooses to block Device Code Flow using Conditional Access policies. Fortunately, once a device is transitioned to password-less the device no longer uses DCF to refresh it's authentication token and DCF can be blocked via policy. It is important to note however that if the account needs to be used to setup a new device in the future, you'll need to allow DCF temporarily or sign-in locally on the device using username + password.
