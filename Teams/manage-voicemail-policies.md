@@ -63,7 +63,7 @@ Warning
 
 For Skype for Business customers, disabling voicemail through a Microsoft Teams calling policy might also disable the voicemail service for your Skype for Business users.
 
-Voicemail policies allow you to configure and assign existing or new voicemail policies to groups of users for features such as call answering rules, voicemail transcription, transcription profanity masking, transcription translation, and system prompt language.
+Voicemail policies allow you to configure and assign existing or new voicemail policies to groups of users for features such as call answering rules, voicemail transcription, transcription profanity masking, transcription translation, voicemail pre-triage with AI and system prompt language.
 
 Before specifying policies, you should read [Set up Cloud Voicemail](set-up-phone-system-voicemail). For information on managing settings for individual users, see [Manage Voicemail settings](manage-voicemail-settings).
 
@@ -78,6 +78,7 @@ The default policies for users are:
 - Editing call answering rules is enabled.
 - Primary and secondary system prompt languages are set to null and the user's voicemail language setting is used.
 - No pre- or postamble configured.
+- Voicemails pre-triage with AI isn't enabled.
 
 You can use the global (Org-wide default) policy that's created automatically or create and assign custom policies.
 
@@ -136,10 +137,16 @@ You can also use PowerShell to configure and assign existing or new voicemail po
 - **Voicemail transcription** - This setting controls whether the Cloud Voicemail service generates a text transcription of the recorded voicemail and include it in the voicemail message. The transcription is done based on the language detected in the recorded voicemail.
 - **Translation for transcriptions** - This setting controls whether the Cloud Voicemail service translates the transcription of the recorded voicemail. The translation is attempted in the preferred language of the voicemail receiver.
 - **Mask profanity in voicemail transcription** - This setting controls whether the Cloud Voicemail service masks profanity found in the transcription of the voicemail.
-- **Users can share data for service improvement** - This setting specifies whether voicemail and transcription data is shared with the service for training and improving accuracy. If set to false, voicemail data isn't be shared, regardless of user choice.
+- **Users can share data for service improvement** - This setting is deprecated and no longer has any effect. Its value is ignored by the service and is retained only for backward compatibility. Historically it specified whether voicemail and transcription data was shared with the service for training and improving accuracy.
 - **Play preamble audio file before voicemail greeting** - The audio file to play to the caller before the user's voicemail greeting is played.
 - **Play postamble audio file after voicemail greeting** - The audio file to play to the caller after the user's voicemail greeting has played and before the caller is allowed to leave a voicemail message.
 - **Disconnect the call if preamble or postamble audio can't be played** - Is playing the Pre- or Postamble mandatory before the caller can leave a message.
+
+Important
+
+The following configuration parameter is available through the Microsoft Frontier Program. General Availability for this functionality has not been determined at this time.
+
+- **Personal voicemail AI triage** - Specifies whether AI-powered triage is enabled for personal voicemail. When enabled, personal voicemail messages for eligible users are enriched with AI-generated metadata from voicemail transcription, including a summary, suggested actions, a category, and an importance classification. This feature requires a Microsoft 365 Copilot license and a configured spending policy for usage-based billing.
 
 Note
 

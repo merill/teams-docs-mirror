@@ -12,7 +12,7 @@ author: MSTonySmith
 ms.author: tonysmit
 manager: pamgreen
 ms.reviewer: vapati
-ms.date: 2026-10-29T00:00:00.0000000Z
+ms.date: 2026-11-13T00:00:00.0000000Z
 ms.topic: article
 audience: Admin
 ms.service: msteams
@@ -266,6 +266,7 @@ The following are supported versions of the Authenticator app:
 
 | **Release date** | **App version** |
 | --- | --- |
+| November 2026 | 6.2610.6918 |
 | October 2026 | 6.2609.6407 |
 | September 2026 | 6.2607.4685 |
 | July 2026 | 6.2606.4246 |
@@ -274,6 +275,13 @@ The following are supported versions of the Authenticator app:
 | January 2026 | 6.2512.8111 |
 | December 2025 | 6.2509.6046 |
 | December 2024 | 6.2410.7268 |
+
+### 6.2610.6918
+
+**This release is available for all Teams certified devices and contains following updates.**
+
+- Telemetry improvements and additional optimizations to conserve eMMC writes
+- Security and reliability improvements
 
 ### 6.2609.6407
 

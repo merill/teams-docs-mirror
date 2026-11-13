@@ -11,7 +11,7 @@ recommendations: true
 author: MSTonySmith
 ms.author: tonysmit
 manager: pamgreen
-ms.date: 2025-10-14T00:00:00.0000000Z
+ms.date: 2026-07-10T00:00:00.0000000Z
 ms.reviewer: sohailta
 ms.topic: article
 audience: Admin
@@ -118,7 +118,7 @@ If you install Teams Rooms solutions or if you already have rooms that have alre
 
 *Video:* Video in these spaces will be handled by the Teams Rooms solution and its Microsoft-certified cameras.
 
-*Engagement:* Your end users are able to take advantage of the complete Teams Rooms experience for their meetings, ensuring that everyone can join meetings easily and have great and audio and video.
+*Engagement:* Your end users are able to take advantage of the complete Teams Rooms experience for their meetings, ensuring that everyone can join meetings easily and have great audio and video.
 
 #### Best experience – Teams Rooms solutions used in conjunction with personal devices
 
@@ -163,6 +163,14 @@ As important as good audio, high-quality video is a necessity for modern Teams c
 - Included cameras in devices like laptops and tablets should be used in all meetings to ensure that everyone is seen and heard. For users looking to bring a richer video experience to **a** **personal space**, external cameras represent a step up from embedded devices and can be used in a greater number of scenarios and configurations, ensuring that call participants share the best quality view of themselves. These devices easily install with simple USB connection found on every PC.
 - In shared spaces, the options and features expand. **Smaller rooms** may be covered by cameras included within all-in-one audio devices, such as soundbars. These cameras typically feature a wide field of view, ensuring that they capture every participant in the space in a single shot. Many of these cameras also feature things like intelligent framing of the image, so that the camera only shows the people in the meeting and not empty chairs, or people counting, to track and understand space utilization.
 - In **larger rooms**, cameras feature the technology needed to capture participants in a variety of locations at varying distances away. These cameras can capture groups or focus on specific individuals while maintaining great visual clarity. Devices that can track and feature only active speakers are regularly used in larger spaces so that many participants may be featured individually throughout a meeting as they contribute their thoughts.
+
+### Console Configuration
+
+Microsoft Teams Rooms typically include a console intended to be placed on a meeting room table or wall mounted. Each Teams Rooms console is fully touch interactive and offers controls for: meeting join, meeting interaction, participant control, etc. Teams Rooms consoles come in many forms, some are USB connected while others are network connected and may offer content ingest as well.
+
+Teams Rooms all-in-one boards are the exception and don't typically include a console, instead call controls are available on the all-in-one board. A console can be added to an all-in-one board if desired.
+
+Teams Rooms devices both Windows and Android have a single console user interface intended to support a single in-room console. However, certain meeting room designs may be better suited for multiple consoles, in that case, Microsoft allows Teams Rooms device manufacturers to replicate the Teams Rooms console interface across multiple consoles. In this experience, an action taken on one console will also be shown on another console display, this is the expected behavior and is allowed by Microsoft and supported in partnership with the device manufacturer. Teams Rooms customers should consult with their device manufacturer to see if this feature is available on their specific devices.
 
 ### Display Configuration
 
@@ -701,7 +709,7 @@ Proper lighting enhances video quality and ensures in-room participants appear p
 
 Lighting recommendations:
 
-- Balanced illumination: Diffused lights, LED panels, and pendent fixtures should be distributed throughout the room to ensure even illumination.
+- Balanced illumination: Diffused lights, LED panels, and pendant fixtures should be distributed throughout the room to ensure even illumination.
 - Avoid direct backlighting: Position lights indirectly to prevent silhouettes and maintain facial detail.
 - Adjustable lighting: Provide flexibility such as dimmable or zoned lights, and blinds or shades to help tailor brightness.
 

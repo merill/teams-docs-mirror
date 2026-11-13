@@ -397,6 +397,7 @@ The following Windows Touchboard Devices are Certified under the Microsoft Teams
 | Windows Touchboard Devices | Processor | RAM | Disk |
 | --- | --- | --- | --- |
 | [DTEN D7X AI Board 55"](https://www.dten.com/products/d7x-ai/) | Ultra 7 155H | 16 GB | 256 GB |
+| [Logitech Rally Board 65 for Windows Touchboard](https://www.logitech.com/video-collaboration/partners/microsoft.html) | Core Ultra 7 265H | 32GB | 250GB |
 | MAXHUB XBoard V555T | Core i5 | 16 GB | 256 GB |
 | MAXHUB XBoard V655T | Core i5 | 16 GB | 256 GB |
 | MAXHUB XBoard V755T | Core i5 | 16 GB | 256 GB |
