@@ -12,7 +12,7 @@ author: CLYVR
 ms.author: colongma
 manager: roykuntz
 ms.reviewer: colongma
-ms.date: 2026-11-09T00:00:00.0000000Z
+ms.date: 2026-11-16T00:00:00.0000000Z
 ms.topic: how-to
 ms.tgt.pltfrm: cloud
 ms.service: msteams
@@ -172,6 +172,8 @@ None.
 
 ## What's new in Teams Phone Agent (last six months)
 
+- November 16, 2026
+    - Dial by name enhanced search context for [multiple users with the same name](aa-cq-setup-teams-phone-agent#multiple-users-with-the-same-name)
 - October 21, 2026
     - [Spam detection](aa-cq-setup-teams-phone-agent-template-spam-detection) can be configured in Teams admin center.
 - October 19, 2026
@@ -545,6 +547,28 @@ Note
 
 If you want to offer callers both the **Dial by name** and **Dial by extension** features, you can enable the **Dial by name** feature on the main Teams Phone Agent and then config an option to transfer to a second Teams Phone Agent or Auto Attendant where **Dial by extension** is enabled.
 
+###### Multiple users with the same name
+
+If there are multiple users with the same name, the default behavior is to say each name followed by the option to select.
+
+For example, if the caller searches for John Smith and there are three people with that name in the organization, the caller hears:
+
+For John Smith, press 1. For John Smith, press 2. For John Smith, press 3.
+
+In these situations, you can extend the information the caller hears by configuring the **Enhanced search context** option.
+
+This option adds the user's department or office location information, making it easier for the caller to determine which John Smith they want.
+
+Possible values are:
+
+- None: The username is pronounced as is. This is the default value.
+- Office: Adds office information from the user profile.
+- Department: Adds department information from the user profile.
+
+If the **Enhanced search context** is configured with Department, the caller hears:
+
+For John Smith in accounting, press 1. For John Smith in sales, press 2. For John Smith in support, press 3.
+
 For more information, see the [Dial by name or number reference](aa-cq-reference-dial-by-name-number).
 
 After setting the business-hours call flow options, select **Next**.
@@ -678,6 +702,28 @@ Choose an option for **Directory search**.
 Note
 
 If you want to offer callers both the **Dial by name** and **Dial by extension** features, you can enable the **Dial by name** feature on the main Teams Phone Agent and then config an option to transfer to a second Teams Phone Agent or Auto Attendant where **Dial by extension** is enabled.
+
+###### Multiple users with the same name
+
+If there are multiple users with the same name, the default behavior is to say each name followed by the option to select.
+
+For example, if the caller searches for John Smith and there are three people with that name in the organization, the caller hears:
+
+For John Smith, press 1. For John Smith, press 2. For John Smith, press 3.
+
+In these situations, you can extend the information the caller hears by configuring the **Enhanced search context** option.
+
+This option adds the user's department or office location information, making it easier for the caller to determine which John Smith they want.
+
+Possible values are:
+
+- None: The username is pronounced as is. This is the default value.
+- Office: Adds office information from the user profile.
+- Department: Adds department information from the user profile.
+
+If the **Enhanced search context** is configured with Department, the caller hears:
+
+For John Smith in accounting, press 1. For John Smith in sales, press 2. For John Smith in support, press 3.
 
 For more information, see the [Dial by name or number reference](aa-cq-reference-dial-by-name-number).
 
@@ -827,6 +873,28 @@ Choose an option for **Directory search**.
 Note
 
 If you want to offer callers both the **Dial by name** and **Dial by extension** features, you can enable the **Dial by name** feature on the main Teams Phone Agent and then config an option to transfer to a second Teams Phone Agent or Auto Attendant where **Dial by extension** is enabled.
+
+###### Multiple users with the same name
+
+If there are multiple users with the same name, the default behavior is to say each name followed by the option to select.
+
+For example, if the caller searches for John Smith and there are three people with that name in the organization, the caller hears:
+
+For John Smith, press 1. For John Smith, press 2. For John Smith, press 3.
+
+In these situations, you can extend the information the caller hears by configuring the **Enhanced search context** option.
+
+This option adds the user's department or office location information, making it easier for the caller to determine which John Smith they want.
+
+Possible values are:
+
+- None: The username is pronounced as is. This is the default value.
+- Office: Adds office information from the user profile.
+- Department: Adds department information from the user profile.
+
+If the **Enhanced search context** is configured with Department, the caller hears:
+
+For John Smith in accounting, press 1. For John Smith in sales, press 2. For John Smith in support, press 3.
 
 For more information, see the [Dial by name or number reference](aa-cq-reference-dial-by-name-number).
 

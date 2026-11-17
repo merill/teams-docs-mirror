@@ -12,7 +12,7 @@ author: CLYVR
 ms.author: colongma
 manager: roykuntz
 ms.reviewer: colongma
-ms.date: 2026-11-03T00:00:00.0000000Z
+ms.date: 2026-11-16T00:00:00.0000000Z
 ms.topic: how-to
 ms.tgt.pltfrm: cloud
 ms.service: msteams
@@ -52,11 +52,11 @@ source_path: Teams/aa-cq-setup-auto-attendant.md
 cmProducts:
 - https://authoring-docs-microsoft.poolparty.biz/devrel/1ae5c491-970a-4062-8301-6336e69f9026
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/b5267373-9b61-4d5a-a4ac-5d03f8f8800f
-- https://authoring-docs-microsoft.poolparty.biz/devrel/63959238-cb90-4871-a33d-4a5519097e47
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/12ed19f9-ebdf-4c8a-8bcd-7a681836774d
 spProducts:
 - https://authoring-docs-microsoft.poolparty.biz/devrel/f2c3e52e-3667-4e8a-bf11-20b9eaccdc8c
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/bcd4f3ef-c612-47a8-aa4a-7f9bedc3a98c
-- https://authoring-docs-microsoft.poolparty.biz/devrel/78d87f42-5582-4a6b-90be-7db2f12b34e6
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/3a764584-4f97-452b-8f1d-36f19b12f6ae
 platformId: ccb323ec-f511-c250-e46b-29053c24cb4d
 ---
 
@@ -127,6 +127,8 @@ None.
 
 ## What's new in Auto Attendants (last six months)
 
+- November 16, 2026
+    - Dial by name enhanced search context for [multiple users with the same name](aa-cq-setup-auto-attendant#multiple-users-with-the-same-name)
 - September 29, 2026
     - [Historical reporting](aa-cq-report-historical) updated.
 
@@ -397,6 +399,28 @@ Note
 
 If you want to offer callers both the **Dial by name** and **Dial by extension** features, you can enable the **Dial by name** feature on the main Auto Attendant and then config an option to transfer to a second Auto Attendant where **Dial by extension** is enabled.
 
+###### Multiple users with the same name
+
+If there are multiple users with the same name, the default behavior is to say each name followed by the option to select.
+
+For example, if the caller searches for John Smith and there are three people with that name in the organization, the caller hears:
+
+For John Smith, press 1. For John Smith, press 2. For John Smith, press 3.
+
+In these situations, you can extend the information the caller hears by configuring the **Enhanced search context** option.
+
+This option adds the user's department or office location information, making it easier for the caller to determine which John Smith they want.
+
+Possible values are:
+
+- None: The username is pronounced as is. This is the default value.
+- Office: Adds office information from the user profile.
+- Department: Adds department information from the user profile.
+
+If the **Enhanced search context** is configured with Department, the caller hears:
+
+For John Smith in accounting, press 1. For John Smith in sales, press 2. For John Smith in support, press 3.
+
 For more information, see the [Dial by name or number reference](aa-cq-reference-dial-by-name-number).
 
 After setting the business-hours call flow options, select **Next**.
@@ -488,6 +512,28 @@ If you didn't assign dial keys, then choose an option for **Directory search**.
 Note
 
 If you want to offer callers both the **Dial by name** and **Dial by extension** features, you can enable the **Dial by name** feature on the main Auto Attendant and then config an option to transfer to a second Auto Attendant where **Dial by extension** is enabled.
+
+###### Multiple users with the same name
+
+If there are multiple users with the same name, the default behavior is to say each name followed by the option to select.
+
+For example, if the caller searches for John Smith and there are three people with that name in the organization, the caller hears:
+
+For John Smith, press 1. For John Smith, press 2. For John Smith, press 3.
+
+In these situations, you can extend the information the caller hears by configuring the **Enhanced search context** option.
+
+This option adds the user's department or office location information, making it easier for the caller to determine which John Smith they want.
+
+Possible values are:
+
+- None: The username is pronounced as is. This is the default value.
+- Office: Adds office information from the user profile.
+- Department: Adds department information from the user profile.
+
+If the **Enhanced search context** is configured with Department, the caller hears:
+
+For John Smith in accounting, press 1. For John Smith in sales, press 2. For John Smith in support, press 3.
 
 For more information, see the [Dial by name or number reference](aa-cq-reference-dial-by-name-number).
 
@@ -593,6 +639,28 @@ If you didn't assign dial keys, then choose an option for **Directory search**.
 Note
 
 If you want to offer callers both the **Dial by name** and **Dial by extension** features, you can enable the **Dial by name** feature on the main Auto Attendant and then config an option to transfer to a second Auto Attendant where **Dial by extension** is enabled.
+
+###### Multiple users with the same name
+
+If there are multiple users with the same name, the default behavior is to say each name followed by the option to select.
+
+For example, if the caller searches for John Smith and there are three people with that name in the organization, the caller hears:
+
+For John Smith, press 1. For John Smith, press 2. For John Smith, press 3.
+
+In these situations, you can extend the information the caller hears by configuring the **Enhanced search context** option.
+
+This option adds the user's department or office location information, making it easier for the caller to determine which John Smith they want.
+
+Possible values are:
+
+- None: The username is pronounced as is. This is the default value.
+- Office: Adds office information from the user profile.
+- Department: Adds department information from the user profile.
+
+If the **Enhanced search context** is configured with Department, the caller hears:
+
+For John Smith in accounting, press 1. For John Smith in sales, press 2. For John Smith in support, press 3.
 
 For more information, see the [Dial by name or number reference](aa-cq-reference-dial-by-name-number).
 

@@ -8,10 +8,10 @@ ms.suite: office
 feedback_system: Standard
 feedback_product_url: https://aka.ms/TeamsFeedback
 recommendations: true
-author: marina-hayrapetyan
-ms.author: mhayrapetyan
-manager: ktsuji
-ms.date: 2025-11-04T00:00:00.0000000Z
+author: LanaChin8
+ms.author: v-lanchin
+manager: v-jesserowe
+ms.date: 2026-11-16T00:00:00.0000000Z
 ms.topic: how-to
 ms.service: msteams
 ms.subservice: msteams-admin
@@ -54,88 +54,88 @@ platformId: c1bc8fad-bd4c-b5a3-6e58-de6ecbe9c0b2
 
 # Malicious URL protection in Microsoft Teams - Microsoft Teams | Microsoft Learn
 
-Link Protection helps to safeguard users from malicious URLs shared in chats, channels, and meeting messages. This feature helps protect your organization from phishing and other link-based threats by automatically displaying warnings when potentially harmful links are detected in Teams conversations.
+Malicious URL protection helps safeguard users from malicious URLs shared in Teams chats, channels, and meeting messages, including URLs in QR codes. This feature helps protect your organization from phishing and other link-based threats by automatically displaying warnings when potentially harmful links are detected in Teams conversations.
 
-## How Link Protection works in Teams
+## How malicious URL protection works
 
-At a high level, here's how Link Protection works in Microsoft Teams:
+At a high level, here's how malicious URL protection works:
 
-1. A user sends a message containing a URL in a chat, channel, or meeting conversation.
+1. A user sends a message that contains a URL directly or embedded in a QR code in a chat, channel, or meeting conversation.
 2. Teams automatically scans the URL against threat intelligence databases to identify potentially malicious links.
-3. If a harmful link is detected, Teams displays clear warnings to both the sender and all recipients in the conversation.
+3. If the URL is detected as potentially malicious, Teams displays warnings to both the sender and all recipients in the conversation.
 
-## User experience in Teams
+## Manage malicious URL protection in Teams
+
+For **new tenants**, this protection is included as part of Teams baseline security protection and doesn’t require admin configuration.
+
+For **existing tenants** and **GCC**, **GCC High**, and **DoD tenants**, admins can turn malicious URL protection off or on in the Teams admin center. It's enabled by default.
+
+To turn off or turn on malicious URL protection:
+
+1. Sign in to the [Teams admin center](https://admin.teams.microsoft.com/).
+2. In the left navigation, go to **Messaging** &gt; **Messaging settings**.
+3. Under **Messaging safety**, turn off or turn on **Malicious URL protection**.
+
+    [![Screenshot of the Malicious URL protection setting in the Teams admin center.](media/malicious-url-protection.png)](media/malicious-url-protection.png#lightbox)
+4. Select **Save**.
+
+This is a tenant-level setting. When enabled, all users in your organization have malicious URL protection applied to their Teams messages.
+
+## User experience
+
+Here's an overview of the user experience. For more information, see [Make sure chats, links, and files are secure in Microsoft Teams](https://support.microsoft.com/teams/troubleshooting/make-sure-chats-links-and-files-are-secure-in-microsoft-teams).
 
 ### Sender experience
 
-When you send a message containing a potentially malicious URL, you can:
+When a user sends a message that contains a potentially malicious URL, the user:
 
-- See a clear warning that the shared link is flagged as potentially harmful.
-- Receive detailed information about why the link was flagged (for R3 users) or a generic warning (for R4 users).
-- Retain the ability to edit or delete the message if desired.
-- Modify the message to remove or replace the problematic link.
+- Sees a warning that the URL is identified as potentially harmful.
 
-[![Screenshot of message of malicious URL for sender.](media/sender-msg-malicious-url-protect.png)](media/sender-msg-malicious-url-protect.png#lightbox)
+    [![Screenshot of message of malicious URL for sender.](media/sender-msg-malicious-url-protect.png)](media/sender-msg-malicious-url-protect.png#lightbox)
+- Can edit or delete the message.
+- Can remove or replace the problematic URL in the message.
 
 ### Receiver experience
 
-As a receiver, when someone sends you a message with a flagged URL, you can:
+When someone sends a message that contains a potentially malicious URL, as the recipient, the user:
 
-- See a clear warning before any interaction with the flagged link.
-- Receive information about the potential threat to help make informed decisions.
-- Choose whether to proceed with caution or avoid clicking the link entirely.
-- Receive different levels of detail, depending on your Teams client version (R3 users see detailed explanations, R4 users see generic "This message was flagged" warnings).
+- Sees a warning before any interaction with the flagged URL.
 
-[![Screenshot of message of flagged URL.](media/receiver-msg-flagged-url.png)](media/receiver-msg-flagged-url.png#lightbox)
+    [![Screenshot of message of flagged URL.](media/receiver-msg-flagged-url.png)](media/receiver-msg-flagged-url.png#lightbox)
+- Receives information about the potential threat to help them make an informed decision.
+- Can choose whether to proceed with caution or avoid the link entirely.
 
 ### External collaboration experience
 
-When collaborating with users from external organizations, Malicious URL Protection in external conversations follows these rules:
+When collaborating with users from external organizations, malicious URL protection follows these rules:
 
-- If any participating organization in the conversation has URL protection enabled, it applies to everyone.
-- Warning messages display for all participants when any participating organization has turned on the feature.
+- If any organization in the conversation has malicious URL protection enabled, the protection applies to all participants.
+- A warning message is displayed to all participants in the conversation when any organization has the feature enabled.
 
-## Manage Malicious URL Protection in Teams
+## How malicious URL protection differs from Safe Links and zero-hour auto purge (ZAP)
 
-For **new tenants** this protection is included as part of Microsoft Teams baseline security posture. Administrators do not need to configure any setting to activate malicious URL protection. 
+The following table summarizes the differences between malicious URL protection, [Safe Links for Teams in Microsoft Defender for Office 365](/en-us/defender-office-365/safe-links-about#safe-links-settings-for-microsoft-teams), and [zero-hour auto purge (ZAP) for Teams in Microsoft Defender](/en-us/defender-office-365/zero-hour-auto-purge#zero-hour-auto-purge-zap-in-microsoft-teams).
 
-For **existing tenants** that still display the setting, administrators can review or modify the configuration using the Teams admin center.
+| - | Malicious URL protection | Safe Links | ZAP for Teams |
+| --- | --- | --- | --- |
+| **Availability** | All Teams users (baseline protection) | Requires Defender for Office 365 Plan 1 or Plan 2 license | Requires Defender for Office 365 Plan 1 or Plan 2 license |
+| **Action** | Displays warning | Blocks on click | Removes content |
+| **Configuration** | Automatic | Microsoft Defender portal | Microsoft Defender portal |
 
-To enable Link Protection using the Teams Admin Center:
+Here are more details:
 
-1. Sign in to the Teams Admin Center at [https://admin.teams.microsoft.com](https://admin.teams.microsoft.com/).
-2. In the left navigation, select **Messaging settings**.
-3. Scroll down to **Messaging safety** settings.
-4. Turn on the setting: **Scan messages for unsafe URLs**.
-5. Select **Save** to apply the changes.
-
-[![Screenshot of enabling Link Protection using Teams admin center.](media/links-protection-teams-msg.png)](media/links-protection-teams-msg.png#lightbox)
-
-Once enabled, all users in the tenant can have Link Protection applied to their Teams messages.
-
-## FAQs
-
-- What's the difference between this feature, [Safe Links for Teams in Microsoft Defender for Office 365](/en-us/defender-office-365/safe-links-about#safe-links-settings-for-microsoft-teams), and [zero-hour auto purge (ZAP) for Teams in Microsoft Defender for Office 365 Plan 2](/en-us/defender-office-365/zero-hour-auto-purge#zero-hour-auto-purge-zap-in-microsoft-teams)?
 - **Malicious URL protection**:
 
-    - Is available for all Teams users as part of base protection.
-    - Doesn't block links on click.
-    - Adds warnings to messages to inform users about link reputation.
-    - Doesn't require additional licenses.
+    - Is available for all Teams users as part of baseline protection.
+    - Doesn't block URLs on click.
+    - Adds warnings to messages to inform users about URLs identified as potentially malicious.
+    - Doesn't require an additional license.
 - **Safe Links**:
 
-    - Blocks URLs at the time of click based on your Microsoft Defender portal settings
-    - Requires Microsoft Defender licenses
+    - Blocks URLs at the time of click based on your Defender portal settings.
+    - Requires a Microsoft Defender for Office 365 Plan 1 or Plan 2 license.
 - **Zero-hour auto purge (ZAP)**:
 
-    - Removes malicious URL and content entirely for internal messages.
-    - Actions are based on your settings in the Microsoft Defender portal.
-    - Requires Microsoft Defender for Office 365 Plan 1 or Plan 2 license.
-
-    The differences are summarized in the following table:
-
-    | Feature | Malicious URL Protection | Safe Links | ZAP for Teams |
-    | --- | --- | --- | --- |
-    | **Availability** | All Teams users (base protection) | Requires Defender for Office 365 Plan 1 or Plan 2 license. | Requires Defender for Office 365 Plan 1 or Plan 2 license. |
-    | **Action** | Displays warning | Blocks on click. | Removes content. |
-    | **Configuration** | Automatic | Microsoft Defender portal. | Microsoft Defender portal. |
+    - Removes malicious URLs and content entirely for internal messages.
+    - Actions are based on your Defender portal settings.
+    - Requires a Microsoft Defender for Office 365 Plan 1 or Plan 2 license.

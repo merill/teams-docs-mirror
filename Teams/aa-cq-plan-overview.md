@@ -91,6 +91,8 @@ Together, Teams Phone Agent and Microsoft Copilot Studio offer a scalable, custo
 [![Open in New Tab](media/aa-cq/teams-phone-agent-demo.png)](https://go.microsoft.com/fwlink/?LinkId=2373040)
 ## What's new in Teams Phone Agent (last six months)
 
+- November 16, 2026
+    - Dial by name enhanced search context for [multiple users with the same name](aa-cq-setup-teams-phone-agent#multiple-users-with-the-same-name)
 - October 21, 2026
     - [Spam detection](aa-cq-setup-teams-phone-agent-template-spam-detection) can be configured in Teams admin center.
 - October 19, 2026
@@ -145,6 +147,8 @@ Internal callers, using their Teams client, can reach an auto attendant by calli
 
 ## What's new in Auto Attendant (last six months)
 
+- November 16, 2026
+    - Dial by name enhanced search context for [multiple users with the same name](aa-cq-setup-auto-attendant#multiple-users-with-the-same-name)
 - September 29, 2026
     - [Historical reporting](aa-cq-report-historical) updated.
 

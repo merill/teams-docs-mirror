@@ -110,6 +110,8 @@ None.
 
 ## What's new in Auto Attendant (last six months)
 
+- November 16, 2026
+    - Dial by name enhanced search context for [multiple users with the same name](aa-cq-setup-auto-attendant#multiple-users-with-the-same-name)
 - September 29, 2026
     - [Historical reporting](aa-cq-report-historical) updated.
 

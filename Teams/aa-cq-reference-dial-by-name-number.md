@@ -12,7 +12,7 @@ author: CLYVR
 ms.author: colongma
 manager: roykuntz
 ms.reviewer: colongma
-ms.date: 2026-08-31T00:00:00.0000000Z
+ms.date: 2026-11-16T00:00:00.0000000Z
 ms.topic: reference
 ms.tgt.pltfrm: cloud
 ms.service: msteams
@@ -155,25 +155,25 @@ Callers can say names in the following formats:
 
 ### Multiple users with the same name
 
-If there are multiple users with the same name, it's possible that a Dial by Name search returns these users. In this case, the default behavior is to say each name followed by the option to select. For example, if the caller searches for `John Smith` and there are three people with that name in the organization, the caller hears:
+If there are multiple users with the same name, the default behavior is to say each name followed by the option to select.
 
-- For John Smith, press 1.
-- For John Smith, press 2.
-- For John Smith, press 3.
+For example, if the caller searches for John Smith and there are three people with that name in the organization, the caller hears:
 
-In these situations, you can extend the information the caller is presented with by configuring the [-UserNameExtension](/en-us/powershell/module/teams/new-csautoattendant#-usernameextension) parameter.
+For John Smith, press 1. For John Smith, press 2. For John Smith, press 3.
 
-The `-UserNameExtension` parameter specifies how to extend the information returned in a Dial by Name search with additional information. Possible values are:
+In these situations, you can extend the information the caller hears by configuring the **Enhanced search context** option.
 
-- **None**: The username is pronounced as is. This is the default value.
-- **Office**: Adds office information from the user profile.
-- **Department**: Adds department information from the user profile.
+This option adds the user's department or office location information, making it easier for the caller to determine which John Smith they want.
 
-If `-UserNameExtension` is configured with `Department`, and the caller searches for `John Smith` when there are three people with that name in the organization, the caller hears:
+Possible values are:
 
-- For John Smith in accounting, press 1.
-- For John Smith in sales, press 2.
-- For John Smith in support, press 3.
+- None: The username is pronounced as is. This is the default value.
+- Office: Adds office information from the user profile.
+- Department: Adds department information from the user profile.
+
+If the **Enhanced search context** is configured with Department, the caller hears:
+
+For John Smith in accounting, press 1. For John Smith in sales, press 2. For John Smith in support, press 3.
 
 ## Dial by Extension
 

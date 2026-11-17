@@ -130,6 +130,8 @@ None.
 
 ## What's new in Teams Phone Agent (last six months)
 
+- November 16, 2026
+    - Dial by name enhanced search context for [multiple users with the same name](aa-cq-setup-teams-phone-agent#multiple-users-with-the-same-name)
 - October 21, 2026
     - [Spam detection](aa-cq-setup-teams-phone-agent-template-spam-detection) can be configured in Teams admin center.
 - October 19, 2026
