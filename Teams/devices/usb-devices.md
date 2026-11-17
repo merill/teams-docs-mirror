@@ -419,7 +419,7 @@ Note
 
 Teams doesn't support button controls on connected certified peripherals if third-party collaboration and conferencing apps are running at the same time.
 
-# [Certified Native Bluetooth devices](#tab/bluetooth)
+# [Certified Native Bluetooth devices - Classic](#tab/bluetoothclassic)
 *Table Updated November 2026*
 
 Note
@@ -455,5 +455,17 @@ The date format is MM/DD/YYYY.
 | Logitech | Zone Vibe Wireless Headset | 7/23/2025 | Certified for Microsoft Teams |
 | Logitech | Zone 305 Headset | 4/4/2025 | Certified for Microsoft Teams |
 | Logitech | Zone Wireless 2 Headset | 01/13/2025 | Certified for Microsoft Teams |
+
+# [Certified Native Bluetooth devices - LE Audio](#tab/bluetoothleaudio)
+*Table Updated November 2026*
+
+Note
+
+The date format is MM/DD/YYYY.
+
+| **Manufacturer** | **Model** | **Qualified** | **Certified Program** |
+| --- | --- | --- | --- |
+| Jabra | Evolve3 85 | 11/13/2026 | Certified for Microsoft Teams |
+| Jabra | Evolve3 75 | 11/13/2026 | Certified for Microsoft Teams |
 
 ---

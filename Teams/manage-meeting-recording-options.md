@@ -65,6 +65,7 @@ The following table shows the features available to help you manage meeting reco
 | Microsoft Copilot in Teams meetings and events | Yes | No | Yes | Yes |
 | Meeting recording overall | Yes | No | No | No |
 | Privacy and Security URL | Yes | No | No | No |
+| Audio announcements for recording and transcription | Yes | No | No | No |
 | Record and transcribe automatically | No^1^ | Yes | Yes | Yes |
 | Recordings and transcripts expiration | Yes | No | No | No |
 | Transcription | Yes | No | No | Yes |
@@ -104,6 +105,27 @@ With a Teams admin policy or meeting template, you can manage how meeting transc
 ## Privacy and security URL
 
 With a Teams admin policy, you can add your custom privacy statement to Teams meeting recordings and transcripts in your organization. If your organization has a legal website that you want people to go to for any legal concerns, this policy allows you to display the URL. To learn more, see [Manage Teams recording policies for meetings and events](meeting-recording#set-a-custom-privacy-policy-url).
+
+## Audio announcements for recording and transcription
+
+You can enable audio announcements to notify users when recording or transcription starts in Teams meetings and VoIP calls. Announcements help participants stay informed and improve accessibility awareness. Whether a user hears an announcement depends on that user's assigned policy, not just the meeting organizer's policy.
+
+Use the **`-RecordingAndTranscriptionAudioNotification`** parameter in [Set-CsTeamsMeetingPolicy](/en-us/powershell/module/microsoftteams/set-csteamsmeetingpolicy#-recordingandtranscriptionaudionotification) for meetings and group calls, and in [Set-CsTeamsCallingPolicy](/en-us/powershell/module/microsoftteams/set-csteamscallingpolicy#-recordingandtranscriptionaudionotification) for 1:1 VoIP calls. The default value is **Disabled**. Set it to **Enabled** to turn on announcements, or **Disabled** to turn them off.
+
+For example, to enable announcements in the global meeting and calling policies, run:
+
+```powershell
+Set-CsTeamsMeetingPolicy -Identity Global -RecordingAndTranscriptionAudioNotification Enabled
+Set-CsTeamsCallingPolicy -Identity Global -RecordingAndTranscriptionAudioNotification Enabled
+```
+
+Changes to the global policies apply to users who don't have custom policies assigned. To enable announcements for specific users or groups instead, configure custom meeting and calling policies and [assign those policies to the users or groups](assign-policies-users-and-groups).
+
+Supported clients include Windows and macOS desktop, web, Microsoft Teams Rooms, Android, iOS, and VDI 2.0. VDI 1.0 isn't supported.
+
+Note
+
+This policy doesn't control audio announcements for PSTN users or for Teams users in 1:1 calls between Teams and PSTN. Audio announcements for these scenarios are enabled by default.
 
 ## Require participant agreement for recording
 

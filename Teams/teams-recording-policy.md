@@ -104,6 +104,12 @@ Tip
 
 To learn more about recording options that you might allow your users to control, see [Record a meeting in Microsoft Teams](https://support.microsoft.com/office/record-a-meeting-in-microsoft-teams-34dfbe7f-b07d-4a27-b4c6-de62f1348c24). 
 
+## Audio announcements for recording and transcription
+
+For recording and transcription in Teams meetings and VoIP calls, you can enable audio announcements to notify participants when recording or transcription starts. These policy-controlled announcements are off by default. Whether a user hears an announcement depends on that user's assigned meeting or calling policy.
+
+You can configure the policies for your organization or assign custom policies to specific users or groups. For configuration steps, supported clients, and PSTN exclusions, see [Audio announcements for recording and transcription](manage-meeting-recording-options#audio-announcements-for-recording-and-transcription).
+
 ## Managing recording policies
 
 For more specific details on convenience and compliance recording, see the following resources.

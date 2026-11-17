@@ -65,6 +65,7 @@ As an admin, you can manage convenience recording and transcription for meetings
 - **Convenience recording**: User-initiated recording of Teams meetings, events, and calls.
 - **Transcription**: Automatic conversion of spoken audio into text.
 - **Explicit recording consent**: A policy setting that requires participants to consent before they can be included in recording/transcription.
+- **Audio announcements**: Policy-controlled audio notifications when recording or transcription starts in Teams meetings and VoIP calls. These announcements are off by default and play for users whose assigned meeting or calling policy enables them.
 - **Intelligent recap**: AI-generated meeting or call recap features that depend on transcript availability and licensing.
 
 ## Meeting, events, and calling policies
@@ -95,6 +96,7 @@ When you make changes to the Global policy, they apply to everyone in your organ
 | Record an event | Allow or prevent event recording for users, groups, or your entire organization. | [Manage Teams recording policies for meetings and events](meeting-recording) |
 | Transcription for meetings | Allow or prevent meeting and group call transcription for users, groups, or your entire organization. | [Admins- Manage transcription and captions for Teams meetings](meeting-transcription-captions#meetings) |
 | Transcription for events | Allow or prevent transcription for events for users, groups, or your entire organization. | [Admins- Manage transcription and captions for Teams meetings](meeting-transcription-captions) |
+| Audio announcements | Control whether users hear an audio announcement when recording or transcription starts in meetings and group calls. | [Manage audio announcements for recording and transcription](manage-meeting-recording-options#audio-announcements-for-recording-and-transcription) |
 | Auto recording | Control whether organizers have the **Record and transcribe automatically** setting in their **Meeting options** for meetings and events. If you allow auto recording, your users’ **Record and transcribe automatically** setting is **Off** by default for meetings and **On** for events. When organizers want their meetings to be recorded and transcribed automatically, they must switch the toggle to **On** for each meeting. With a Teams Premium license, you can use [Meeting templates or Sensitivity labels](manage-teams-auto-recording) to enforce a value for this setting. | [Manage Teams recording policies for meetings and events](manage-teams-auto-recording) |
 | Real-Time-Text (RTT) | Manage whether your users can use RTT in Teams meetings and group calls. | [Manage Real-Time Text (RTT) in Teams for users in your organization](teams-real-time-text) |
 | Explicit recording consent | Control whether meeting participants must provide consent to be recorded. | [Manage Teams recording policies for meetings and events](participant-agreement-recording-transcription) |
@@ -118,6 +120,7 @@ When you make changes to the Global policy, they apply to everyone in your organ
 | --- | --- | --- |
 | Recording | Allow or prevent 1:1 and PSTN call recording for users, groups, or your entire organization. | [Configure call recording, transcription, and captions in Teams](call-recording-transcription-captions#enable-call-recording) |
 | Transcription | Allow or prevent 1:1 and PSTN call transcription for users, groups, or your entire organization. | [Configure call recording, transcription, and captions in Teams](call-recording-transcription-captions#enable-call-transcription) |
+| Audio announcements | Control whether Teams users hear an audio announcement when recording or transcription starts in 1:1 VoIP calls. This policy doesn't control announcements for PSTN users or 1:1 Teams-to-PSTN calls. | [Manage audio announcements for recording and transcription](manage-meeting-recording-options#audio-announcements-for-recording-and-transcription) |
 | Intelligent recap for calls | Licensing and the transcription policy control this feature. Users with a Teams Premium or Microsoft Copilot license automatically have access to this feature. | [Intelligent recap for Teams calls and meetings](intelligent-recap-calls-meetings) |
 | Real-Time-Text (RTT) | Manage whether your users can use RTT in Teams 1:1 VoIP calls. | [Manage Real-Time Text (RTT) in Teams for users in your organization](teams-real-time-text) |
 
