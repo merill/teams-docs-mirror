@@ -12,7 +12,7 @@ author: iris-su
 ms.author: irisasu
 manager: roykuntz
 ms.reviewer: colongma
-ms.date: 2026-10-22T00:00:00.0000000Z
+ms.date: 2026-11-17T00:00:00.0000000Z
 ms.topic: how-to
 ms.tgt.pltfrm: cloud
 ms.service: msteams
@@ -51,12 +51,12 @@ item_type: Content
 source_path: Teams/aa-cq-direct-mcs.md
 cmProducts:
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/c389ea6b-b6a0-46df-93a1-1e21f25e19e7
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/b5267373-9b61-4d5a-a4ac-5d03f8f8800f
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/46e3c7c4-fe77-4a6e-b40a-44c569819fa5
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/b5267373-9b61-4d5a-a4ac-5d03f8f8800f
 spProducts:
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/19ada1b6-705b-4ed7-aad0-bffd1bd03dfa
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/bcd4f3ef-c612-47a8-aa4a-7f9bedc3a98c
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/d0c6fab8-2d7d-4bb0-bf40-589e08d7c132
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/bcd4f3ef-c612-47a8-aa4a-7f9bedc3a98c
 platformId: b395d135-7481-fe0b-75df-942e41400b1a
 ---
 
@@ -84,6 +84,10 @@ None.
     - Entered Frontier Public Preview
 
 ## Overview
+
+Note
+
+Teams Phone supports Contact Center Intelligence voice agents (also referred to as the Customer conversation agents in Microsoft Copilot Studio) and Microsoft Copilot Studio agents built using the standard harness.
 
 Voice enabling Microsoft Copilot Studio voice agents through Microsoft Teams Phone allow you to create conversational AI bots and attach them directly to a phone number via Teams Phone's resource accounts. By using these first-party conversational voice agents, you can significantly enhance your current Interactive Voice Response experiences or upgrade your current call flows.
 

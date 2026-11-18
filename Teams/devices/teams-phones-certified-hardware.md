@@ -88,6 +88,7 @@ For updates regarding certification and/or Microsoft support end dates, see [And
 | Poly CCX600 | `9.0.0.10315` | August 15, 2028 | 12 |
 | Poly Trio C60, Trio C60 NR, Trio C60 ND | `9.0.0.10315` | August 15, 2028 | 12 |
 | Poly EM60 supported on CCX505 and CCX600 | `9.0.0.10315` | August 15, 2027 | N/A |
+| Yealink CP965 E2 | ` 200.15.0.12` | October 15, 2029 | 15 |
 | Yealink MP52 E2 | `176.15.0.182` | October 15, 2029 | 15 |
 | Yealink MP54 E2 | `176.15.0.182` | October 15, 2029 | 15 |
 | Yealink MP55 E2 | `176.15.0.182` | October 15, 2029 | 15 |

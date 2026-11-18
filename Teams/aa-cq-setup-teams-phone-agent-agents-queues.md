@@ -12,7 +12,7 @@ author: CLYVR
 ms.author: colongma
 manager: roykuntz
 ms.reviewer: colongma
-ms.date: 2026-10-21T00:00:00.0000000Z
+ms.date: 2026-11-17T00:00:00.0000000Z
 ms.topic: how-to
 ms.tgt.pltfrm: cloud
 ms.service: msteams
@@ -154,6 +154,10 @@ None.
     - [Historical reporting](aa-cq-report-historical) for Teams Phone Agent is now available.
 - June 15, 2026
     - Entered Frontier Public Preview
+
+Note
+
+Teams Phone supports Contact Center Intelligence voice agents (also referred to as the Customer conversation agents in Microsoft Copilot Studio) and Microsoft Copilot Studio agents built using the standard harness.
 
 ## Microsoft Copilot Studio voice agent setup and configuration
 

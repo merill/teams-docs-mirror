@@ -12,7 +12,7 @@ author: CLYVR
 ms.author: colongma
 manager: roykuntz
 ms.reviewer: colongma
-ms.date: 2026-11-03T00:00:00.0000000Z
+ms.date: 2026-11-17T00:00:00.0000000Z
 ms.topic: concept-article
 ms.tgt.pltfrm: cloud
 ms.service: msteams
@@ -76,6 +76,10 @@ This article is for IT pros and Teams administrators who want to learn about the
 ## Agents and Queues
 
 ### Microsoft Copilot Studio
+
+Note
+
+Teams Phone supports Contact Center Intelligence voice agents (also referred to as the Customer conversation agents in Microsoft Copilot Studio) and Microsoft Copilot Studio agents built using the standard harness.
 
 With Teams Phone Agent's integration with [Microsoft Copilot Studio (MCS)](/en-us/microsoft-copilot-studio/), organizations can create custom voice agents in MCS to attach to their Teams Phone Agent.
 

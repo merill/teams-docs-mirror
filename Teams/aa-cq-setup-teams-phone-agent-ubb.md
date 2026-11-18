@@ -12,7 +12,7 @@ author: CLYVR
 ms.author: colongma
 manager: roykuntz
 ms.reviewer: colongma
-ms.date: 2026-10-19T00:00:00.0000000Z
+ms.date: 2026-11-17T00:00:00.0000000Z
 ms.topic: how-to
 ms.tgt.pltfrm: cloud
 ms.service: msteams
@@ -184,7 +184,7 @@ For more information, see [Create, edit, or delete a security group](/en-us/micr
 
 Note
 
-These steps require the **AI Administrator** role.
+To create, edit, and manage spending policies, **Global administrator** and **Billing administrator** roles are needed. To edit existing spending policies, the **AI Administrator** role is needed.
 
 ### Add spending policy
 
