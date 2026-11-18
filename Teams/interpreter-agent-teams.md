@@ -8,11 +8,11 @@ ms.suite: office
 feedback_system: Standard
 feedback_product_url: https://aka.ms/TeamsFeedback
 recommendations: true
-author: wlibebe
-ms.author: wlibebe
-manager: pamgreen
-ms.reviewer: harinlee
-ms.date: 2026-09-21T00:00:00.0000000Z
+author: LanaChin8
+ms.author: v-lanchin
+manager: v-jesserowe
+ms.reviewer: harinlee, chenanqi
+ms.date: 2026-11-17T00:00:00.0000000Z
 ms.update-cycle: 180-days
 ms.topic: how-to
 ms.tgt.pltfrm: cloud
@@ -47,12 +47,12 @@ item_type: Content
 source_path: Teams/interpreter-agent-teams.md
 cmProducts:
 - https://authoring-docs-microsoft.poolparty.biz/devrel/63959238-cb90-4871-a33d-4a5519097e47
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/c6f99e62-1cf6-4b71-af9b-649b05f80cce
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/46e3c7c4-fe77-4a6e-b40a-44c569819fa5
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/c6f99e62-1cf6-4b71-af9b-649b05f80cce
 spProducts:
 - https://authoring-docs-microsoft.poolparty.biz/devrel/78d87f42-5582-4a6b-90be-7db2f12b34e6
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/3f56b378-07a9-4fa1-afe8-9889fdc77628
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/d0c6fab8-2d7d-4bb0-bf40-589e08d7c132
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/3f56b378-07a9-4fa1-afe8-9889fdc77628
 platformId: 971b2bc9-bb26-c979-e087-967a597e9066
 ---
 
@@ -60,9 +60,11 @@ platformId: 971b2bc9-bb26-c979-e087-967a597e9066
 
 **APPLIES TO:**![Image of a checkmark for yes](/en-us/office/media/icons/success-teams.png) Meetings ![Image of a checkmark for yes](/en-us/office/media/icons/success-teams.png) Calls ![Image of a x for no](/en-us/office/media/icons/cancel-teams.png) Events
 
-Interpreter agent acts as a translator in Microsoft Teams meetings, allowing participants with a Microsoft Copilot license to listen to the meeting in their chosen language. Interpreter listens to the spoken language in the meeting and translates it into another language in real-time, allowing participants who speak different languages to understand each other and collaborate effectively. To represent their voices, participants can choose to have Interpreter **simulate their own voice** when translating to others or select one of the following **preset automated voices**: Ava (female), Andrew (male), Fable Turbo (neutral). If an automated voice is selected, **Ava is the default.**
+Interpreter offers two modes: simultaneous interpretation and consecutive interpretation.
 
-As an admin, you can control whether your organization can use Interpreter and select the default voice option for how users' speech is heard by others.
+With simultaneous interpretation, Interpreter agent acts as a translator in Microsoft Teams meetings, allowing participants with a Microsoft Copilot license to listen to the meeting in their chosen language. Interpreter listens to the spoken language in the meeting and translates it into another language in real-time, allowing participants who speak different languages to understand each other and collaborate effectively. To represent their voices, participants can choose to have Interpreter **simulate their own voice** when translating to others or select one of the following **preset automated voices**: Ava (female), Andrew (male), Fable Turbo (neutral). If an automated voice is selected, **Ava is the default.**
+
+As an admin, you can control whether your organization can use either interpretation mode. For simultaneous interpretation, you can also select the default voice option for how users' speech is heard by others.
 
 To learn more about the Interpreter experience in meetings, see [Interpreter in Microsoft Teams meetings](https://support.microsoft.com/office/interpreter-in-microsoft-teams-meetings-c7efe2bb-535d-42ab-a5c4-d2d91619b46d).
 
@@ -72,7 +74,11 @@ Interpreter supports the following languages for speaking and listening: Chinese
 
 ## Prerequisites and licensing
 
-The following list contains the prerequisites for users to access Interpreter in Teams meetings. Users must meet all the following requirements:
+### Simultaneous interpretation
+
+Simultaneous interpretation is supported in Teams calls (VoIP only), Teams meetings, and Teams Rooms. The existing licensing and billing model for simultaneous interpretation remains unchanged for both calls and meetings.
+
+The following list contains the prerequisites for users to access Interpreter in Teams meetings and Teams calls (VoIP only). Users must meet all the following requirements:
 
 Important
 
@@ -90,7 +96,32 @@ Interpreter agent is available as part of the Microsoft Copilot license. **A Mic
     - 20 hours of interpretation is included per user per month with a *Microsoft Teams Rooms Pro* license.
     - For more information on *Microsoft Teams Rooms Pro* licensing, see [Teams Rooms licensing](/en-us/microsoftteams/rooms/rooms-licensing).
 
+### Consecutive interpretation
+
+Consecutive interpretation is a usage-based billing experience that consumes Copilot Credits.
+
+The following list contains the prerequisites for meeting organizers to activate consecutive interpretation in Teams meetings:
+
+Important
+
+Consecutive interpretation is a distinct mode from simultaneous interpretation and is billed separately. The eligible meeting organizer's applicable billing policy is charged for consecutive interpretation.
+
+- An eligible *Microsoft 365*base license.
+    - For the list of eligible base licenses, see [Understand licensing requirements for Microsoft Copilot](/en-us/microsoft-365/copilot/microsoft-365-copilot-licensing).
+- An eligible *Microsoft Teams*license.
+    - Teams licenses might be included in your *Microsoft 365* subscription, or you might need to purchase a separate Teams license if you have *Microsoft 365 (no Teams)* licenses.
+- A *Microsoft Copilot*license.
+    - The experience is activated by a meeting organizer, who requires *Microsoft Copilot (Premium)* as a prerequisite, with Copilot Credits usage-based billing enabled through the applicable spending policy.
+
+Once activated by an eligible meeting organizer, consecutive interpretation provides interpreted audio for all meeting participants regardless of whether they have a Microsoft Copilot license.
+
+#### Estimate usage costs
+
+Customers can learn more about rates and cost benchmarking guidance to create illustrative, non-binding “t-shirt sizing” estimates using information in the [Copilot Credits Guide](https://www.microsoft.com/licensing/guidance/CopilotCreditsGuide). Actual consumption and charges may vary.
+
 ## Data, security, and privacy
+
+The following information applies to both simultaneous and consecutive interpretation. Voice simulation is available only with simultaneous interpretation.
 
 When your users allow Interpreter to simulate their voice, their voice sample isn’t stored.
 
@@ -103,7 +134,7 @@ Interpreter performs real-time speech-to-speech (STS) translation using Azure Co
 3. Text-to-speech (TTS)- Produces translated speech in the chosen language. TTS can simulate the speaker’s voice or use a predefined voice based on user preference and the admin policy.
 4. A bot transmits meeting audio for cloud-based processing and returns translations instantly.
 
-### How Interpreter uses your users' voices
+### How Interpreter uses your users' voices (simultaneous interpretation only)
 
 Voice simulation generates translated speech in your user's voice, allowing other participants to hear translations as if they're speaking their language directly. When a user turns on this feature in Interpreter, the system briefly analyzes short segments of their speech on the fly (in real-time) to simulate their unique tone, style, and voice characteristics. **Voice samples or biometric data are never stored.** AI instantly creates a natural-sounding voice in the selected language, preserving their authentic tone, pitch, and speaking style without exaggerating emotions. This ensures a familiar and seamless multilingual conversation experience.
 
@@ -119,6 +150,8 @@ Voice data is processed immediately, entirely on the fly, without ever storing y
 
 ## Manage Interpreter using PowerShell
 
+The meeting policy setting to turn Interpreter on or off applies to both modes. The voice simulation setting and the calling policy settings below apply only to simultaneous interpretation.
+
 You must use PowerShell to manage Interpreter for your entire organization.
 
 To manage Interpreter for your entire organization, you can use the **`-AIInterpreter`** and **`-VoiceSimulationInInterpreter`** parameters in the following PowerShell cmdlets:
@@ -132,7 +165,9 @@ To manage Interpreter for your entire organization, you can use the **`-AIInterp
 
 #### Turn Interpreter on or off
 
-The org-wide **`-AIInterpreter`** parameter controls whether your users with a Microsoft Copilot license can use Interpreter during meetings in your organization. **This parameter is enabled by default.**
+The org-wide **`-AIInterpreter`** parameter controls whether your users can use simultaneous or consecutive interpretation during meetings in your organization. **This parameter is enabled by default.**
+
+Turning on Interpreter through this policy doesn't replace the licensing and Copilot Credits spending policy prerequisites for consecutive interpretation.
 
 To turn off Interpreter for your entire organization, use the following script:
 
@@ -146,14 +181,15 @@ To turn on Interpreter for your entire organization, use the following script:
 Set-CsTeamsMeetingPolicy -Identity <policy name> -AIInterpreter Enabled
 ```
 
-#### Set the default value for how users can set their preference for how others hear their speech via Interpreter
+#### Manage voice simulation (simultaneous interpretation only)
 
-The org-wide **`-VoiceSimulationInInterpreter`** parameter controls your users' default value for **Choose your voice when interpreted** in **Interpreter settings**. The **Choose your voice when interpreted** setting controls how a user's voice is represented to other participants. **By default, this parameter is set to enabled.**
+The org-wide **`-VoiceSimulationInInterpreter`** parameter controls whether users can select voice simulation and the default value for **Choose your voice when interpreted** in **Interpreter settings**. The **Choose your voice when interpreted** setting controls how a user's voice is represented to other participants. **By default, this parameter is set to enabled.**
 
 Here's the user experience for Interpreter depending on the value you choose:
 
 - **Enabled**: Sets the default value for **Choose your voice when interpreted** to **Simulate my voice**. When users with a Microsoft Copilot license turn on Interpreter, it automatically simulates their voices when translating to others in meetings. All participants in an Interpreter-enabled meeting can also select an automated voice. **This is the default value.**
 - **Disabled**: Sets the default value for **Choose your voice when interpreted** to **Automated voice**. When users with a Microsoft Copilot license turn on Interpreter, by default, Ava (female) option is selected by default among the automated voices. All participants in an Interpreter-enabled meeting can select another automated voice or choose to have Interpreter simulate their own voice.
+- **VoiceSimulationDisabled**: Hides the **Simulate my voice** option in **Interpreter settings** so users can't select voice simulation.
 
 To set the org-wide default value for the **Choose your voice when interpreted** setting to **Simulate my voice**, use the following script:
 
@@ -167,11 +203,17 @@ To set the org-wide default value for the **Choose your voice when interpreted**
 Set-CsTeamsMeetingPolicy -Identity <policy name> -VoiceSimulationInInterpreter Disabled
 ```
 
+To hide the **Simulate my voice** option, use the following script:
+
+```PowerShell
+Set-CsTeamsMeetingPolicy -Identity <policy name> -VoiceSimulationInInterpreter VoiceSimulationDisabled
+```
+
 Important
 
 It's highly recommended to confirm **VoiceSimulationInInterpreter** is set to **Enabled** to deliver the best listening experience for interpretation.
 
-### Manage Interpreter in calls
+### Manage Interpreter in calls (simultaneous interpretation only)
 
 Use [CsTeamsCallingPolicy](/en-us/powershell/module/microsoftteams/set-csteamscallingpolicy) to configure Interpreter for supported 1:1 Teams-to-Teams VoIP calls.
 
@@ -191,7 +233,7 @@ To turn on Interpreter for your entire organization, use the following script:
 Set-CsTeamsCallingPolicy -Identity <policy name> -AIInterpreter Enabled
 ```
 
-## Supported platforms and clients
+## Supported platforms and clients (simultaneous interpretation)
 
 ### Supported
 
@@ -215,3 +257,13 @@ Interpreter isn't supported on the following platforms and clients:
 - Microsoft Teams Rooms on Android
 - Using personal peripherals with Microsoft Teams Rooms
 - Microsoft Teams free
+
+## Consecutive interpretation: meeting and client requirements
+
+Consecutive interpretation supports a shared bilingual conversation for the entire group.
+
+- Consecutive interpretation is supported in Teams meetings only, not calls.
+- Only the meeting organizer can turn on consecutive interpretation, using Teams desktop.
+- Participants can listen on Teams desktop or mobile. Mobile participants can't turn it on.
+- The organizer selects two languages for the shared conversation.
+- Consecutive interpretation is designed for small-group discussions with a maximum of 50 meeting participants, ideally with 10–15 participants.

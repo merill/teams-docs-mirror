@@ -12,7 +12,7 @@ author: officedocspr5
 ms.author: odocspr
 manager: jtremper
 ms.reviewer: solomon.alex, grace.culver
-ms.date: 2026-08-13T00:00:00.0000000Z
+ms.date: 2026-11-04T00:00:00.0000000Z
 ms.update-cycle: 180-days
 ms.topic: install-set-up-deploy
 ms.tgt.pltfrm: cloud
@@ -77,11 +77,12 @@ There are Facilitator capabilities generally available and certain capabilities 
 > The following Facilitator capabilities are currently in public preview:
 > 
 > - Task tracking integration with Planner
+> - PowerPoint deck creation in meeting or post meeting, for example "@Facilitator, Create a product planning PowerPoint deck based on last two meetings for executive review"
 > 
 
 Note
 
-We are migrating to a new back-end system that provides greater flexibility and enables higher-quality document creation experiences going forward. As part of this migration, two changes will take effect: Word document generation will be enhanced, Loop file generation will no longer be supported by Jul 31, 2026. There is no impact on Facilitator live note.
+We have migrated to a new back-end system to improve document generation. As part of this change, Loop file generation has been discontinued as of July 31, 2026. Facilitator live notes remain unaffected.
 
 > 
 > Features in preview might not be complete and could undergo changes before becoming available in the public release. They're provided for evaluation and exploration purposes only. For more information about Teams features in public preview, see [Microsoft Teams Public preview](public-preview-doc-updates).
