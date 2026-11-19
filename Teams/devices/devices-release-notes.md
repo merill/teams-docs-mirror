@@ -321,6 +321,19 @@ To add a mobile system OS scanner:
 - Hide meeting names for sensitive spaces. This setting is off by default (the **Show meeting names** setting is on). The tenant admin can enable it through **Settings** &gt; **Device settings** &gt; **Admin Settings** &gt; **Panels App Settings** &gt; **Meetings** &gt; **Show meeting names**. When meeting names is turned off, the meeting name is replaced with the meeting organizer's name.
 
 # [Teams phones](#tab/phones)
+## November 19, 2026
+
+**Applies to**: *Teams app version*: 1449/1.0.94.2026381202 (Poly, Yealink, Audiocodes)
+
+- **Assign call transfer line keys from PMP or the phone**: Admins can now assign a Call transfer line key in the Pro Management Portal (PMP), either in a phone's individual settings or through a settings template. You can also assign one directly on your phone. Set the key up as a blind or consult transfer. Then, during a call, press the key to start a transfer right away and pick who to transfer the call to.
+- **Configure auto dial from PMP**: Admins can now turn auto dial on or off and set the auto dial timer (5 to 20 seconds) for personal, conference and common area phones in the Pro Management Portal (PMP). When auto dial is turned off, users press Call to place a call, which helps prevent incomplete or accidental calls, including accidental emergency calls, caused by pausing mid-number. Minimum Admin Agent version needed for this feature to work on PMP: 901/1.0.0.202610190119.
+- **Streamlined call park and retrieval**: When you park a call, a notification now shows the pickup code "Call Park: code". Parked call banners on the home screen and in call history include a Retrieve option so you can pick the call back up in one tap. When a parked call is retrieved, the parked call banner is dismissed automatically across the home screen and call history. If a parked call isn't retrieved before your organization's park timeout as defined in the call park policy, the call rings back to the phone that parked it and shows as "Parked call".
+- **Reorder in-call actions**: You can now reorder the actions on your call screen so the ones you use most stay at the top instead of getting lost in the More menu. The actions you can use haven't changed and still depend on your policies and licenses. To turn it on: On the phone, select **Settings &gt; Calling settings &gt; Quick actions**. Turn on **Allow call screen reorder**. Move actions up or down to set the order you want on your call screen.
+- **Faster navigation on non-touch phones**: Navigating to the Calls app and the dial pad is now faster on non-touch phones.
+- **Call queue context on incoming call banners**: When you're already on a call and a call queue call arrives, the incoming call banner now shows that the call is for the call queue, while still showing the caller's name or number.
+- **Let users manage line keys on common area phones**: A new setting lets you allow users to manage line keys on common area phones. Turn it on in line key settings: go to **Settings &gt; Line key settings** and turn on **Allow User Override.** Once enabled, users can do a long-press a line key to assign, edit or remove it, or to set a custom ringtone. When the setting is off, line keys on common area phones stay locked to how the admin set them up.
+- App also includes multiple bug fixes and improvements
+
 ## September 30, 2026
 
 **Applies to**: *Teams app version*: 1449/1.0.94.2026226711 (Poly, Yealink, Audiocodes)

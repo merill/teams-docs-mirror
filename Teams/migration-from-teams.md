@@ -88,6 +88,10 @@ When you start exporting data or when an export is in progress, any new data cre
 
 ### Step-by-step: Using the Teams data export tool
 
+Note
+
+The **Teams data export tool** widget is only available for the classic Microsoft Teams admin center dashboard. To switch to the classic portal, toggle off the 'New Dashboard' option:
+
 1. Locate the **Teams data export tool** in the **Teams admin center**. Sign in to the **Microsoft Teams admin center** as a Global Administrator. On the **Dashboard**, locate the **Teams data export card**.
 
     [![Screenshot of the Microsoft Teams admin center, showing the Teams data export experience.](media/export/teams-data-export-1.png)](media/export/teams-data-export-1.png#lightbox)

@@ -46,12 +46,12 @@ item_type: Content
 source_path: Teams/devices/bluetooth-devices.md
 cmProducts:
 - https://authoring-docs-microsoft.poolparty.biz/devrel/63959238-cb90-4871-a33d-4a5519097e47
-- https://authoring-docs-microsoft.poolparty.biz/devrel/bcbcbad5-4208-4783-8035-8481272c98b8
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/19ec6774-09b8-473e-a17e-b17b518bbad7
+- https://authoring-docs-microsoft.poolparty.biz/devrel/bcbcbad5-4208-4783-8035-8481272c98b8
 spProducts:
 - https://authoring-docs-microsoft.poolparty.biz/devrel/78d87f42-5582-4a6b-90be-7db2f12b34e6
-- https://authoring-docs-microsoft.poolparty.biz/devrel/43b2e5aa-8a6d-4de2-a252-692232e5edc8
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/ade36b61-c646-4bd8-87ee-f3a843461962
+- https://authoring-docs-microsoft.poolparty.biz/devrel/43b2e5aa-8a6d-4de2-a252-692232e5edc8
 platformId: f1093c9c-73e7-90ba-7fed-3eda1d850741
 ---
 
@@ -89,6 +89,7 @@ We recommend the following processors:
 - **Intel - Intel® Core™ 12th Gen processors or newer**
     - See the OS and software requirements section for recommended driver versions
 - **Qualcomm - Snapdragon X or newer**
+- **NVIDIA RTX Spark or newer**
 
 PCs using aftermarket USB Bluetooth adapters are not recommended or certified. USB Bluetooth audio dongles that connect to the PC as a USB Audio device instead of a Bluetooth controller cannot support the Native Bluetooth experience in Microsoft Teams.
 
@@ -146,9 +147,17 @@ On Windows 11 PCs with Intel processors, we recommend the following minimum driv
 
 ## Certified Native Bluetooth peripherals
 
-This certification is currently for Classic Bluetooth devices. The Microsoft Teams Certification Program has not started certifying Bluetooth Low Energy (LE) Audio headsets yet. We will update this article when the time comes. We do not anticipate issues with headsets that support both Classic Bluetooth and Bluetooth LE Audio, but the latter mode is not certified for Teams.
+Native Bluetooth peripherals can be certified either for Bluetooth Classic Audio, or as Dual Mode with support for both Classic Audio and LE Audio.
+
+Certified Dual Mode devices deliver improved voice fidelity in Teams calls when connected to a Windows 11 PC that supports LE Audio. When connected to a Windows 11 PC that only supports Classic Audio, these devices continue to deliver a certified experience with Teams.
+
+To check if your PC supports Bluetooth LE Audio, see [Check if a Windows 11 device supports Bluetooth Low Energy Audio](https://support.microsoft.com/windows/hardware/bluetooth/check-if-a-windows-11-device-supports-bluetooth-low-energy-audio)
 
 To see a list of supported Bluetooth personal peripherals, see [Certified personal peripherals](/en-us/microsoftteams/devices/usb-devices?tabs=bluetooth).
+
+## Requirements for Spatial Audio on Native Bluetooth devices
+
+Spatial Audio is only available for Bluetooth LE Audio connections, and only when the PC supports Super Wideband Stereo. To check if your PC supports Super Wideband Stereo, visit [Configuring Bluetooth LE Audio quality settings on Windows 11](https://support.microsoft.com/windows/hardware/bluetooth/configuring-bluetooth-le-audio-quality-settings-on-windows-11)
 
 ## Troubleshooting
 
