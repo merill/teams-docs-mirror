@@ -209,11 +209,18 @@ The following are supported versions of the Microsoft Intune app:
 
 | **Release date** | **App version** |
 | --- | --- |
+| November 2026 | 26.10.3 |
 | October 2026 | 26.6.4 |
 | August 2026 | 26.6.3 |
 | August 2026 | 26.6.0 |
 | June 2026 | 26.03.1 |
 | June 2025 | 25.02.1 |
+
+### 26.10.3
+
+**This release is available for** **Certified Poly Phones Only**
+
+- Telemetry improvements and additional optimizations to conserve eMMC writes.
 
 ### 26.6.4
 

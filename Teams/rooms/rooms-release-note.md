@@ -882,6 +882,7 @@ Introduced in this update:
 
 | Release | Release date |
 | --- | --- |
+| 1449/1.0.96.2026344105 | November 2026 |
 | 1449/1.0.96.2026264504 | October 2026 |
 | 1449/1.0.96.2026261804 | September 2026 |
 | 1449/1.0.96.2026249711 | September 2026 |
@@ -902,6 +903,27 @@ Note
 There can be a delay between when features are released by Microsoft and when they become available on a device make and model. If an update isn't available on your device, check with your device manufacturer for information on when it might become available.
 
 Features with ![](../media/mtr-pro-icon.png) are only available with Teams Rooms Pro license.
+
+### 1449/1.0.96.2026344105 (November 2026)
+
+Introduced in this update:
+
+- **Change the app display language from the device:** Just like with Teams Rooms on Windows, users can now change the Teams app language directly on the Teams Rooms in Android device, without admin intervention. The language reverts to the default language upon device restart. This is useful for multilingual sites and regulated, multi-language deployments.
+- **Breakout rooms support:** Teams Rooms on Android devices can join a breakout room, allowing in-room participants to stay with their group.
+- **Private chat for organizers and presenters for webinars and structured meetings**![](../media/mtr-pro-icon.png)**:** When a Teams Rooms on Android is an organizer, co-organizer or presenter in a webinar and structured meeting, you have access to a private chat for event management known as the Event Group. Teams Rooms on Android can switch to view the Event Group chat or Everyone chat (which includes all presenters and attendees).
+- **PowerPoint Live support for webinars and structured meetings**![](../media/mtr-pro-icon.png)**:** Participants joining webinars and structured meetings from Teams Rooms on Android can view and interact with PowerPoint Live presentations. This provides greater flexibility and accessibility while keeping room participants aligned with the active presentation.
+- **Automatic return to the home screen:** After a period of inactivity in any out-of-meeting screen, the device now returns to the home screen automatically, so the next person walking into the room always finds a clean, ready state and can see the room calendar.
+- **Call Quality Feedback surveys:** Users can now rate the quality of their calls and meetings and provide additional feedback on calling, video, and screen-sharing experiences to help organizations ensure consistent, high-quality experiences. These results are visible in the Call Quality Dashboard and can be controlled using [feedback policies](/en-us/privacy/microsoft-365/feedback/feedback-manage).
+
+Resolved Issues:
+
+- Resolved an issue when switching between the built-in camera and an external IP or USB camera did not work as expected mid-call.
+- Resolved an issue where participants waiting in the lobby may have appeared as a joined participant in the roster and on stage or the lobby participant could not be admitted.
+- Resolved an issue where the "Live" tag appeared on the console during a Teams event even when the green room was disabled.
+- Resolved an issue where the console interface didn’t transition back to the regular meeting experience after "Who can present" was changed back to Everyone.
+- Resolved an issue where Interpreter was shown on the in-meeting console despite the interpreter policy being set to disabled.
+- Resolved an issue where Teams meeting links in the meeting body didn’t generate a calendar join button.
+- Resolved an issue where content ingest may not start automatically after a device reboot.
 
 ### 1449/1.0.96.2026264504 (October 2026)
 

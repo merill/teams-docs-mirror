@@ -1,6 +1,6 @@
 ---
 layout: Conceptual
-title: Remotely configure front row layout on Teams Rooms - Microsoft Teams | Microsoft Learn
+title: Front Row layout in Teams Rooms - Microsoft Teams | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/microsoftteams/rooms/manage-front-row
 breadcrumb_path: /microsoftteams/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-MicrosoftTeams
@@ -24,7 +24,7 @@ ms.collection:
 f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
-description: Remotely configure the front row layout on Microsoft Teams Rooms systems.
+description: Learn about Front Row layout capabilities and how to configure Front Row on Microsoft Teams Rooms.
 locale: en-us
 document_id: 4ac71360-064a-4747-6da8-c9c32afd9de7
 document_version_independent_id: 4ac71360-064a-4747-6da8-c9c32afd9de7
@@ -48,9 +48,9 @@ spProducts:
 platformId: 01d22094-1cbf-f41a-5f63-8cb606872e13
 ---
 
-# Remotely configure front row layout on Teams Rooms - Microsoft Teams | Microsoft Learn
+# Front Row layout in Teams Rooms - Microsoft Teams | Microsoft Learn
 
-Front Row is an inclusive meeting layout available on Microsoft Teams Rooms systems that fosters a deeper connection between in-person and virtual meeting participants. Front Row allows you to maximize screen real estate so you can see both people, content, and chat simultaneously.
+Front Row is an inclusive meeting layout for Microsoft Teams Rooms that creates a stronger connection between in-room and remote participants. Front Row places remote participants at eye level along the bottom of the front-of-room display while keeping meeting content, chat, and other meeting information visible. The layout helps in-room participants maintain a more natural line of sight between remote participants and people in the room.
 
 If you have multiple Teams Rooms systems deployed in your organizations, you can configure Front Row on those systems remotely using an XML configuration file. This XML configuration file can be deployed from a central location to your Teams Rooms systems. When the XML file is deployed to a Teams Rooms system, the configuration settings defined within it will be applied the next time the system is restarted.
 

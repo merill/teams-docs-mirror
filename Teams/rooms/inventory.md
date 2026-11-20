@@ -29,8 +29,8 @@ description: Learn how to manage your resource account inventory in the Teams Ro
 ai-usage: ai-assisted
 ms.custom: QuickDraft
 locale: en-us
-document_id: 5c601441-4892-a861-b06b-921eb85a26fe
-document_version_independent_id: 5c601441-4892-a861-b06b-921eb85a26fe
+document_id: 284bed9f-a55f-b2d0-466f-7e8150df30bb
+document_version_independent_id: 284bed9f-a55f-b2d0-466f-7e8150df30bb
 original_content_git_url: https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness-pr/blob/live/Teams/rooms/inventory.md
 site_name: Docs
 depot_name: office.OfficeDocs-MicrosoftTeams

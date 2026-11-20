@@ -26,8 +26,8 @@ ms.localizationpriority: medium
 search.appverid: MET150
 description: This article shows you the health signals that are available, not available, or not applicable for Teams Rooms on Windows, Teams Rooms on Android, Teams panels, Teams phones, and Microsoft Device Ecosystem Platform (MDEP).
 locale: en-us
-document_id: bf0f9eb7-7056-b845-7262-c0d2562a0672
-document_version_independent_id: bf0f9eb7-7056-b845-7262-c0d2562a0672
+document_id: 79ab7ba4-8c08-3909-1c25-63695b2e3e3e
+document_version_independent_id: 79ab7ba4-8c08-3909-1c25-63695b2e3e3e
 original_content_git_url: https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness-pr/blob/live/Teams/rooms/signals.md
 site_name: Docs
 depot_name: office.OfficeDocs-MicrosoftTeams

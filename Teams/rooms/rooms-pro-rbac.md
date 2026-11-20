@@ -26,8 +26,8 @@ search.appverid: MET150
 description: Learn about role-based access control in the Microsoft Teams Rooms Pro Management Portal.
 f1keywords: 
 locale: en-us
-document_id: b9211ee7-1c36-f653-9c3c-dfda04fdf77c
-document_version_independent_id: b9211ee7-1c36-f653-9c3c-dfda04fdf77c
+document_id: 8a9a93a3-9abf-814a-909e-c6ab2575496b
+document_version_independent_id: 3a1fcd15-d9d5-370b-9658-f95563c2d6f7
 original_content_git_url: https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness-pr/blob/live/Teams/rooms/rooms-pro-rbac.md
 site_name: Docs
 depot_name: office.OfficeDocs-MicrosoftTeams

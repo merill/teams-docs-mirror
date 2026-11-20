@@ -89,7 +89,7 @@ Languages/Locales: 63 (Expand to see list of supported languages/locales)
 | 03 | hy-AM | Armenian (Armenia) |  |
 | 04 | bg-BG | Bulgarian (Bulgaria) |  |
 | 05 | ca-ES | Catalan (Spain) |  |
-| 06 | zh-CN | Chinese (Simplified, PRC) | Xiaoqi, 🎵 [Xiaoxiao](https://res.cdn.office.net/s01-itpro-tac-ui/1.0.261025.2/5386fbd85fec2a30.wav), Yunfan, 🎵 [Yunxiao](https://res.cdn.office.net/s01-itpro-tac-ui/1.0.261025.2/0d7132d65af0021a.wav) |
+| 06 | zh-CN | Chinese (Simplified, PRC) | 🎵 [Xiaoqi](https://res.cdn.office.net/s01-itpro-tac-ui/1.0.261105.7/2557618e5d7ef0fb.wav), 🎵 [Xiaoxiao](https://res.cdn.office.net/s01-itpro-tac-ui/1.0.261025.2/5386fbd85fec2a30.wav), 🎵 [Yunfan](https://res.cdn.office.net/s01-itpro-tac-ui/1.0.261105.7/ae8a9d8e9887231e.wav), 🎵 [Yunxiao](https://res.cdn.office.net/s01-itpro-tac-ui/1.0.261025.2/0d7132d65af0021a.wav) |
 | 07 | zh-HK | Chinese (Traditional, Hong Kong SAR) |  |
 | 08 | zh-TW | Chinese (Traditional, Taiwan) |  |
 | 09 | hr-HR | Croatian (Croatia) |  |
@@ -97,9 +97,9 @@ Languages/Locales: 63 (Expand to see list of supported languages/locales)
 | 11 | da-BE | Danish (Belgium) |  |
 | 12 | da-DK | Danish (Denmark) |  |
 | 13 | nl-NL | Dutch (Netherlands) |  |
-| 14 | en-AU | English (Australia) | Siennatopaz |
+| 14 | en-AU | English (Australia) | 🎵 [Siennatopaz](https://res.cdn.office.net/s01-itpro-tac-ui/1.0.261105.7/7ca1b390392076cb.wav) |
 | 15 | en-CA | English (Canada) |  |
-| 16 | en-GB | English (United Kingdom) | Ollie |
+| 16 | en-GB | English (United Kingdom) | 🎵 [Ollie](https://res.cdn.office.net/s01-itpro-tac-ui/1.0.261105.7/9381153e68254f72.wav) |
 | 17 | en-IE | English (Ireland) |  |
 | 18 | en-IN | English (India) | 🎵 [Aarti](https://res.cdn.office.net/s01-itpro-tac-ui/1.0.261025.2/b5b6793994cc8297.wav) |
 | 19 | en-PH | English (Philippines) |  |
@@ -110,18 +110,18 @@ Languages/Locales: 63 (Expand to see list of supported languages/locales)
 | 24 | fr-BE | French (Belgium) |  |
 | 25 | fr-CA | French (Canada) |  |
 | 26 | fr-CH | French (Switzerland) |  |
-| 27 | fr-FR | French (France) | Remy |
+| 27 | fr-FR | French (France) | 🎵 [Remy](https://res.cdn.office.net/s01-itpro-tac-ui/1.0.261105.7/845af550721d91bd.wav) |
 | 28 | gl-ES | Galician (Spain) |  |
 | 29 | de-AT | German (Austria) |  |
 | 30 | de-CH | German (Switzerland) |  |
-| 31 | de-DE | German (Germany) | 🎵 [Florian](https://res.cdn.office.net/s01-itpro-tac-ui/1.0.261025.2/a9dcb83eef8018e5.wav), Seraphina |
+| 31 | de-DE | German (Germany) | 🎵 [Florian](https://res.cdn.office.net/s01-itpro-tac-ui/1.0.261025.2/a9dcb83eef8018e5.wav), 🎵 [Seraphina](https://res.cdn.office.net/s01-itpro-tac-ui/1.0.261105.7/2be05baa1a93d733.wav) |
 | 32 | el-GR | Greek (Greece) |  |
 | 33 | he-IL | Hebrew (Israel) |  |
 | 34 | hi-IN | Hindi (India) | 🎵 [Diya](https://res.cdn.office.net/s01-itpro-tac-ui/1.0.261025.2/5908b5cfd1247ee1.wav), 🎵 [Meera](https://res.cdn.office.net/s01-itpro-tac-ui/1.0.261025.2/6fd584f9d50c9a45.wav) |
 | 35 | hu-HU | Hungarian (Hungary) |  |
 | 36 | is-IS | Icelandic (Iceland) |  |
 | 37 | id-ID | Indonesian (Indonesia) |  |
-| 38 | it-IT | Italian (Italy) | Isabella |
+| 38 | it-IT | Italian (Italy) | 🎵 [Isabella](https://res.cdn.office.net/s01-itpro-tac-ui/1.0.261105.7/ba55a9d5c9d78e3d.wav) |
 | 39 | ja-JP | Japanese (Japan) |  |
 | 40 | kn-IN | Kannada (India) |  |
 | 41 | ko-KR | Korean (Korea) |  |
@@ -131,7 +131,7 @@ Languages/Locales: 63 (Expand to see list of supported languages/locales)
 | 45 | nb-NO | Norwegian Bokmål (Norway) |  |
 | 46 | fa-IR | Persian (Iran) |  |
 | 47 | pl-PL | Polish (Poland) |  |
-| 48 | pt-BR | Portuguese (Brazil) | Thalita |
+| 48 | pt-BR | Portuguese (Brazil) | 🎵 [Thalita](https://res.cdn.office.net/s01-itpro-tac-ui/1.0.261105.7/c401a47404d465bb.wav) |
 | 49 | pt-PT | Portuguese (Portugal) |  |
 | 50 | ro-RO | Romanian (Romania) |  |
 | 51 | ru-RU | Russian (Russia) |  |
@@ -156,45 +156,45 @@ Voices: 42 (Expand to see list of supported voices)
 | --- | --- | --- | --- |
 | 01 | 🎵 [Aarti](https://res.cdn.office.net/s01-itpro-tac-ui/1.0.261025.2/b5b6793994cc8297.wav) | Y | en-IN - English (India) |
 | 02 | 🎵 [Andrew](https://res.cdn.office.net/s01-itpro-tac-ui/1.0.261025.2/0d788fa6d3b13b1d.wav) | Y | en-US - English (US) |
-| 03 | Angelo | Y |  |
-| 04 | Ardi | Y |  |
-| 05 | Arjun | Y |  |
-| 06 | Athina | Y |  |
+| 03 | 🎵 [Angelo](https://res.cdn.office.net/s01-itpro-tac-ui/1.0.261105.7/f0c42d76d5138945.wav) | Y |  |
+| 04 | 🎵 [Ardi](https://res.cdn.office.net/s01-itpro-tac-ui/1.0.261105.7/e4324afae88363bc.wav) | Y |  |
+| 05 | 🎵 [Arjun](https://res.cdn.office.net/s01-itpro-tac-ui/1.0.261105.7/cd8534eb02d4e295.wav) | Y |  |
+| 06 | 🎵 [Athina](https://res.cdn.office.net/s01-itpro-tac-ui/1.0.261105.7/59f1771897da72d1.wav) | Y |  |
 | 07 | 🎵 [Ava](https://res.cdn.office.net/s01-itpro-tac-ui/1.0.261025.2/76dc76cf370e8d30.wav)^1 ^ | Y | en-US - English (US) |
-| 08 | Blessica | Y |  |
-| 09 | Dalia | Y |  |
+| 08 | 🎵 [Blessica](https://res.cdn.office.net/s01-itpro-tac-ui/1.0.261105.7/ce2bdba0b5b80105.wav) | Y |  |
+| 09 | 🎵 [Dalia](https://res.cdn.office.net/s01-itpro-tac-ui/1.0.261105.7/2e85733b5c851222.wav) | Y |  |
 | 10 | 🎵 [Diya](https://res.cdn.office.net/s01-itpro-tac-ui/1.0.261025.2/5908b5cfd1247ee1.wav) | Y | hi-IN - Hindi (India) |
 | 11 | 🎵 [Florian](https://res.cdn.office.net/s01-itpro-tac-ui/1.0.261025.2/a9dcb83eef8018e5.wav) | Y | de-DE - German (Germany) |
-| 12 | Gadis | Y |  |
-| 13 | Giuseppe | Y |  |
-| 14 | Hyunsu | Y |  |
-| 15 | Isabella | Y | it-IT - Italian (Italy) |
-| 16 | Jorge | Y |  |
+| 12 | 🎵 [Gadis](https://res.cdn.office.net/s01-itpro-tac-ui/1.0.261105.7/edb0f7db412e1bb6.wav) | Y |  |
+| 13 | 🎵 [Giuseppe](https://res.cdn.office.net/s01-itpro-tac-ui/1.0.261105.7/8ea04653132d2b6a.wav) | Y |  |
+| 14 | 🎵 [Hyunsu](https://res.cdn.office.net/s01-itpro-tac-ui/1.0.261105.7/24a766ff9e761466.wav) | Y |  |
+| 15 | 🎵 [Isabella](https://res.cdn.office.net/s01-itpro-tac-ui/1.0.261105.7/ba55a9d5c9d78e3d.wav) | Y | it-IT - Italian (Italy) |
+| 16 | 🎵 [Jorge](https://res.cdn.office.net/s01-itpro-tac-ui/1.0.261105.7/403575a451ca3bf2.wav) | Y |  |
 | 17 | Mariela | Y |  |
-| 18 | Masaru | Y |  |
+| 18 | 🎵 [Masaru](https://res.cdn.office.net/s01-itpro-tac-ui/1.0.261105.7/91d84257457e6efc.wav) | Y |  |
 | 19 | 🎵 [Meera](https://res.cdn.office.net/s01-itpro-tac-ui/1.0.261025.2/6fd584f9d50c9a45.wav) | Y | hi-IN - Hindi |
 | 20 | Nadira | Y |  |
-| 21 | Nanami | Y |  |
-| 22 | Ollie | Y | en-GB - English (United Kingdom) |
-| 23 | Osman | Y |  |
-| 24 | Remy | Y | fr-FR - French (France) |
-| 25 | Seraphina | Y | de-DE - German (Germany) |
-| 26 | Siennatopaz | N | en-AU - English (Australia) |
-| 27 | Sonia | Y |  |
-| 28 | SunHi | Y |  |
-| 29 | Sylvie | Y |  |
+| 21 | 🎵 [Nanami](https://res.cdn.office.net/s01-itpro-tac-ui/1.0.261105.7/1900643fce2d9968.wav) | Y |  |
+| 22 | 🎵 [Ollie](https://res.cdn.office.net/s01-itpro-tac-ui/1.0.261105.7/9381153e68254f72.wav) | Y | en-GB - English (United Kingdom) |
+| 23 | 🎵 [Osman](https://res.cdn.office.net/s01-itpro-tac-ui/1.0.261105.7/4a1f3c0b0d6744a5.wav) | Y |  |
+| 24 | 🎵 [Remy](https://res.cdn.office.net/s01-itpro-tac-ui/1.0.261105.7/845af550721d91bd.wav) | Y | fr-FR - French (France) |
+| 25 | 🎵 [Seraphina](https://res.cdn.office.net/s01-itpro-tac-ui/1.0.261105.7/2be05baa1a93d733.wav) | Y | de-DE - German (Germany) |
+| 26 | 🎵 [Siennatopaz](https://res.cdn.office.net/s01-itpro-tac-ui/1.0.261105.7/7ca1b390392076cb.wav) | N | en-AU - English (Australia) |
+| 27 | 🎵 [Sonia](https://res.cdn.office.net/s01-itpro-tac-ui/1.0.261105.7/313967fd6dce703a.wav) | Y |  |
+| 28 | 🎵 [SunHi](https://res.cdn.office.net/s01-itpro-tac-ui/1.0.261105.7/bf0f9feea4890a67.wav) | Y |  |
+| 29 | 🎵 [Sylvie](https://res.cdn.office.net/s01-itpro-tac-ui/1.0.261105.7/224d84b1abc2ca72.wav) | Y |  |
 | 30 | Tessa | N | en-US - English (United States) |
-| 31 | Thalita | Y | pt-BR - Portuguese (Brazil) |
-| 32 | Thierry | Y |  |
-| 33 | Tristan | Y |  |
-| 34 | Tyler | Y |  |
-| 35 | Vivienne | Y |  |
-| 36 | William | Y |  |
-| 37 | Xiaoqi | Y | zh-CN - Chinese (Simplified, PRC) |
+| 31 | 🎵 [Thalita](https://res.cdn.office.net/s01-itpro-tac-ui/1.0.261105.7/c401a47404d465bb.wav) | Y | pt-BR - Portuguese (Brazil) |
+| 32 | 🎵 [Thierry](https://res.cdn.office.net/s01-itpro-tac-ui/1.0.261105.7/7fd3fe8bb32c6c4d.wav) | Y |  |
+| 33 | 🎵 [Tristan](https://res.cdn.office.net/s01-itpro-tac-ui/1.0.261105.7/24c5decabb66554c.wav) | Y |  |
+| 34 | 🎵 [Tyler](https://res.cdn.office.net/s01-itpro-tac-ui/1.0.261105.7/c5e80be5762456ea.wav) | Y |  |
+| 35 | 🎵 [Vivienne](https://res.cdn.office.net/s01-itpro-tac-ui/1.0.261105.7/fc1381f6f4ad5878.wav) | Y |  |
+| 36 | 🎵 [William](https://res.cdn.office.net/s01-itpro-tac-ui/1.0.261105.7/1a6341780b08d409.wav) | Y |  |
+| 37 | 🎵 [Xiaoqi](https://res.cdn.office.net/s01-itpro-tac-ui/1.0.261105.7/2557618e5d7ef0fb.wav) | Y | zh-CN - Chinese (Simplified, PRC) |
 | 38 | 🎵 [Xiaoxiao](https://res.cdn.office.net/s01-itpro-tac-ui/1.0.261025.2/5386fbd85fec2a30.wav) | Y | zh-CN - Chinese (Simplified, PRC) |
 | 39 | 🎵 [Ximena](https://res.cdn.office.net/s01-itpro-tac-ui/1.0.261025.2/5c0ab10bfbdf65f6.wav) | Y | es-ES - Spanish (Spain) |
-| 40 | Yasmin | Y |  |
-| 41 | Yunfan | Y | zh-CN - Chinese (Simplified, PRC) |
+| 40 | 🎵 [Yasmin](https://res.cdn.office.net/s01-itpro-tac-ui/1.0.261105.7/3cd089d65d1d3cab.wav) | Y |  |
+| 41 | 🎵 [Yunfan](https://res.cdn.office.net/s01-itpro-tac-ui/1.0.261105.7/ae8a9d8e9887231e.wav) | Y | zh-CN - Chinese (Simplified, PRC) |
 | 42 | 🎵 [Yunxiao](https://res.cdn.office.net/s01-itpro-tac-ui/1.0.261025.2/0d7132d65af0021a.wav) | Y | zh-CN - Chinese (Simplified, PRC) |
 
 1. Ava is the default voice and is recommended for all langauges that don't have an optimized voice.
