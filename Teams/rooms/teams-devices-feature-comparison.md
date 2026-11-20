@@ -12,7 +12,7 @@ author: MattSlomka
 ms.author: mattslomka
 manager: pamgreen
 ms.reviewer: mattslomka
-ms.date: 2026-11-09T00:00:00.0000000Z
+ms.date: 2026-11-20T00:00:00.0000000Z
 ms.topic: article
 audience: Admin
 ms.service: msteams
@@ -86,7 +86,7 @@ To help guide you as to what features are available on different platforms, you 
 |  | Live reactions | Available | Available |
 |  | PowerPoint Live | Available | Available |
 |  | Live closed captions | Available | Available |
-|  | Participate in breakout rooms | Available | Not available |
+|  | Participate in breakout rooms | Available | Available |
 |  | Teams Premium meeting protection policies | Available | Available |
 |  | End to End Encrypted Meetings | Available | Available |
 |  | Start meeting recording and transcription | Available | Available |
@@ -106,8 +106,8 @@ To help guide you as to what features are available on different platforms, you 
 |  | People Recognition (video) | Available | Not available |
 |  | Intelligent Speaker Recognition (voice) | Available | Available |
 |  | Room Capacity Notifications | Available | Available |
-|  | User accessible device language change | Available | Not available |
-|  | Rate my call report | Available | Not available |
+|  | User accessible device language change | Available | Available |
+|  | Rate my call report | Available | Available |
 |  | Net promoter score (NPS) at meeting end | Available | Available |
 |  | Meeting controls on touch enabled front of room displays | Not available | Available |
 |  | Smart Camera Controls | Available | Available |
@@ -204,7 +204,7 @@ To help guide you as to what features are available on different platforms, you 
 |  | Live reactions | Available | Available |
 |  | PowerPoint Live | Available | Available |
 |  | Live closed captions | Available | Available |
-|  | Participate in breakout rooms | Available | Not available |
+|  | Participate in breakout rooms | Available | Available |
 |  | Teams Premium meeting protection policies | Available | Available |
 |  | End to End Encrypted Meetings | Available | Available |
 |  | Start meeting recording and transcription | Available | Available |
@@ -223,8 +223,8 @@ To help guide you as to what features are available on different platforms, you 
 |  | People Recognition (video) | Not available | Not available |
 |  | Intelligent Speaker Recognition (voice) | Available | Available |
 |  | Room Capacity Notifications | Available | Available |
-|  | User accessible device language change | Available | Not available |
-|  | Rate my call report | Available | Not available |
+|  | User accessible device language change | Available | Available |
+|  | Rate my call report | Available | Available |
 |  | Net promoter score (NPS) at meeting end | Not available | Not available |
 |  | Meeting controls on touch enabled front of room displays | Not available | Available |
 |  | Smart Camera Controls | Available | Available |
@@ -321,7 +321,7 @@ To help guide you as to what features are available on different platforms, you 
 |  | Live reactions | Available | Available |
 |  | PowerPoint Live | Available | Available |
 |  | Live closed captions | Available | Available |
-|  | Participate in breakout rooms | Available | Not available |
+|  | Participate in breakout rooms | Available | Available |
 |  | Teams Premium meeting protection policies | Available | Available |
 |  | End to End Encrypted Meetings | Available | Available |
 |  | Start meeting recording and transcription | Available | Available |
@@ -341,8 +341,8 @@ To help guide you as to what features are available on different platforms, you 
 |  | People Recognition (video) | Not available | Not available |
 |  | Intelligent Speaker Recognition (voice) | Not available | Not available |
 |  | Room Capacity Notifications | Not available | Not available |
-|  | User accessible device language change | Available | Not available |
-|  | Rate my call report | Available | Not available |
+|  | User accessible device language change | Available | Available |
+|  | Rate my call report | Available | Available |
 |  | Net promoter score (NPS) at meeting end | Not available | Not available |
 |  | Meeting controls on touch enabled front of room displays | Not available | Available |
 |  | Smart Camera Controls | Available | Available |

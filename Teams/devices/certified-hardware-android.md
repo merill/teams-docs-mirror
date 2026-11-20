@@ -695,6 +695,14 @@ Devices must be updated to newer application releases (when available) to remain
 
 | Device model | Latest firmware version | Minimum version details | Included Microsoft applications | Release date |
 | --- | --- | --- | --- | --- |
+| Logi Rallybar (VR0019) | `2.2.181 (AOSP)` | Firmware: `2.1.204` | Teams client: `1449/1.0.96.2026264504` Microsoft Intune: `26.06.4` Authenticator: `6.2609.6407` Admin Agent: `1.0.0.202608280411.product (865)` | November 19, 2026 |
+| Logi Rallybar Mini (VR0020) | `2.2.181 (AOSP)` | Firmware: `2.1.204` | Teams client: `1449/1.0.96.2026264504` Microsoft Intune: `26.06.4` Authenticator: `6.2609.6407` Admin Agent: `1.0.0.202608280411.product (865)` | November 19, 2026 |
+| Logi TAP IP (VR0029) | `2.2.154 (AOSP)` | Firmware: `2.1.328` | Teams client: `1449/1.0.96.2026264504` Microsoft Intune: `26.06.4` Authenticator: `6.2609.6407` Admin Agent: `1.0.0.202608280411.product (865)` | November 19, 2026 |
+| Logi RoomMate (VR0030) | `2.2.148 (AOSP)` | Firmware: `2.1.186` | Teams client: `1449/1.0.96.2026264504` Microsoft Intune: `26.06.4` Authenticator: `6.2609.6407` Admin Agent: `1.0.0.202608280411.product (865)` | November 19, 2026 |
+| Logi Rallybar Huddle (VR0034) | `2.2.131 (AOSP)` | Firmware: `2.1.209` | Teams client: `1449/1.0.96.2026264504` Microsoft Intune: `26.06.4` Authenticator: `6.2609.6407` Admin Agent: `1.0.0.202608280411.product (865)` | November 19, 2026 |
+| Logitech Rally Board 65 (VR0039) | `2.2.154 (AOSP)` | Firmware: `2.1.268` | Teams client: `1449/1.0.96.2026264504` Microsoft Intune: `26.06.4` Authenticator: `6.2609.6407` Admin Agent: `1.0.0.202608280411.product (865)` | November 19, 2026 |
+| Logi Rallybar 2 (VR0050) | `2.2.96 (AOSP)` | NA | Teams client: `1449/1.0.96.2026264504` Microsoft Intune: `26.06.4` Authenticator: `6.2609.6407` Admin Agent: `1.0.0.202608280411.product (865)` | November 19, 2026 |
+| Logi TAP IP 2 (VR0053) | `2.2.112 (AOSP)` | NA | Teams client: `1449/1.0.96.2026264504` Microsoft Intune: `26.06.4` Authenticator: `6.2609.6407` Admin Agent: `1.0.0.202608280411.product (865)` | November 19, 2026 |
 | Logi Rallybar (VR0019) | `2.1.204 (AOSP)` | Firmware: `2.1.176` Teams client: `1449/1.0.96.2026249711` | Teams client: `1449/1.0.96.2026129709` Microsoft Intune: `26.3.1` Authenticator: `6.2606.4246` Admin Agent: `1.0.0.202607160723.product (856)` | September 28, 2026 |
 | Logi Rallybar Mini (VR0020) | `2.1.204 (AOSP)` | Firmware: `2.1.176` Teams client: `1449/1.0.96.2026249711` | Teams client: `1449/1.0.96.2026129709` Microsoft Intune: `26.3.1` Authenticator: `6.2606.4246` Admin Agent: `1.0.0.202607160723.product (856)` | September 28, 2026 |
 | Logi TAP IP (VR0029) | `2.1.328(AOSP)` | Firmware: `2.1.303` Teams client: `1449/1.0.96.2026249711` | Teams client: `1449/1.0.96.2026129709` Microsoft Intune: `26.3.1` Authenticator: `6.2606.4246` Admin Agent: `1.0.0.202607160723.product (856)` | September 28, 2026 |

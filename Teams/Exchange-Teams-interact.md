@@ -118,6 +118,10 @@ The following table provides a helpful quick reference to feature availability b
 
 Note
 
+For users whose mailboxes are hosted on Exchange on-premises, Loop-based meeting notes in Teams are supported for single-instance meetings. Meeting notes for recurring meetings aren't supported.
+
+Note
+
 Setting Out of Office (OOF) via the Teams client is currently not supported for users whose mailboxes are hosted on-premises; these users should perform this action via the Outlook client.
 
 ## Exchange on-premises and Teams Premium

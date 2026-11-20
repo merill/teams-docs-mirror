@@ -12,7 +12,7 @@ author: officedocspr5
 ms.author: odocspr
 manager: jtremper
 ms.topic: upgrade-and-migration-article
-ms.date: 2026-08-25T00:00:00.0000000Z
+ms.date: 2026-11-20T00:00:00.0000000Z
 ms.service: msteams
 ms.subservice: msteams-admin
 audience: admin
@@ -284,7 +284,9 @@ Administrators can rely on the teamsbootstrapper.exe [error code](/en-us/windows
 
 For Windows Server 2019, the only supported installation method is:
 
-```Command
+```
+
+Command Line
 Dism /Online /Add-ProvisionedAppxPackage /PackagePath:<MSIX package path> /SkipLicense
 ```
 
@@ -333,7 +335,9 @@ This command unregisters and deprovisions Teams for all users. Teams user profil
 
 To prevent Teams from autoupdating, use the following registry key on the virtual machine. Only Teams builds higher than 23306.3314.2555.9628 in VDI can process this registry key.
 
-```Registry
+```
+
+Registry editor
 Location: Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Teams
 Name: disableAutoUpdate
 Type: DWORD
@@ -647,10 +651,12 @@ Learn more: [Manage accounts and organizations in Microsoft Teams](https://suppo
 
 ## Features currently not available and known issues in VDI with Teams
 
-- AVD/W365 users optimized with WebRTC fail to see incoming video/screensharing if they are on a virtual desktop running Windows 11 24H2/25H2 (26100.6725 and 26200.6725 or higher) and User Account Control (UAC) is disabled. Current workaround for this issue requires Administrators to enabled UAC on the Windows virtual machine.
+- Windows Server 2019 VM's might run into BSOD when running Teams 26288.x.x.x or higher (BugID 5996506). Teams 26276.x.x.x is not impacted. Windows Server 2019 is unsupported. Customers must migrate to Windows Server 2025.
+- VD/W365 users optimized with WebRTC fail to see incoming video/screensharing if they are on a virtual desktop running Windows 11 24H2/25H2 (26100.6725 and 26200.6725 or higher) and User Account Control (UAC) is disabled. Current workaround for this issue requires Administrators to enabled UAC on the Windows virtual machine.
 - Microsoft Teams optimization isn't supported in nested or double hop scenarios (i.e. launching a second virtual desktop from another virtual desktop).
 - In some scenarios, Citrix RemotePC users might experience a Teams crash and restart loop when using VDA 2411 and accessing Teams locally (not via HDX). Check CTX585013 for more details.
 - Teams doesn't on-demand register during FSLogix profile creation (even with HotFix 4), and doesn't register during future sign-ins, despite being installed. A race condition between Process Lifetime Manager (PLM) service and AppxSvc causes this issue. causing a transient failure when updating the package with error 0x80004001 (E\_NOTIMPL). If the PLM service isn't running, Teams registration fails.
+
     - (In MSIX, Registration occurs on a per-user basis and begins when a user logs on. The OS then loads the preinstalled packaged app, creating user-specific app data, FTAs, and app tiles in the Start menu. This action is done by the AppReadiness Service, which is aware of all preinstalled apps and requests the Appx Deployment Service (AppxSvc) deploy those packages.)
     - Customers hitting this error, even with FSLogix Hotfix 4, must deploy these fixes:
         - Windows 11 21H2 [KB5043067](https://support.microsoft.com/topic/september-10-2024-kb5043067-os-build-22000-3197-62287850-4f0d-4e4a-9fe8-b026bb1be994)
@@ -658,24 +664,28 @@ Learn more: [Manage accounts and organizations in Microsoft Teams](https://suppo
         - Windows Server 2019 [KB5043050](https://support.microsoft.com/topic/september-10-2024-kb5043050-os-build-17763-6293-66e9809a-1838-4474-a6a7-90d64f042f00)
     - This bug is addressed with [KB5037849](https://support.microsoft.com/help/5037849) for Windows 10 (May 2024). The issue isn't present on Windows 11 22H2 or higher.
 - Teams fails to launch for users logging into single-user non-persistent Windows 10 virtual desktops, or the app isn't visible in the Start menu. But the app might become visible and launches successfully 15 minutes after logging in.
+
     - This issue is addressed in [KB5041582](https://support.microsoft.com/topic/august-29-2024-kb5041582-os-build-19045-4842-preview-f4c4d191-5457-475c-80ac-e1d43cf9c941)[KB5041587](https://support.microsoft.com/topic/august-27-2024-kb5041587-os-builds-22621-4112-and-22631-4112-preview-9706ea0e-6f72-430e-b08a-878963dafe08) for Windows 10/11, and Teams 24215.1007.3082.1590 (or higher) - both components are needed.
-    - You might also need to exclude the following location from your roaming profile solution (for FSLogix customers, as an example, via redirections.xml): `AppData\Local\Packages\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\TempState`.
-    - **NOTE** - The issue isn't seen in **multi-user** Windows 10 or 11. For Windows 2019. A fix to resolve this issue is available: [KB5044227](https://support.microsoft.com/topic/october-8-2024-kb5044277-os-build-17763-6414-edccc872-2f4e-4ac6-b224-50ca8f1acd4f).
+    - You might also need to exclude the following location from your roaming profile solution (for FSLogix customers, as an example, via redirections.xml): `AppData\Local\Packages\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\TempState`. 
+        Note
+
+        The issue isn't seen in **multi-user** Windows 10 or 11. For Windows 2019. A fix to resolve this issue is available: [KB5044227](https://support.microsoft.com/topic/october-8-2024-kb5044277-os-build-17763-6414-edccc872-2f4e-4ac6-b224-50ca8f1acd4f).
 - Customers installing Teams on a golden image, which later undergoes a sysprep to generalize it, are failing to launch the app. This circumstance includes templates from Azure Image Gallery.
+
     - Users logging in to the provisioned virtual machines see the Teams icon greyed out in the start menu and clicking on it has no effect.
     - The AppX log in the Event Viewer has the error 0x80073CF1.
     - Running `Get-AppxPackage -name MsTeams -allusers` from an elevated PowerShell window shows that PackageUserInformation is in a **Paused state** for SID S-1-15-18 (LocalSystem). This error isn't seen on W11 22H2 or higher. Install [KB5039299](https://support.microsoft.com/topic/june-25-2024-kb5039299-os-build-19045-4598-preview-d4e3e815-fdd8-465e-8144-42afa165efed) for Windows 10 [KB5040437](https://support.microsoft.com/topic/july-9-2024-kb5040437-os-build-20348-2582-5b28d9b8-fcba-43bb-91e6-062f43c7ec7c) for WS2022, and [KB5040431](https://support.microsoft.com/topic/july-9-2024-kb5040431-os-build-22000-3079-346db750-842d-41b8-a55a-103cc04d175a) for W11 21H2.
 - Screen sharing from chat for Azure Virtual Desktops/Windows 365 (This issue is now fixed on RD Client 1.2.5105 and Redirector Service [1.50.2402.29001](/en-us/azure/virtual-desktop/whats-new-webrtc#updates-for-version-150240229001)).
-- Screen sharing from chat for Citrix when using Workspace app 2311 only.
 - msteams\_autostart.exe "The parameter is incorrect": In non-persistent environments that use FSLogix (any version before 2210 HotFix 4) or Citrix Profile Manager profile containers, when Teams attempts to autostart or a user tries to launch Teams from the Start menu, it throws the error: "The parameter is incorrect." The frequency and reproducibility of the error varies depending on the environment and especially the antivirus software being used (SentinelOne, Palo Alto, Trend Micro, Bitdefender, CrowdStrike, and so on.) and exclusions in place. This issue is now fixed on FSLogix 2210 HotFix 4. Customers facing this issue with Citrix Profile Manager must upgrade to CPM 2402 or 2203 CU5.
+
     - "The parameter is incorrect" error can be caused by other file system drivers. Running fltmc from an elevated command window lists the drivers. Two Citrix drivers (UPMAction and upmjit) can cause the error, even if you're only using FSLogix HotFix 4 and don't have Citrix Profile Manager. This error happens because Citrix VDA installers typically install profilemgt\_x64.msi by default for Citrix Director monitoring of logon time counters. Removing that MSI can fix "the parameter is incorrect" error.
-- Teams fails to launch for users logging into non-persistent virtual desktops, or the app is **not**visible in the Start menu.
+- Teams fails to launch for users logging into non-persistent virtual desktops, or the app is **not** visible in the Start menu.
+
     - Admins don't experience this issue - after installing Teams on the golden image they can launch it successfully.
     - After you seal the golden image and deploying it at scale (with provisioning tools like Citrix MCS/PVS or Omnissa Instant-Clones), users log in to the virtual machines and select the Teams icon, but aren't able to launch the app. The issue is caused by a failed registration of the MSIX package at the user level with different profile management software (FSLogix before 2210 HotFix 4, Citrix CPM 2308 or 2311 **but not on 2402**, Ivanti UEM, and so on), even though the staging of the package was successful (the OS stored the package's contents on the disk in the %ProgramFiles%\WindowsApps directory). This issue can be confirmed by running Get-AppxPackage -name MsTeams for the affected users. Running this code returns an empty output.
     - If Get-AppxPackage -name MsTeams -allusers is run from an elevated PowerShell command window, the output shows that Teams is registered (see line PackageFullName) and the Status is **OK**.
     - This issue is fixed in FSLogix 2210 HotFix 4.
 - When you use Azure Virtual Desktops or Windows 365, and the MAC Remote Desktop Client or Windows app, Microsoft Teams UI doesn't enumerate all the peripherals connected to the device. Instead, only the device selected at the macOS-level is shown in the Devices' drop-down menu of Microsoft Teams. The peripheral is labeled. "MAC device name" + "Speakers" is an example of this labeling.
-- Teams meetings can't be launched when selecting a link from Outlook. There's an authentication prompt (Access to '{tenant}' tenant is denied) when users attempt to join an **external** meeting. This issue is fixed in Teams 24091.214.2846.1452.
 
 ## Teams for web in VDI
 

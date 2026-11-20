@@ -155,6 +155,7 @@ Devices must be updated to newer application releases (when available) to remain
 
 | Device model | Latest firmware version | Minimum version details | Included Microsoft applications | Release date |
 | --- | --- | --- | --- | --- |
+| CCX350/CCX400/CCX500/CCX505/CCX600/Trio C60 | `9.6.0.1666 (AOSP)` | `N/A` | Teams client: `1449/1.0.94.2026224505` Microsoft Intune: `26.06.0` Authenticator: `6.2607.4685` Admin Agent: `1.0.0.202608280411.product (856)` | November 19, 2026 |
 | CCX350/CCX400/CCX500/CCX505/CCX600/Trio C60 | `9.5.1.0130 (AOSP)` | `N/A` | Teams client: `1449/1.0.94.2026047602` Microsoft Intune: `25.02.1` Authenticator: `6.2601.189` Admin Agent: `1.0.0.202604060507.product (820)` | October 02, 2026 |
 | CCX350/CCX400/CCX500/CCX505/CCX600/Trio C60 | `9.5.1.0067 (AOSP)` | `N/A` | Teams client: `1449/1.0.94.2026047602` Microsoft Intune: `25.02.1` Authenticator: `6.2601.189` Admin Agent: `1.0.0.202604060507.product (820)` | September 15, 2026 |
 | CCX350/CCX400/CCX500/CCX505/CCX600/Trio C60 | `9.5.0.1321 (AOSP)` | `N/A` | Teams client: `1449/1.0.94.2026047602` Microsoft Intune: `25.02.1` Authenticator: `6.2601.189` Admin Agent: `1.0.0.202604060507.product (820)` | July 20, 2026 |
