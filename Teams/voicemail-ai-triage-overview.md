@@ -71,7 +71,7 @@ The service analyzes the voicemail transcript and can generate these outputs:
 - **Suggested actions**: Recommended follow-up tasks derived from the voicemail content. System-defined action labels include callback, set appointment, reschedule appointment, cancel appointment, and email reply, followed by other requested actions generated from the transcript.
 - **Importance flag (urgency)**: A priority signal for time-critical messages, which can mark the voicemail as important in Outlook.
 
-Generated triage insights are stored with the voicemail in Exchange and can be used by downstream automations such as Outlook rules, agent-based workflows, and other LLM-powered processes.
+Generated triage insights are stored with the voicemail in Exchange and can be used by downstream automations such as Outlook rules, agent-based workflows, and other LLM-powered processes. A compliant evaluation model is used to assess the quality of the generated triage insights and monitor triage performance.
 
 If AI-generated content doesn't appear for a voicemail, audio or transcript clarity might be insufficient for reliable triage output.
 
@@ -80,7 +80,7 @@ If AI-generated content doesn't appear for a voicemail, audio or transcript clar
 - **Shared voicemail triage** applies to missed calls handled by Auto Attendants, Call Queues, and Teams Phone Agents.
 - **Personal voicemail triage** applies to a user's personal Teams voicemail.
 
-For shared voicemail, AI triage data is also shown in the Teams Queues app experience. This Queues app experience isn't generally available (GA) yet. The Queues app requires a Teams Premium license.
+For shared voicemail, AI triage data will also be available in the Teams Queues app experience soon. The Queues app requires a Teams Premium license.
 
 ## Admin controls
 

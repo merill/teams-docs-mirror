@@ -51,20 +51,20 @@ Important
 
 This feature is available only through the Microsoft Frontier Program. General availability (GA) timing hasn't been announced yet.
 
-## Planning and licensing review
+### Planning and licensing review
 
-### Planning
+#### Planning
 
 - [Usage-based billing](/en-us/copilot/implement/usage-based-billing-copilot-credits-setup)
 - [Configure billing methods](/en-us/copilot/implement/usage-based-billing-copilot-credits-setup#configure-billing-method)
 
-### Licensing
+#### Licensing
 
 - Shared voicemail AI triage requires usage-based billing.
 - A Microsoft 365 Copilot license isn't required for shared voicemail triage.
 - For Queues app scenarios, the Queues app has separate licensing requirements (Teams Premium).
 
-## Shared voicemail AI triage usage-based billing
+### Shared voicemail AI triage usage-based billing
 
 Each shared voicemail is charged once per processed voicemail, regardless of how many users receive it.
 
@@ -74,7 +74,7 @@ If you want to limit which resource accounts have voicemail AI triage enabled, c
 
 Configuring a spending policy alone doesn't enable AI triage for resource accounts. AI triage must also be enabled in the specific Call Queue, Auto Attendant, and Teams Phone Agent templates.
 
-### For "Specific groups" option create a Microsoft 365 security group
+#### For "Specific groups" option create a Microsoft 365 security group
 
 1. In the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339), go to **Teams & groups** &gt; **Active teams and groups** &gt; **Security groups**.
 2. Select **Add a security group**.
@@ -86,24 +86,24 @@ and add Call Queue, Auto Attendant, and Teams Phone Agent resource accounts to t
 2. Add owners.
 3. Add the resource accounts used by Auto Attendants, Call Queues, or Teams Phone Agents.
 
-## Create a spending policy
+### Create a spending policy
 
 These steps require the **AI Administrator** role.
 
-### Add spending policy
+#### Add spending policy
 
 1. In the Microsoft 365 admin center, go to **Copilot** &gt; **Cost Management**.
 2. Select the **Configuration** tab.
 3. Select **+ Add spending policy**.
 
-### Agents and services
+#### Agents and services
 
 1. Turn off **Allow new Agents and services as they become available**.
 2. Select only **AI Triage for Shared Voicemail**.
 3. Clear all other services.
 4. Select **Next**.
 
-### Access scope
+#### Access scope
 
 1. Name the policy.
 2. Select one of the following:
@@ -111,24 +111,24 @@ These steps require the **AI Administrator** role.
     - **All users** to apply the policy to all resource accounts.
 3. Select **Next**.
 
-### Set limits and alerts
+#### Set limits and alerts
 
 1. Configure monthly spending limits.
 2. Optionally configure per-resource-account limits.
 3. Optionally configure policy-level and user-level alerts.
 4. Select **Next**.
 
-### Billing method
+#### Billing method
 
 1. Use the default spending policy billing method, or override it if you're a Global admin or Billing admin.
 2. Select **Next**.
 
-### Review and add the policy
+#### Review and add the policy
 
 1. Verify scope, services, billing method, limits, and alerts.
 2. Select **Create spending policy**.
 
-## Activation prerequisites and charging behavior
+### Activation prerequisites and charging behavior
 
 Shared voicemail AI triage runs only when both are true:
 
@@ -137,7 +137,7 @@ Shared voicemail AI triage runs only when both are true:
 
 If no template is selected, AI triage isn't performed and no usage-based billing charges are incurred, even when a spending policy is configured.
 
-## Billing attribution
+#### Billing attribution
 
 Shared voicemail AI triage is billed once per processed voicemail, regardless of how many users receive the voicemail.
 
