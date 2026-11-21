@@ -914,6 +914,7 @@ Introduced in this update:
 - **PowerPoint Live support for webinars and structured meetings**![](../media/mtr-pro-icon.png)**:** Participants joining webinars and structured meetings from Teams Rooms on Android can view and interact with PowerPoint Live presentations. This provides greater flexibility and accessibility while keeping room participants aligned with the active presentation.
 - **Automatic return to the home screen:** After a period of inactivity in any out-of-meeting screen, the device now returns to the home screen automatically, so the next person walking into the room always finds a clean, ready state and can see the room calendar.
 - **Call Quality Feedback surveys:** Users can now rate the quality of their calls and meetings and provide additional feedback on calling, video, and screen-sharing experiences to help organizations ensure consistent, high-quality experiences. These results are visible in the Call Quality Dashboard and can be controlled using [feedback policies](/en-us/privacy/microsoft-365/feedback/feedback-manage).
+- **AI-powered notes for in-person meetings with Facilitator**![](../media/mtr-pro-icon.png)**:** Facilitator captures real-time notes and meeting outcomes during in-person meetings. Simply tap to start taking notes, view them on the front-of-room display or touch board, and enter your name to save them for later access in meeting recap. [Learn more](/en-us/microsoftteams/rooms/facilitator-teams-rooms).
 
 Resolved Issues:
 

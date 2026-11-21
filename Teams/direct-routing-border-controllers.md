@@ -91,7 +91,7 @@ We're not accepting new nominations for certification until further notice.
 
 | Vendor | Product | Non-media bypass | Media bypass | Software version | 911 Service Provider Capable\* | ELIN capable |
 | --- | --- | --- | --- | --- | --- | --- |
-| [AudioCodes](https://www.audiocodes.com/solutions-products/products/products-for-microsoft-365/direct-routing-for-microsoft-teams) | Mediant 500 SBC | ✔ | ✔ | Supported 7.40A.600 (Recommended 7.40A.500) | ✔ | ✔ |
+| [AudioCodes](https://www.audiocodes.com/products/products-for-microsoft-teams/direct-routing-sbcs-for-microsoft-teams) | Mediant 500 SBC | ✔ | ✔ | Supported 7.40A.600 (Recommended 7.40A.500) | ✔ | ✔ |
 |  | Mediant 500 Li SBC | ✔ | ✔ | Supported 7.2x.xxx (Recommended 7.40A.400) | ✔ | ✔ |
 |  | Mediant 800 SBC | ✔ | ✔ | Supported 7.40A.600 (Recommended 7.40A.500) | ✔ | ✔ |
 |  | Mediant 2600 SBC | ✔ | ✔ | Supported 7.40A.600 (Recommended 7.40A.500) | ✔ | ✔ |
@@ -102,7 +102,7 @@ We're not accepting new nominations for certification until further notice.
 |  | Virtual Edition SBC | ✔ | ✔ | Supported 7.40A.600 (Recommended 7.40A.500) | ✔ | ✔ |
 |  | Mediant Cloud Edition SBC | ✔ | ✔ | Supported 7.40A.600 (Recommended 7.40A.500) | ✔ | ✔ |
 |  | Mediant 3100 | ✔ | ✔ | Supported 7.40A.600 (Recommended 7.40A.500) | ✔ | ✔ |
-| [Ribbon Communications](https://ribboncommunications.com/solutions/enterprise-solutions/microsoft-skype-business) | SBC 5400 | ✔ | ✔ | Supported on available versions of 11.1 and later, 10.1, 9.2, and 7.2 (Recommended latest version) | ✔ |  |
+| [Ribbon Communications](https://ribboncommunications.com/solutions/enterprise-solutions/secure-cloud-communications/microsoft-solutions-teams-direct-routing-0) | SBC 5400 | ✔ | ✔ | Supported on available versions of 11.1 and later, 10.1, 9.2, and 7.2 (Recommended latest version) | ✔ |  |
 |  | SBC 7000 | ✔ | ✔ | Supported on available versions of 11.1 and later, 10.1, 9.2, and 7.2 (Recommended latest version) | ✔ |  |
 |  | All SBC SWe variants, including hosted offers | ✔ | ✔ | Supported on available versions of 11.1 and later, 10.1, 9.2, and 7.2 (Recommended latest version) | ✔ |  |
 |  | SBC 1000 | ✔ | ✔ | Supported on available versions of 12.x and later, 11.x, or 9.x (Recommended latest version) | ✔ | ✔ |
@@ -131,13 +131,13 @@ We're not accepting new nominations for certification until further notice.
 | [Avaya](https://support.avaya.com/products/P0997/avaya-session-border-controller-for-enterprise/8.1.x) | Avaya Session Border Controller for Enterprise (ASBCE) | ✔ | ✔ | Release 8.1.1 or higher (8.1.2 or higher for Media Bypass, 10.2.0.2 for ELIN) | ✔ | ✔ |
 | [Nokia](https://documentation.nokia.com/aces/cgi-bin/chk_access.cgi/3TB30222GBAAACZZA.zip) | Nokia Session Border Controller | ✔ | ✔ | 25.7 | ✔ |  |
 | [Italtel](https://www.italtel.com/italtels-sbc-obtains-microsoft-teams-direct-routing-certification/) | NetMatch-S CI | ✔ | ✔ | Supported 5.8 (Recommended latest version) | ✔ | ✔ |
-| [Ericsson](https://www.ericsson.com/portfolio/cloud-software-and-services/cloud-core/communication-services-udm-and-exposure/communication-services--udm/cloud-ims/enterprise-communication/sip-trunking) | vSBC 2.16 | ✔ |  |  |  |  |
+| [Ericsson](https://portfolio.ericsson.net/Main-Catalog/Cloud-Software-and-Services/Cloud-Core/Communication-Services-UDM-and-Exposure/Communication-Services/Cloud-IMS/Session-Border-Controller/c/FGB1010751) | vSBC 2.16 | ✔ |  |  |  |  |
 | [Cataleya](https://cataleya.com/cataleya-launches-orchid-cloud-revolutionary-cloud-based-wholesale-voice-business-platform/) | Orchid Link | ✔ |  | 3.1 |  |  |
-| [ULTATEL](https://www.ultatel.com/services/direct-routing-teams-sbc) | Teams SBC | ✔ | ✔ | 1.6 |  |  |
+| [ULTATEL](https://www.ultatel.com/direct-routing-teams-sbc/) | Teams SBC | ✔ | ✔ | 1.6 |  |  |
 | [Mitel](https://www.mitel.com/products/openscape-session-border-controller) | Unify OpenScape Session Border Controller | ✔ | ✔ | V10R2.2.0 or higher |  |  |
 |  | Mitel Session Border Controller | ✔ | ✔ | Supported v1.0.127 (Recommended v1.0.127) |  |  |
 | [Sansay Inc.](https://www.sansay.com/solutions/microsoft-teams/) | vmVSXi | ✔ | ✔ | 10.5.1.354-vm-S-x64 | ✔ |  |
-| [Enghouse Networks](https://www.enghousenetworks.com/products/infrastructure-security/enghouse-bordernet-sbc/) | Dialogic BorderNet SBC | ✔ | ✔ | 3.9.x |  |  |
+| [Enghouse Networks](https://www.enghousenetworks.com/products/infrastructure-security/enghouse-bordernet-sbc/) | Enghouse BorderNet SBC | ✔ | ✔ | 3.9.x |  |  |
 | [Patton Electronics Co.](https://www.patton.com/microsoft/) | Patton SmartNode eSBC | ✔ |  | 3.19.x |  |  |
 | [M5 Technologies (previously known as Media5 Corporation)](https://www.m5technologies.com/pages/gateways-sbcs-for-microsoft-teams-1) | Mediatrix Sentinel Series | ✔ |  | DGW 48.0.2340 (Recommended DGW 48.5.2718) |  |  |
 | [Ekinops](https://www.ekinops.com/solutions/voice-data-access/microsoft-direct-routing-sbc) | Ekinops Session Border Controller (ONeSBC) | ✔ | ✔ | Supported 6.12.x (Recommended 6.14.x) |  |  |
@@ -182,12 +182,12 @@ The following table describes which SBC vendors support [Local Media Optimizatio
 |  | Mediant 9000 SBC | Supported 7.20A.258 (Recommended 7.40A.100) |
 |  | Mediant Virtual Edition SBC | Supported 7.20A.258 (Recommended 7.40A.100) |
 |  | Mediant Cloud Edition SBC | Supported 7.20A.258 (Recommended 7.40A.100) |
-| [Ribbon SBC Core](https://support.sonus.net/display/ALLDOC/SBC+8.2+-+Configure+Local+Media+Optimization) | SBC 5110 | 8.2 or higher SW version |
+| [Ribbon SBC Core](https://ribboncommunications.com/solutions/enterprise-solutions/secure-cloud-communications/microsoft-solutions-teams-direct-routing-0) | SBC 5110 | 8.2 or higher SW version |
 |  | SBC 5210 | 8.2 or higher SW version |
 |  | SBC 5400 | 8.2 or higher SW version |
 |  | SBC 7000 | 8.2 or higher SW version |
 |  | SBC SWe | 8.2 or higher SW version |
-| [Ribbon SBC Edge](https://support.sonus.net/display/UXDOC81/Best+Practice+-+Configuring+Microsoft+Teams+Local+Media+Optimization) | SBC SWe Edge (formerly SWe Lite) | 8.1.5 or higher SW version |
+| [Ribbon SBC Edge](https://publicdoc.rbbn.com/spaces/UXDOC121/pages/413243254/Configuring+Microsoft+Teams+Direct+Routing) | SBC SWe Edge (formerly SWe Lite) | 8.1.5 or higher SW version |
 |  | SBC 1000 | 8.1.5 or higher SW version |
 |  | SBC 2000 | 8.1.5 or higher SW version |
 |  | SBC 8000 (w/SBC SWe Edge) | 23.06 or higher SW version |
@@ -203,7 +203,7 @@ The following table describes which SBC vendors support [Local Media Optimizatio
 |  | AP 6400 | 10.x |
 | [Avaya](https://documentation.avaya.com/en-US/bundle/WorkingWithAvayaSBCEandMicrosoftTeams_r81x/page/About_Avaya_SBCE_and_MS_Teams.html) | Avaya Session Border Controller for Enterprise (ASBCE) | 10.1.2 or higher |
 | [Italtel](https://www.italtel.com/italtels-sbc-obtains-microsoft-teams-direct-routing-certification/) | NetMatch-S CI | 5.7 or higher SW version |
-| [Enghouse Networks](https://www.enghousenetworks.com/portfolio/network-infrastructure/) | Enghouse BorderNet | 3.9.2-XY or higher SW version |
+| [Enghouse Networks](https://www.enghousenetworks.com/products/infrastructure-security/enghouse-bordernet-sbc/) | Enghouse BorderNet | 3.9.x |
 
 ## Direct Routing and analog devices interoperability
 
@@ -211,8 +211,8 @@ The following table lists devices that are verified for interoperability between
 
 | Vendor | Product | Verified |
 | --- | --- | --- |
-| [AudioCodes](https://www.audiocodes.com/solutions-products/products/products-for-microsoft-365/direct-routing-for-microsoft-teams) | [ATA-1](https://www.audiocodes.com/media/2373/mp-1xx-and-mp-124-datasheet.pdf) | ✔ |
-| [AudioCodes](https://www.audiocodes.com/solutions-products/products/products-for-microsoft-365/direct-routing-for-microsoft-teams) | [ATA-2](https://www.audiocodes.com/media/2399/mediapack-20x-mp-20x-analog-telephone-adapters-datasheet.pdf) | ✔ |
+| [AudioCodes](https://www.audiocodes.com/products/products-for-microsoft-teams/direct-routing-sbcs-for-microsoft-teams) | [ATA-1](https://www.audiocodes.com/media/2373/mp-1xx-and-mp-124-datasheet.pdf) | ✔ |
+| [AudioCodes](https://www.audiocodes.com/products/products-for-microsoft-teams/direct-routing-sbcs-for-microsoft-teams) | [ATA-2](https://www.audiocodes.com/media/2399/mediapack-20x-mp-20x-analog-telephone-adapters-datasheet.pdf) | ✔ |
 | [Cisco](https://www.cisco.com/c/en/us/products/collateral/unified-communications/ata-190-series-analog-telephone-adapters/datasheet-c78-740013.html) | ATA 191 Multiplatform Analog Telephone Adapter | ✔ |
 | [Oracle](https://www.oracle.com/technical-resources/documentation/acme-packet.html) | AP 1100 Software Version 9.x and 10.x. Recommended latest version. | ✔ |
 | [Oracle](https://www.oracle.com/technical-resources/documentation/acme-packet.html) | AP 3900 Software Version 9.x and 10.x. Recommended latest version. | ✔ |
@@ -223,14 +223,14 @@ The following table lists devices that are verified for interoperability between
 | [Oracle](https://www.oracle.com/technical-resources/documentation/acme-packet.html) | AP 3950 Software Version 9.x and 10.x. Recommended latest version. | ✔ |
 | [Oracle](https://www.oracle.com/technical-resources/documentation/acme-packet.html) | AP 4900 Software Version 9.x and 10.x. Recommended latest version. | ✔ |
 | [Oracle](https://www.oracle.com/technical-resources/documentation/acme-packet.html) | AP 6400 Software Version 10.x. Recommended latest version. | ✔ |
-| [Ribbon](https://ribboncommunications.com/solutions/enterprise-solutions/microsoft-solutions) | [SBC 1000. Software version: 8.1.1 (build 527) or higher SW version](https://support.sonus.net/display/UXDOC81/Connect+SBC+Edge+to+Microsoft+Teams+Direct+Routing+to+Support+Analog+Devices) | ✔ |
-| [Ribbon](https://ribboncommunications.com/solutions/enterprise-solutions/microsoft-solutions) | [SBC 2000. Software version: 8.1.1 (build 527) or higher SW version](https://support.sonus.net/display/UXDOC81/Connect+SBC+Edge+to+Microsoft+Teams+Direct+Routing+to+Support+Analog+Devices) | ✔ |
-| [Ribbon](https://ribboncommunications.com/solutions/enterprise-solutions/microsoft-solutions) | [EdgeMarc 302. Software version: 16.1.1 or higher SW version](https://ribboncommunications.com/products/service-provider-products/cloud-and-edge/session-border-controllers/session-border-controllers-edge-appliances) | ✔ |
-| [Ribbon](https://ribboncommunications.com/solutions/enterprise-solutions/microsoft-solutions) | [EdgeMarc 304. Software version: 16.1.1 or higher SW version](https://ribboncommunications.com/products/service-provider-products/cloud-and-edge/session-border-controllers/session-border-controllers-edge-appliances) | ✔ |
-| [Ribbon](https://ribboncommunications.com/solutions/enterprise-solutions/microsoft-solutions) | [EdgeMarc 2900A. Software version: 16.1.1 or higher SW version](https://ribboncommunications.com/products/service-provider-products/cloud-and-edge/session-border-controllers/session-border-controllers-edge-appliances) | ✔ |
-| [Ribbon](https://ribboncommunications.com/solutions/enterprise-solutions/microsoft-solutions) | [EdgeMarc 4806. Software version: 16.1.1 or higher SW version](https://ribboncommunications.com/products/service-provider-products/cloud-and-edge/session-border-controllers/session-border-controllers-edge-appliances) | ✔ |
-| [Ribbon](https://ribboncommunications.com/solutions/enterprise-solutions/microsoft-solutions) | [EdgeMarc 4808. Software version: 16.1.1 or higher SW version](https://ribboncommunications.com/products/service-provider-products/cloud-and-edge/session-border-controllers/session-border-controllers-edge-appliances) | ✔ |
-| [Ribbon](https://ribboncommunications.com/solutions/enterprise-solutions/microsoft-solutions) | [EdgeMarc 6000. Software version: 16.1.1 or higher SW version](https://ribboncommunications.com/products/service-provider-products/cloud-and-edge/session-border-controllers/session-border-controllers-edge-appliances) | ✔ |
+| [Ribbon](https://ribboncommunications.com/solutions/enterprise-solutions/secure-cloud-communications/microsoft-solutions-teams-direct-routing-0) | [SBC 1000. Software version: 8.1.1 (build 527) or higher SW version](https://publicdoc.rbbn.com/spaces/UXDOC121/pages/413243254/Configuring+Microsoft+Teams+Direct+Routing) | ✔ |
+| [Ribbon](https://ribboncommunications.com/solutions/enterprise-solutions/secure-cloud-communications/microsoft-solutions-teams-direct-routing-0) | [SBC 2000. Software version: 8.1.1 (build 527) or higher SW version](https://publicdoc.rbbn.com/spaces/UXDOC121/pages/413243254/Configuring+Microsoft+Teams+Direct+Routing) | ✔ |
+| [Ribbon](https://ribboncommunications.com/solutions/enterprise-solutions/secure-cloud-communications/microsoft-solutions-teams-direct-routing-0) | [EdgeMarc 302. Software version: 16.1.1 or higher SW version](https://publicdoc.rbbn.com/spaces/IOT/pages/243570903/Ribbon+EdgeMarc+SBC+Configuration+with+Microsoft+Teams) | ✔ |
+| [Ribbon](https://ribboncommunications.com/solutions/enterprise-solutions/secure-cloud-communications/microsoft-solutions-teams-direct-routing-0) | [EdgeMarc 304. Software version: 16.1.1 or higher SW version](https://publicdoc.rbbn.com/spaces/IOT/pages/243570903/Ribbon+EdgeMarc+SBC+Configuration+with+Microsoft+Teams) | ✔ |
+| [Ribbon](https://ribboncommunications.com/solutions/enterprise-solutions/secure-cloud-communications/microsoft-solutions-teams-direct-routing-0) | [EdgeMarc 2900A. Software version: 16.1.1 or higher SW version](https://publicdoc.rbbn.com/spaces/IOT/pages/243570903/Ribbon+EdgeMarc+SBC+Configuration+with+Microsoft+Teams) | ✔ |
+| [Ribbon](https://ribboncommunications.com/solutions/enterprise-solutions/secure-cloud-communications/microsoft-solutions-teams-direct-routing-0) | [EdgeMarc 4806. Software version: 16.1.1 or higher SW version](https://publicdoc.rbbn.com/spaces/IOT/pages/243570903/Ribbon+EdgeMarc+SBC+Configuration+with+Microsoft+Teams) | ✔ |
+| [Ribbon](https://ribboncommunications.com/solutions/enterprise-solutions/secure-cloud-communications/microsoft-solutions-teams-direct-routing-0) | [EdgeMarc 4808. Software version: 16.1.1 or higher SW version](https://publicdoc.rbbn.com/spaces/IOT/pages/243570903/Ribbon+EdgeMarc+SBC+Configuration+with+Microsoft+Teams) | ✔ |
+| [Ribbon](https://ribboncommunications.com/solutions/enterprise-solutions/secure-cloud-communications/microsoft-solutions-teams-direct-routing-0) | [EdgeMarc 6000. Software version: 16.1.1 or higher SW version](https://publicdoc.rbbn.com/spaces/IOT/pages/243570903/Ribbon+EdgeMarc+SBC+Configuration+with+Microsoft+Teams) | ✔ |
 | [TE-SYSTEMS](https://www.anynode.de/anynode-and-microsoft-teams/) | anynode with Grandstream GXW42xx (V1.0.7.10) | ✔ |
 
 Note the certification is granted to a major version. That means that firmware with any number in the SBC firmware following the major version is supported.
