@@ -16,7 +16,7 @@ ms.topic: how-to
 ms.service: msteams
 ms.subservice: msteams-admin
 ms.reviewer: snchatur
-ms.date: 2026-05-26T00:00:00.0000000Z
+ms.date: 2026-11-18T00:00:00.0000000Z
 f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
@@ -59,6 +59,10 @@ In Microsoft Teams, users can view analytics for teams and channels that they're
 - **Per-channel analytics** gives users an even more granular view, showing usage data for a specific channel.
 
 Users can filter any of these views to see data for a specified time period.
+
+Note
+
+Team and channel analytics isn't supported in GCCH and DoD environments.
 
 ## View cross-team analytics
 
