@@ -11,6 +11,7 @@ recommendations: true
 ms.author: guypaskar
 author: PeerDiego
 manager: hadarweiss
+ms.reviewer: badarsadaf
 f1.keywords:
 - NOCSH
 audience: Admin
@@ -22,7 +23,7 @@ ms.collection:
 - Ent_O365_Hybrid
 - Hybrid
 - M365-email-calendar
-ms.date: 2026-07-06T00:00:00.0000000Z
+ms.date: 2026-11-23T00:00:00.0000000Z
 description: Learn about Teams Silent Testing.
 locale: en-us
 document_id: 493603ae-dce3-4aa6-6ad1-2c596a17a399
@@ -48,18 +49,6 @@ platformId: 880bff2b-a2cb-a7de-3c4e-e2bd531dc608
 ---
 
 # Teams Silent Testing - Microsoft Teams | Microsoft Learn
-
-![Information icon.](media/info.png)**Some features described in this article require [Teams Premium](enhanced-teams-experience) for meetings and are included with Teams Enterprise for events.**
-
-Important
-
-**Licensing update for Teams Premium and Teams Enterprise**
-
-As of April 1, 2026, some features that were previously only available with Teams Premium are now included with Teams Enterprise. Teams Premium continues to offer advanced meeting protection, advanced communication (like the Queues app), branding and personalization, and intelligence capabilities. [Learn more](https://techcommunity.microsoft.com/blog/microsoftteamsblog/licensing-updates-extend-access-to-advanced-capabilities-in-microsoft-teams-and-/4488312).
-
-Customers who purchased Teams Premium licenses before April 1, 2026 will continue to have access to all the previously included Teams Premium features and product experiences included with these licenses until they expire.
-
-To manage Teams Premium features, your tenant must have at least one active [Teams Premium license](/en-us/microsoftteams/teams-add-on-licensing/licensing-enhance-teams).
 
 ## Overview
 
@@ -106,7 +95,11 @@ By integrating Teams Silent Testing into your operational routines, you can dete
 - Teams client must be installed and running.
 - Device must be powered ON.
 - User must not be on an active Teams call.
-- Teams user signed in to the device must have a Teams Premium license for Silent Test Calls. Silent Test Town halls is included with Teams Enterprise.
+
+## Licensing requirements
+
+- Silent Test Calls (meetings): Requires Teams Premium.
+- Silent Test Town halls: Currently in private preview for eligible customers without Teams Premium. Customers participating in private preview must have at least one Teams Premium license to start testing. Expected to become available to Teams Enterprise customers in early 2027.
 
 ## Networking requirements
 
@@ -120,10 +113,6 @@ For Silent Testing to work properly, your network infrastructure must meet speci
 Important
 
 As part of the [Unified Domains](/en-us/microsoft-365/enterprise/cloud-microsoft-domain) initiative, domains are transitioning from `*.teams.microsoft.com` to `*.teams.cloud.microsoft`. Both domains are required during the transition period to ensure uninterrupted service.
-
-## Licensing details
-
-- Silent Test Calls is a Teams Premium feature. Silent Test Town halls is included with Teams Enterprise.
 
 ## How to schedule a Silent Test
 

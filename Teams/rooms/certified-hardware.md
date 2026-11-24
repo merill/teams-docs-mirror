@@ -154,6 +154,7 @@ The following devices are Certified under the Microsoft Teams Rooms on Windows C
 | [Yealink MVC 800 II](https://www.yealink.com/product/microsoft-teams-room-system-mvc800II) | Core i5 | 8 GB | 128 GB |
 | [Yealink MVC 900 II](https://www.yealink.com/product/microsoft-teams-room-system-mvc900II) | Core i5 | 8 GB | 128 GB |
 | [Yealink MVC840](https://www.yealink.com/en/product-detail/microsoft-teams-rooms-mvc840-iii) | Core i5 | 8 GB | 128 GB |
+| Yealink MVC860-C5U-000 E2 | Core Ultra 5 | 16 GB | 256 GB |
 | [Yealink MVC940](https://www.yealink.com/en/product-detail/microsoft-teams-rooms-mvc940-iii) | Core i5 | 8 GB | 128 GB |
 | [Yealink MVC940 Bundle with AV Hub](https://www.yealink.com/en/product-detail/microsoft-teams-rooms-mvc940-avhub) | Core i5 | 8 GB | 128 GB |
 | [Yealink MVC860](https://www.yealink.com/en/product-detail/microsoft-teams-rooms-mvc860-iii) | Core i5 | 8 GB | 128 GB |
@@ -318,6 +319,7 @@ The following devices are certified under the Microsoft Teams Rooms peripherals 
 | [Yealink UVC84](https://www.yealink.com/product/camera-uvc84) | 262.410.0.10 |  |  |  |  |
 | Yealink UVC85 | 299.410.0.130 |  |  |  |  |
 | [Yealink UVC86](https://www.yealink.com/product/camera-uvc86) | 151.410.0.5 |  |  |  |  |
+| Yealink UVC86 E2 | 353.410.0.56 |  |  |  |  |
 | Yealink MSpeech | 136.410.0.19 |  |  |  | ✔ |
 | Yealink CM20 Ceiling Audio Kit | Yealink RoomConnect Software: 2.33.43.0  AVHub: 153.433.0.15  CM20: 294.410.0.35  CS10: 298.410.0.40 |  |  |  |  |
 | Yealink CM50 Premium Ceiling Audio Kit | AP08: 294.420.0.10  CM50: 294.420.0.10  CS10-D: 298.420.0.5 |  |  |  |  |

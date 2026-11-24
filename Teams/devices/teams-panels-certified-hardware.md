@@ -185,7 +185,7 @@ Devices must be updated to newer application releases (when available) to remain
 | --- | --- | --- | --- | --- |
 | TAP Scheduler (VR0028) | ` 2.2.154 (AOSP)` | `2.1.328` | Teams client: `1449/1.0.97.2026286706` Microsoft Intune: `26.06.4` Authenticator: `6.2609.6407` Admin Agent: `1.0.0.202608280411.product (865)` | November 19, 2026 |
 | DockFlex (VR0035) | `2.2.143 (AOSP)` | `2.1.168` | Teams client: `1449/1.0.97.2026286706` Microsoft Intune: `26.06.4` Authenticator: `6.2609.6407` Admin Agent: `1.0.0.202608280411.product (865)` | November 19, 2026 |
-| TAP Scheduler 2 (VR0054) | `2.1.112 (AOSP)` | `NA` | Teams client: `1449/1.0.97.2026286706` Microsoft Intune: `26.06.4` Authenticator: `6.2609.6407` Admin Agent: `1.0.0.202608280411.product (865)` | November 19, 2026 |
+| TAP Scheduler 2 (VR0054) | `2.2.112 (AOSP)` | `NA` | Teams client: `1449/1.0.97.2026286706` Microsoft Intune: `26.06.4` Authenticator: `6.2609.6407` Admin Agent: `1.0.0.202608280411.product (865)` | November 19, 2026 |
 | TAP Scheduler (VR0028) | ` 2.1.328 (AOSP)` | `2.1.303` | Teams client: `1449/1.0.97.2026181101` Microsoft Intune: `26.3.1` Authenticator: `6.2606.4246` Admin Agent: `1.0.0.202607160723.product (856)` | September 28, 2026 |
 | DockFlex (VR0035) | `2.1.168 (AOSP)` | `2.1.138` | Teams client: `1449/1.0.97.2026181101` Microsoft Intune: `26.3.1` Authenticator: `6.2606.4246` Admin Agent: `1.0.0.202607160723.product (856)` | September 28, 2026 |
 | TAP Scheduler (VR0028) | `2.1.303 (AOSP)` | `2.0.127` | Teams client: `1449/1.0.97.2026164101` Microsoft Intune: `25.02.1` Authenticator: `6.2605.3066` Admin Agent: `1.0.0.202604060507.product (820)` | August 10, 2026 |

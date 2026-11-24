@@ -461,7 +461,7 @@ The date format is MM/DD/YYYY.
 
 Note
 
-The date format is MM/DD/YYYY.
+The date format is MM/DD/YYYY. Native Bluetooth devices - LE Audio are certified for both Bluetooth Classic Audio and LE Audio.
 
 | **Manufacturer** | **Model** | **Qualified** | **Certified Program** |
 | --- | --- | --- | --- |
