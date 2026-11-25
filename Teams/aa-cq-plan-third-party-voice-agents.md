@@ -12,7 +12,7 @@ author: CLYVR
 ms.author: colongma
 manager: roykuntz
 ms.reviewer: colongma
-ms.date: 2026-11-03T00:00:00.0000000Z
+ms.date: 2026-11-30T00:00:00.0000000Z
 ms.topic: concept-article
 ms.tgt.pltfrm: cloud
 ms.service: msteams
@@ -67,7 +67,7 @@ This article is for IT pros and Teams administrators who want to learn about thi
 
 The [Teams Phone Unify Integration model (Teams Phone extensibility)](/en-us/azure/communication-services/concepts/interop/tpe/teams-phone-extensibility-overview) integration model for third-party voice agents enables organizations to extend Teams Phone with third-party conversational voice agents, whether built in-house or delivered by a partner.
 
-With this integration, these third-party voice agents can answer calls, provide information, authenticate callers, capture intent, and more. Those voice agents can also seamlessly route the call to the right Teams Phone destination, such as auto attendants, call queues, or individual users, handing off the full caller context to whoever picks up next.
+With this integration, these third-party voice agents can answer calls, provide information, authenticate callers, capture intent, and more. Those voice agents can also seamlessly route the call to the right Teams Phone destination, such as voice applications or individual users, handing off the full caller context to whoever picks up next.
 
 Through the Context Pane in the Teams call client, end-to-end context is preserved as the call routes to different destinations. Structured call metadata, including caller identity, intent, call topic, conversation summary, and sentiment, flows automatically between an auto attendant, third-party voice agent, and the receiving call queue representatives (agents) or Teams user, so context is never lost on a handoff and the next person in the chain answers callers fully informed.
 

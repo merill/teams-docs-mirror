@@ -12,7 +12,7 @@ author: CLYVR
 ms.author: colongma
 manager: roykuntz
 ms.reviewer: colongma
-ms.date: 2026-08-31T00:00:00.0000000Z
+ms.date: 2026-11-30T00:00:00.0000000Z
 ms.topic: how-to
 ms.tgt.pltfrm: cloud
 ms.service: msteams
@@ -21,6 +21,7 @@ search.appverid: MET150
 ms.collection:
 - M365-voice
 - m365initiative-voice
+- highpri
 - tier1
 audience: Admin
 ms.localizationpriority: medium
@@ -91,7 +92,7 @@ platformId: f7b2532a-bccc-0c48-317b-98460cac9db6
 
     If the `MicrosoftTeams` PowerShell module is already installed, the output from the command will look similar to:
 
-    ```
+    ```powershell
     Get-InstalledModule -Name MicrosoftTeams
     
     Version              Name                                Repository           Description
@@ -160,7 +161,7 @@ platformId: f7b2532a-bccc-0c48-317b-98460cac9db6
     - Template: Sales
 - Automatic recording: No
 
-Expand to see PowerShell commands
+**Expand to see PowerShell commands**
 
 ### Login
 
@@ -174,7 +175,7 @@ Connect-MgGraph -Credential $credential
 
 ### Create Audio Files
 
-Replace `d:\\` with the path to where the wav files are stored on your computer.
+Replace `d:\` with the path to where the wav files are stored on your computer.
 
 ```powershell
 $content = [System.IO.File]::ReadAllBytes('d:\sales-hold-in-queue-music.wav')
@@ -237,7 +238,7 @@ New-CsCallQueue -Name "Sales" -AgentAlertTime 15 -AllowOptOut $true -MusicOnHold
 - Shared call history
 - automatic recording
 
-Expand to see PowerShell commands
+**Expand to see PowerShell commands**
 
 ### Login
 
@@ -251,7 +252,7 @@ Connect-MgGraph -Credential $credential
 
 ### Create audio files
 
-Replace `d:\\` with the path to where the wav files are stored on your computer.
+Replace `d:\` with the path to where the wav files are stored on your computer.
 
 ```powershell
 $content1 = [System.IO.File]::ReadAllBytes('d:\support-greeting.wav')
@@ -338,7 +339,7 @@ New-CsOnlineApplicationInstanceAssociation -Identities @($applicationInstanceID)
 - Shared call history
 - automatic recording
 
-Expand to see PowerShell commands
+**Expand to see PowerShell commands**
 
 ### Login
 

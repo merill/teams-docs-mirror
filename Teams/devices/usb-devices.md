@@ -428,6 +428,7 @@ The date format is MM/DD/YYYY.
 
 | **Manufacturer** | **Model** | **Qualified** | **Certified Program** |
 | --- | --- | --- | --- |
+| Dell | WL3024 Headset | 11/20/2026 | Certified for Microsoft Teams |
 | HP | Free 60 Earbuds | 10/5/2026 | Certified for Microsoft Teams |
 | Dell | WL5024 Headset | 9/11/2026 | Certified for Microsoft Teams |
 | Dell | WL527 Headset | 9/11/2026 | Certified for Microsoft Teams |

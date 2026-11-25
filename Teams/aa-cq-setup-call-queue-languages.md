@@ -12,7 +12,7 @@ author: CLYVR
 ms.author: colongma
 manager: roykuntz
 ms.reviewer: colongma
-ms.date: 2026-08-31T00:00:00.0000000Z
+ms.date: 2026-11-30T00:00:00.0000000Z
 ms.topic: reference
 ms.tgt.pltfrm: cloud
 ms.service: msteams
@@ -21,6 +21,7 @@ search.appverid: MET150
 ms.collection:
 - M365-voice
 - m365initiative-voice
+- highpri
 - tier1
 audience: Admin
 ms.localizationpriority: medium
@@ -28,6 +29,8 @@ f1.keywords:
 - CSH
 ms.custom:
 - Phone System
+- ms.teamsadmincenter.callqueues.overview
+- seo-marvel-apr2020
 description: Microsoft Teams Call queue supported languages
 locale: en-us
 document_id: 6bc189d4-80fb-bb6f-c521-e74de39ba94f

@@ -17,7 +17,7 @@ ms.tgt.pltfrm: cloud
 ms.service: msteams
 ms.subservice: teams-calling
 audience: Admin
-ms.date: 2026-11-03T00:00:00.0000000Z
+ms.date: 2026-11-30T00:00:00.0000000Z
 ms.collection:
 - M365-voice
 - m365initiative-voice
@@ -73,7 +73,7 @@ There are several reporting options for voice applications. The reporting option
 
 The **Auto Attendant Usage** and **Call Queue Usage** reports in the Teams admin center only provide a count of the number of calls received. These reports also don't support the following:
 
-- Reporting on auto attendants or call queues that are nested without resource accounts.
+- Reporting on voice applications that are nested without resource accounts.
     - Nest with resource accounts if you need to use the Teams admin center reports.
 - More than 28 days of reporting.
     - Use the [Teams Phone Agent, Auto Attendant and Call Queue historical reports](aa-cq-report-historical) in Power BI and in Queues App to get up to 45 days.

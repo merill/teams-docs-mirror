@@ -12,7 +12,7 @@ author: CLYVR
 ms.author: colongma
 manager: roykuntz
 ms.reviewer: colongma
-ms.date: 2026-11-03T00:00:00.0000000Z
+ms.date: 2026-11-30T00:00:00.0000000Z
 ms.topic: concept-article
 ms.tgt.pltfrm: cloud
 ms.service: msteams
@@ -92,7 +92,7 @@ Authorized users and shared voicemail members can see a history of actions on sh
 
 ## Amount of history shown
 
-Shared Call History shows the last 3,000 entries, or 6 months of calls, per auto attendant or call queue.
+Shared Call History shows the last 3,000 entries, or 6 months of calls, per voice application.
 
 ## Licensing requirements
 

@@ -12,7 +12,7 @@ author: CLYVR
 ms.author: colongma
 manager: roykuntz
 ms.reviewer: colongma
-ms.date: 2026-10-07T00:00:00.0000000Z
+ms.date: 2026-11-30T00:00:00.0000000Z
 ms.topic: how-to
 ms.tgt.pltfrm: cloud
 ms.service: msteams
@@ -69,7 +69,7 @@ Submit a brief [Teams Phone & Voice AI Interest](https://go.microsoft.com/fwlink
 
 **We want your feedback**
 
-Help us improve Teams Phone Agent. [Share your feedback](https://go.microsoft.com/fwlink/?LinkId=2375134) on our planning and setup documentation, the Teams admin center experience, Teams Phone Agent features, or tell us about features and improvements you’d like to see.
+Help us improve Teams Phone Agent. [Share your feedback](https://go.microsoft.com/fwlink/?LinkId=2375134) on our planning and setup documentation, the Teams admin center experience, Teams Phone Agent features, or tell us about features and improvements you'd like to see.
 
 Caution
 
@@ -132,14 +132,14 @@ None.
     - Teams Phone Agent now supports 42 voices, including 33 new ones.
 - September 30, 2026
     - Teams Phone Agent is now generally available to all customers.
-    - [Appointments integration with Microsoft Bookings](aa-cq-setup-teams-phone-agent-tools-appointments) can be configured in Teams admin center.
+    - [Appointment integration with Microsoft Bookings](aa-cq-setup-teams-phone-agent-tools-appointments) can be configured in Teams admin center.
     - [Automatic Recording for Teams Phone Agent](aa-cq-setup-teams-phone-agent-template-recording-automatic) can be configured in Teams admin center.
     - [Maximum call length with configurable disconnect message](aa-cq-setup-teams-phone-agent#whats-new-configurable-call-length) can be configured in Teams admin center.
     - Question and Answers URLs are refreshed daily.
 - September 29, 2026
     - [Historical reporting](aa-cq-report-historical) for Teams Phone Agent updated.
 - September 1, 2026
-    - Appointments integration with Microsoft Bookings can be configured via PowerShell.
+    - Appointment integration with Microsoft Bookings can be configured via PowerShell.
 - August 31, 2026
     - [AI disclaimer](aa-cq-setup-teams-phone-agent#ai-disclaimer-customization) can be configured in Teams admin center.
     - [Maximum call length](aa-cq-setup-teams-phone-agent#whats-new-configurable-call-length) can be configured in Teams admin center.
@@ -163,18 +163,18 @@ To create a **Questions and Answers** tool in the [Teams admin center](https://g
 3. Select **Tools**.
 4. Select **Add**.
 
-    ![Screenshot showing Tools being selected on the Templates and resources page.](media/aa-cq/aa-cq-setup-teams-phone-agent-tools-questions-answers-01.png)
+    [![Screenshot showing Tools being selected on the Templates and resources page.](media/aa-cq/aa-cq-setup-teams-phone-agent-tools-questions-answers-01.png)](media/aa-cq/aa-cq-setup-teams-phone-agent-tools-questions-answers-01.png#lightbox)
 5. Enter a **Name** and **Description** for the tool.
 6. Select **Questions and Answers** as the tool type.
 
-    ![Screenshot showing the Questions and Answers tool type when creating a new tool.](media/aa-cq/aa-cq-setup-teams-phone-agent-tools-questions-answers-03.png)
+    [![Screenshot showing the Questions and Answers tool type when creating a new tool.](media/aa-cq/aa-cq-setup-teams-phone-agent-tools-questions-answers-03.png)](media/aa-cq/aa-cq-setup-teams-phone-agent-tools-questions-answers-03.png#lightbox)
 7. Select **Knowledge - Document** or **Knowledge - URL**.
 
-    ![Screenshot showing the Questions and Answers tool with the option to select a document or URL.](media/aa-cq/aa-cq-setup-teams-phone-agent-tools-questions-answers-04.png)
+    [![Screenshot showing the Questions and Answers tool with the option to select a document or URL.](media/aa-cq/aa-cq-setup-teams-phone-agent-tools-questions-answers-04.png)](media/aa-cq/aa-cq-setup-teams-phone-agent-tools-questions-answers-04.png#lightbox)
 
     For **Knowledge - Document**:
 
-    ![Screenshot showing the Questions and Answers tool when selecting a document.](media/aa-cq/aa-cq-setup-teams-phone-agent-tools-questions-answers-04-document.png)
+    [![Screenshot showing the Questions and Answers tool when selecting a document.](media/aa-cq/aa-cq-setup-teams-phone-agent-tools-questions-answers-04-document.png)](media/aa-cq/aa-cq-setup-teams-phone-agent-tools-questions-answers-04-document.png#lightbox)
 
     Teams Phone Agent Questions and Answers tool articles support the following file types:
 
@@ -196,7 +196,7 @@ To create a **Questions and Answers** tool in the [Teams admin center](https://g
 
     For **Knowledge - URL**:
 
-    ![Screenshot showing the Questions and Answers tool when selecting a URL.](media/aa-cq/aa-cq-setup-teams-phone-agent-tools-questions-answers-04-url.png)
+    [![Screenshot showing the Questions and Answers tool when selecting a URL.](media/aa-cq/aa-cq-setup-teams-phone-agent-tools-questions-answers-04-url.png)](media/aa-cq/aa-cq-setup-teams-phone-agent-tools-questions-answers-04-url.png#lightbox)
 
     Teams Phone Agent Questions and Answers tool articles support **public facing** web pages (URLs):
 
@@ -210,7 +210,7 @@ To create a **Questions and Answers** tool in the [Teams admin center](https://g
 
 ## Related Teams Phone Agent setup and configuration articles
 
-- [Appointments](aa-cq-setup-teams-phone-agent-tools-appointments)
+- [Appointment](aa-cq-setup-teams-phone-agent-tools-appointments)
 - [Agents and Queues](aa-cq-setup-teams-phone-agent-agents-queues)
 - [Third-party voice agents](aa-cq-setup-third-party-voice-agents)
 - [Holidays](aa-cq-setup-holidays)

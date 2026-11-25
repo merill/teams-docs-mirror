@@ -12,7 +12,7 @@ author: CLYVR
 ms.author: colongma
 manager: roykuntz
 ms.reviewer: colongma
-ms.date: 2026-11-16T00:00:00.0000000Z
+ms.date: 2026-11-30T00:00:00.0000000Z
 ms.topic: reference
 ms.tgt.pltfrm: cloud
 ms.service: msteams
@@ -21,6 +21,7 @@ search.appverid: MET150
 ms.collection:
 - M365-voice
 - m365initiative-voice
+- highpri
 - tier1
 audience: Admin
 ms.localizationpriority: medium
@@ -71,7 +72,7 @@ Submit a brief [Teams Phone & Voice AI Interest](https://go.microsoft.com/fwlink
 
 **We want your feedback**
 
-Help us improve Teams Phone Agent. [Share your feedback](https://go.microsoft.com/fwlink/?LinkId=2375134) on our planning and setup documentation, the Teams admin center experience, Teams Phone Agent features, or tell us about features and improvements you’d like to see.
+Help us improve Teams Phone Agent. [Share your feedback](https://go.microsoft.com/fwlink/?LinkId=2375134) on our planning and setup documentation, the Teams admin center experience, Teams Phone Agent features, or tell us about features and improvements you'd like to see.
 
 Dial by Name or Number (Extension) is a Teams Phone Agent and Auto Attendant feature that enables callers to reach Teams users in your organization. Callers can use their voice or phone keypad to say or enter the full or partial name or extension of the person they would like to reach. The system searches the company directory, locates the person, and then transfers the caller to them. As an admin, Dial by Name and Dial by Extension are options you set up when you [set up a Teams Phone Agent](aa-cq-setup-teams-phone-agent) or [set up an Auto Attendant](aa-cq-setup-auto-attendant).
 

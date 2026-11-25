@@ -12,7 +12,7 @@ author: CLYVR
 ms.author: colongma
 manager: roykuntz
 ms.reviewer: colongma
-ms.date: 2026-08-31T00:00:00.0000000Z
+ms.date: 2026-11-30T00:00:00.0000000Z
 ms.topic: how-to
 ms.tgt.pltfrm: cloud
 ms.service: msteams
@@ -21,6 +21,7 @@ search.appverid: MET150
 ms.collection:
 - M365-voice
 - m365initiative-voice
+- highpri
 - tier1
 audience: Admin
 ms.localizationpriority: medium
@@ -30,6 +31,8 @@ ms.custom:
 - Phone System
 - has-azure-ad-ps-ref
 - azure-ad-ref-level-one-done
+- ms.teamsadmincenter.autoattendants.overview
+- seo-marvel-apr2020
 description: Learn how to configure auto attendants via PowerShell
 locale: en-us
 document_id: 6ad1c0f2-1ddc-5c9c-8eec-1d0c90f5d48f
@@ -118,7 +121,7 @@ Customers with auto attendants serving these areas that have time zone configura
 
 Note
 
-Some of the cmdlets mentioned in this article may be part of the Public Preview version of Teams PowerShell Module. For more information, see [Install Teams PowerShell public preview](teams-powershell-install) and also see [Microsoft Teams PowerShell Release Notes](teams-powershell-release-notes).
+Some of the cmdlets mentioned in this article might be part of the Public Preview version of Teams PowerShell Module. For more information, see [Install Teams PowerShell public preview](teams-powershell-install) and also see [Microsoft Teams PowerShell Release Notes](teams-powershell-release-notes).
 
 Users who already have the MicrosoftTeams module installed should `Update-Module MicrosoftTeams` to ensure the most up-to-date version is installed.
 
@@ -126,7 +129,7 @@ Users who already have the MicrosoftTeams module installed should `Update-Module
 
 The following auto attendant call flow is built:
 
-![Diagram of Auto Attendant call flow being built with cmdlets.](media/aa-cq/create-a-phone-system-auto-attendant-via-cmdlets.png)
+[![Screenshot showing the Auto Attendant call flow built with cmdlets.](media/aa-cq/create-a-phone-system-auto-attendant-via-cmdlets.png)](media/aa-cq/create-a-phone-system-auto-attendant-via-cmdlets.png#lightbox)
 
 Useful configuration information:
 

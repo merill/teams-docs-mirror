@@ -86,13 +86,34 @@ Third-party synthetic audio and video detection uses a partner ecosystem model. 
 
 ## What certification means
 
-Providers that are available in Teams have gone through the Teams synthetic audio and video detection certification program. Certification validates how a provider's solution integrates with and surfaces detections in Teams at enterprise scale, including integration quality, scale, reliability, security, compliance, and consistent disclosure to users.
+Certification validates how a provider's solution integrates with and surfaces detections in Teams at enterprise scale, including integration quality, scale, reliability, security, compliance, and consistent disclosure to users.
 
 Certification doesn't validate the accuracy of a provider's detection models. Detection results are produced by the provider, and the provider is responsible for its detection quality. Evaluate each provider's accuracy claims, privacy statement, and terms against your organization's requirements before you deploy.
 
-## Available detection providers (coming soon)
+## Available detection providers
+
+The following partners provide synthetic audio and video detection solutions for Teams meetings during public preview. The tables list their certification status and Teams app names as shown in the Teams admin center. These lists are updated as partners complete certification.
+
+### Certified partners
+
+The following partners have completed the Teams synthetic audio and video detection certification program. For details about what certification covers, see What certification means.
+
+| Partner | Teams app name |
+| --- | --- |
+| [Pindrop](https://www.pindrop.com/) | Pindrop Pulse |
+
+### Partners in the certification process
+
+The following partners are in the process of certifying their solutions for Teams. Their solutions are available during public preview but have not yet completed certification.
+
+| Partner | Teams app name |
+| --- | --- |
+| [GetReal Security](https://www.getrealsecurity.com/) | GetReal Security |
+| [Reality Defender](https://www.realitydefender.com/) | Reality Defender RealMeeting |
 
 Each provider has its own licensing, service activation, data handling, and support model. Contact the provider directly to purchase or activate its service.
+
+To find a provider's app, go to **Teams apps** &gt; **Manage apps** in the Teams admin center and search for the Teams app name listed above. Follow the setup steps in this article before enabling detection.
 
 ## Prerequisites
 

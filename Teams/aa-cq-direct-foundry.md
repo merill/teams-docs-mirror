@@ -12,7 +12,7 @@ author: CLYVR
 ms.author: colongma
 manager: roykuntz
 ms.reviewer: colongma
-ms.date: 2026-10-21T00:00:00.0000000Z
+ms.date: 2026-11-30T00:00:00.0000000Z
 ms.topic: how-to
 ms.tgt.pltfrm: cloud
 ms.service: msteams
@@ -31,8 +31,8 @@ ms.custom:
 - ms.teamsadmincenter.autoattendants.overview
 - Phone System
 - seo-marvel-apr2020
-customer-intent: As a Teams Administrator, I want learn about voice enabling my Microsoft Foundry agents through Teams Phone so I know when and how to use them within my organization.
-description: Setup - Voice enable Microsoft Foundry agents through Teams Phone
+customer-intent: As a Teams Administrator, I want to learn about voice enabling my Microsoft Foundry agents through Teams Phone so I know when and how to use them within my organization.
+description: Learn how to voice enable Microsoft Foundry agents through Teams Phone by using resource accounts, Azure Communication Services, and PowerShell.
 locale: en-us
 document_id: 30adfa22-7526-63c6-3650-75ee14af854c
 document_version_independent_id: 30adfa22-7526-63c6-3650-75ee14af854c
@@ -81,19 +81,19 @@ None.
 
 [Microsoft Foundry](https://go.microsoft.com/fwlink/?LinkId=2387204) is the enterprise AI platform to build, ground, and govern AI apps and agents at scale. It brings together your full agent lifecycle with open development, built-in intelligence, and consistent security, compliance, and policy controls across every agent.
 
-Direct dial Microsoft Foundry voice agents through Microsoft Teams Phone allow you to create conversational AI bots and attach them directly to a phone number via Teams Phone's resource accounts. By using these first-party conversational voice agents, you can significantly enhance your current Interactive Voice Response experiences or upgrade your current call flows.
+Voice enabling Microsoft Foundry agents through Microsoft Teams Phone allow you to create conversational AI bots and attach them to a [Teams Phone Agent](aa-cq-plan-overview#teams-phone-agent) enable direct calling by assigning a phone number. By using these first-party conversational voice agents, you can significantly enhance your current Interactive Voice Response experiences or upgrade your current call flows.
 
 By front-ending your call flow with a Microsoft Foundry voice agent, you unlock deep automation and tailored experiences. You can design custom workflows to handle common inquiries, such as billing, order status, and inventory checks. The agent acts as an intelligent first point of contact, resolving issues independently before seamlessly routing the call to a human representative using traditional Teams Phone routing systems if needed.
 
 ## What you will build
 
-![High level call diagram showing the components a Teams call goes through to reach a Foundry agent.](media/aa-cq/direct-foundry.png)
+[![Screenshot showing the components a Teams call goes through to reach a Foundry agent.](media/aa-cq/direct-foundry.png)](media/aa-cq/direct-foundry.png#lightbox)
 
 ## Prerequisites
 
 - Azure access - An Azure subscription where you can create Foundry, ACS, an app registration, Azure Bot, and Event Grid resources.
 - Teams administration - Teams and Microsoft 365 permissions to create, license and assign a phone number to a resource account.
-- PowerShell - with the lastest MicrosoftTeams module. The custom application-endpoint menu option is PowerShell only.
+- PowerShell - with the latest MicrosoftTeams module. The custom application-endpoint menu option is PowerShell only.
 
 ## Values to collect
 
@@ -105,11 +105,11 @@ By front-ending your call flow with a Microsoft Foundry voice agent, you unlock 
 | `<azure-tenant-id>` | App registrations → Overview | Azure Bot single-tenant configuration |
 | `<acs-endpoint-host>` | ACS Properties / JSON | Foundry connection and ACS server-consent request |
 | `<acs-immutable-resource-id>` | ACS Properties / JSON | Teams resource-account AcsResourceId |
-| `<teams-tenant-id>` | Get-CsTenan | ACS server-consent scope |
+| `<teams-tenant-id>` | Get-CsTenant | ACS server-consent scope |
 | `<resource-account-object-id>` | Get-CsOnlineApplicationInstance | Foundry phone binding, ACS consent, and MA ApplicationEndpoint target |
 | `<teams-service-number>` | Teams admin center | Resource-account assignment and Foundry phone binding |
 
-## Setup procudure
+## Setup procedure
 
 ### Step 1: Create and test the Foundry voice agent
 
@@ -128,8 +128,8 @@ By front-ending your call flow with a Microsoft Foundry voice agent, you unlock 
 
 1. Open [Azure portal](https://portal.azure.com/).
 2. Create an ACS resource in the same Entra tenant as the Foundry project.
-3. Select the data location that matches the Teams tenant’s data location.
-4. Open the ACS resource’s Properties or JSON view.
+3. Select the data location that matches the Teams tenant's data location.
+4. Open the ACS resource's Properties or JSON view.
 
 - hostName -&gt; `<acs-endpoint-host>`
 - immutableResourceId -&gt; `<acs-immutable-resource-id>`
@@ -183,12 +183,28 @@ Get-CsOnlineApplicationInstance -Identity $ra.ObjectId |
 
 **Expected:** The output contains an ObjectId, the app client ID, and the ACS immutable resource ID. Save the ObjectId as `<resource-account-object-id>`.
 
-### Step 5: License the resource account and satisfy the portal’s number requirement
+### Step 5: License the resource account
 
-1. Open [Microsoft 365 admin center](https://admin.microsoft.com/).
+1. Open [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339).
 2. Assign the **Microsoft Teams Phone Resource Account** license in Microsoft 365 admin center.
-3. Open [Teams admin center](https://admin.teams.microsoft.com/).
+
+The Foundry agent is now ready to be part of a [Teams Phone Agent](aa-cq-setup-teams-phone-agent#set-menu-options) call flow.
+
+If you want people from outside your Teams tenant to call the Foundry agent, assign a phone number to the resource account as outlined step 6.
+
+**Expected:** The resource account is Licensed.
+
+### Step 6: Create the Foundry Microsoft Teams phone binding (optional)
+
+#### Teams admin center
+
+1. Open [Teams admin center](https://go.microsoft.com/fwlink/p/?linkid=2066851).
+2. Expand **Voice**.
+3. Select **Phone numbers**.
 4. Choose an unassigned Teams service number whose capabilities include `VoiceApplicationAssignment`.
+5. Select **Edit**.
+6. Search for the resource account created in step 4.
+7. Select **Apply**.
 
 If the Teams UI is disabled for the custom resource account, assign the number through PowerShell.
 
@@ -204,9 +220,7 @@ Set-CsPhoneNumberAssignment `
     -NumberType $number.NumberType
 ```
 
-**Expected:** The resource account is Licensed, and the number’s assignment target is the resource-account ObjectId.
-
-### Step 6: Create the Foundry Microsoft Teams phone binding
+#### Microsoft Foundry
 
 1. Open [Microsoft Foundry](https://ai.azure.com/login).
 2. Open the target voice agent, then **Channels → Phone numbers → Add a number → Microsoft Teams**.
@@ -215,15 +229,17 @@ Set-CsPhoneNumberAssignment `
 5. Enter `<teams-service-number>` and `<resource-account-object-id>`.
 6. Complete the binding and wait for it to appear on the Channels page.
 
-**Important:** The binding is associated with whichever Foundry agent’s Channels tab you are using. No Foundry agent ID is written onto the Teams resource account.
+Important
 
-**Expected:** The Microsoft Teams number is visible on the voice agent’s Phone numbers card.
+The binding is associated with whichever Foundry agent's Channels tab you are using. No Foundry agent ID is written onto the Teams resource account.
+
+**Expected:** The Microsoft Teams number is visible on the voice agent's Phone numbers card.
 
 ### Step 7: Grant ACS server consent for the Teams resource account
 
 [Teams Phone Extensibility guide](/en-us/azure/communication-services/quickstarts/tpe/teams-phone-extensibility-quickstart)
 
-ACS must authorize the exact pair of `<teams-tenant-id>` and `<resource-account-object-id>`. A direct call commonly returns **Busy** until this is complete.
+ACS must authorize the exact pair of `<teams-tenant-id>` and `<resource-account-object-id>`. A call commonly returns **Busy** until this is complete.
 
 **Read the ACS key locally with Read-Host -AsSecureString. Never paste it into chat or save it in the script. Rotate it immediately if exposed.**
 
@@ -270,8 +286,8 @@ Invoke-RestMethod -Method Put `
 
 ### Step 8: Validate the complete call path
 
-1. Call `<teams-service-number>`. Confirm the Foundry greeting, two-way audio, and barge-in.
-2. Open [Microsoft Foundry](https://ai.azure.com/login) agent’s Traces tab and confirm the sessions appear.
+1. Call the resource account or the `<teams-service-number>`. Confirm the Foundry greeting, two-way audio, and barge-in.
+2. Open [Microsoft Foundry](https://ai.azure.com/login) agent's Traces tab and confirm the sessions appear.
 
 ## Related Teams Phone Agent setup and configuration articles
 

@@ -12,7 +12,7 @@ author: CLYVR
 ms.author: colongma
 manager: roykuntz
 ms.reviewer: colongma
-ms.date: 2026-11-16T00:00:00.0000000Z
+ms.date: 2026-11-30T00:00:00.0000000Z
 ms.topic: how-to
 ms.tgt.pltfrm: cloud
 ms.service: msteams
@@ -67,7 +67,7 @@ Submit a brief [Teams Phone & Voice AI Interest](https://go.microsoft.com/fwlink
 
 **We want your feedback**
 
-Help us improve Teams Phone Agent. [Share your feedback](https://go.microsoft.com/fwlink/?LinkId=2375134) on our planning and setup documentation, the Teams admin center experience, Teams Phone Agent features, or tell us about features and improvements you’d like to see.
+Help us improve Teams Phone Agent. [Share your feedback](https://go.microsoft.com/fwlink/?LinkId=2375134) on our planning and setup documentation, the Teams admin center experience, Teams Phone Agent features, or tell us about features and improvements you'd like to see.
 
 Caution
 
@@ -139,13 +139,13 @@ This article is for IT pros and Teams administrators who want to create Teams Ph
     - Workaround: Save the Teams Phone Agent first, then edit it to add the Automatic Recording template.
 - Teams Phone Agent is not supported for use in India.
 
-Expand to see a list of issues with individual features
+**Expand to see a list of issues with individual features**
 
 ### Agents and queues
 
 None.
 
-### Appointments
+### Appointment
 
 None.
 
@@ -182,14 +182,14 @@ None.
     - Teams Phone Agent now supports 42 voices, including 33 new ones.
 - September 30, 2026
     - Teams Phone Agent is now generally available to all customers.
-    - [Appointments integration with Microsoft Bookings](aa-cq-setup-teams-phone-agent-tools-appointments) can be configured in Teams admin center.
+    - [Appointment integration with Microsoft Bookings](aa-cq-setup-teams-phone-agent-tools-appointments) can be configured in Teams admin center.
     - [Automatic Recording for Teams Phone Agent](aa-cq-setup-teams-phone-agent-template-recording-automatic) can be configured in Teams admin center.
     - [Maximum call length with configurable disconnect message](aa-cq-setup-teams-phone-agent#whats-new-configurable-call-length) can be configured in Teams admin center.
     - Question and Answers URLs are refreshed daily.
 - September 29, 2026
     - [Historical reporting](aa-cq-report-historical) for Teams Phone Agent updated.
 - September 1, 2026
-    - Appointments integration with Microsoft Bookings can be configured via PowerShell.
+    - Appointment integration with Microsoft Bookings can be configured via PowerShell.
 - August 31, 2026
     - [AI disclaimer](aa-cq-setup-teams-phone-agent#ai-disclaimer-customization) can be configured in Teams admin center.
     - [Maximum call length](aa-cq-setup-teams-phone-agent#whats-new-configurable-call-length) can be configured in Teams admin center.
@@ -219,7 +219,7 @@ Note
 
 The setup steps assume that all required **Questions and Answers** and **Appointment** tools, and any required Microsoft Copilot Studio associated **Agents and Queues**, have been created.
 
-Step 1 - General info (expand to see instructions)
+**Step 1 - General info (expand to see instructions)**
 
 #### Step 1: General info
 
@@ -247,7 +247,7 @@ This option is not currently available for Teams Phone Agent.
 
 Specify a supported language for this Teams Phone Agent. This is the default language that Teams Phone Agent uses for the disclaimer message, if the language spoken by the caller isn't recognized, or if Teams Phone Agent isn't able to speak in the same language as the caller.
 
-Expand to see list of supported languages
+**Expand to see list of supported languages**
 
 | # | Locale | Language | Optimized Voice |
 | --- | --- | --- | --- |
@@ -325,7 +325,7 @@ Use the [Voice Gallery](https://go.microsoft.com/fwlink/?LinkId=2387203) to samp
 
 Note: Not all of the voices in the Voice Gallery are available in Teams Phone Agent.
 
-Expand to see list of supported voices
+**Expand to see list of supported voices**
 
 | # | Name | Available for all languages | Optimized for |
 | --- | --- | --- | --- |
@@ -394,7 +394,7 @@ Make sure to also set up an **Operator** key on the menu options; otherwise, the
 
 After setting the **Operator**, select **Next**.
 
-Step 2 - Call handling hours (expand to see instructions)
+**Step 2 - Call handling hours (expand to see instructions)**
 
 #### Step 2: Call handling hours
 
@@ -422,7 +422,7 @@ After setting the **Business and after hours** times, select **Next**.
 
 - Step 1 - General info
 
-Step 3 - Business-hours call flow (expand to see instructions)
+**Step 3 - Business-hours call flow (expand to see instructions)**
 
 #### Step 3: Business-hours call flow
 
@@ -507,7 +507,7 @@ For each menu option, specify the following settings:
 - **Destination**- the specific routing or resource for Teams Phone Agent to invoke.
     - **Operator** - the operator defined for the Teams Phone Agent.
     - **Person in the organization** - a person in your organization who can receive voice calls.
-    - **Tools** - access Questions and Answers andAppointments.
+    - **Tools** - access Questions and Answers and Appointment.
     - **Agents & queues** - access Microsoft Copilot Studio (MCS) agents and third party IVRs.^See Note 1^
     - **Voice app** - Choose the Teams Phone Agent, Auto Attendant, or Call Queue when choosing this destination.
     - **Resource account** - Choose the resource account associated with the Teams Phone Agent, Auto Attendant or Call Queue when choosing this destination.
@@ -532,7 +532,7 @@ The default Teams Phone Agent call length is 4 minutes. When the configured time
 
 The default message is:
 
-`I’m sorry the time limit of the call has been reached, and we will be disconnected in a moment, goodbye.`
+`I'm sorry the time limit of the call has been reached, and we will be disconnected in a moment, goodbye.`
 
 Provide a **Custom message** if required.
 
@@ -578,7 +578,7 @@ After setting the business-hours call flow options, select **Next**.
 - Step 1 - General info
 - Step 2 - Call handling hours
 
-Step 4 - After-hours call flow (expand to see instructions)
+**Step 4 - After-hours call flow (expand to see instructions)**
 
 #### Step 4: After-hours call flow
 
@@ -663,7 +663,7 @@ For each menu option, specify the following settings:
 - **Destination**- the specific routing or resource for Teams Phone Agent to invoke.
     - **Operator** - the operator defined for the Teams Phone Agent.
     - **Person in the organization** - a person in your organization who can receive voice calls.
-    - **Tools** - access Questions and Answers andAppointments.
+    - **Tools** - access Questions and Answers and Appointment.
     - **Agents & queues** - access Microsoft Copilot Studio (MCS) agents and third party IVRs.^See Note 1^
     - **Voice app** - Choose the Teams Phone Agent, Auto Attendant, or Call Queue when choosing this destination.
     - **Resource account** - Choose the resource account associated with the Teams Phone Agent, Auto Attendant or Call Queue when choosing this destination.
@@ -688,7 +688,7 @@ The default Teams Phone Agent call length is 4 minutes. When the configured time
 
 The default message is:
 
-`I’m sorry the time limit of the call has been reached, and we will be disconnected in a moment, goodbye.`
+`I'm sorry the time limit of the call has been reached, and we will be disconnected in a moment, goodbye.`
 
 Provide a **Custom message** if required.
 
@@ -735,7 +735,7 @@ After setting the after-hours call flow options, select **Next**.
 - Step 2 - Call handling hours
 - Step 3 - Business-hours call flow
 
-Step 5 - Holidays call flow (expand to see instructions)
+**Step 5 - Holidays call flow (expand to see instructions)**
 
 #### Step 5: Holidays call flow (optional)
 
@@ -832,7 +832,7 @@ For each menu option, specify the following settings:
 - **Destination**- the specific routing or resource for Teams Phone Agent to invoke.
     - **Operator** - the operator defined for the Teams Phone Agent.
     - **Person in the organization** - a person in your organization who can receive voice calls.
-    - **Tools** - access Questions and Answers andAppointments.
+    - **Tools** - access Questions and Answers and Appointment.
     - **Agents & queues** - access Microsoft Copilot Studio (MCS) agents and third party IVRs.^See Note 1^
     - **Voice app** - Choose the Teams Phone Agent, Auto Attendant, or Call Queue when choosing this destination.
     - **Resource account** - Choose the resource account associated with the Teams Phone Agent, Auto Attendant or Call Queue when choosing this destination.
@@ -857,7 +857,7 @@ The default Teams Phone Agent call length is 4 minutes. When the configured time
 
 The default message is:
 
-`I’m sorry the time limit of the call has been reached, and we will be disconnected in a moment, goodbye.`
+`I'm sorry the time limit of the call has been reached, and we will be disconnected in a moment, goodbye.`
 
 Provide a **Custom message** if required.
 
@@ -907,19 +907,19 @@ After setting the holidays call flow options, select **Next**.
 - Step 3 - Business-hours call flow
 - Step 4 - After-hours call flow
 
-Step 6 - Templates (expand to see instructions)
+**Step 6 - Templates (expand to see instructions)**
 
 #### Step 6: Templates (optional)
 
 ##### Set the Automatic Recording template for Teams Phone Agent (optional)
 
-Select an existing template from the drop-down or Create a new template.
+Select an existing template from the dropdown or Create a new template.
 
 To create an Automatic Recording template for Teams Phone Agent, see [Automatic Recording for Teams Phone Agent](aa-cq-setup-teams-phone-agent-template-recording-automatic).
 
 ##### Set the Spam Detection template for Teams Phone Agent (optional)
 
-Select an existing template from the drop-down or Create a new template.
+Select an existing template from the dropdown or Create a new template.
 
 To create a Spam Detection template for Teams Phone Agent, see [Spam Detection for Teams Phone Agent](aa-cq-setup-teams-phone-agent-template-spam-detection).
 
@@ -933,7 +933,7 @@ Once you select the optional templates, select Next button at the bottom of the 
 - Step 4 - After-hours call flow
 - Step 5 - Holidays call flow
 
-Step 7 - Dial scope (expand to see instructions)
+**Step 7 - Dial scope (expand to see instructions)**
 
 #### Step 7: Dial scope (optional)
 
@@ -958,7 +958,7 @@ After setting the **Dial scope** options, select **Next**.
 - Step 5 - Holidays call flow
 - Step 6 - Templates
 
-Step 8 - Authorized users (expand to see instructions)
+**Step 8 - Authorized users (expand to see instructions)**
 
 #### Step 8: Authorized users (optional)
 
@@ -968,12 +968,12 @@ Select **Add**, search for the user, select the user, and then select **Add**.
 
 Important
 
-A user needs a voice applications policy that allows at least one type of configuration change, and must be an authorized user for at least one Teams Phone Agent, auto attendant or call queue.
+A user needs a voice applications policy that allows at least one type of configuration change, and must be an authorized user for at least one voice application.
 
 A user can't make any configuration changes if:
 
-- The user has a policy assigned but isn't assigned as an authorized user to at least one auto attendant or call queue.
-- The user is assigned as an authorized user to at least one auto attendant or call queue but doesn't have a policy assigned.
+- The user has a policy assigned but isn't assigned as an authorized user to at least one voice application.
+- The user is assigned as an authorized user to at least one voice application but doesn't have a policy assigned.
 
 For more information, see [Set up authorized users](aa-cq-setup-authorized-users).
 
@@ -989,7 +989,7 @@ After setting the **Authorized users** option, select **Next**.
 - Step 6 - Templates
 - Step 7 - Dial scope
 
-Step 9 - Review & submit (expand to see instructions)
+**Step 9 - Review & submit (expand to see instructions)**
 
 #### Step 9: Review & submit
 

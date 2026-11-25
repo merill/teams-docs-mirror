@@ -12,7 +12,7 @@ author: CLYVR
 ms.author: colongma
 manager: roykuntz
 ms.reviewer: colongma
-ms.date: 2026-11-03T00:00:00.0000000Z
+ms.date: 2026-11-30T00:00:00.0000000Z
 ms.topic: reference
 ms.tgt.pltfrm: cloud
 ms.service: msteams
@@ -110,7 +110,7 @@ If your Teams Phone Agents, Auto Attendants, or Call Queues perform any of the f
 
 - Transfer calls to an external phone number.
 - Use the Call Queue Callback feature.
-- Use resource accounts for representative on-behalf-of outbound calling line ID control in call queues.
+- Use resource accounts for representative on behalf of outbound calling line ID control in call queues.
 
 Then, in addition to the **Teams Phone Resource Account** license, the resource account must also have one of the following assigned:
 
@@ -187,7 +187,7 @@ In order for Teams Phone Agents, Auto Attendants, and Call Queues to receive inb
 
 Note
 
-Direct Routing service numbers for auto attendants and call queues are supported for Microsoft Teams users and representatives (agents) only.
+Direct Routing service numbers for voice applications are supported for Microsoft Teams users and representatives (agents) only.
 
 Transfers between Calling Plan, Operator Connect, and Direct Routing trunks aren't supported.
 

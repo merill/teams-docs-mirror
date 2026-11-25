@@ -17,7 +17,7 @@ ms.tgt.pltfrm: cloud
 ms.service: msteams
 ms.subservice: teams-calling
 audience: Admin
-ms.date: 2026-11-03T00:00:00.0000000Z
+ms.date: 2026-11-30T00:00:00.0000000Z
 ms.collection:
 - M365-voice
 - m365initiative-voice

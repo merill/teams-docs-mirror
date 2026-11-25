@@ -12,7 +12,7 @@ author: CLYVR
 ms.author: colongma
 manager: roykuntz
 ms.reviewer: colongma
-ms.date: 2026-08-31T00:00:00.0000000Z
+ms.date: 2026-11-30T00:00:00.0000000Z
 ms.topic: how-to
 ms.tgt.pltfrm: cloud
 ms.service: msteams
@@ -123,7 +123,7 @@ Each call queue configures the compliance recording **Default greeting** and **D
 4. Select **Add** to create a new Compliancde Recording for Call Queue template.
 5. Enter a **Name** for the template.
 6. Enter a **Description** for the template.
-7. Select the **Compliance Recording Bot** resource account from the drop-down list.
+7. Select the **Compliance Recording Bot** resource account from the dropdown list.
 8. Select the **Paired Compliance Recording Bot** resource account from the drop down list (optional).
 9. (Strict Recording) - If the recording bot must join the call before the agent answers, turn on **Required before call**.
 10. (Strict Recording) - If the recording bot must be present for the duration of the call, turn on **Required during call**.

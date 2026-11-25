@@ -17,7 +17,7 @@ ms.tgt.pltfrm: cloud
 ms.service: msteams
 ms.subservice: teams-calling
 audience: Admin
-ms.date: 2026-08-31T00:00:00.0000000Z
+ms.date: 2026-11-30T00:00:00.0000000Z
 ms.collection:
 - M365-voice
 - m365initiative-voice
@@ -122,11 +122,11 @@ Contoso Support defines the following call priorities for their resource account
 
 Customers in the call queue are presented to representatives (agents) in the order of their priority. The Gold level customers are all presented first, followed by Silver, Bronze, and finally general support customers.
 
-![Diagram showing the call flow for Scenario 1.](media/aa-cq/aa-cq-call-priorities-scenario-1.svg)
+[![Diagram showing the call flow for Scenario 1.](media/aa-cq/aa-cq-call-priorities-scenario-1.svg)](media/aa-cq/aa-cq-call-priorities-scenario-1.svg#lightbox)
 
 The following command uses the [New-CsOnlineApplicationInstanceAssociation](/en-us/powershell/module/teams/new-csonlineapplicationinstanceassociation) cmdlet with the `-CallPriority` parameter to set the call priority for a call queue based on the dialed number (Gold, Silver, Bronze, General):
 
-Expand to see the PowerShell example
+**Expand to see the PowerShell example**
 
 ```powershell
 # Assign resource accounts to call queue
@@ -151,11 +151,11 @@ In this scenario, Contoso Travel has a single Travel Support call queue for all 
 
 Callers who press 1 get top priority and connect to representatives first, followed by callers who press 2, 3, and 4 in decreasing order of priority.
 
-![Diagram showing the call flow for Scenario 2.](media/aa-cq/aa-cq-call-priorities-scenario-2.svg)
+[![Diagram showing the call flow for Scenario 2.](media/aa-cq/aa-cq-call-priorities-scenario-2.svg)](media/aa-cq/aa-cq-call-priorities-scenario-2.svg#lightbox)
 
 The following command uses the [New-CsAutoAttendantCallableEntity](/en-us/powershell/module/teams/new-csautoattendantcallableentity) cmdlet with the `-CallPriority` parameter to set the call priority for a call queue based on the Auto attendant menu choices (immediate assistance, existing booking, new booking, other inquiries):
 
-Expand to see the PowerShell example
+**Expand to see the PowerShell example**
 
 ```powershell
 # Create the Auto Attendant
@@ -182,7 +182,7 @@ New-CsAutoAttendant -Name "Contoso Travel" -LanguageId en-US -TimeZoneId "Easter
 
 In this scenario, Contoso Finance Customer Service representatives triage calls and they often transfer these calls to Tier 2 Support groups. Tier 2 Support groups can also take calls directly from customers. Contoso wants call transfers from Customer Service to have higher priority than calls that are directly dialed into Tier 2 Support, as these callers have already waited and spoken with a representative.
 
-![Diagram showing the call flow for Scenario 3.](media/aa-cq/aa-cq-call-priorities-scenario-3.svg)
+[![Diagram showing the call flow for Scenario 3.](media/aa-cq/aa-cq-call-priorities-scenario-3.svg)](media/aa-cq/aa-cq-call-priorities-scenario-3.svg#lightbox)
 
 ## Considerations
 

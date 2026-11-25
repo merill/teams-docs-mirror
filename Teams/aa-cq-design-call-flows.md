@@ -12,7 +12,7 @@ author: CLYVR
 ms.author: colongma
 manager: roykuntz
 ms.reviewer: colongma
-ms.date: 2026-11-03T00:00:00.0000000Z
+ms.date: 2026-11-30T00:00:00.0000000Z
 ms.topic: concept-article
 ms.tgt.pltfrm: cloud
 ms.service: msteams
@@ -63,9 +63,9 @@ platformId: f9e59f5b-bf05-a7e9-be1e-60371165a541
 
 # Design - Call flows for voice applications - Microsoft Teams | Microsoft Learn
 
-As part of the planning process, we recommend that you work out the call routing for your organization in a diagram. The diagram helps determine the most efficient routing for people calling in to your organization. You can also use the diagram to determine the auto attendants and call queues that you need to create, along with related requirements such as service numbers, licenses, and resource accounts.
+As part of the planning process, we recommend that you work out the call routing for your organization in a diagram. The diagram helps determine the most efficient routing for people calling in to your organization. You can also use the diagram to determine the voice applications that you need to create, along with related requirements such as service numbers, licenses, and resource accounts.
 
-Let's look at how auto attendants and call queues route calls.
+Let's look at how voice applications route calls.
 
 ## Auto Attendants
 
@@ -83,7 +83,7 @@ An auto attendant can redirect calls to the following destinations:
     - An operator can be any of the other destinations in this list.
 - **Person in the organization** - a person in your organization who is able to receive voice calls. This person can be an online user or a user hosted on-premises using Skype for Business Server.
 - **Voice app** - another auto attendant or a call queue. The call priority can be set when the destination is a call queue.
-- **Resource account** - the resource account associated with another auto attendant or call queue. The call priority can be set when the resource account is associated with a call queue.
+- **Resource account** - the resource account associated with another voice application. The call priority can be set when the resource account is associated with a call queue.
 - **Voicemail**- the voice mailbox associated with a Microsoft 365 Group, distribution list, or mail-enabled security group that you specify.
     - Using a Microsoft 365 Group is recommended.
     - You can choose if you want voicemail transcriptions and the "Please leave a message after the tone" system prompt.
@@ -105,13 +105,13 @@ Call queues place the caller on hold until a representative (agent) assigned to 
 
 - **Call overflow** - if the number of calls waiting in the queue exceeds the limit that you set, then new callers are redirected out of the queue.
 - **Call timeout** - if a caller stays in the queue longer than the configured timeout setting, they're redirected out of the queue.
-- **No agents** - if there are no agents opted in or logged into the queue, callers may be redirected out of the queue.
+- **No agents** - if there are no agents opted in or logged into the queue, callers might be redirected out of the queue.
 
 Calls redirected out of a queue can be sent to the following destinations:
 
 - **Person in the organization** - a person in your organization who is able to receive voice calls. This person can be an online user or a user hosted on-premises using Skype for Business Server.
 - **Voice app** - another auto attendant or a call queue.
-- **Resource account** - the resource account associated with another auto attendant or call queue.
+- **Resource account** - the resource account associated with another voice application.
 - **External phone number** - any phone number. See [Outbound Calls from Teams Phone Agent, Auto Attendant, or Call Queue](aa-cq-reference-prerequisites-licensing#outbound-calls-from-teams-phone-agent-auto-attendant-or-call-queue).
 - **Voicemail (personal)** - the voice mailbox associated with a specific user.
 - **Voicemail (shared)**- the voice mailbox associated with a Microsoft 365 Group, distribution list, or mail-enabled security group.
@@ -121,22 +121,22 @@ For more information on when to use **Voice app** or **Resource account** as the
 
 ## Call flow diagrams
 
-The following call flow diagrams show three different examples of call routing using auto attendants and call queues.
+The following call flow diagrams show three different examples of call routing using voice applications.
 
-![Call flow diagram showing call priority based on the dialed resource account phone number.](media/aa-cq/aa-cq-call-priorities-scenario-1.svg)
+[![Diagram showing call priority based on the dialed resource account phone number.](media/aa-cq/aa-cq-call-priorities-scenario-1.svg)](media/aa-cq/aa-cq-call-priorities-scenario-1.svg#lightbox)
 
 In this example:
 
 - The call queues are open 24/7.
 - Call priorities are assigned based on the resource account phone number dialed by the caller.
 
-![Call flow diagram showing call priority based on auto attendant menu choices.](media/aa-cq/aa-cq-call-priorities-scenario-2.svg)
+[![Diagram showing call priority based on auto attendant menu choices.](media/aa-cq/aa-cq-call-priorities-scenario-2.svg)](media/aa-cq/aa-cq-call-priorities-scenario-2.svg#lightbox)
 
 In this example:
 
 - The auto attendant assigns the call priority based on the menu option selected by the caller.
 
-![Call flow diagram showing call priority for call queue transfers.](media/aa-cq/aa-cq-call-priorities-scenario-3.svg)
+[![Diagram showing call priority for call queue transfers.](media/aa-cq/aa-cq-call-priorities-scenario-3.svg)](media/aa-cq/aa-cq-call-priorities-scenario-3.svg#lightbox)
 
 In this example:
 
@@ -145,7 +145,7 @@ In this example:
 
 We recommend that you create one or more diagrams similar to the example given to map out your call routing. Be sure your diagram or accompanying documentation includes the following:
 
-- The auto attendants and call queues that have direct access via phone numbers, as these require resource accounts.
+- The voice applications that have direct access via phone numbers, as these require resource accounts.
 - The off-hours and holiday routing requirements for each auto attendant.
 - The membership for each call queue. (You can add users individually or map the queue to different kinds of groups. Mapping a queue to a team provides the most versatile experience.)
 
@@ -164,7 +164,7 @@ Here are some call routing best practices:
 
 Important
 
-The maximum number of transitions a single call is permitted to make through auto attendants and call queues is 25. After the 25th transition, the call is disconnected. This prevents a call from infinitely looping through a series of auto attendants and call queues.
+The maximum number of transitions a single call is permitted to make through voice applications is 25. After the 25th transition, the call is disconnected. This prevents a call from infinitely looping through a series of voice applications.
 
 For example, if a call arrives on auto attendant #1 and the caller selects an option that sends them to auto attendant #2, then a transition has occurred. If the caller selects an option on auto attendant #2 that returns them to auto attendant #1 or sends them to call queue #1, a second transition has occurred.
 

@@ -12,7 +12,7 @@ author: CLYVR
 ms.author: colongma
 manager: roykuntz
 ms.reviewer: colongma
-ms.date: 2026-09-30T00:00:00.0000000Z
+ms.date: 2026-11-30T00:00:00.0000000Z
 ms.topic: how-to
 ms.tgt.pltfrm: cloud
 ms.service: msteams
@@ -53,9 +53,13 @@ monikers: []
 item_type: Content
 source_path: Teams/aa-cq-report-historical-custom.md
 cmProducts:
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/b5267373-9b61-4d5a-a4ac-5d03f8f8800f
 - https://authoring-docs-microsoft.poolparty.biz/devrel/63959238-cb90-4871-a33d-4a5519097e47
+- https://authoring-docs-microsoft.poolparty.biz/devrel/fcc3cd4a-59ea-47a2-9cc1-784142a5a25d
 spProducts:
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/bcd4f3ef-c612-47a8-aa4a-7f9bedc3a98c
 - https://authoring-docs-microsoft.poolparty.biz/devrel/78d87f42-5582-4a6b-90be-7db2f12b34e6
+- https://authoring-docs-microsoft.poolparty.biz/devrel/d7a55faf-a992-4e27-aa3a-eadc9830e778
 platformId: 659128eb-9fda-5da0-1c96-6b770ea817d0
 ---
 
@@ -63,7 +67,7 @@ platformId: 659128eb-9fda-5da0-1c96-6b770ea817d0
 
 Note
 
-Help shape the future of **Teams Voice Applications Historical Reporting**. [Share quick feedback](https://go.microsoft.com/fwlink/?LinkId=2375135) on the reports, setup documentation, translations, or languages you’d like supported. Your input will be reviewed by Microsoft and used to improve the product, documentation, and localization experience for everyone.
+Help shape the future of **Teams Voice Applications Historical Reporting**. [Share quick feedback](https://go.microsoft.com/fwlink/?LinkId=2375135) on the reports, setup documentation, translations, or languages you'd like supported. Your input will be reviewed by Microsoft and used to improve the product, documentation, and localization experience for everyone.
 
 This article is for IT pros and Teams administrators who want to build custom historical reports outside of Power BI for Teams Phone Agents, Auto Attendants, and Call Queues.
 
@@ -316,7 +320,7 @@ These dimensions are common to both Auto attendants and Call queues:
 | AIAgentName(Text) |  | N | The name of the Microsoft Copilot Studio agent*Not currently populated* |
 | AppointmentCancelled(Boolean) |  | Y | Was an appointment cancelled |
 | AppointmentModified(Boolean) |  | Y | Was an appointment modified |
-| AppointmentRequestStarted(Boolean) |  | Y | Was the Appointments tool started |
+| AppointmentRequestStarted(Boolean) |  | Y | Was the Appointment tool started |
 | AppointmentReviewed(Boolean) |  | Y | Was an appointment reviewed |
 | AppointmentScheduled(Boolean) |  | Y | Was an appointment scheduled |
 | CallerAuthenticated(Boolean) |  | Y | Was the caller successfully authenticated |

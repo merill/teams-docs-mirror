@@ -12,7 +12,7 @@ author: CLYVR
 ms.author: colongma
 manager: roykuntz
 ms.reviewer: colongma
-ms.date: 2026-09-30T00:00:00.0000000Z
+ms.date: 2026-11-30T00:00:00.0000000Z
 ms.topic: how-to
 ms.tgt.pltfrm: cloud
 ms.service: msteams
@@ -20,6 +20,7 @@ ms.subservice: teams-calling
 ms.collection:
 - M365-voice
 - m365initiative-voice
+- highpri
 - tier1
 search.appverid: MET150
 audience: Admin
@@ -57,7 +58,7 @@ Caution
 
 All customers should use V3.x.x of [Voice Applications Historical Reports](aa-cq-report-historical).
 
-Support for the v1.xx templates for Government Community Cloud High (GCCH) and Department of Defence (DoD) customers ended on July 8,2026
+Support for the v1.xx templates for Government Community Cloud High (GCCH) and Department of Defense (DoD) customers ended on July 8,2026
 
 This documentation will be removed on December 28, 2026.
 
@@ -95,7 +96,7 @@ Perform the following steps:
 4. Open the `CQD Teams Auto Attendant & Call Queue Historical Report V1.64.pbit` template file. Power BI Desktop should launch.
 5. Once prompted to select the CQD data pipeline region, choose the region where your tenant is located.
 
-    ![Screenshot selecting the CQD data pipeline region.](media/aa-cq/historical-report-v164-01.png)
+    [![Screenshot selecting the CQD data pipeline region.](media/aa-cq/historical-report-v164-01.png)](media/aa-cq/historical-report-v164-01.png#lightbox)
 
     Public Cloud Customers (not supported but works):
 6. The region where your tenant is located can be obtained by using the [Get-CsTenant](/en-us/powershell/module/teams/get-cstenant) cmdlet.
@@ -109,17 +110,17 @@ Perform the following steps:
     The region is displayed after the **/** as in the above example where the region is `noam`.
 
     GCCH and DoD Customers:
-7. Select the appropriate CQD data pipeline from the drop-down list:
+7. Select the appropriate CQD data pipeline from the dropdown list:
 
     - GCCH: `cqd.gov.teams.microsoft.us/data`
     - DoD: `cqd.dod.teams.microsoft.us/data`
 8. The report launches with sample data.
 9. To see your own data, select **Refresh** on the **Home** tab under **Queries** in Power BI Desktop.
 
-    ![Screenshot selecting the refresh option.](media/aa-cq/historical-report-v164-02.png)
+    [![Screenshot selecting the refresh option.](media/aa-cq/historical-report-v164-02.png)](media/aa-cq/historical-report-v164-02.png#lightbox)
 10. When prompted to sign in, select **Organizational account**, and then select **Sign in**.
 
-    ![Screenshot showing login for V1.63.](media/aa-cq/historical-report-v164-03.png)
+    [![Screenshot showing login for V1.63.](media/aa-cq/historical-report-v164-03.png)](media/aa-cq/historical-report-v164-03.png#lightbox)
 11. After you select **Connect**, the data refreshes.
 
 ## Data latency for Auto Attendant (AA) and Call Queue (CQ) analytics

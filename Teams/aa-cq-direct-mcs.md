@@ -12,7 +12,7 @@ author: iris-su
 ms.author: irisasu
 manager: roykuntz
 ms.reviewer: colongma
-ms.date: 2026-11-17T00:00:00.0000000Z
+ms.date: 2026-11-30T00:00:00.0000000Z
 ms.topic: how-to
 ms.tgt.pltfrm: cloud
 ms.service: msteams
@@ -31,8 +31,8 @@ ms.custom:
 - ms.teamsadmincenter.autoattendants.overview
 - Phone System
 - seo-marvel-apr2020
-customer-intent: As a Teams Administrator, I want learn about voice enabling my Microsoft Copilot Studio agents through Microsoft Teams Phone so I know when and how to use them within my organization.
-description: Setup - Voice enable Microsoft Copilot Studio agents through Teams Phone
+customer-intent: As a Teams Administrator, I want to learn about voice enabling my Microsoft Copilot Studio agents through Microsoft Teams Phone so I know when and how to use them within my organization.
+description: Learn how to voice enable Microsoft Copilot Studio agents through Teams Phone by setting up an AI Agent resource account in the Teams admin center.
 locale: en-us
 document_id: 6873e8c6-7bcd-1509-0394-a60c8f2666e4
 document_version_independent_id: 6873e8c6-7bcd-1509-0394-a60c8f2666e4
@@ -78,10 +78,12 @@ None.
 
 ## What's new in voice enabling Microsoft Copilot Studio agents (last six months)
 
+- November 17, 2026
+    - Entered General availability
 - October, 22, 2026
-    - Entered public preview
+    - Entered Public preview
 - June 15, 2026
-    - Entered Frontier Public Preview
+    - Entered Frontier Public preview
 
 ## Overview
 
@@ -99,11 +101,14 @@ Copilot Studio provides a powerful platform to build custom workflows tailored t
 
 By front-ending your call flow with a Copilot Studio voice agent, you unlock deep automation and tailored experiences. You can design custom workflows to handle common inquiries, such as billing, order status, and inventory checks. The agent acts as an intelligent first point of contact, resolving issues independently before seamlessly routing the call to a human representative using traditional Teams Phone routing systems if needed.
 
-## Teams Admin Center setup and configuration
+## Teams admin center setup and configuration
 
 ### Make a Copilot Studio voice agent:
 
-1. For detailed steps on how to make a Microsoft Copilot Studio voice agent, see [Integrate voice agents with Teams Phone](/en-us/microsoft-copilot-studio/voice-teams-phone-agent).
+For detailed steps on how to make a Microsoft Copilot Studio voice agent:
+
+- See [Integrate voice agents with Teams Phone (Standard)](/en-us/microsoft-copilot-studio/voice-teams-phone-agent)
+- See [Integrate voice agents with Teams Phone (Customer Conversation)](/en-us/microsoft-copilot-studio/agents-experience/voice-teams-phone-agent-customer-conversation)
 
 ### Create an AI Agent Resource account:
 
@@ -114,7 +119,7 @@ By front-ending your call flow with a Copilot Studio voice agent, you unlock dee
 
 ### License your AI Resource account:
 
-1. Go to Microsoft Admin Center, navigate Users / Active users, and select your Resource account.
+1. Go to the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339), navigate to **Users** &gt; **Active users**, and select your Resource account.
 2. Add the Teams Phone Resource Account license under Licenses and Apps.
 3. Save your changes.
 4. Wait for the changes to propagate.
@@ -122,7 +127,7 @@ By front-ending your call flow with a Copilot Studio voice agent, you unlock dee
 ### Link your AI Agent Resource account and Copilot Studio voice agent:
 
 1. In the [Teams admin center](https://go.microsoft.com/fwlink/p/?linkid=2066851), expand **Voice**, and select **Resource accounts**.
-2. select your **AI Agent Resource account** and select **Edit**.
+2. Select your **AI Agent Resource account** and select **Edit**.
 3. (optional) Select a **Voice routing policy**.
 4. (optional) Assign a **phone number**. If you don't assign a phone number, only users in your tenant can call this resource account over VOIP via Teams Client.
     1. Select your **Phone number type**: **Calling Plans**, **Operator Connect**, or **Direct Routing**.

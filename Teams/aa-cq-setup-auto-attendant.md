@@ -12,7 +12,7 @@ author: CLYVR
 ms.author: colongma
 manager: roykuntz
 ms.reviewer: colongma
-ms.date: 2026-11-16T00:00:00.0000000Z
+ms.date: 2026-11-30T00:00:00.0000000Z
 ms.topic: how-to
 ms.tgt.pltfrm: cloud
 ms.service: msteams
@@ -115,7 +115,7 @@ This article is for IT pros and Teams administrators who want to set up auto att
 
 No known issues with the main auto attendant service.
 
-Expand to see issues with individual features
+**Expand to see issues with individual features**
 
 ### Authorized users
 
@@ -150,7 +150,7 @@ To set up an auto attendant in the [Teams admin center](https://go.microsoft.com
 
 ### Quick setup
 
-Quick setup (expand to see instructions)
+**Quick setup (expand to see instructions)**
 
 #### Step 1: General info for Auto attendant
 
@@ -169,7 +169,7 @@ Once you select your call routing options, select the **Submit** button at the b
 
 ### Advanced setup
 
-Step 1 - General info (expand to see instructions)
+**Step 1 - General info (expand to see instructions)**
 
 #### Step 1: General info
 
@@ -197,7 +197,7 @@ Select this option if this auto attendant is [nested](aa-cq-plan-nesting) behind
 
 Specify a supported language for this auto attendant. This language is used for system-generated voice prompts.
 
-Expand to see list of supported languages/locales
+**Expand to see list of supported languages/locales**
 
 | # | Language | Text to Speech (TTS) | Speech Recognition |
 | --- | --- | --- | --- |
@@ -288,7 +288,7 @@ Make sure to also set up an **Operator** key on the menu options, otherwise the 
 
 After setting the **Operator**, select **Next**.
 
-Step 2 - Call handling hours (expand to see instructions)
+**Step 2 - Call handling hours (expand to see instructions)**
 
 #### Step 2: Call handling hours
 
@@ -316,7 +316,7 @@ After setting the **Business and after hours** times, select **Next**.
 
 - Step 1 - General info
 
-Step 3 - Business-hours call flow (expand to see instructions)
+**Step 3 - Business-hours call flow (expand to see instructions)**
 
 #### Step 3: Business-hours call flow
 
@@ -376,7 +376,7 @@ For each menu option, specify the following settings:
 - **Destination**- the specific routing location for this option.
     - **Operator** - the operator defined for the Teams Phone Agent.
     - **Person in the organization** - a person in your organization who can receive voice calls.
-    - **Tools** - access Questions and Answers andAppointments
+    - **Tools** - access Questions and Answers and Appointment
     - **Agents & queues** - access Microsoft Copilot Studio (MCS) agents and third party IVRs
     - **Voice app** - Choose the Teams Phone Agent, Auto Attendant, or Call Queue when choosing this destination.
     - **Resource account** - Choose the resource account associated with the Teams Phone Agent, Auto Attendant or Call Queue when choosing this destination.
@@ -430,7 +430,7 @@ After setting the business-hours call flow options, select **Next**.
 - Step 1 - General info
 - Step 2 - Call handling hours
 
-Step 4 - After-hours call flow (expand to see instructions)
+**Step 4 - After-hours call flow (expand to see instructions)**
 
 #### Step 4: After-hours call flow
 
@@ -490,7 +490,7 @@ For each menu option, specify the following settings:
 - **Destination**- the specific routing location for this option.
     - **Operator** - the operator defined for the Teams Phone Agent.
     - **Person in the organization** - a person in your organization who can receive voice calls.
-    - **Tools** - access Questions and Answers andAppointments
+    - **Tools** - access Questions and Answers and Appointment
     - **Agents & queues** - access Microsoft Copilot Studio (MCS) agents and third party IVRs
     - **Voice app** - Choose the Teams Phone Agent, Auto Attendant, or Call Queue when choosing this destination.
     - **Resource account** - Choose the resource account associated with the Teams Phone Agent, Auto Attendant or Call Queue when choosing this destination.
@@ -545,7 +545,7 @@ After setting the after-hours call flow options, select **Next**.
 - Step 2 - Call handling hours
 - Step 3 - Business-hours call flow
 
-Step 5 - Holidays call flow (expand to see instructions)
+**Step 5 - Holidays call flow (expand to see instructions)**
 
 #### Step 5: Holidays call flow (optional)
 
@@ -617,7 +617,7 @@ For each menu option, specify the following settings:
 - **Destination**- the specific routing location for this option.
     - **Operator** - the operator defined for the Teams Phone Agent.
     - **Person in the organization** - a person in your organization who can receive voice calls.
-    - **Tools** - access Questions and Answers andAppointments
+    - **Tools** - access Questions and Answers and Appointment
     - **Agents & queues** - access Microsoft Copilot Studio (MCS) agents and third party IVRs
     - **Voice app** - Choose the Teams Phone Agent, Auto Attendant, or Call Queue when choosing this destination.
     - **Resource account** - Choose the resource account associated with the Teams Phone Agent, Auto Attendant or Call Queue when choosing this destination.
@@ -675,7 +675,7 @@ After setting the holidays call flow options, select **Next**.
 - Step 3 - Business-hours call flow
 - Step 4 - After-hours call flow
 
-Step 6 - Dial scope (expand to see instructions)
+**Step 6 - Dial scope (expand to see instructions)**
 
 #### Step 6: Dial scope (optional)
 
@@ -699,7 +699,7 @@ After setting the **Dial scope** options, select **Next**.
 - Step 4 - After-hours call flow
 - Step 5 - Holidays call flow
 
-Step 7 - Authorized users (expand to see instructions)
+**Step 7 - Authorized users (expand to see instructions)**
 
 #### Step 7: Authorized users (optional)
 
@@ -709,12 +709,12 @@ Select **Add**, search for the user, select **Add**, and then select **Add**.
 
 Important
 
-A user needs a voice applications policy that allows at least one type of configuration change and must be an authorized user for at least one auto attendant or call queue.
+A user needs a voice applications policy that allows at least one type of configuration change and must be an authorized user for at least one voice application.
 
 A user can't make any configuration changes if:
 
-- The user has a policy assigned but isn't assigned as an authorized user to at least one auto attendant or call queue.
-- The user is assigned as an authorized user to at least one auto attendant or call queue but doesn't have a policy assigned.
+- The user has a policy assigned but isn't assigned as an authorized user to at least one voice application.
+- The user is assigned as an authorized user to at least one voice application but doesn't have a policy assigned.
 
 For more information, see [Set up authorized users](aa-cq-setup-authorized-users).
 
@@ -729,7 +729,7 @@ After setting the **Authorized users** option, select **Next**.
 - Step 5 - Holidays call flow
 - Step 6 - Dial scope
 
-Step 8 - Review & submit (expand to see instructions)
+**Step 8 - Review & submit (expand to see instructions)**
 
 #### Step 8: Review & submit
 

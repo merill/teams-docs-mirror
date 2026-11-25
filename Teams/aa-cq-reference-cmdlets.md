@@ -12,7 +12,7 @@ author: CLYVR
 ms.author: colongma
 manager: roykuntz
 ms.reviewer: colongma
-ms.date: 2026-08-31T00:00:00.0000000Z
+ms.date: 2026-11-30T00:00:00.0000000Z
 ms.topic: reference
 ms.tgt.pltfrm: cloud
 ms.service: msteams
@@ -21,6 +21,7 @@ search.appverid: MET150
 ms.collection:
 - M365-voice
 - m365initiative-voice
+- highpri
 - tier1
 audience: Admin
 ms.localizationpriority: medium
@@ -29,8 +30,8 @@ ms.custom:
 - seo-marvel-apr2020
 - has-azure-ad-ps-ref
 - azure-ad-ref-level-one-done
-customer-intent: As a Teams Administrator, I want a reference list of all teams cmdlets needed to fully manage teams phone agent, auto attendant, and call queue configuration
-description: Reference - PowerShell cmdlets for Teams Phone Agent, Auto Attendant, and Call Queue
+customer-intent: As a Teams Administrator, I want a reference list of all Teams cmdlets needed to fully manage voice applications configuration.
+description: Find the PowerShell cmdlets you use to create and manage voice applications, including Teams Phone Agent, auto attendants, and call queues.
 locale: en-us
 document_id: f9b9f205-5dee-ffcf-be6c-f01be1439cca
 document_version_independent_id: f9b9f205-5dee-ffcf-be6c-f01be1439cca
@@ -66,7 +67,7 @@ Submit a brief [Teams Phone & Voice AI Interest](https://go.microsoft.com/fwlink
 
 **We want your feedback**
 
-Help us improve Teams Phone Agent. [Share your feedback](https://go.microsoft.com/fwlink/?LinkId=2375134) on our planning and setup documentation, the Teams admin center experience, Teams Phone Agent features, or tell us about features and improvements you’d like to see.
+Help us improve Teams Phone Agent. [Share your feedback](https://go.microsoft.com/fwlink/?LinkId=2375134) on our planning and setup documentation, the Teams admin center experience, Teams Phone Agent features, or tell us about features and improvements you'd like to see.
 
 Caution
 
@@ -136,7 +137,7 @@ The following cmdlet references are for Microsoft Teams Phone Agent, Auto Attend
 
 ## Teams Phone Agent
 
-The following cmdlets are specific to Teams Phone Agent feature configuration. The Auto Attendant cmdlets must also be used in order to create a working Teams Phone Agent.
+The following cmdlets are specific to Teams Phone Agent feature configuration. The Auto Attendant cmdlets must also be used to create a working Teams Phone Agent.
 
 - [Get-CsMainlineAttendantFlow](/en-us/powershell/module/microsoftteams/get-csmainlineattendantflow)
 - [New-CsMainlineAttendantAppointmentBookingFlow](/en-us/powershell/module/microsoftteams/new-csmainlineattendantappointmentbookingflow)

@@ -17,18 +17,24 @@ ms.tgt.pltfrm: cloud
 ms.service: msteams
 ms.subservice: teams-calling
 audience: Admin
-ms.date: 2026-08-31T00:00:00.0000000Z
+ms.date: 2026-11-30T00:00:00.0000000Z
 ms.collection:
 - M365-voice
 - m365initiative-voice
+- highpri
 - tier1
 f1.keywords:
 - CSH
-ms.custom: ms.teamsadmincenter.voice.voiceapplications.overview
+ms.custom:
+- ms.teamsadmincenter.voice.voiceapplications.overview
+- ms.teamsadmincenter.autoattendants.overview
+- ms.teamsadmincenter.callqueues.overview
+- Phone System
+- seo-marvel-apr2020
 ms.localizationpriority: medium
 search.appverid: MET150
-customer-intent: As a Teams Administrator, I want to setup authorized users so I can allow users to make changes to teams phone agent, auto attendant, or call queue configurations without having access to Teams Admin Center.
-description: Setup - Authorized Users
+customer-intent: As a Teams Administrator, I want to set up authorized users so they can change voice applications configurations without access to the Teams admin center.
+description: Learn how to set up authorized users so they can change voice applications settings without access to the Teams admin center.
 locale: en-us
 document_id: bdc17ac9-a82b-8705-fc77-5d0ecdcb2b56
 document_version_independent_id: bdc17ac9-a82b-8705-fc77-5d0ecdcb2b56
@@ -86,11 +92,11 @@ In Ontario, the following communities and areas will not turn clocks back and wi
 
 Customers with auto attendants serving these areas that have time zone configurations that reference **(UTC-05:00) Eastern Time (US & Canada)** should change the time zone selection to **(UTC-05:00) Bogota, Lima, Quito, Rio Branco** or **(UTC-05:00) Chetumal** as DST is not observed in these areas.
 
-This article is for IT Pros and administrators who want to delegate Teams Phone Agent, Auto attendant, and Call queue change capabilities to users in their organization. This article describes the necessary steps to create an Authorized user.
+This article is for IT pros and administrators who want to delegate Teams Phone Agent, Auto attendant, and Call queue change capabilities to users in their organization. This article describes the necessary steps to create an Authorized user.
 
 Before you read this article, read [Plan for authorized users](aa-cq-plan-authorized-users) to understand the licensing and prerequisites for Auto Attendant and Call Queue authorized users.
 
-An **authorized user** is a Teams user that a Teams admin center administrator authorizes to make configuration changes to Teams Phone Agents, auto attendants, and call queues. The user doesn't need to have access to the Teams admin center portal nor be assigned any administrative roles.
+An **authorized user** is a Teams user that a Teams admin center administrator authorizes to make configuration changes to voice applications. The user doesn't need to have access to the Teams admin center portal nor be assigned any administrative roles.
 
 With the Queues App in Teams, you can give authorized users more control. They can set call routing for business hours, after hours, and holidays, and view real-time and historical metrics. For more information, see Set up Queues app for authorized users.
 

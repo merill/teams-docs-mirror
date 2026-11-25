@@ -12,7 +12,7 @@ author: CLYVR
 ms.author: colongma
 manager: roykuntz
 ms.reviewer: colongma
-ms.date: 2026-08-31T00:00:00.0000000Z
+ms.date: 2026-11-30T00:00:00.0000000Z
 ms.topic: how-to
 ms.tgt.pltfrm: cloud
 ms.service: msteams
@@ -21,6 +21,7 @@ search.appverid: MET150
 ms.collection:
 - M365-voice
 - m365initiative-voice
+- highpri
 - tier1
 audience: Admin
 ms.localizationpriority: medium
@@ -30,7 +31,9 @@ ms.custom:
 - Phone System
 - has-azure-ad-ps-ref
 - azure-ad-ref-level-one-done
-description: Setup - Create a Teams Phone Agent via PowerShell
+- ms.teamsadmincenter.autoattendants.overview
+- seo-marvel-apr2020
+description: Learn how to create and configure a Teams Phone Agent by using PowerShell cmdlets.
 locale: en-us
 document_id: 58651573-f05e-cad4-6800-9f9d31613c83
 document_version_independent_id: 58651573-f05e-cad4-6800-9f9d31613c83
@@ -68,7 +71,7 @@ Submit a brief [Teams Phone & Voice AI Interest](https://go.microsoft.com/fwlink
 
 **We want your feedback**
 
-Help us improve Teams Phone Agent. [Share your feedback](https://go.microsoft.com/fwlink/?LinkId=2375134) on our planning and setup documentation, the Teams admin center experience, Teams Phone Agent features, or tell us about features and improvements you’d like to see.
+Help us improve Teams Phone Agent. [Share your feedback](https://go.microsoft.com/fwlink/?LinkId=2375134) on our planning and setup documentation, the Teams admin center experience, Teams Phone Agent features, or tell us about features and improvements you'd like to see.
 
 Caution
 
@@ -114,14 +117,14 @@ Customers with Teams Phone Agents serving these areas that have time zone config
     - Teams Phone Agent now supports 42 voices, including 33 new ones.
 - September 30, 2026
     - Teams Phone Agent is now generally available to all customers.
-    - [Appointments integration with Microsoft Bookings](aa-cq-setup-teams-phone-agent-tools-appointments) can be configured in Teams admin center.
+    - [Appointment integration with Microsoft Bookings](aa-cq-setup-teams-phone-agent-tools-appointments) can be configured in Teams admin center.
     - [Automatic Recording for Teams Phone Agent](aa-cq-setup-teams-phone-agent-template-recording-automatic) can be configured in Teams admin center.
     - [Maximum call length with configurable disconnect message](aa-cq-setup-teams-phone-agent#whats-new-configurable-call-length) can be configured in Teams admin center.
     - Question and Answers URLs are refreshed daily.
 - September 29, 2026
     - [Historical reporting](aa-cq-report-historical) for Teams Phone Agent updated.
 - September 1, 2026
-    - Appointments integration with Microsoft Bookings can be configured via PowerShell.
+    - Appointment integration with Microsoft Bookings can be configured via PowerShell.
 - August 31, 2026
     - [AI disclaimer](aa-cq-setup-teams-phone-agent#ai-disclaimer-customization) can be configured in Teams admin center.
     - [Maximum call length](aa-cq-setup-teams-phone-agent#whats-new-configurable-call-length) can be configured in Teams admin center.
@@ -157,7 +160,7 @@ Customers with Teams Phone Agents serving these areas that have time zone config
 
 Note
 
-Some of the cmdlets mentioned in this article may be part of the Public Preview version of Teams PowerShell Module. For more information, see [Install Teams PowerShell public preview](teams-powershell-install) and also see [Microsoft Teams PowerShell Release Notes](teams-powershell-release-notes).
+Some of the cmdlets mentioned in this article might be part of the Public Preview version of Teams PowerShell Module. For more information, see [Install Teams PowerShell public preview](teams-powershell-install) and also see [Microsoft Teams PowerShell Release Notes](teams-powershell-release-notes).
 
 Users who already have the MicrosoftTeams module installed should `Update-Module MicrosoftTeams` to ensure the most up-to-date version is installed.
 

@@ -12,7 +12,7 @@ author: CLYVR
 ms.author: colongma
 manager: roykuntz
 ms.reviewer: colongma
-ms.date: 2026-08-31T00:00:00.0000000Z
+ms.date: 2026-11-30T00:00:00.0000000Z
 ms.topic: how-to
 ms.tgt.pltfrm: cloud
 ms.service: msteams
@@ -106,7 +106,7 @@ The Shared Call History template is used for both call queues and auto attendant
 
 This Shared Call History for Call Queue article describes the call queue options highlighted in the following image:
 
-![Screenshot showing the Shared Call History template and highlighting the Call queue portion.](media/aa-cq/aa-cq-setup-call-queue-shared-history.png)
+[![Screenshot showing the Shared Call History template and highlighting the Call queue portion.](media/aa-cq/aa-cq-setup-call-queue-shared-history.png)](media/aa-cq/aa-cq-setup-call-queue-shared-history.png#lightbox)
 
 See [Shared Call History for Auto Attendant](aa-cq-setup-auto-attendant-template-shared-history) for details on configuring Shared Call History for auto attendants.
 

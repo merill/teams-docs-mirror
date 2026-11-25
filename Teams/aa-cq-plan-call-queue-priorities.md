@@ -17,7 +17,7 @@ ms.tgt.pltfrm: cloud
 ms.service: msteams
 ms.subservice: teams-calling
 audience: Admin
-ms.date: 2026-11-03T00:00:00.0000000Z
+ms.date: 2026-11-30T00:00:00.0000000Z
 ms.collection:
 - M365-voice
 - m365initiative-voice
@@ -94,7 +94,7 @@ Contoso Support defines the following call priorities for their resource account
 
 Customers in the call queue are presented to representatives in the order of their priority. The Gold level customers are all presented first, followed by Silver, Bronze, and finally general support customers.
 
-![Call flow diagram for Scenario 1: callers to the general, Bronze, Silver, and Gold support numbers are assigned priorities 4, 3, 2, and 1 in the Technical Support call queue.](media/aa-cq/aa-cq-call-priorities-scenario-1.svg)
+[![Diagram showing Scenario 1: callers to the general, Bronze, Silver, and Gold support numbers are assigned priorities 4, 3, 2, and 1 in the Technical Support call queue.](media/aa-cq/aa-cq-call-priorities-scenario-1.svg)](media/aa-cq/aa-cq-call-priorities-scenario-1.svg#lightbox)
 
 ### Scenario 2: Priority to callers based on auto attendant menu choices
 
@@ -105,13 +105,13 @@ In this scenario, Contoso Travel has a single Travel Support call queue for all 
 
 Callers who press 1 get top priority and connect to representatives first, followed by callers who press 2, 3, and 4 in decreasing order of priority.
 
-![Call flow diagram for Scenario 2: an auto attendant routes callers to the Travel Support call queue with priority set by the menu option pressed, 1 through 4.](media/aa-cq/aa-cq-call-priorities-scenario-2.svg)
+[![Diagram showing Scenario 2: an auto attendant routes callers to the Travel Support call queue with priority set by the menu option pressed, 1 through 4.](media/aa-cq/aa-cq-call-priorities-scenario-2.svg)](media/aa-cq/aa-cq-call-priorities-scenario-2.svg#lightbox)
 
 ### Scenario 3: Priority to representatives transferring calls to another call queue
 
 In this scenario, Contoso Finance Customer Service representatives triage calls and often transfer them to Tier 2 Support groups. Tier 2 Support groups can also take calls directly from customers. Contoso wants calls transferred from Customer Service to take priority over calls dialed directly into Tier 2 Support, as these callers have already waited and spoken with a representative.
 
-![Call flow diagram for Scenario 3: calls transferred from Customer Service receive higher priority in the Tier 2 Support call queue than calls dialed in directly.](media/aa-cq/aa-cq-call-priorities-scenario-3.svg)
+[![Diagram showing Scenario 3: calls transferred from Customer Service receive higher priority in the Tier 2 Support call queue than calls dialed in directly.](media/aa-cq/aa-cq-call-priorities-scenario-3.svg)](media/aa-cq/aa-cq-call-priorities-scenario-3.svg#lightbox)
 
 ## Licensing requirements
 

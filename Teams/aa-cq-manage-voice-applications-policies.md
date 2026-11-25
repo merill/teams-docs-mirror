@@ -17,7 +17,7 @@ ms.tgt.pltfrm: cloud
 ms.service: msteams
 ms.subservice: teams-calling
 audience: Admin
-ms.date: 2026-08-31T00:00:00.0000000Z
+ms.date: 2026-11-30T00:00:00.0000000Z
 ms.collection:
 - M365-voice
 - m365initiative-voice
@@ -94,7 +94,7 @@ Customers with auto attendants serving these areas that have time zone configura
 
 This article is for IT pros and administrators who want to delegate auto attendant and call queue change capabilities to users in their organization.
 
-As an administrator, you create and assign voice applications policies to authorized users. Voice applications policies control what configuration changes an authorized user can make to the auto attendants and call queues they're authorized for.
+As an administrator, you create and assign voice applications policies to authorized users. Voice applications policies control what configuration changes an authorized user can make to the voice applications they're authorized for.
 
 Before creating and assigning policies, read [Plan for authorized users](aa-cq-plan-authorized-users) for licensing information and [Set up authorized users](aa-cq-setup-authorized-users). Some configuration capabilities require a Teams Premium license.
 
@@ -117,13 +117,13 @@ Important
 
 The global, org-wide default policy disables all configuration change capabilities for all users. This policy shouldn't be changed.
 
-You must create and assign custom policies to allow authorized users to make configuration changes to auto attendants and call queues.
+You must create and assign custom policies to allow authorized users to make configuration changes to voice applications.
 
 Best practice: The custom policy assigned to a user should provide the minimum levels of permissions the user needs to perform their job.
 
 ## Create a custom voice applications policy
 
-Create custom policies that reflect the configuration changes you want to allow authorized users to make to auto attendants and call queues.
+Create custom policies that reflect the configuration changes you want to allow authorized users to make to voice applications.
 
 1. In the left navigation of the [Teams admin center](https://go.microsoft.com/fwlink/p/?linkid=2066851), go to **Voice** &gt; **Voice applications policies**.
 2. Select **Add**.
@@ -152,15 +152,15 @@ It's not possible to change the name or description of the policy.
 
 To individually assign a custom voice applications policy to users, you can use the Teams admin center or the [Grant-CsTeamsVoiceApplicationsPolicy](/en-us/powershell/module/teams/grant-csteamsvoiceapplicationspolicy) cmdlet.
 
-In addition to creating and assigning a voice applications policy to users, a user must also be assigned as an [authorized user](aa-cq-setup-authorized-users) to at least one auto attendant or call queue.
+In addition to creating and assigning a voice applications policy to users, a user must also be assigned as an [authorized user](aa-cq-setup-authorized-users) to at least one voice application.
 
-A user must be an authorized user to at least one auto attendant or call queue, and must have a voice applications policy assigned, to perform the actions described in Voice applications policy settings.
+A user must be an authorized user to at least one voice application, and must have a voice applications policy assigned, to perform the actions described in Voice applications policy settings.
 
 To learn more about the different ways that you can assign policies to users, see [Assign policies to your users in Teams](policy-assignment-overview).
 
 ## Voice applications policy settings
 
-Voice applications policies control the configuration changes and actions an authorized user can make to the auto attendants and call queues they're authorized for. In addition, they also control which real-time and historical reports authorized users have access to. The following settings are available:
+Voice applications policies control the configuration changes and actions an authorized user can make to the voice applications they're authorized for. In addition, they also control which real-time and historical reports authorized users have access to. The following settings are available:
 
 ### Auto attendants - Features
 
@@ -193,8 +193,8 @@ Voice applications policies control the configuration changes and actions an aut
 Reporting values:
 
 - **None** - no access to any metrics.
-- **AuthorizedOnly** - the authorized user only sees metrics for the auto attendants, call queues, and associated representatives (agents) they're authorized for.
-- **All** - the authorized user sees metrics for all auto attendants, call queues, and representatives.
+- **AuthorizedOnly** - the authorized user only sees metrics for the voice applications and associated representatives (agents) they're authorized for.
+- **All** - the authorized user sees metrics for all voice applications and representatives.
 
 Important
 
@@ -256,7 +256,7 @@ Agent monitor notification mode values:
 1. The authorized user requires a Teams Premium license and Queues App to access this functionality.
 2. Under *Call answering*, the call queue must have **Conference mode** enabled.
 3. Under *Agent selection*, the call queue must have **Presence-based** routing enabled.
-4. If the authorized user is also a member in the call queue, they must be opted out in order to monitor.
+4. If the authorized user is also a member in the call queue, they must be opted out to monitor.
 
 ### Call queues - Reporting
 
@@ -270,8 +270,8 @@ Agent monitor notification mode values:
 Reporting values:
 
 - **None** - no access to any metrics.
-- **AuthorizedOnly** - the authorized user only sees metrics for the auto attendants, call queues, and associated representatives they're authorized for.
-- **All** - the authorized user sees metrics for all auto attendants, call queues, and associated representatives configured in the tenant.
+- **AuthorizedOnly** - the authorized user only sees metrics for the voice applications and associated representatives they're authorized for.
+- **All** - the authorized user sees metrics for all voice applications and associated representatives configured in the tenant.
 
 Important
 

@@ -12,7 +12,7 @@ author: CLYVR
 ms.author: colongma
 manager: roykuntz
 ms.reviewer: colongma
-ms.date: 2026-08-31T00:00:00.0000000Z
+ms.date: 2026-11-30T00:00:00.0000000Z
 ms.topic: how-to
 ms.tgt.pltfrm: cloud
 ms.service: msteams
@@ -32,6 +32,7 @@ ms.custom:
 - ms.teamsadmincenter.autoattendants.overview
 - ms.teamsadmincenter.callqueues.overview
 - seo-marvel-apr2020
+- Phone System
 customer-intent: As a Teams Administrator, I want to create holiday schedules and routing so I can use them with Teams Phone Agent and Auto Attendant.
 description: Learn how to create and change holiday schedules and call routing for use with Teams Phone Agent and auto attendants in the Teams admin center.
 locale: en-us
@@ -71,7 +72,7 @@ Submit a brief [Teams Phone & Voice AI Interest](https://go.microsoft.com/fwlink
 
 **We want your feedback**
 
-Help us improve Teams Phone Agent. [Share your feedback](https://go.microsoft.com/fwlink/?LinkId=2375134) on our planning and setup documentation, the Teams admin center experience, Teams Phone Agent features, or tell us about features and improvements you’d like to see.
+Help us improve Teams Phone Agent. [Share your feedback](https://go.microsoft.com/fwlink/?LinkId=2375134) on our planning and setup documentation, the Teams admin center experience, Teams Phone Agent features, or tell us about features and improvements you'd like to see.
 
 Caution
 

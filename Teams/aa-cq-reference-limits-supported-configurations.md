@@ -17,7 +17,7 @@ ms.tgt.pltfrm: cloud
 ms.service: msteams
 ms.subservice: teams-calling
 audience: Admin
-ms.date: 2026-11-03T00:00:00.0000000Z
+ms.date: 2026-11-30T00:00:00.0000000Z
 ms.collection:
 - M365-voice
 - m365initiative-voice
@@ -80,7 +80,7 @@ This article is for IT pros and administrators who want to understand the suppor
 
 ### Teams Phone Agent languages / locales
 
-Languages/Locales: 63 (Expand to see list of supported languages/locales)
+**Languages/Locales: 63 (Expand to see list of supported languages/locales)**
 
 | # | Locale | Language | Optimized Voice |
 | --- | --- | --- | --- |
@@ -150,7 +150,7 @@ Languages/Locales: 63 (Expand to see list of supported languages/locales)
 
 ### Teams Phone Agent voices
 
-Voices: 42 (Expand to see list of supported voices)
+**Voices: 42 (Expand to see list of supported voices)**
 
 | # | Name | Available for all languages | Optimized for |
 | --- | --- | --- | --- |
@@ -218,7 +218,7 @@ Voices: 42 (Expand to see list of supported voices)
     - Text to speech: 54
     - Speech recognition: 14
 
-Languages/Locales: 54 Expand to see list of supported language/locales
+**Languages/Locales: 54 Expand to see list of supported language/locales**
 
 | # | Language | Text to Speech (TTS) | Speech Recognition |
 | --- | --- | --- | --- |
@@ -309,7 +309,7 @@ Notes:
 
 ### Call Queue languages / locales
 
-Languages/Locales: 54 (Expand to see list of supported language/locales)
+**Languages/Locales: 54 (Expand to see list of supported language/locales)**
 
 | # | Language | Text to Speech (TTS) |
 | --- | --- | --- |
@@ -374,7 +374,7 @@ When using Text to Speech, the text must be entered in the selected language as 
 
 ### Call Queue feature compatibility by call queue type
 
-Expand to see table
+**Expand to see table**
 
 | Feature | Standard Call Queues^1^ | Channel Based Call Queues^2^ | Shifts Based Call Queues^3^ | Comment |
 | --- | --- | --- | --- | --- |
@@ -432,7 +432,7 @@ Expand to see table
 
 ### Call Queue feature compatibility by device type
 
-Expand to see table
+**Expand to see table**
 
 | Feature | Teams Desktop^1^ | Teams Web | Teams Mobile App^2^ | Teams Phone Mobile^3^ | Skype for Business | IP Phones | Comment |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -494,7 +494,7 @@ Expand to see table
 
 ### Call Queue supported clients
 
-Expand to see table
+**Expand to see table**
 
 The following clients are supported for representatives (agents) in a call queue:
 
@@ -553,7 +553,7 @@ The audio file content can't be larger than 5 MB.
 
 ## Click-to-call restrictions
 
-To help prevent a denial-of-service attack from web-based click-to-call applications, there's a maximum of 40 click-to-call calls per minute across all auto attendants and call queues in a tenant.
+To help prevent a denial-of-service attack from web-based click-to-call applications, there's a maximum of 40 click-to-call calls per minute across all voice applications in a tenant.
 
 ## Greeting message maximum characters
 

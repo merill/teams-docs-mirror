@@ -12,7 +12,7 @@ author: CLYVR
 ms.author: colongma
 manager: roykuntz
 ms.reviewer: colongma
-ms.date: 2026-11-03T00:00:00.0000000Z
+ms.date: 2026-11-30T00:00:00.0000000Z
 ms.topic: reference
 ms.tgt.pltfrm: cloud
 ms.service: msteams
@@ -63,30 +63,30 @@ platformId: d3ba1bcc-65c0-fdd4-e7cb-2e88002ee7ab
 
 # Reference - Getting Started - Microsoft Teams | Microsoft Learn
 
-This article is for IT pros and Teams administrators who are ready to start setting up their Teams Phone Agents, auto attendants, and call queues.
+This article is for IT pros and Teams administrators who are ready to start setting up their voice applications.
 
 ## Getting started
 
-Once you complete the planning tasks in this series, follow these steps to get your auto attendants and call queues set up:
+Once you complete the planning tasks in this series, follow these steps to get your voice applications set up:
 
-1. [Design call flows](aa-cq-design-call-flows) to identify the number of resource accounts, Teams Phone Agents, auto attendants, call queues, and associated configuration items you need.
-2. [Plan for Auto Attendant and Call Queue authorized users](aa-cq-plan-authorized-users) who can be responsible for administrative changes to auto attendants or call queues.
+1. [Design call flows](aa-cq-design-call-flows) to identify the number of resource accounts, voice applications, and associated configuration items you need.
+2. [Plan for Auto Attendant and Call Queue authorized users](aa-cq-plan-authorized-users) who can be responsible for administrative changes to voice applications.
 3. Get a [Teams Phone Resource Account license](teams-add-on-licensing/virtual-user) for each resource account that you plan to create. These licenses are free, so we suggest getting a few extra in case you decide to make changes to your resource accounts in the future.
 4. [Create a resource account](aa-cq-manage-resource-accounts) for each Teams Phone Agent, auto attendant, and call queue that directly answers calls.
 5. Assign a Teams Phone Resource Account license to each resource account.
     - If the resource account is used to transfer calls externally, assign a pay-as-you-go license or communications credits to the resource account.
-6. Get service numbers for the Teams Phone Agents, auto attendants, and call queues that you want phone callers from outside your organization to call.
+6. Get service numbers for the voice applications that you want phone callers from outside your organization to call.
     - For more information about service numbers, see [transferring numbers from another provider](phone-number-calling-plans/transfer-phone-numbers-to-teams) or [requesting new service numbers](getting-service-phone-numbers).
 7. Create click-to-call configurations for the [Teams Phone Agent/Auto Attendant](/en-us/azure/communication-services/quickstarts/voice-video-calling/get-started-teams-auto-attendant) and [Call Queues](/en-us/azure/communication-services/quickstarts/voice-video-calling/get-started-teams-call-queue) that you want users on your website or in your mobile applications to call.
 8. [Create the holidays](aa-cq-setup-holidays) for which you want to have separate call routing in your auto attendants.
 9. Create the groups, Teams channels, or Shifts scheduling groups that you want to use to contain the representatives (agents) for the call queues.
 10. If you plan to enable dial by extension, ensure that you add your users' extension numbers to their Microsoft Entra ID profiles.
 
-Once you complete these steps, you're ready to create your Teams Phone Agents, auto attendants, and call queues. Refer to the workflow diagram that you created to determine what should be created first.
+Once you complete these steps, you're ready to create your voice applications. Refer to the workflow diagram that you created to determine what should be created first.
 
 In the example diagram, we recommend creating the sales and support call queues before the Contoso main auto attendant, because the auto attendant needs to direct callers to the queues.
 
-See the following articles for information on how to create Teams Phone Agents, auto attendants, and call queues:
+See the following articles for information on how to create voice applications:
 
 - [Teams Phone Agent](aa-cq-setup-teams-phone-agent)
 - [Auto Attendant](aa-cq-setup-auto-attendant)
@@ -94,9 +94,9 @@ See the following articles for information on how to create Teams Phone Agents, 
 
 Important
 
-A user's Microsoft Entra ID GUID token is stored as part of the auto attendant or call queue configuration when the user is configured as:
+A user's Microsoft Entra ID GUID token is stored as part of the voice application configuration when the user is configured as:
 
-- an auto attendant or call queue **Authorized user**.
+- a voice application **Authorized user**.
 - an auto attendant **Operator**.
 - a **Person in Organization** transfer point.
 - an individual member of a call queue.
@@ -113,7 +113,7 @@ This doesn't apply to call queue representative memberships that are configured 
 
 - [Overview](aa-cq-plan-overview)
 - [Questions and Answers tools (Teams Phone Agent)](aa-cq-plan-teams-phone-agent-tools-questions-answers)
-- [Appointments tools (Teams Phone Agent)](aa-cq-plan-teams-phone-agent-tools-appointments)
+- [Appointment tools (Teams Phone Agent)](aa-cq-plan-teams-phone-agent-tools-appointments)
 - [Agents and Queues (Teams Phone Agent)](aa-cq-plan-teams-phone-agent-agents-queues)
 - [Spam detection (Teams Phone Agent)](aa-cq-plan-teams-phone-agent-spam-detection)
 - [Usage-based billing (Teams Phone Agent)](aa-cq-plan-teams-phone-agent-ubb)

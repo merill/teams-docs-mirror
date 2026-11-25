@@ -17,7 +17,7 @@ ms.tgt.pltfrm: cloud
 ms.service: msteams
 ms.subservice: teams-calling
 audience: Admin
-ms.date: 2026-11-03T00:00:00.0000000Z
+ms.date: 2026-11-30T00:00:00.0000000Z
 ms.collection:
 - M365-voice
 - m365initiative-voice
@@ -32,7 +32,7 @@ ms.custom:
 - seo-marvel-apr2020
 ms.localizationpriority: medium
 search.appverid: MET150
-customer-intent: As a Teams Administrator, I want to learn about the decisions I need to make in order to determine how and when to use Teams Phone Agents, Auto Attendants, or Call Queues and their various features within my organization.
+customer-intent: As a Teams Administrator, I want to learn about the decisions I need to make to determine how and when to use Teams Phone Agents, Auto Attendants, or Call Queues and their various features within my organization.
 description: Learn the business decisions to make before configuring voice applications, including languages, hours, agents, and compliance.
 locale: en-us
 document_id: 3504c3e2-6c61-d376-f295-aeb5bb301327
@@ -107,7 +107,7 @@ We recommend choosing a strategy for adding representatives to queues before you
 
 ### Migrating phone numbers
 
-If you have existing auto attendants and call queues that you're migrating to Teams, you need a plan to transfer your existing phone numbers to the new Teams Phone Agents, Auto Attendants, and Call Queues. You might need to create a [port order](phone-number-calling-plans/port-order-overview) to move your numbers from another provider.
+If you have existing voice applications that you're migrating to Teams, you need a plan to transfer your existing phone numbers to the new Teams Phone Agents, Auto Attendants, and Call Queues. You might need to create a [port order](phone-number-calling-plans/port-order-overview) to move your numbers from another provider.
 
 Tip
 

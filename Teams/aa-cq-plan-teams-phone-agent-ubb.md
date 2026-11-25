@@ -12,7 +12,7 @@ author: CLYVR
 ms.author: colongma
 manager: roykuntz
 ms.reviewer: colongma
-ms.date: 2026-11-03T00:00:00.0000000Z
+ms.date: 2026-11-30T00:00:00.0000000Z
 ms.topic: concept-article
 ms.tgt.pltfrm: cloud
 ms.service: msteams
@@ -52,10 +52,8 @@ item_type: Content
 source_path: Teams/aa-cq-plan-teams-phone-agent-ubb.md
 cmProducts:
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/b5267373-9b61-4d5a-a4ac-5d03f8f8800f
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/46e3c7c4-fe77-4a6e-b40a-44c569819fa5
 spProducts:
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/bcd4f3ef-c612-47a8-aa4a-7f9bedc3a98c
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/d0c6fab8-2d7d-4bb0-bf40-589e08d7c132
 platformId: 9ab966d6-02b6-1f4c-03d9-3350d0445ac5
 ---
 
@@ -69,7 +67,7 @@ Submit a brief [Teams Phone & Voice AI Interest](https://go.microsoft.com/fwlink
 
 **We want your feedback**
 
-Help us improve Teams Phone Agent. [Share your feedback](https://go.microsoft.com/fwlink/?LinkId=2375134) on our planning and setup documentation, the Teams admin center experience, Teams Phone Agent features, or tell us about features and improvements you’d like to see.
+Help us improve Teams Phone Agent. [Share your feedback](https://go.microsoft.com/fwlink/?LinkId=2375134) on our planning and setup documentation, the Teams admin center experience, Teams Phone Agent features, or tell us about features and improvements you'd like to see.
 
 This article is for IT pros and Teams administrators who want to learn about usage-based billing and how it applies to Teams Phone Agent.
 
@@ -82,8 +80,6 @@ Depending on the service, organizations can use fixed licensing, the Copilot Cre
 ## Copilot credits
 
 Copilot Credits are a common currency for eligible Microsoft services with usage-based billing.
-
-For more information about licensing details for Copilot Credits and services, see the [Copilot Credits Guide.](https://go.microsoft.com/fwlink/?LinkId=2383615)
 
 For more information, see [Understand usage-based billing and cost management for Copilot Credits](/en-us/microsoft-365/copilot/usage-based-billing-overview-copilot-credits).
 

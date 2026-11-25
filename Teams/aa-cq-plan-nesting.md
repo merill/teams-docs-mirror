@@ -17,7 +17,7 @@ ms.tgt.pltfrm: cloud
 ms.service: msteams
 ms.subservice: teams-calling
 audience: Admin
-ms.date: 2026-11-03T00:00:00.0000000Z
+ms.date: 2026-11-30T00:00:00.0000000Z
 ms.collection:
 - M365-voice
 - m365initiative-voice
@@ -65,11 +65,11 @@ This article is for IT pros and administrators who want to link Teams Phone Agen
 
 ## Nested call flows
 
-A nested call flow is when a parent auto attendant or call queue routes calls to another auto attendant or call queue. The second auto attendant or call queue is *nested* behind the first one.
+A nested call flow is when a parent voice application routes calls to another voice application. The second voice application is *nested* behind the first one.
 
 In this example, the Travel call queue is nested behind an auto attendant:
 
-![Call flow diagram showing a Travel Support call queue nested behind an auto attendant.](media/aa-cq/aa-cq-call-priorities-scenario-2.svg)
+[![Diagram showing a Travel Support call queue nested behind an auto attendant.](media/aa-cq/aa-cq-call-priorities-scenario-2.svg)](media/aa-cq/aa-cq-call-priorities-scenario-2.svg#lightbox)
 
 ## How to nest call flows
 
@@ -79,7 +79,7 @@ You can nest Teams Phone Agents, Auto Attendants, and Call Queues in two ways: d
 
 The first Teams Phone Agent, Auto Attendant, or Call Queue that answers the calls requires a resource account and associated licensing. Nested Teams Phone Agents, Auto Attendants, or Call Queues that receive calls from the Teams Phone Agent, Auto Attendant, or Call Queue that already answered the call don't need a resource account, even if they end up transferring calls externally.
 
-When you nest Teams Phone Agents, Auto Attendants, or Call Queues this way, license the resource account on the first auto attendant or call queue receiving the call.
+When you nest Teams Phone Agents, Auto Attendants, or Call Queues this way, license the resource account on the first voice application receiving the call.
 
 Nesting without resource accounts is the recommended approach. This method removes the need to create and license extra resource accounts. It also makes routing flows easier to understand and manage.
 

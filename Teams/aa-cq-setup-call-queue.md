@@ -12,7 +12,7 @@ author: CLYVR
 ms.author: colongma
 manager: roykuntz
 ms.reviewer: colongma
-ms.date: 2026-11-03T00:00:00.0000000Z
+ms.date: 2026-11-30T00:00:00.0000000Z
 ms.topic: how-to
 ms.tgt.pltfrm: cloud
 ms.service: msteams
@@ -83,7 +83,7 @@ This article is for IT pros and Teams administrators who want to create call que
 
 No known issues with the main call queue service.
 
-Expand to see issues with individual features
+**Expand to see issues with individual features**
 
 ### Authorized users
 
@@ -139,7 +139,7 @@ To set up a call queue in the [Teams admin center](https://go.microsoft.com/fwli
 
 ### Quick setup
 
-Quick setup (expand to see instructions)
+**Quick setup (expand to see instructions)**
 
 #### Step 1: General info for Call queue
 
@@ -158,7 +158,7 @@ Once you select who can answer the incoming calls, select the **Submit** button 
 
 ### Advanced setup
 
-Step 1 - General info (expand to see instructions)
+**Step 1 - General info (expand to see instructions)**
 
 #### Step 1: General info
 
@@ -170,7 +170,7 @@ Type a name for the call queue in the box at the top.
 
 Specify a supported language for this call queue. This language is used for the text-to-speech and system-generated voice prompts.
 
-Supported languages/locales (expand to see list)
+**Supported languages/locales (expand to see list)**
 
 | # | Language | Text to Speech (TTS) |
 | --- | --- | --- |
@@ -235,11 +235,11 @@ When using Text to Speech, the text must be entered in the selected language as 
 
 ##### Add an existing resource account
 
-For details on how to create resource accounts and ready them for use with auto attendants or call queues, see [Manage Teams resource accounts](aa-cq-manage-resource-accounts).
+For details on how to create resource accounts and ready them for use with voice applications, see [Manage Teams resource accounts](aa-cq-manage-resource-accounts).
 
 All call queues that directly answer calls must have an associated resource account. All resource accounts must be assigned a [Microsoft Teams Phone Resource Account license](teams-add-on-licensing/virtual-user). Multiple resource accounts can be assigned to a call queue.
 
-Nested auto attendants and call queues that receive calls from an auto attendant or call queue that already answered the call don't require a resource account. For more information, see [Nested auto attendants and call queues](aa-cq-plan-nesting).
+Nested voice applications that receive calls from a voice application that already answered the call don't require a resource account. For more information, see [Nested auto attendants and call queues](aa-cq-plan-nesting).
 
 Representatives see the resource account name or call queue name when they receive an incoming call.
 
@@ -247,7 +247,7 @@ Representatives see the resource account name or call queue name when they recei
 
 Assign outbound caller ID numbers for the representatives by specifying one or more resource accounts with a phone number. Representatives can select which outbound caller ID number to use with each outbound call they make. Within the Calls app, representatives can use their Call Queue (CQ) / Auto Attendant (AA) number or their own personal Direct Inward Dial (DID).
 
-For details on how to create resource accounts and ready them for use with auto attendants or call queues, see [Manage Teams resource accounts](aa-cq-manage-resource-accounts).
+For details on how to create resource accounts and ready them for use with voice applications, see [Manage Teams resource accounts](aa-cq-manage-resource-accounts).
 
 Note
 
@@ -276,7 +276,7 @@ Changing the service level threshold during business hours causes inaccurate ser
 
 After you set the service level threshold, select the **Next** button at the bottom of the **Add a Call queue** page.
 
-Step 2 - Greeting and music (expand to see instructions)
+**Step 2 - Greeting and music (expand to see instructions)**
 
 #### Step 2: Greeting and music
 
@@ -310,7 +310,7 @@ After you select a greeting and on-hold music, select the **Next** button at the
 
 - Step 1 - General info
 
-Step 3 - Call answering (expand to see instructions)
+**Step 3 - Call answering (expand to see instructions)**
 
 #### Step 3: Call answering
 
@@ -429,7 +429,7 @@ Transfer mode (when conference mode is disabled) is now in legacy mode. A Messag
 - Step 1 - General info
 - Step 2 - Greeting and music
 
-Step 4 - Agent selection (expand to see instructions)
+**Step 4 - Agent selection (expand to see instructions)**
 
 #### Step 4: Agent selection
 
@@ -499,13 +499,13 @@ Once you select your representative call routing options, select the **Next** bu
 - Step 2 - Greeting and music
 - Step 3 - Call answering
 
-Step 5 - Callback (expand to see instructions)
+**Step 5 - Callback (expand to see instructions)**
 
 #### Step 5: Callback
 
 ##### Enable callback
 
-Enable callback in order to configure when callers will be able to request a callback.
+Enable callback to configure when callers will be able to request a callback.
 
 Configuration is maintained when callback is turned off.
 
@@ -529,7 +529,7 @@ Set the messaging an caller hears when they become *eligible* for callback. Make
 
 ##### Key to press
 
-Select the key that *eligible* callers must press in order to request the callback. This information shoudl be included in the Greeting.
+Select the key that *eligible* callers must press to request the callback. This information shoudl be included in the Greeting.
 
 ##### When callback could not be completed
 
@@ -584,7 +584,7 @@ Once you select your callback options, select the **Next** button at the bottom 
 - Step 3 - Call answering
 - Step 4 - Agent selection
 
-Step 6 - Exception handling (expand to see instructions)
+**Step 6 - Exception handling (expand to see instructions)**
 
 #### Step 6: Exception handling
 
@@ -797,25 +797,25 @@ Once you select your call overflow, call timeout, and no agents handling options
 - Step 4 - Agent selection
 - Step 5 - Callback
 
-Step 7 - Templates (expand to see instructions)
+**Step 7 - Templates (expand to see instructions)**
 
 #### Step 7: Templates
 
 #### Set the Automatic Recording for Call Queue template (optional)
 
-Select an existing template from the drop-down or Create a new template.
+Select an existing template from the dropdown or Create a new template.
 
 To create an Automatic Recording for Call Queue template, see [Automatic Recording for Call Queue template](aa-cq-setup-call-queue-template-recording-automatic)
 
 ##### Set the Compliance Recording for Call Queue template (optional)
 
-Select up to two existing templates from the drop-down or Create a new template.
+Select up to two existing templates from the dropdown or Create a new template.
 
 To create a Compliance Recording for Call Queue template, see [Compliance Recording for Call Queue template](aa-cq-setup-call-queue-template-recording-compliance)
 
 ##### Set the Shared call history for call queue template (optional)
 
-Select an existing template from the drop-down or Create a new template.
+Select an existing template from the dropdown or Create a new template.
 
 To create a Shared Call History for Call Queue template, see [Shared Call History for Call Queue template](aa-cq-setup-call-queue-template-shared-history)
 
@@ -830,7 +830,7 @@ Once you select the optional templates, select **Next** button at the bottom of 
 - Step 5 - Callback
 - Step 6 - Exception handling
 
-Step 8 - Authorized users (expand to see instructions)
+**Step 8 - Authorized users (expand to see instructions)**
 
 #### Step 8: Authorized users
 
@@ -842,12 +842,12 @@ To **add a user** to the authorized users:
 
 Important
 
-A user must have a policy assigned that enables at least one type of configuration change. The user must also be assigned as an authorized user to at least one auto attendant or call queue.
+A user must have a policy assigned that enables at least one type of configuration change. The user must also be assigned as an authorized user to at least one voice application.
 
 A user can't make any configuration changes if:
 
-- The user has a policy assigned but isn't assigned as an authorized user to at least one auto attendant or call queue.
-- The user is assigned as an authorized user to at least one auto attendant or call queue but doesn't have a policy assigned.
+- The user has a policy assigned but isn't assigned as an authorized user to at least one voice application.
+- The user is assigned as an authorized user to at least one voice application but doesn't have a policy assigned.
 
 Note
 
@@ -886,7 +886,7 @@ These configuration options are currently only available through PowerShell cmdl
 
 The Overflow, Call timeout, and No Agents exception redirect options for **Person in organization** and **Voicemail personal** support additional prompting just like the other redirect options.
 
-Expand to see PowerShell options
+**Expand to see PowerShell options**
 
 | New-CsCallQueue (For new call queues) | Set-CsCallQueue (For existing call queues) |
 | --- | --- |
@@ -907,7 +907,7 @@ Expand to see PowerShell options
 
 Hidden authorized users aren't visible to Queues App users.
 
-Hiding authorized users (expand to see instructions)
+**Hiding authorized users (expand to see instructions)**
 
 | New-CsCallQueue (For new call queues) | Set-CsCallQueue (For existing call queues) |
 | --- | --- |
@@ -936,7 +936,7 @@ For instructions on creating call queues using PowerShell, see [Call queues with
 
 ## Call queue diagnostic tool
 
-Call queue diagnostic tool (expand to see instructions)
+**Call queue diagnostic tool (expand to see instructions)**
 
 If you're an administrator, you can use the following diagnostic tool to validate that a call queue is able to receive calls:
 

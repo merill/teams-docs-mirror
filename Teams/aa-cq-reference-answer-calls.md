@@ -13,7 +13,7 @@ author: CLYVR
 ms.author: colongma
 manager: roykuntz
 audience: Admin
-ms.date: 2026-08-31T00:00:00.0000000Z
+ms.date: 2026-11-30T00:00:00.0000000Z
 ms.topic: reference
 ms.service: msteams
 ms.subservice: teams-calling
@@ -64,7 +64,7 @@ Submit a brief [Teams Phone & Voice AI Interest](https://go.microsoft.com/fwlink
 
 **We want your feedback**
 
-Help us improve Teams Phone Agent. [Share your feedback](https://go.microsoft.com/fwlink/?LinkId=2375134) on our planning and setup documentation, the Teams admin center experience, Teams Phone Agent features, or tell us about features and improvements you’d like to see.
+Help us improve Teams Phone Agent. [Share your feedback](https://go.microsoft.com/fwlink/?LinkId=2375134) on our planning and setup documentation, the Teams admin center experience, Teams Phone Agent features, or tell us about features and improvements you'd like to see.
 
 Teams users can receive and answer calls from Teams Phone Agent, Auto Attendant, and Call Queue directly in their Teams client.
 
@@ -74,7 +74,7 @@ Users can differentiate incoming calls from a Teams Phone Agent, Auto Attendant,
 
 When users receive a call from a Teams Phone Agent, the information in the toast contains the name or number of the caller, the display name of the resource account assigned to the Teams Phone Agent that answered the call, and the caller's intent.
 
-![Screenshot showing an incoming call toast from a Teams Phone Agent.](media/aa-cq/aa-cq-reference-answer-calls-teams-phone-agent.png)
+[![Screenshot showing an incoming call toast from a Teams Phone Agent.](media/aa-cq/aa-cq-reference-answer-calls-teams-phone-agent.png)](media/aa-cq/aa-cq-reference-answer-calls-teams-phone-agent.png#lightbox)
 
 Note
 
@@ -84,7 +84,7 @@ Calls from Teams Phone Agents are forwarded based on the user's call answering r
 
 When users receive a call from an auto attendant, the information in the toast contains the name or number of the caller and the display name of the resource account assigned to the auto attendant that answered the call.
 
-![Screenshot showing an incoming call toast from an Auto Attendant.](media/aa-cq/aa-cq-reference-answer-calls-auto-attendant.png)
+[![Screenshot showing an incoming call toast from an Auto Attendant.](media/aa-cq/aa-cq-reference-answer-calls-auto-attendant.png)](media/aa-cq/aa-cq-reference-answer-calls-auto-attendant.png#lightbox)
 
 Note
 
@@ -97,7 +97,7 @@ When representatives (agents) receive a call from a call queue, the toast displa
 - If the call was transferred to the call queue without a resource account, the representative receives the name of the call queue in the toast.
 - If the call was transferred to the call queue through a resource account, the representative receives the display name of the resource account.
 
-![Screenshot showing an incoming call toast from a Call Queue.](media/aa-cq/aa-cq-reference-answer-calls-call-queue.png)
+[![Screenshot showing an incoming call toast from a Call Queue.](media/aa-cq/aa-cq-reference-answer-calls-call-queue.png)](media/aa-cq/aa-cq-reference-answer-calls-call-queue.png#lightbox)
 
 Note
 

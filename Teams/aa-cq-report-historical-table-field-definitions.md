@@ -12,7 +12,7 @@ author: CLYVR
 ms.author: colongma
 manager: roykuntz
 ms.reviewer: colongma
-ms.date: 2026-09-30T00:00:00.0000000Z
+ms.date: 2026-11-30T00:00:00.0000000Z
 ms.topic: reference
 ms.tgt.pltfrm: cloud
 ms.service: msteams
@@ -53,9 +53,13 @@ monikers: []
 item_type: Content
 source_path: Teams/aa-cq-report-historical-table-field-definitions.md
 cmProducts:
-- https://authoring-docs-microsoft.poolparty.biz/devrel/63959238-cb90-4871-a33d-4a5519097e47
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/b5267373-9b61-4d5a-a4ac-5d03f8f8800f
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/46e3c7c4-fe77-4a6e-b40a-44c569819fa5
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/c389ea6b-b6a0-46df-93a1-1e21f25e19e7
 spProducts:
-- https://authoring-docs-microsoft.poolparty.biz/devrel/78d87f42-5582-4a6b-90be-7db2f12b34e6
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/bcd4f3ef-c612-47a8-aa4a-7f9bedc3a98c
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/d0c6fab8-2d7d-4bb0-bf40-589e08d7c132
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/19ada1b6-705b-4ed7-aad0-bffd1bd03dfa
 platformId: c4797f74-4179-47d4-8dca-c1b537088d5a
 ---
 
@@ -63,7 +67,7 @@ platformId: c4797f74-4179-47d4-8dca-c1b537088d5a
 
 Note
 
-Help shape the future of **Teams Voice Applications Historical Reporting**. [Share quick feedback](https://go.microsoft.com/fwlink/?LinkId=2375135) on the reports, setup documentation, translations, or languages you’d like supported. Your input will be reviewed by Microsoft and used to improve the product, documentation, and localization experience for everyone.
+Help shape the future of **Teams Voice Applications Historical Reporting**. [Share quick feedback](https://go.microsoft.com/fwlink/?LinkId=2375135) on the reports, setup documentation, translations, or languages you'd like supported. Your input will be reviewed by Microsoft and used to improve the product, documentation, and localization experience for everyone.
 
 This article is for IT pros and Teams administrators who want to report on the calls handled by Teams Phone Agents, Auto Attendants, and Call Queues.
 
@@ -84,7 +88,7 @@ This article is for IT pros and Teams administrators who want to report on the c
 
 ### Cloud Teams Phone Agent Analytics report
 
-Expand to see the TeamsPhoneAgent table field descriptions
+**Expand to see the TeamsPhoneAgent table field descriptions**
 
 | Name | Data Type | Description |
 | --- | --- | --- |
@@ -123,7 +127,7 @@ Expand to see the TeamsPhoneAgent table field descriptions
 
 ### Cloud Auto Attendant Analytics report
 
-Expand to see the AutoAttendant table field descriptions
+**Expand to see the AutoAttendant table field descriptions**
 
 | Name | Data Type | Description |
 | --- | --- | --- |
@@ -156,7 +160,7 @@ Expand to see the AutoAttendant table field descriptions
 
 ### Cloud Call Queue Analytics report
 
-Expand to see the CallQueue table field descriptions
+**Expand to see the CallQueue table field descriptions**
 
 | Name | Data Type | Description |
 | --- | --- | --- |
@@ -186,7 +190,7 @@ Expand to see the CallQueue table field descriptions
 | DateTimeCQName | Text | Unique key for filtering on fCallQueueFinalStateAction |
 | DialogID (Per Call only) | Text | Used for troubleshooting purposes - provide this information when opening a ticket |
 
-Expand to see the CallQueueFinalStateAction table field descriptions
+**Expand to see the CallQueueFinalStateAction table field descriptions**
 
 | Name | Data Type | Description |
 | --- | --- | --- |
@@ -202,7 +206,7 @@ Expand to see the CallQueueFinalStateAction table field descriptions
 
 ### Cloud Call Queue Agent Timeline report
 
-Expand to see the AgentTimeline table field descriptions
+**Expand to see the AgentTimeline table field descriptions**
 
 | Name | Data Type | Description |
 | --- | --- | --- |
@@ -225,7 +229,7 @@ Expand to see the AgentTimeline table field descriptions
 | DialogID | Text | Used for troubleshooting purposes - provide this information when opening a ticket |
 | MM-DD | Text | Call queue call month-day |
 
-Expand to see the AgentTimelineSummary table field descriptions
+**Expand to see the AgentTimelineSummary table field descriptions**
 
 | Name | Data Type | Description |
 | --- | --- | --- |

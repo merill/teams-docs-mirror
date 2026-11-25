@@ -12,7 +12,7 @@ author: CLYVR
 ms.author: colongma
 manager: roykuntz
 ms.reviewer: colongma
-ms.date: 2026-10-25T00:00:00.0000000Z
+ms.date: 2026-11-30T00:00:00.0000000Z
 ms.topic: how-to
 ms.tgt.pltfrm: cloud
 ms.service: msteams
@@ -69,7 +69,7 @@ platformId: c81df42d-9204-ebc7-b0bd-5e62c0484186
 
 Note
 
-Help shape the future of **Teams Voice Applications Historical Reporting**. [Share quick feedback](https://go.microsoft.com/fwlink/?LinkId=2375135) on the reports, setup documentation, translations, or languages you’d like supported. Your input will be reviewed by Microsoft and used to improve the product, documentation, and localization experience for everyone.
+Help shape the future of **Teams Voice Applications Historical Reporting**. [Share quick feedback](https://go.microsoft.com/fwlink/?LinkId=2375135) on the reports, setup documentation, translations, or languages you'd like supported. Your input will be reviewed by Microsoft and used to improve the product, documentation, and localization experience for everyone.
 
 This article is for IT pros and Teams administrators who want to report on the calls handled by Teams Phone Agents, Auto Attendants, and Call Queues.
 
@@ -111,7 +111,7 @@ These reports use data from the Voice Applications Analytics Collector (VAAC) se
 
 The Teams Voice Applications Historical Reports Power BI template contains the following five reports:
 
-Cloud Teams Phone Agent Analytics (expand to see sample report)
+**Cloud Teams Phone Agent Analytics (expand to see sample report)**
 
 The Cloud Teams Phone Agent Analytics report shows analytics for calls coming into your Teams Phone Agents.
 
@@ -121,19 +121,19 @@ In addition, when hovering over a call in table at the bottom of the report, the
 
 [![Screenshot showing an example of the Teams Phone Agent Usage Details report.](media/aa-cq/historical-report-sample-v332-teams-phone-agent-usage-details.png)](media/aa-cq/historical-report-sample-v332-teams-phone-agent-usage-details.png#lightbox)
 
-Cloud Auto Attendant Analytics (expand to see sample report)
+**Cloud Auto Attendant Analytics (expand to see sample report)**
 
 The Cloud Auto Attendant Analytics report shows analytics for calls coming into your Auto Attendants.
 
 [![Screenshot showing an example of the Auto Attendant report.](media/aa-cq/historical-report-sample-v332-auto-attendant.png)](media/aa-cq/historical-report-sample-v332-auto-attendant.png#lightbox)
 
-Cloud Call Queue Analytics (expand to see sample report)
+**Cloud Call Queue Analytics (expand to see sample report)**
 
 The Cloud Call Queue Analytics report shows analytics for calls coming into your Call Queues.
 
 [![Screenshot showing an example of the Call Queue report.](media/aa-cq/historical-report-sample-v332-call-queue.png)](media/aa-cq/historical-report-sample-v332-call-queue.png#lightbox)
 
-Cloud Agent Timeline Analytics (expand to see sample report)
+**Cloud Agent Timeline Analytics (expand to see sample report)**
 
 The Cloud Agent Timeline Analytics report shows a timeline view of representatives (agents) being active in Call Queue calls.
 
@@ -180,7 +180,7 @@ Use one of the following methods to control access to the historical reports:
 
 ## V3.x.x desktop installation
 
-Expand to see the desktop installation steps
+**Expand to see the desktop installation steps**
 
 Important
 
@@ -241,7 +241,7 @@ Perform the following steps:
 
 ## V3.x.x Power BI service installation
 
-Expand to see the Power BI service installation steps
+**Expand to see the Power BI service installation steps**
 
 Important
 
@@ -292,7 +292,7 @@ With that in mind, using these reports for auditing, compliance, or payroll-rela
 
 ### Cloud Teams Phone Agent Analytics
 
-Expand to see how to interpret the Cloud Teams Phone Agent Analytics report, for notes and known issues
+**Expand to see how to interpret the Cloud Teams Phone Agent Analytics report, for notes and known issues**
 [![Screenshot showing sample Cloud Teams Phone Agent Analytics report.](media/aa-cq/historical-report-sample-v332-teams-phone-agent-callouts.png)](media/aa-cq/historical-report-sample-v332-teams-phone-agent-callouts.png#lightbox)
 
 | Callout | Title | Description |
@@ -336,7 +336,7 @@ No known issues.
 
 ### Cloud Teams Phone Agent Usage Details
 
-Expand to see how to interpret the Cloud Teams Phone Agent Usage Details report, for notes and known issues
+**Expand to see how to interpret the Cloud Teams Phone Agent Usage Details report, for notes and known issues**
 
 [![Screenshot showing sample Cloud Teams Phone Agent Usage Details report.](media/aa-cq/historical-report-sample-v332-teams-phone-agent-usage-details-callouts.png)](media/aa-cq/historical-report-sample-v332-teams-phone-agent-usage-details-callouts.png#lightbox)
 
@@ -348,7 +348,7 @@ Expand to see how to interpret the Cloud Teams Phone Agent Usage Details report,
 | 4 | UTC Offset | The selected UTC offset. |
 | 5 | Feedback | Provide your feedback on the reports. |
 | 6 |  | The details for the selected call.<br>- **Teams Phone Agent Resource Account** or **Teams Phone Agent**<br>    - **Admins** - Teams Phone Agent Resource Account.^See Note 1^<br>    - **Admins or Auth Users:** Teams Phone Agent.^See Note 2^<br>- **Voice** - the voice configured on the Teams Phone Agent.<br>- **Conference ID** - the unique ID for the call.<br>- **Schedule** - the schedule Teams Phone Agent was following. |
-| 7 |  | Breakdown showing the date and time of each action taken and the end result of that action.<br>- **Start Time** - The start time of the specific step.<br>- **Action** - The specific action invoked in Teams Phone Agent^See Known Issue 1^.<br>    - **Find Person By Name** - dial by name request.<br>    - **Find Person By Name With Recognizer** - dial by name request.<br>    - **Find Person By Extension** - dial by extension request.<br>    - **Transfer Call** - call was transferred.<br>    - **Fallback To DTMF** - Teams Phone Agent reverted to touch-tone mode.<br>    - **Initiate Caller Authentication** - authentication for appointment booked was started.<br>    - **Authenticate Caller** - caller was authenticated.<br>    - **Get Available Appointments** - a list of available appointments was retreived.<br>    - **Book Appointment** - an appointment was booked.<br>    - **Get All Appointments For Caller** - the caller's existing bookings were retrieved.<br>    - **Cancel Appointment** - an existing appointment was cancelled.<br>    - **Modify Appointment** - an existing appointment was changed.<br>    - **Question Answer** - question and answer tool was used.<br>    - **Spam Likely Detection** - the call was identified as spam.<br>    - **Other** - some other action was taken.<br>- **Menu Option** - The voice command as configured on the Teams Phone Agent menu option associated with the action.<br>- **Menu Option Description** - The menu option description as configured on the Teams Phone Agent menu option associated with the action.<br>- **Result** - The end result of the action.^See Known Issue 1^ |
+| 7 |  | Breakdown showing the date and time of each action taken and the end result of that action.<br>- **Start Time** - The start time of the specific step.<br>- **Action** - The specific action invoked in Teams Phone Agent^See Known Issue 1^.<br>    - **Find Person By Name** - dial by name request.<br>    - **Find Person By Name With Recognizer** - dial by name request.<br>    - **Find Person By Extension** - dial by extension request.<br>    - **Transfer Call** - call was transferred.<br>    - **Fallback To DTMF** - Teams Phone Agent reverted to touch-tone mode.<br>    - **Initiate Caller Authentication** - authentication for appointment booked was started.<br>    - **Authenticate Caller** - caller was authenticated.<br>    - **Get Available Appointments** - a list of available appointments was retrieved.<br>    - **Book Appointment** - an appointment was booked.<br>    - **Get All Appointments For Caller** - the caller's existing bookings were retrieved.<br>    - **Cancel Appointment** - an existing appointment was cancelled.<br>    - **Modify Appointment** - an existing appointment was changed.<br>    - **Question Answer** - question and answer tool was used.<br>    - **Spam Likely Detection** - the call was identified as spam.<br>    - **Other** - some other action was taken.<br>- **Menu Option** - The voice command as configured on the Teams Phone Agent menu option associated with the action.<br>- **Menu Option Description** - The menu option description as configured on the Teams Phone Agent menu option associated with the action.<br>- **Result** - The end result of the action.^See Known Issue 1^ |
 
 #### Teams Phone Agent Usage Details Notes
 
@@ -372,7 +372,7 @@ Expand to see how to interpret the Cloud Teams Phone Agent Usage Details report,
 
 ### Cloud Auto Attendant Analytics
 
-Expand to see how to interpret the Cloud Auto Attendant Analytics report, for notes and known issues
+**Expand to see how to interpret the Cloud Auto Attendant Analytics report, for notes and known issues**
 
 [![Screenshot showing sample Cloud Auto Attendant Analytics report.](media/aa-cq/historical-report-sample-v332-auto-attendant-callouts.png)](media/aa-cq/historical-report-sample-v332-auto-attendant-callouts.png#lightbox)
 
@@ -419,7 +419,7 @@ No known issues.
 
 ### Cloud Call Queue Analytics
 
-Expand to see how to interpret the Cloud Call Queue Analytics report, for notes and known issues
+**Expand to see how to interpret the Cloud Call Queue Analytics report, for notes and known issues**
 
 [![Screenshot showing sample Cloud Call Queue Analytics report.](media/aa-cq/historical-report-sample-v332-call-queue-callouts.png)](media/aa-cq/historical-report-sample-v332-call-queue-callouts.png#lightbox)
 
@@ -466,7 +466,7 @@ No known issues.
 
 ### Cloud Call Queue Agent Timeline
 
-Expand to see how to interpret the Cloud Call Queue Agent Timeline report, for notes and known issues
+**Expand to see how to interpret the Cloud Call Queue Agent Timeline report, for notes and known issues**
 
 [![Screenshot showing sample Cloud Call Queue Agent Timeline report - inside.](media/aa-cq/historical-report-sample-v332-agent-timeline-callouts.png)](media/aa-cq/historical-report-sample-v332-agent-timeline-callouts.png#lightbox)
 
@@ -518,7 +518,7 @@ Expand to see how to interpret the Cloud Call Queue Agent Timeline report, for n
 
 ### Cloud Call Flow Details
 
-Expand to see how to interpret the Cloud Call Flow Details report, for notes and known issues
+**Expand to see how to interpret the Cloud Call Flow Details report, for notes and known issues**
 
 [![Screenshot showing sample Cloud Call Flow Details report - inside.](media/aa-cq/historical-report-sample-v332-call-flow-details-callouts.png)](media/aa-cq/historical-report-sample-v332-call-flow-details-callouts.png#lightbox)
 
@@ -566,7 +566,7 @@ This customization results in the Agent Timeline report showing representative n
 
 This customization requires registering an Entra ID application.
 
-Expand to see customization steps
+**Expand to see customization steps**
 
 These instructions assume that you have the AA/CQ Historical Reports templates installed and working on your desktop.
 
@@ -610,7 +610,7 @@ let
                 "https://graph.microsoft.us/v1.0/users?$select=displayName,userPrincipalName,id"
             else  // Public Cloud
                 "https://graph.microsoft.com/v1.0/users?$select=displayName,userPrincipalName,id",
-    
+
     TokenResponse = if TeamsUserInvalidConfig then
             null
         else
@@ -748,7 +748,7 @@ in
 
 ## Localization
 
-Expand to see the list of supported locales and known localization issues
+**Expand to see the list of supported locales and known localization issues**
 
 ### Supported locales
 
@@ -783,7 +783,7 @@ Expand to see the list of supported locales and known localization issues
 
 Note
 
-Translations/localizations were performed by Artificial Intelligence and may contain errors.
+Translations/localizations were performed by Artificial Intelligence and might contain errors.
 
 Use the [Teams Voice Applications Historical Reporting Feedback](https://go.microsoft.com/fwlink/?LinkId=2375135) form to report any translation/localization issues.
 
@@ -857,7 +857,7 @@ Increasing the maximum number of rows that can be returned results in longer exe
 
 The colors used for the visual text, background, and data points can be fully customized through the **ReportTheme** settings.
 
-Expand for details on how to customize the visual text, background, and data points
+**Expand for details on how to customize the visual text, background, and data points**
 
 The 16 base color settings are:
 
@@ -1022,7 +1022,7 @@ The 16 base color settings are:
 
 - Agent Timeline
 
-    [![Screenshot showing the Agent Timline stacked column visuals from the reports.](media/aa-cq/historical-report-customization-visuals-agent-timeline-stacked-column-chart.png)](media/aa-cq/historical-report-customization-visuals-agent-timeline-stacked-column-chart.png#lightbox)
+    [![Screenshot showing the Agent Timeline stacked column visuals from the reports.](media/aa-cq/historical-report-customization-visuals-agent-timeline-stacked-column-chart.png)](media/aa-cq/historical-report-customization-visuals-agent-timeline-stacked-column-chart.png#lightbox)
 
     | Variable Name | HEX color Code |
     | --- | --- |
