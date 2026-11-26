@@ -12,7 +12,7 @@ author: MSTonySmith
 ms.author: tonysmit
 manager: pamgreen
 ms.reviewer: mattslomka
-ms.date: 2026-06-29T00:00:00.0000000Z
+ms.date: 2026-11-25T00:00:00.0000000Z
 ms.topic: how-to
 audience: Admin
 ms.service: msteams
@@ -138,6 +138,10 @@ Proxy settings on Teams Rooms on Android vary by device manufacturer. Consult OE
 ## Wireless network considerations
 
 We strongly recommend that you connect your Teams Rooms devices to a wired network for greater stability and performance, ensuring a seamless meeting experience. If using a wired connection isn't available, you may opt to use a wireless connection.
+
+Note
+
+Initial device provisioning/deployment should be completed using a wired internet connection. On an exception basis, all-in-one board devices may be able to complete initial deployment via WiFi but if you encounter issues during deployment, use a wired connection to complete the deployment.
 
 Important
 

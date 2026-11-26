@@ -14,7 +14,7 @@ ms.author: dimehta
 manager: srpall
 ms.service: msteams
 ms.topic: article
-ms.date: 2026-08-04T00:00:00.0000000Z
+ms.date: 2026-11-25T00:00:00.0000000Z
 ms.subservice: msteams-admin
 locale: en-us
 document_id: 2931510a-9c3f-d3be-8ec9-8632021114c0
@@ -47,7 +47,7 @@ Organizations commonly deploy shared Teams devices (Teams Rooms, Teams panels, a
 
 ## Key Benefits
 
-Shared device accounts are fundamentally different from personal user accounts as they exist to support room experiences and shared collaboration scenarios not personal productivity workflows. By marking shared device accounts as Resource Accounts, organizations can use this to strengthen their security posture. Key benefits include:
+Shared device accounts are fundamentally different from personal user accounts as they exist to support room experiences and shared collaboration scenarios not personal productivity workflows. By marking shared device accounts as Resource Accounts, organizations can use this to strengthen their security posture. This feature is part of [baseline security mode](/en-us/microsoft-365/baseline-security-mode/baseline-security-mode-settings) in Microsoft 365. Key benefits include:
 
 - Microsoft 365 services are able to differentiate resource accounts from standard user accounts, enabling more secure, consistent, and resource aware behaviors across the ecosystem
 - Removes resource accounts from meeting chats after the call ends
@@ -55,14 +55,25 @@ Shared device accounts are fundamentally different from personal user accounts a
 - Align shared device identities with Microsoft 365 governance and compliance models
 - Prepare for future platform capabilities that enforce resource-specific access policies
 
-## How it Works
+Note
+
+To restrict file and recording access, the `-RestrictResourceAccountAccess` parameter must be configured as `true` in SharePoint Online. See [Set-SPOTenant](/en-us/powershell/module/microsoft.online.sharepoint.powershell/set-spotenant#-restrictresourceaccountaccess) for more details.
+
+## How it Works & Recommendations
 
 When an administrator marks an account as a Resource Account in PMP:
 
-1. PMP updates the account using Microsoft service APIs
+1. PMP updates the Entra ID account using Microsoft service APIs setting `isResourceAccount` to true.
 2. The account is identified as a shared resource account within supported Microsoft 365 services
 3. Shared device scenarios receive resource aware security handling
 4. No user interaction is required on the Teams Rooms device as the operation is designed to be silent and non-disruptive for end users
+
+Microsoft recommends:
+
+- Using Resource Accounts for all Teams Rooms and shared collaboration devices
+- Avoiding personal user accounts for shared meeting spaces
+- Regularly reviewing shared device account inventory in PMP
+- Applying governance and lifecycle management policies consistently across shared endpoints
 
 Tip
 
@@ -86,11 +97,14 @@ The Resource Accounts page includes a **Resource** status column.
 - Yes: The account is marked as a Resource Account and secured for shared-device usage
 - No: The account has not yet been secured as a Resource Account
 
-## Best Practices
+## Frequently Asked Questions
 
-Microsoft recommends:
+**What attribute is configured on Entra ID accounts when this is configured?**
 
-- Using Resource Accounts for all Teams Rooms and shared collaboration devices
-- Avoiding personal user accounts for shared meeting spaces
-- Regularly reviewing shared device account inventory in PMP
-- Applying governance and lifecycle management policies consistently across shared endpoints
+> 
+> The `isResourceAccount` attribute in Entra ID is set to true during this process.
+
+**How can I validate this configuration across my organization?**
+
+> 
+> The easiest method is by viewing the **Resource** status column within the **Planning** &gt; **Resource Accounts** page within the Pro Management Portal. However, it can also be viewed using Microsoft Graph by checking resource account object for the `isResourceAccount` attribute value, view the [user resource type - Microsoft Graph](/en-us/graph/api/resources/user) documentation for more information.

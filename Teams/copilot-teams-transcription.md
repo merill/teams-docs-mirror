@@ -88,7 +88,7 @@ To learn more about how organizers can use Copilot during and after the meeting,
 
 When organizers create a meeting or event, they can set Copilot's value to **Only during the meeting** from the dropdown list in their meeting options. Once someone with a Microsoft Copilot license selects the Copilot button during the meeting or event, Copilot runs for all licensed users. This option relies on speech-to-text audio processing data that isn't saved after the meeting or event ends.
 
-Depending on your organization's Microsoft Purview retention policies, Copilot prompts and responses during meetings might be retained for compliance purposes, even if recording and transcription are turned off. This applies to Commercial and GCC cloud environments but not to DoD.
+Depending on your organization's Microsoft Purview retention policies, Copilot prompts and responses during meetings might be retained for compliance purposes, even if recording and transcription are turned off. This applies to Commercial, GCC, GCC High, and DoD environments.
 
 To learn more about how organizers can use Copilot only during the meeting, see [Use Microsoft Copilot in Teams without recording a Teams meeting](https://support.microsoft.com/office/use-copilot-without-recording-a-teams-meeting-a59cb88c-0f6b-4a20-a47a-3a1c9a818bd9).
 
@@ -99,10 +99,6 @@ For information about using Copilot only during Teams *calls*, see [Manage Micro
 Important
 
 Microsoft Copilot in Teams meetings and events isn't available in end-to-end encrypted meetings. For more information on end-to-end encryption, see [Manage end-to-end encryption for Microsoft Teams meetings and one-to-one calls](teams-end-to-end-encryption).
-
-Note
-
-Microsoft Copilot in Teams isn't currently available for GCC High.
 
 ## Prerequisites
 

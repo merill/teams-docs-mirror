@@ -52,8 +52,10 @@ item_type: Content
 source_path: Teams/aa-cq-plan-teams-phone-agent-ubb.md
 cmProducts:
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/b5267373-9b61-4d5a-a4ac-5d03f8f8800f
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/46e3c7c4-fe77-4a6e-b40a-44c569819fa5
 spProducts:
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/bcd4f3ef-c612-47a8-aa4a-7f9bedc3a98c
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/d0c6fab8-2d7d-4bb0-bf40-589e08d7c132
 platformId: 9ab966d6-02b6-1f4c-03d9-3350d0445ac5
 ---
 
@@ -81,9 +83,11 @@ Depending on the service, organizations can use fixed licensing, the Copilot Cre
 
 Copilot Credits are a common currency for eligible Microsoft services with usage-based billing.
 
+For more information about licensing details for Copilot Credits and services, see the [Copilot Credits Guide.](https://go.microsoft.com/fwlink/?LinkId=2383615)
+
 For more information, see [Understand usage-based billing and cost management for Copilot Credits](/en-us/microsoft-365/copilot/usage-based-billing-overview-copilot-credits).
 
-Use the [Copilot Credit Estimator](https://nptnlopcost-ppe-h8b6dtchacfcgqhk.b02.azurefd.net/#/estimator) to understand Teams Phone Agent costs.
+Use the [Copilot Credit Estimator](https://go.microsoft.com/fwlink/?LinkId=2390400) to understand Teams Phone Agent costs.
 
 ## Teams Phone Agent and Copliot credits
 
