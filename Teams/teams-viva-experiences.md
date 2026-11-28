@@ -13,7 +13,7 @@ ms.author: v-lilkafka
 manager: v-jesserowe
 ms.reviewer: adriennet
 ms.topic: how-to
-ms.date: 2026-01-26T00:00:00.0000000Z
+ms.date: 2026-11-19T00:00:00.0000000Z
 ms.service: msteams
 ms.subservice: teams-chat
 audience: admin
@@ -56,11 +56,11 @@ platformId: e6cefe67-e675-0af6-77d5-3c5a5338bfb2
 
 Note
 
-Engage storylines in Teams is generally available. Engage communities in Teams is currently in public preview. Features in public preview might not be complete and could undergo changes before the public GA release. They're provided for evaluation purposes only. For more information about Engage communities in Teams, see [Getting started with Viva Engage Communities in Microsoft Teams](https://support.microsoft.com/en-us/office/getting-started-with-viva-engage-communities-in-microsoft-teams-b9fa52b8-4d1f-4ed4-b285-03e2537d3dbe).
+The Engage storylines experience in Teams is generally available. The Engage communities experience in Teams is currently in public preview. Features in public preview might not be complete and could undergo changes before the public GA release. They're provided for evaluation purposes only. For more information about Engage communities in Teams, see [Getting started with Viva Engage Communities in Microsoft Teams](https://support.microsoft.com/en-us/office/getting-started-with-viva-engage-communities-in-microsoft-teams-b9fa52b8-4d1f-4ed4-b285-03e2537d3dbe).
 
 Viva Engage unites your organization, allowing people to connect with leaders, coworkers, and communities. With Viva Engage, your users can generate ideas, share their work and experiences, and find connection at work.
 
-Now, Viva Engage integrates into your users' Teams workflows. This article outlines the technical details of the integration of Viva Engage experiences into Teams and advises IT admins on feature management.
+Viva Engage integrates communities, storylines, notifications, and personalized digest experiences into your users' Teams workflows. This article describes the Viva Engage experiences available in Teams and explains how IT admins can manage them.
 
 ## Admin requirements for Viva Engage experiences in Teams
 
@@ -74,7 +74,7 @@ Before rolling out Viva Engage experiences to Teams, observe the following guide
 
 ### User requirements for Viva Engage experiences in Teams
 
-To access Engage features, Teams users must have the following licenses:
+To access Engage features, Teams users must have the following:
 
 - A Microsoft 365 license
 - A Microsoft Teams license
@@ -90,7 +90,7 @@ The following Engage features and activities are usable only in the Viva Engage 
 - Create communities
 - Several right rail features, such as community campaigns and events, aren't currently supported.
 
-Engage experiences in Teams aren't available for educational (EDU) tenants, or for tenants that don't support the Engage app, such as special clouds, GCC, and GCC-H.
+Engage experiences in Teams aren't available for educational (EDU) tenants or for tenants that don't support the Engage app, such as special clouds, GCC, and GCC-H.
 
 Engage experiences in Teams aren't usable for organizations that configure and use [segmentation](/en-us/viva/engage/engage-segmentation/engage-segmentation) in their network. For [multi-tenant organizations](/en-us/entra/identity/multi-tenant-organizations/overview) (MTOs), members of hub tenants can see MTO communities in the Teams navigation. Members of spoke tenants can't see MTO communities.
 
@@ -106,7 +106,7 @@ Note
 
 **What's happening across your organization** doesn't have a separate setting. To prevent community content from appearing in this section, turn off the **Communities** setting. To prevent storyline content from appearing, turn off the **Storylines** setting.
 
-**Set the communities experience in Teams**
+### Set the communities experience in Teams
 
 To change the communities setting, complete the following steps: 
 
@@ -118,7 +118,7 @@ To change the communities setting, complete the following steps:
 6. To enable **communities in Teams**, switch on the toggle.
 7. Choose **Save**.
 
-**Set the storylines experience in Teams**
+### Set the storylines experience in Teams
 
 To change the storyline setting, complete the following steps: 
 
@@ -145,32 +145,63 @@ Teams chats support storyline pages with the following user features:
 - Receive notifications in Teams for relevant activity in storyline
 - Post a storyline or comment on storyline posts on behalf of others as a delegate
 - Change the cover photo at the top of their storyline
-- A similar look and feel for Storyline conversations to other messaging experiences in Teams.
+- Experience storyline conversations with a look and feel similar to other messaging experiences in Teams.
 
-[Viva Engage Premium](/en-us/viva/engage/setup#set-up-licensing-for-viva-engage) licensed users can use the following features:
+Users with a [Viva Engage Premium](/en-us/viva/engage/setup#set-up-licensing-for-viva-engage) license can use the following features:
 
 - Assigned leaders can send storyline announcements
 - Users can view personal analytics about their storyline
-- Review analytics to get insights into engagement trends, to measure impact and optimize content strategies.
+- Review analytics to understand engagement trends, measure impact, and optimize content strategies.
 
-## User experience of Engage communities in Team chats
+## User experience of Engage communities in Teams chats
 
 The communities in Teams experience includes the following features:
 
-**Unified access in Teams**: Find Communities in the Teams navigation pane (Chat app for unified view or Teams and Channels app for split view), which reduces friction and keeps collaboration in one place. Navigation includes the following options: 
+### Unified access in Teams
 
-- Show (or hide) communities in the nav that are most important to them
-- Create custom sections for tailored organization
+Find Communities in the Teams navigation pane (Chat app for unified view or Teams and Channels app for split view), which reduces friction and keeps collaboration in one place.
+
+Navigation includes the following options:
+
+- Show (or hide) communities that are most important to them.
+- Create custom sections for tailored organization.
 - Use a-z or recency-based sort order for the default **Communities** section.
+- Relevant community posts can also appear in a personalized Viva Engage weekly digest delivered through the Teams Activity feed.
 
-**Discoverability & Personalization**: Users can browse and join communities aligned with interests and organizational priorities.
+### Discoverability & Personalization
 
-**Rich Engagement Features:**
+Users can browse and join communities aligned with interests and organizational priorities.
+
+### Rich Engagement Features
 
 - Users can scroll through the community feed, post discussions, questions, praise, or polls, react to posts and see who else reacts, and create announcements (if an admin).
 - Delegated posting for designated roles (requires delegate set up in Viva Engage).
-- Notifications for announcements, user mentions and other community experiences appear in the Teams Activity feed. Users can deep-link into these new experiences.
+- Notifications for announcements, user mentions, and other community experiences appear in the Teams Activity feed. Users can deep-link into these new experiences.
 - Use community-scoped search to search in communities for specific content, or search across communities with the Teams search bar.
 - Join and engage with events in communities: ask questions, upvote, view live, or rewatch events.
 - Review analytics for insight into engagement trends (requires premium Viva Engage license).
 - Manage community settings, membership, admin, and expert roles seamlessly from the new experience (community admin only).
+
+## Viva Engage weekly digest in Teams
+
+Viva Engage can deliver a personalized weekly digest in the Teams Activity feed. The digest helps users catch up on relevant Viva Engage content from within Teams.
+
+The weekly digest can include:
+
+- Posts from people the user follows.
+- Posts from communities the user joined.
+- Recommended posts from other storylines and communities in the organization.
+
+From the digest, users can:
+
+- View and reply to posts.
+- React to posts.
+- Follow people.
+- Join communities.
+- Open the related conversation in Viva Engage.
+
+Viva Engage determines whether to deliver the weekly digest through Teams or Outlook based on content relevance and the appropriate delivery channel.
+
+Note
+
+The weekly digest doesn't replace the Viva Engage daily email digest.
